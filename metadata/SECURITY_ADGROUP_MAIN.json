@@ -1,0 +1,362 @@
+{
+  "groupBy": [
+    {
+      "value": "Name",
+      "label": "Name",
+      "type": "account.igaContent.givenName.keyword"
+    },
+    {
+      "value": "Display Name",
+      "label": "Display name",
+      "type": "account.igaContent.displayName.keyword"
+    },
+    {
+      "type": "decision.certification.actors.label.keyword",
+      "label": "Reviewer",
+      "value": "Reviewer",
+      "default": true
+    },
+    {
+      "value": "Username",
+      "label": "Username",
+      "type": "user.userName.keyword"
+    },
+    {
+      "type": "account.igaContent.sAMAccountName.keyword",
+      "label": "Account Name",
+      "value": "Account Name"
+    },
+    {
+      "type": "assignment.name.keyword",
+      "label": "Entitlement",
+      "value": "Entitlement"
+    },
+    {
+      "type": "application.name.keyword",
+      "label": "Application Name",
+      "value": "Application Name"
+    },
+    {
+      "type": "assignment.igaContent.GroupCategory.keyword",
+      "label": "Group Category",
+      "value": "Group Category"
+    },
+    {
+      "type": "account.igaContent.dbagCostcenter.keyword",
+      "label": "Cost Center",
+      "value": "Cost Center"
+    },
+    {
+      "type": "assignment.igaContent.group_type.keyword",
+      "label": "Group Type",
+      "value": "Group Type"
+    }
+  ],
+  "initialGroupBy": "All",
+  "filterBy": [
+    {
+      "value": "certify",
+      "type": "decision.certification.decision.keyword",
+      "label": "Maintained"
+    },
+    {
+      "value": "revoke",
+      "type": "decision.certification.decision.keyword",
+      "label": "Revoked"
+    },
+    {
+      "value": "reassign",
+      "type": "decision.certification.comments.action.keyword",
+      "label": "Reassign",
+      "sortType": "decision.certification.comments.action.keyword"
+    },
+    {
+      "value": "nullValue",
+      "type": "decision.certification.decision.keyword",
+      "label": "None"
+    }
+  ],
+  "initialFilterBy": "All",
+  "paginationSizes": [10, 25, 50, 100],
+  "hasSortableColumns": true,
+  "initialSortColumnId": "applicationName",
+  "bulkActions": ["maintain", "revoke", "reassign", "forward"],
+  "columns": [
+    {
+      "id": "select",
+      "type": "checkbox",
+      "header": {
+        "type": "component",
+        "component": "checkbox",
+        "text": "Select"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "mandatory": true,
+      "initialDisplay": true,
+      "order": 1
+    },
+    {
+      "id": "decision",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Decision"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 2,
+      "properties": {
+        "options": [
+          {
+            "id": "maintain",
+            "iconInactive": "maintainDefault",
+            "iconActive": "maintain",
+            "title": "Maintain"
+          },
+          {
+            "id": "revoke",
+            "iconInactive": "revokeNew",
+            "iconActive": "radio",
+            "title": "Revoke"
+          }
+        ]
+      }
+    },
+    {
+      "id": "comment",
+      "type": "iconPopup",
+      "header": {
+        "type": "text",
+        "text": "comment"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "order": 3,
+      "properties": {
+        "iconInactive": "comments",
+        "iconActive": "comments"
+      }
+    },
+    {
+      "id": "displayName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Display Name",
+        "sortKey": "account.igaContent.displayName.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 4
+    },
+    {
+      "id": "sAMAccountName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account",
+        "sortKey": "account.igaContent.sAMAccountName.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 5,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "account"
+      }
+    },
+    {
+      "id": "entitlement",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Entitlement Name",
+        "sortKey": "assignment.name.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "mandatory": false,
+      "initialDisplay": true,
+      "order": 6,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "entitlement"
+      }
+    },
+    {
+      "id": "adGroupDescription",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Description",
+        "sortKey": "assignment.igaContent.description.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 7
+    },
+    {
+      "id": "email",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Email",
+        "sortKey": "user.mail.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 8
+    },
+    {
+      "id": "username",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Name",
+        "sortKey": "user.userName.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 9,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "username"
+      }
+    },
+    {
+      "id": "accountTypeA",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "accountTypeA",
+        "sortKey": "account.accountType.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 10
+    },
+    {
+      "id": "name",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Name",
+        "sortKey": "account.igaContent.givenName.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 11
+    },
+    {
+      "id": "employeeType",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Employee Type",
+        "sortKey": "account.igaContent.employeeType.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 12
+    },
+    {
+      "id": "costCenter",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Cost Center",
+        "sortKey": "account.igaContent.dbagCostcenter.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 13
+    },
+    {
+      "id": "groupType",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Type",
+        "sortKey": "assignment.igaContent.group_type.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 14
+    },
+    {
+      "id": "groupCategory",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Category",
+        "sortKey": "assignment.igaContent.GroupCategory.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 15
+    },
+    {
+      "id": "actions",
+      "type": "longMenu",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "mandatory": true,
+      "initialDisplay": true,
+      "order": 16,
+      "properties": {
+        "iconInactive": "ellipsisMenu",
+        "iconActive": "ellipsisMenu",
+        "options": [
+          {
+            "id": "maintain",
+            "title": "Maintain"
+          },
+          {
+            "id": "revoke",
+            "title": "Revoke"
+          },
+          {
+            "id": "reassign",
+            "popupId": "reviewItemReassign"
+          },
+          {
+            "id": "forward",
+            "popupId": "reviewItemForward"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sticky",
+      "type": "sticky",
+      "header": {
+        "type": "component",
+        "component": "sticky"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "order": 17,
+      "sticky": "right"
+    }
+  ]
+}

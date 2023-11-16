@@ -1,0 +1,299 @@
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 15,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "Requestor1@example.com",
+            "givenName": "Requestor1",
+            "id": "managed/user/2a1e9e14-cf43-4760-9682-9048de2052a1",
+            "sn": "Requestor1",
+            "userName": "Requestor1",
+            "isAdmin": false
+          },
+
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230331-960",
+              "groupDN": "CN=GROUPUACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com",
+              "requestJustification": "Joining",
+              "AccessioBulkRequestNumber": "20230331984z",
+              "requestorMail": "namrata.hom@gbgdev.db.com",
+              "isDraft": false,
+              "category": "AD Group",
+              "operation": "Add Membership",
+              "applicationName": "AD_DBG",
+              "accountDN": "CN=ACCOUNTUACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com"
+            }
+          },
+
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"
+          },
+          "requestType": "entitlementGrant",
+          "decision": {
+            "actors": {
+              "inactive": [],
+              "actorTags": [
+                "activeId=managed%2Fuser%2F005&phase=",
+                "phase=&activeId=managed%2Fuser%2F005"
+              ],
+              "active": [
+                {
+                  "mail": "kpanduri@hcmlabs.com",
+                  "permissions": {
+                    "approve": true,
+                    "comment": true,
+                    "modify": true,
+                    "reassign": true,
+                    "reject": true,
+                    "cancel": true,
+                    "fulfill": true
+                  },
+                  "givenName": "Kishore",
+                  "id": "managed/user/2916e744-48ab-4a5b-a6c4-3142b27556ab",
+                  "sn": "Panduri",
+                  "isAdmin": true,
+                  "userName": "kpanduri"
+                }
+              ]
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-03-06T10:31:31+00:00",
+                "request": {
+                  "common": {
+                    "Accessio_Request_No": "20230331-960",
+                    "groupDN": "CN=GROUPUACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com",
+                    "requestJustification": "Joining",
+                    "AccessioBulkRequestNumber": "20230331984z",
+                    "requestorMail": "namrata.hom@gbgdev.db.com",
+                    "isDraft": false,
+                    "category": "AD Group",
+                    "operation": "Add Membership",
+                    "applicationName": "AD_DBG",
+                    "accountDN": "CN=ACCOUNTUACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com"
+                  }
+                },
+                "action": "updateRequest",
+                "user": {
+                  "id": "SYSTEM"
+                }
+              }
+            ],
+            "completionDate": "2023-04-18T16:51:37+00:00",
+            "deadline": null,
+            "outcome": null,
+            "startDate": "2023-04-18T16:51:37+00:00",
+            "phases": [
+              {
+                "decision": null,
+                "workflowTaskId": "351043",
+                "name": "LineManagerApproval",
+                "completionDate": "2023-03-15T08:43:23+00:00",
+                "type": "request",
+                "startDate": "2023-03-31T06:00:55+00:00",
+                "events": {
+                  "reminder": {
+                    "notification": "accountsApprovalReminder",
+                    "date": "2023-04-05T06:00:55+00:00",
+                    "frequency": 5
+                  },
+                  "expiration": {
+                    "notification": "accountsRequestExpired",
+                    "date": "2023-04-10",
+                    "action": "reject"
+                  }
+                },
+                "status": "in-progress"
+              }
+            ]
+          },
+          "id": "8a3e7a49-c528-4185-808a-122ae72e85b4"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "Requestor1@example.com",
+            "givenName": "Requestor1",
+            "id": "managed/user/2a1e9e14-cf43-4760-9682-9048de2052a1",
+            "sn": "Requestor1",
+            "userName": "Requestor1",
+            "isAdmin": false
+          },
+
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230331-961",
+              "AccessioBulkRequestNumber": "",
+              "recepientMail": "s.santaosh.patil@accenture.com",
+              "accountDescription": "this request will Create Technical-Test",
+              "rLastName": "User1",
+              "requestorMail": "s.santaosh.patil@accenture.com",
+              "isDraft": false,
+              "requestJustification": "Joining",
+
+              "accountDetails": {
+                "passwordNeverExpires": false,
+                "recertificationPeriod": "06",
+                "sAMAccountName": "user1-a",
+                "accountType": "Technical - Test",
+                "domain": "DBG",
+                "middleName": "hh",
+                "l": "Provider (Deutsche Immobilien Leasing)",
+                "dbAGInfrastructureID": "1234-1",
+                "primaryAccount": "mahesh",
+                "userAccountControl": "512"
+              },
+              "rFirstName": "user2",
+              "category": "AD Account",
+              "operation": "Create",
+              "applicationName": "AD_DBG"
+            }
+          },
+
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"
+          },
+          "requestType": "createAccount",
+          "decision": {
+            "actors": {
+              "inactive": [],
+              "actorTags": [
+                "activeId=managed%2Fuser%2F005&phase=",
+                "phase=&activeId=managed%2Fuser%2F005"
+              ],
+              "active": [
+                {
+                  "mail": "kpanduri@hcmlabs.com",
+                  "permissions": {
+                    "approve": true,
+                    "comment": true,
+                    "modify": true,
+                    "reassign": true,
+                    "reject": true,
+                    "cancel": true,
+                    "fulfill": true
+                  },
+                  "givenName": "Kishore",
+                  "id": "managed/user/2916e744-48ab-4a5b-a6c4-3142b27556ab",
+                  "sn": "Panduri",
+                  "isAdmin": true,
+                  "userName": "kpanduri"
+                }
+              ]
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-03-06T10:31:31+00:00",
+                "request": {
+                  "common": {
+                    "Accessio_Request_No": "20230331-960",
+                    "AccessioBulkRequestNumber": "",
+                    "recepientMail": "s.santaosh.patil@accenture.com",
+                    "accountDescription": "this request will Create Technical-Test",
+                    "rLastName": "User1",
+                    "requestorMail": "s.santaosh.patil@accenture.com",
+                    "isDraft": false,
+                    "requestJustification": "Joining",
+
+                    "accountDetails": {
+                      "passwordNeverExpires": false,
+                      "recertificationPeriod": "06",
+                      "sAMAccountName": "user1-a",
+                      "accountType": "Technical - Test",
+                      "domain": "DBG",
+                      "middleName": "hh",
+                      "l": "Provider (Deutsche Immobilien Leasing)",
+                      "dbAGInfrastructureID": "1234-1",
+                      "primaryAccount": "mahesh",
+                      "userAccountControl": "512"
+                    },
+                    "rFirstName": "user2",
+                    "category": "AD Account",
+                    "operation": "Create",
+                    "applicationName": "AD_DBG"
+                  }
+                },
+                "action": "updateRequest",
+                "user": {
+                  "id": "SYSTEM"
+                }
+              }
+            ],
+            "completionDate": "2023-04-18T16:51:37+00:00",
+            "deadline": null,
+            "outcome": null,
+            "startDate": "2023-04-18T16:51:37+00:00",
+            "phases": [
+              {
+                "decision": null,
+                "workflowTaskId": "351043",
+                "name": "LineManagerApproval",
+                "completionDate": "2023-03-15T08:43:23+00:00",
+                "type": "request",
+                "startDate": "2023-03-31T06:00:55+00:00",
+                "events": {
+                  "reminder": {
+                    "notification": "accountsApprovalReminder",
+                    "date": "2023-04-05T06:00:55+00:00",
+                    "frequency": 5
+                  },
+                  "expiration": {
+                    "notification": "accountsRequestExpired",
+                    "date": "2023-04-10",
+                    "action": "reject"
+                  }
+                },
+                "status": "in-progress"
+              }
+            ]
+          },
+          "id": "8a3e7a49-c528-4185-808a-122ae72e85b4"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"]
+      }
+    ]
+  }
+}

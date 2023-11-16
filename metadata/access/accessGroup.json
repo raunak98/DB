@@ -1,0 +1,68 @@
+{
+  "groupBy": [],
+  "initialGroupBy": "All",
+  "filterBy": [],
+  "initialFilterBy": "All",
+  "paginationSizes": [10, 25, 50, 100],
+  "hasSortableColumns": true,
+  "initialSortColumnId": "",
+  "bulkActions": [""],
+  "columns": [
+    {
+      "id": "actions",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 1,
+      "properties": {
+        "options": [
+          {
+            "id": "deleteAccess",
+            "iconInactive": "delete",
+            "iconActive": "delete",
+            "title": "myAccess.removeAccess",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "id",
+              "redirectProps": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "memberOf",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Member Of",
+        "sortKey": ""
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 2
+    },
+    {
+      "id": "mail",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "mail",
+        "sortKey": ""
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 3
+    }
+  ]
+}

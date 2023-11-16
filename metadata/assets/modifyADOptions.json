@@ -1,0 +1,139 @@
+{
+  "result": [
+    {
+      "id": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf1",
+      "ADAccountInfo": [
+        {
+          "id": "accountCategory",
+          "value": {
+            "label": "CyberArk Named Account (Application)",
+            "value": "CyberArkNamedAccountApplication"
+          }
+        },
+        {
+          "id": "dbagApplicationID",
+          "value": {
+            "label": "101235-1 BankAPI-dbAPI",
+            "value": "101235_1"
+          }
+        },
+        {
+          "id": "samAccount",
+          "value": {
+            "label": "MKV-acc",
+            "value": "MKV-acc"
+          }
+        },
+        {
+          "id": "domain",
+          "value": {
+            "label": "DBG",
+            "value": "DBG"
+          }
+        },
+        {
+          "id": "accountStatus",
+          "value": {
+            "value": "512",
+            "label": "Enabled"
+          }
+        },
+        {
+          "id": "expiry",
+          "value": {
+            "value": "",
+            "label": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf3",
+      "ADAccountInfo": [
+        {
+          "id": "accountCategory",
+          "value": {
+            "label": "CyberArk Named Account (Application)",
+            "value": "CyberArkNamedAccountApplication"
+          }
+        },
+        {
+          "id": "dbagApplicationID",
+          "value": ""
+        },
+        {
+          "id": "samAccount",
+          "value": {
+            "label": "MKV-acc",
+            "value": "AVP-acc"
+          }
+        },
+        {
+          "id": "domain",
+          "value": {
+            "label": "DBG",
+            "value": "DBG"
+          }
+        },
+        {
+          "id": "accountStatus",
+          "value": {
+            "value": "512",
+            "label": "Enabled"
+          }
+        },
+        {
+          "id": "expiry",
+          "value": {
+            "value": "",
+            "label": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf2",
+      "ADAccountInfo": [
+        {
+          "id": "accountCategory",
+          "value": {
+            "label": "Personal - Additional",
+            "value": "PersonalAdditional"
+          }
+        },
+        {
+          "id": "dbagApplicationID",
+          "value": ""
+        },
+        {
+          "id": "samAccount",
+          "value": {
+            "label": "MKV-acc",
+            "value": "AVP-acc"
+          }
+        },
+        {
+          "id": "domain",
+          "value": {
+            "label": "DBG",
+            "value": "DBG"
+          }
+        },
+        {
+          "id": "accountStatus",
+          "value": {
+            "value": "512",
+            "label": "Enabled"
+          }
+        },
+        {
+          "id": "expiry",
+          "value": {
+            "value": "",
+            "label": ""
+          }
+        }
+      ]
+    }
+  ]
+}

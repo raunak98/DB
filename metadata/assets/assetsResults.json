@@ -1,0 +1,297 @@
+{
+  "result": [
+    {
+      "id": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf1",
+      "requester": {
+        "mail": "kpanduri@hcmlabs.com",
+        "givenName": "Kishore",
+        "id": "managed/user/005",
+        "sn": "Panduri",
+        "userName": "kpanduri",
+        "isAdmin": true
+      },
+      "requestType": "deleteResource",
+      "request": {
+        "common": {
+          "sAMAccountName": "user1-a",
+          "accountType": "CyberArk Named Account (Application)",
+          "dbagApplicationID": "232132141",
+          "expiryDate": "2022-10-24",
+          "resourceId": "c97d305d38b2c14c3e064b3449b97a934e54b7b74b69eda5aaceeada4c9bb8b1",
+          "applicationName": "APP_AD_B_DBG",
+          "request_type": "Delete Assignment",
+          "requestorMail": "s.santaosh.patil@accenture.com",
+          "startDate": "2022-05-24",
+          "endDate": "2022-05-24",
+          "justification": "This is for deleting group",
+          "isDraft": false
+        }
+      },
+      "decision": {
+        "status": "Enabled",
+        "outcome": null,
+        "completionDate": null,
+        "deadline": null,
+        "comments": [],
+        "isExpired": false,
+        "actors": {
+          "active": [
+            {
+              "mail": "kpanduri@hcmlabs.com",
+              "givenName": "Kishore",
+              "id": "managed/user/2916e744-48ab-4a5b-a6c4-3142b27556ab",
+              "sn": "Panduri",
+              "userName": "kpanduri",
+              "isAdmin": true,
+              "permissions": {
+                "approve": true,
+                "comment": true,
+                "modify": true,
+                "reassign": true,
+                "reject": true,
+                "cancel": true,
+                "fulfill": true
+              }
+            }
+          ],
+          "inactive": [],
+          "actorTags": [
+            "activeId=managed%2Fuser%2F005&phase=",
+            "phase=&activeId=managed%2Fuser%2F005"
+          ]
+        }
+      },
+      "metadata": {
+        "contextId": "1656928390795",
+        "entityType": "/common/decision/accessRequest",
+        "primaryKey": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf1",
+        "entityPath": "/common/decision/accessRequest/03428fd3-d1f1-4d42-b4b3-48a0abab6bf1",
+        "entityDefinition": "accessRequest",
+        "namespace": "/common/decision",
+        "branch": "actual",
+        "created": "2022-07-04T09:53:10.863Z",
+        "tenantId": "a49f18ef-8071-4792-a06f-acf85d659236"
+      }
+    },
+    {
+      "id": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf2",
+      "requester": {
+        "mail": "kpanduri1@hcmlabs.com",
+        "givenName": "Kishore1",
+        "id": "managed/user/005",
+        "sn": "Panduri1",
+        "userName": "kpanduri1",
+        "isAdmin": true
+      },
+      "requestType": "createResource",
+      "request": {
+        "common": {
+          "sAMAccountName": "user1-b",
+          "accountType": "Personal - Additional",
+          "dbagApplicationID": "232132142",
+          "expiryDate": "2022-10-25",
+          "resourceId": "c97d305d38b2c14c3e064b3449b97a934e54b7b74b69eda5aaceeada4c9bb8b1",
+          "applicationName": "APP_AD_B_DBG1",
+          "request_type": "Create Assignment",
+          "requestorMail": "s.santaosh.patil1@accenture.com",
+          "startDate": "2022-05-24",
+          "endDate": "2022-05-24",
+          "justification": "This is for create Group",
+          "isDraft": false
+        }
+      },
+      "decision": {
+        "status": "Disabled",
+        "outcome": null,
+        "completionDate": null,
+        "deadline": null,
+        "comments": [],
+        "isExpired": false,
+        "actors": {
+          "active": [
+            {
+              "mail": "kpanduri@hcmlabs.com",
+              "givenName": "Kishore",
+              "id": "managed/user/2916e744-48ab-4a5b-a6c4-3142b27556ab",
+              "sn": "Panduri",
+              "userName": "kpanduri",
+              "isAdmin": true,
+              "permissions": {
+                "approve": true,
+                "comment": true,
+                "modify": true,
+                "reassign": true,
+                "reject": true,
+                "cancel": true,
+                "fulfill": true
+              }
+            }
+          ],
+          "inactive": [],
+          "actorTags": [
+            "activeId=managed%2Fuser%2F005&phase=",
+            "phase=&activeId=managed%2Fuser%2F005"
+          ]
+        }
+      },
+      "metadata": {
+        "contextId": "1656928390795",
+        "entityType": "/common/decision/accessRequest",
+        "primaryKey": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf1",
+        "entityPath": "/common/decision/accessRequest/03428fd3-d1f1-4d42-b4b3-48a0abab6bf1",
+        "entityDefinition": "accessRequest",
+        "namespace": "/common/decision",
+        "branch": "actual",
+        "created": "2022-07-04T09:53:10.863Z",
+        "tenantId": "a49f18ef-8071-4792-a06f-acf85d659236"
+      }
+    },
+    {
+      "id": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf3",
+      "requester": {
+        "mail": "kpanduri2@hcmlabs.com",
+        "givenName": "Kishore2",
+        "id": "managed/user/005",
+        "sn": "Panduri2",
+        "userName": "kpanduri2",
+        "isAdmin": true
+      },
+      "requestType": "UpdateResourse",
+      "request": {
+        "common": {
+          "sAMAccountName": "user1-c",
+          "accountType": "Shared - Generic",
+          "dbagApplicationID": "232132143",
+          "expiryDate": "2022-10-26",
+          "resourceId": "c97d305d38b2c14c3e064b3449b97a934e54b7b74b69eda5aaceeada4c9bb8b1",
+          "applicationName": "APP_AD_B_DBG2",
+          "request_type": "Update Assignment",
+          "requestorMail": "s.santaosh.patil@accenture.com",
+          "startDate": "2022-05-24",
+          "endDate": "2022-05-24",
+          "justification": "This is for Updating group",
+          "isDraft": false
+        }
+      },
+      "decision": {
+        "status": "Disabled",
+        "outcome": null,
+        "completionDate": null,
+        "deadline": null,
+        "comments": [],
+        "isExpired": false,
+        "actors": {
+          "active": [
+            {
+              "mail": "kpanduri@hcmlabs.com",
+              "givenName": "Kishore",
+              "id": "managed/user/2916e744-48ab-4a5b-a6c4-3142b27556ab",
+              "sn": "Panduri",
+              "userName": "kpanduri",
+              "isAdmin": true,
+              "permissions": {
+                "approve": true,
+                "comment": true,
+                "modify": true,
+                "reassign": true,
+                "reject": true,
+                "cancel": true,
+                "fulfill": true
+              }
+            }
+          ],
+          "inactive": [],
+          "actorTags": [
+            "activeId=managed%2Fuser%2F005&phase=",
+            "phase=&activeId=managed%2Fuser%2F005"
+          ]
+        }
+      },
+      "metadata": {
+        "contextId": "1656928390795",
+        "entityType": "/common/decision/accessRequest",
+        "primaryKey": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf1",
+        "entityPath": "/common/decision/accessRequest/03428fd3-d1f1-4d42-b4b3-48a0abab6bf1",
+        "entityDefinition": "accessRequest",
+        "namespace": "/common/decision",
+        "branch": "actual",
+        "created": "2022-07-04T09:53:10.863Z",
+        "tenantId": "a49f18ef-8071-4792-a06f-acf85d659236"
+      }
+    },
+    {
+      "id": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf4",
+      "requester": {
+        "mail": "kpanduri4@hcmlabs.com",
+        "givenName": "Kishore4",
+        "id": "managed/user/005",
+        "sn": "Panduri4",
+        "userName": "kpanduri4",
+        "isAdmin": true
+      },
+      "requestType": "reassinResource",
+      "request": {
+        "common": {
+          "sAMAccountName": "user1-d",
+          "accountType": "Technical - Generic brokered",
+          "dbagApplicationID": "232132144",
+          "expiryDate": "2022-10-27",
+          "resourceId": "c97d305d38b2c14c3e064b3449b97a934e54b7b74b69eda5aaceeada4c9bb8b1",
+          "applicationName": "APP_AD_B_DBG4",
+          "request_type": "Reassign Assignment",
+          "requestorMail": "s.santaosh.patil4@accenture.com",
+          "startDate": "2022-05-24",
+          "endDate": "2022-05-24",
+          "justification": "This is for Reassign group",
+          "isDraft": false
+        }
+      },
+      "decision": {
+        "status": "Enabled",
+        "outcome": null,
+        "completionDate": null,
+        "deadline": null,
+        "comments": [],
+        "isExpired": false,
+        "actors": {
+          "active": [
+            {
+              "mail": "kpanduri@hcmlabs.com",
+              "givenName": "Kishore",
+              "id": "managed/user/2916e744-48ab-4a5b-a6c4-3142b27556ab",
+              "sn": "Panduri",
+              "userName": "kpanduri",
+              "isAdmin": true,
+              "permissions": {
+                "approve": true,
+                "comment": true,
+                "modify": true,
+                "reassign": true,
+                "reject": true,
+                "cancel": true,
+                "fulfill": true
+              }
+            }
+          ],
+          "inactive": [],
+          "actorTags": [
+            "activeId=managed%2Fuser%2F005&phase=",
+            "phase=&activeId=managed%2Fuser%2F005"
+          ]
+        }
+      },
+      "metadata": {
+        "contextId": "1656928390795",
+        "entityType": "/common/decision/accessRequest",
+        "primaryKey": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf1",
+        "entityPath": "/common/decision/accessRequest/03428fd3-d1f1-4d42-b4b3-48a0abab6bf1",
+        "entityDefinition": "accessRequest",
+        "namespace": "/common/decision",
+        "branch": "actual",
+        "created": "2022-07-04T09:53:10.863Z",
+        "tenantId": "a49f18ef-8071-4792-a06f-acf85d659236"
+      }
+    }
+  ],
+  "searchAfterKey": ["22d272e1-8695-4503-a59c-20c38e03ea0f"]
+}

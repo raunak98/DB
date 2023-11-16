@@ -1,0 +1,128 @@
+{
+  "steps": [
+    {
+      "id": "section1",
+      "title": "Group Categories",
+      "heading": "Group Categories",
+      "status": "Completed",
+      "mapping": "request",
+      "children": [
+        {
+          "label": "Ad Group Type",
+          "value": "Personal - Desktop Admin"
+        },
+        {
+          "label": "Ad Sub Group Type",
+          "value": "Personal - Desktop Admin"
+        },
+        {
+          "label": "DBAccessGate Group Type",
+          "value": "Personal - Desktop Admin"
+        },
+        {
+          "label": "Ad Domain",
+          "value": "Personal - Desktop Admin"
+        }
+      ]
+    },
+    {
+      "id": "section2",
+      "title": "Group Names",
+      "heading": "Group Names",
+      "status": "Completed",
+      "mapping": "request",
+      "children": [
+        {
+          "label": "Name Pattern",
+          "value": "Amanda Brady"
+        },
+        {
+          "label": "Digital Identity",
+          "value": "dbg\\smitsa"
+        },
+        {
+          "label": "Role",
+          "value": "dbg\\smitsa"
+        }
+      ]
+    },
+    {
+      "id": "section3",
+      "title": "Group Details",
+      "heading": "Group Details",
+      "mapping": "request",
+      "status": "Completed",
+      "children": [
+        {
+          "label": "Group Name Patterns",
+          "value": "Default Location (Americas)"
+        },
+        {
+          "label": "Cost Center Number",
+          "value": "Default Location (Americas)"
+        },
+        {
+          "label": "Path",
+          "value": "Default Location (Americas)"
+        },
+        {
+          "label": "Data Security Class",
+          "value": "Default Location (Americas)"
+        },
+        {
+          "label": "Group Description",
+          "value": "Default Location (Americas)"
+        },
+        {
+          "label": "Group Type",
+          "value": "Default Location (Americas)"
+        },
+        {
+          "label": "Group Scope",
+          "value": "Default Location (Americas)"
+        },
+        {
+          "label": "Enable Cloud Sync",
+          "value": "Default Location (Americas)"
+        },
+        {
+          "label": "Price Software Information",
+          "value": "Default Location (Americas)"
+        }
+      ]
+    },
+    {
+      "id": "section4",
+      "title": "Group owners and approvers",
+      "heading": "Group owners and approvers",
+      "status": "Completed",
+      "mapping": "approver",
+      "children": [
+        {
+          "label": "Group Authrisation Contact",
+          "value": "Amanda Brady"
+        },
+        {
+          "label": "Group Authrisation Delegate",
+          "value": "Amanda Brady"
+        },
+        {
+          "label": "Aprrover",
+          "value": "Amanda Brady"
+        },
+        {
+          "label": "Aprrover",
+          "value": "Amanda Brady"
+        },
+        {
+          "label": "Aprrover",
+          "value": "Amanda Brady"
+        },
+        {
+          "label": "Aprrover",
+          "value": "Amanda Brady"
+        }
+      ]
+    }
+  ]
+}

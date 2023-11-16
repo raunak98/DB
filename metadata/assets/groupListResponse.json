@@ -1,0 +1,1859 @@
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 15,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "gov-sit3_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "141652b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"
+          },
+          "_rev": "1",
+          "description": "CN=IA-ROBOT-TESTING,OU=ACCESSIO,OU=GROUPS,OU=CENTRAL ADMIN,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+          "objectType": "__GROUP__",
+          "glossary": {
+            "kv": [
+              {
+                "key": "accessioGroupType",
+                "value": "Robot Object - Infrastructure Other"
+              }
+            ],
+            "idx": {
+              "/": {
+                "accessioGroupType": "Robot Object - Infrastructure Other"
+              }
+            }
+          },
+          "name": "CN=IA-ROBOT-TESTING,OU=ACCESSIO,OU=GROUPS,OU=CENTRAL ADMIN,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+          "__NAME__": "CN=IA-ROBOT-TESTING,OU=ACCESSIO,OU=GROUPS,OU=CENTRAL ADMIN,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "8029",
+            "_id": "2a5a03ae-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [
+            {
+              "assignmentOperation": "mergeWithTarget",
+              "name": "memberOf",
+              "unassignmentOperation": "removeFromTarget",
+              "value": [
+                "CN=IA-ROBOT-TESTING,OU=ACCESSIO,OU=GROUPS,OU=CENTRAL ADMIN,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM"
+              ]
+            }
+          ],
+          "id": "2a5a03ae-c528-4185-808a-122ae72e85b4",
+          "applicationId": "2a5a03ae-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "object": {
+              "dbagObjectLastRecertified": "20230406102302Z",
+              "cn": "IA-ROBOT-TESTING",
+              "dbagRecerttype": "Infrastructure",
+              "dbagRecertSubtype": "Other",
+              "displayName": "IA-ROBOT-TESTING",
+              "distinguishedName": "CN=IA-ROBOT-TESTING,OU=ACCESSIO,OU=GROUPS,OU=CENTRAL ADMIN,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "groupScope": "universal",
+              "groupType": "security",
+              "sAMAccountName": "IA-ROBOT-TESTING",
+              "dbagIMSAuthContactDelegate": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com"
+            },
+            "dbagEntitlement": "Approver",
+            "entitlementProperty": "memberOf",
+            "dbagObjectLastRecertified": "2023-04-06T08:21:47Z",
+            "__NAME__": "IA-ROBOT-TESTING",
+            "name": "IA-ROBOT-TESTING",
+            "displayName": "IA-ROBOT-TESTING",
+            "distinguishedName": "CN=IA-ROBOT-TESTING,OU=ACCESSIO,OU=GROUPS,OU=CENTRAL ADMIN,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Infrastructure",
+            "dbagRecertSubtype": "Other",
+            "projectName": "sdfg",
+            "productionUATorDEV": "UAT",
+            "groupRole": "DEV",
+            "vendorteamName": "sdfg",
+            "domain": "DBG",
+            "cn": "IA-ROBOT-TESTING",
+            "dbagApplicationID": ["123634-1"],
+            "dbagCostcenter": "6201126603",
+            "description": ["Test Description"],
+            "info": "Test Comment",
+            "dbagExtensionAttribute2": "Groups only",
+            "dbagProcessingdata": "sdfg",
+            "department": "Corporates & Industrial Leveraged Lending Portfolio",
+            "dbagSupportGroup": "sdfg",
+            "dbagExtensionAttribute3": "Deutsche bank",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+            "dbagIMSAuthContactDelegate": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "dbagIMSApprovers": [
+              "firstname5027.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com",
+              "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com"
+            ],
+            "groupType": "-2147483646",
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "IA-ROBOT-TESTING",
+            "requestJustification": "Request for modification 1",
+            "dn": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "groupScope": "global",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["IA-ROBOT-TESTING"]
+      },
+      {
+        "sort": ["1NDA-MAILBOX-DEVLOCAL-ROLELOCAL"],
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_id": "1Nc6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "application": {
+            "_refResourceId": "1N7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "_ref": "managed/application/1N7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "_refProperties": {
+              "_rev": "0",
+              "_id": "1N372f433f-9400-485b-b319-8e90c61541a4"
+            },
+            "_refResourceCollection": "managed/application"
+          },
+          "applicationId": "1N8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "8192",
+            "_id": "1N8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "description": "CN=1NDA-MAILBOX-DEVLOCAL-ROLELOCAL,OU=Cloud,DC=acnprojectroots,DC=com",
+          "glossary": {
+            "kv": [
+              {
+                "attrKey": "",
+                "dataType": "string",
+                "key": "accessioGroupType",
+                "value": "Data Access - Mailbox (Default)"
+              }
+            ],
+            "idx": {
+              "/": {
+                "accessioGroupType": "Data Access - Mailbox (Default)"
+              }
+            }
+          },
+          "id": "1Naf734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+          "igaContent": {
+            "cn": "1NDA-MAILBOX-DEVLOCAL-ROLELOCAL",
+            "dbagApplicationID": [],
+            "dbagComplianceStatus": null,
+            "dbagCostcenter": "6201126695",
+            "dbagDataPrivClass": "FALSE",
+            "dbagEntitlement": null,
+            "dbagExternalProvider": ["AZR"],
+            "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+            "dbagIMSAuthContactDelegate": "firstname2020.lastname2027@db.com",
+            "dbagIMSApprovers": [
+              "firstname2078.lastname2027@db.com",
+              "firstname2020.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com"
+            ],
+            "dbagIMSDataSecCLass": "C",
+            "dbAGInfrastructureNARID": [],
+            "dbagObjectLastRecertified": null,
+            "dbagProvisioningBy": "169701-2",
+            "dbagProcessingdata": null,
+            "dbagRecertSubtype": "Mailbox",
+            "dbagRecerttype": "Data",
+            "dbagSupportGroup": null,
+            "description": ["Data Access Mailbox, rolelocal, group local"],
+            "displayName": "1NDA-MAILBOX-DEVLOCAL-ROLELOCAL",
+            "distinguishedName": "CN=1NDA-MAILBOX-DEVLOCAL-ROLELOCAL,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "entitlementProperty": null,
+            "hasMultipleApprovers": "true",
+            "isEntitlement": true,
+            "member": [],
+            "name": "1NDA-MAILBOX-DEVLOCAL-ROLELOCAL",
+            "object": {
+              "cn": "1NDA-MAILBOX-DEVLOCAL-ROLELOCAL",
+              "dbagApplicationID": [],
+              "dbagDataPrivClass": "FALSE",
+              "dbagExternalProvider": ["AZR"],
+              "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+              "dbagIMSAuthContactDelegate": "firstname2020.lastname2027@db.com",
+              "dbagIMSApprovers": [
+                "firstname2078.lastname2027@db.com",
+                "firstname2020.lastname2027@db.com",
+                "firstname5027.lastname2027@db.com"
+              ],
+              "dbagIMSDataSecCLass": "C",
+              "dbagInfrastructureID": [],
+              "dbagObjectLastRecertified": "20230406102302Z",
+              "dbagObjectRecertificationstatus": "N",
+              "dbagProvisioningBy": "169701-2",
+              "dbagRecertSubtype": "Mailbox",
+              "dbagRecerttype": "Data",
+              "description": ["Data Access Mailbox, rolelocal, group local"],
+              "displayName": "1NDA-MAILBOX-DEVLOCAL-ROLELOCAL",
+              "distinguishedName": "CN=1NDA-MAILBOX-DEVLOCAL-ROLELOCAL,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "dn": "CN=1NDA-MAILBOX-DEVLOCAL-ROLELOCAL,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "groupScope": "universal",
+              "groupType": "security",
+              "name": "1NDA-MAILBOX-DEVLOCAL-ROLELOCAL",
+              "sAMAccountName": "1NDA-MAILBOX-DEVLOCAL-ROLELOCAL",
+              "__NAME__": "CN=1NDA-MAILBOX-DEVLOCAL-ROLELOCAL,OU=Cloud,DC=acnprojectroots,DC=com"
+            },
+            "objectClass": ["group", "top"],
+            "recertTypeSubType": "Data-Mailbox",
+            "sAMAccountName": "1NDA-MAILBOX-DEVLOCAL-ROLELOCAL",
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "whenChanged": "2022-09-25T09:29:39Z"
+          },
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "1Naf734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"
+          },
+          "name": "CN=1NDA-MAILBOX-DEVLOCAL-ROLELOCAL,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "resourceType": "__GROUP__",
+          "__NAME__": "CN=1NDA-MAILBOX-DEVLOCAL-ROLELOCAL,OU=Cloud,DC=acnprojectroots,DC=com",
+          "_rev": "0"
+        },
+        "_type": "_doc"
+      },
+      {
+        "sort": ["2NAA-A-ASHO-ROLE3"],
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_id": "2Nc6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "application": {
+            "_refResourceId": "2N7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "_ref": "managed/application/1N7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "_refProperties": {
+              "_rev": "0",
+              "_id": "2N372f433f-9400-485b-b319-8e90c61541a4"
+            },
+            "_refResourceCollection": "managed/application"
+          },
+          "applicationId": "2N8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "8192",
+            "_id": "2N8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "description": "CN=2NAA-A-ASHO-ROLE3,OU=Cloud,DC=acnprojectroots,DC=com",
+          "glossary": {
+            "kv": []
+          },
+          "id": "2Naf734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+          "igaContent": {
+            "cn": "2NAA-A-ASHO-ROLE3",
+            "dbagApplicationID": ["123634-1"],
+            "dbagComplianceStatus": null,
+            "dbagCostcenter": "6201126695",
+            "dbagDataPrivClass": null,
+            "dbagEntitlement": null,
+            "dbagExternalProvider": ["AZR"],
+            "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+            "dbagIMSAuthContactDelegate": "firstname2020.lastname2027@db.com",
+            "dbagIMSApprovers": [
+              "firstname2078.lastname2027@db.com",
+              "firstname2020.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com"
+            ],
+            "dbagIMSDataSecCLass": "I",
+            "dbAGInfrastructureID": [],
+            "dbagObjectLastRecertified": null,
+            "dbagProvisioningBy": "169701-2",
+            "dbagProcessingdata": null,
+            "dbagRecertSubtype": "Authorization",
+            "dbagRecerttype": "Application",
+            "dbagSupportGroup": "Test",
+            "description": ["Authorization, 124218-1 Maltego-CISO, role3, test"],
+            "displayName": "2NAA-A-ASHO-ROLE3",
+            "distinguishedName": "CN=2NAA-A-ASHO-ROLE3,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "entitlementProperty": null,
+            "hasMultipleApprovers": "True",
+            "isEntitlement": true,
+            "member": [],
+            "name": "2NAA-A-ASHO-ROLE3",
+            "object": {
+              "cn": "2NAA-A-ASHO-ROLE3",
+              "dbagApplicationID": ["28112-1"],
+              "dbagCostcenter": "6201126695",
+              "dbagExternalProvider": ["AZR"],
+              "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+              "dbagIMSAuthContactDelegate": "firstname2020.lastname2027@db.com",
+              "dbagIMSApprovers": [
+                "firstname2078.lastname2027@db.com",
+                "firstname2020.lastname2027@db.com",
+                "firstname5027.lastname2027@db.com"
+              ],
+              "dbagIMSDataSecCLass": "I",
+              "dbagInfrastructureID": [],
+              "dbagObjectLastRecertified": "20230406102302Z",
+              "dbagObjectRecertificationstatus": "N",
+              "dbagProvisioningBy": "169701-2",
+              "dbagRecertSubtype": "Authorization",
+              "dbagRecerttype": "Application",
+              "dbagSupportGroup": "Test",
+              "description": ["Authorization, 124218-1 Maltego-CISO, role3, test"],
+              "displayName": "2NAA-A-ASHO-ROLE3",
+              "distinguishedName": "CN=2NAA-A-ASHO-ROLE3,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "dn": "CN=2NAA-A-ASHO-ROLE3,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "groupScope": "universal",
+              "groupType": "security",
+              "name": "2NAA-A-ASHO-ROLE3",
+              "sAMAccountName": "2NAA-A-ASHO-ROLE3",
+              "__NAME__": "CN=2NAA-A-ASHO-ROLE3,OU=Cloud,DC=acnprojectroots,DC=com"
+            },
+            "objectClass": ["group", "top"],
+            "recertTypeSubType": "Application-Authorization",
+            "sAMAccountName": "2NAA-A-ASHO-ROLE3",
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "whenChanged": "2022-09-25T09:29:39Z"
+          },
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "2Naf734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"
+          },
+          "name": "CN=2NAA-A-ASHO-ROLE3,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "resourceType": "__GROUP__",
+          "__NAME__": "CN=2NAA-A-ASHO-ROLE3,OU=Cloud,DC=acnprojectroots,DC=com",
+          "_rev": "15"
+        },
+        "_type": "_doc"
+      },
+      {
+        "sort": ["3NAA-AssignmentPortal"],
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_id": "3Nc6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "application": {
+            "_refResourceId": "2N7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "_ref": "managed/application/1N7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "_refProperties": {
+              "_rev": "0",
+              "_id": "3N372f433f-9400-485b-b319-8e90c61541a4"
+            },
+            "_refResourceCollection": "managed/application"
+          },
+          "applicationId": "3N8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "8192",
+            "_id": "3N8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "description": "CN=3NAA-AssignmentPortal,OU=Cloud,DC=acnprojectroots,DC=com",
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "id": "3Naf734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+          "igaContent": {
+            "cn": "3NAA-AssignmentPortal",
+            "dbagApplicationID": ["123634-1"],
+            "dbagComplianceStatus": null,
+            "dbagCostcenter": "6201126695",
+            "dbagDataPrivClass": null,
+            "dbagEntitlement": null,
+            "dbagExternalProvider": [],
+            "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+            "dbagIMSAuthContactDelegate": "firstname2020.lastname2027@db.com",
+            "dbagIMSApprovers": [
+              "firstname2078.lastname2027@db.com",
+              "firstname2020.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com"
+            ],
+            "dbagIMSDataSecCLass": null,
+            "dbAGInfrastructureID": [],
+            "dbagObjectLastRecertified": null,
+            "dbagProvisioningBy": null,
+            "dbagProcessingdata": null,
+            "dbagRecertSubtype": "Authorisation",
+            "dbagRecerttype": "Application",
+            "dbagSupportGroup": null,
+            "description": ["Authorization"],
+            "displayName": "3NAA-AssignmentPortal",
+            "distinguishedName": "CN=3NAA-AssignmentPortal,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "entitlementProperty": null,
+            "hasMultipleApprovers": "True",
+            "isEntitlement": true,
+            "member": [],
+            "name": "3NAA-AssignmentPortal",
+            "object": {
+              "cn": "3NAA-AssignmentPortal",
+              "dbagApplicationID": ["28112-1"],
+              "dbagCostcenter": "6201126695",
+              "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+              "dbagIMSAuthContactDelegate": "firstname2020.lastname2027@db.com",
+              "dbagIMSApprovers": [
+                "firstname2078.lastname2027@db.com",
+                "firstname2020.lastname2027@db.com",
+                "firstname5027.lastname2027@db.com"
+              ],
+              "dbagInfrastructureID": [],
+              "dbagRecertSubtype": "Authorisation",
+              "dbagRecerttype": "Application",
+              "description": ["Authorization"],
+              "displayName": "3NAA-AssignmentPortal",
+              "distinguishedName": "CN=3NAA-AssignmentPortal,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "dn": "CN=3NAA-AssignmentPortal,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "groupScope": "global",
+              "groupType": "security",
+              "name": "3NAA-AssignmentPortal",
+              "sAMAccountName": "3NAA-AssignmentPortal",
+              "__NAME__": "CN=3NAA-AssignmentPortal,OU=Cloud,DC=acnprojectroots,DC=com"
+            },
+            "objectClass": ["group", "top"],
+            "recertTypeSubType": "Application-Authorization",
+            "sAMAccountName": "3NAA-AssignmentPortal",
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "whenChanged": "2022-09-25T09:29:39Z"
+          },
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "3Naf734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"
+          },
+          "name": "CN=3NAA-AssignmentPortal,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "resourceType": "__GROUP__",
+          "__NAME__": "CN=3NAA-AssignmentPortal,OU=Cloud,DC=acnprojectroots,DC=com",
+          "_rev": "15"
+        },
+        "_type": "_doc"
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"
+          },
+          "_rev": "0",
+          "description": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "glossary": {
+            "kv": [
+              {
+                "key": "accessioGroupType",
+                "value": "Identity Based Access Control (IBAC) - Entitlement Group - Role User"
+              },
+              {
+                "dataType": "string",
+                "attrKey": "",
+                "value": "yes",
+                "key": "accessioIsgMSAGroup"
+              }
+            ],
+            "idx": {
+              "/": {
+                "accessioGroupType": "Identity Based Access Control (IBAC) - Entitlement Group - Role User"
+              }
+            }
+          },
+          "name": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "dbagProvisioningBy": "169701-2",
+            "object": {
+              "dbagObjectLastRecertified": "20230406102302Z",
+              "groupScope": "global",
+              "groupType": "security"
+            },
+
+            "entitlementProperty": null,
+            "dbagObjectLastRecertified": "2023-04-06T08:21:47Z",
+            "__NAME__": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV",
+            "displayName": "UACE-S-IBAC-UAT-sdfg-sdfg-DEV",
+            "distinguishedName": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Role",
+            "dbagRecertSubtype": "User",
+            "projectName": "sdfg",
+            "productionUATorDEV": "UAT",
+            "groupRole": "DEV",
+            "vendorteamName": "sdfg",
+            "domain": "DBG",
+            "cn": "UACE-S-IBAC-UAT-sdfg-sdfg-DEV",
+            "dbagApplicationID": ["123634-1"],
+            "dbagCostcenter": "6201126603",
+            "description": ["Test Description"],
+            "info": "Test Comment",
+            "dbagExtensionAttribute2": "Groups only",
+            "dbagProcessingdata": "sdfg",
+            "department": "Corporates & Industrial Leveraged Lending Portfolio",
+            "dbagSupportGroup": "sdfg",
+            "dbagExtensionAttribute3": "Deutsche bank",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+            "dbagIMSAuthContactDelegate": "firstname5027.lastname2027@db.com",
+            "dbagIMSApprovers": [],
+            "groupType": "-2147483646",
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC1",
+            "requestJustification": "Request for modification 1",
+            "dn": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "groupScope": "global",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1b",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1b"
+          },
+          "_rev": "0",
+          "description": "CN=DA-Mailbox-qs-qs,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "glossary": {
+            "kv": [
+              {
+                "key": "accessioGroupType",
+                "value": "Data Access - Mailbox (Default)"
+              },
+              {
+                "dataType": "string",
+                "attrKey": "",
+                "value": "false",
+                "key": "accessioAppRequest"
+              },
+              {
+                "dataType": "string",
+                "attrKey": "",
+                "value": "yes",
+                "key": "accessioIsgMSAGroup"
+              }
+            ],
+            "idx": {
+              "/": {
+                "accessioGroupType": "Data Access - Mailbox (Default)"
+              }
+            }
+          },
+          "name": "CN=DA-Mailbox-qs-qs,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=DA-Mailbox-qs-qs,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1b",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "object": {
+              "dbagObjectLastRecertified": "20221001115931z",
+              "groupScope": "global",
+              "groupType": "security",
+              "dbagIMSAuthContact": "firstname5027.lastname2027@db.com"
+            },
+            "entitlementProperty": null,
+            "dbagObjectLastRecertified": "2023-01-01T08:21:47Z",
+            "__NAME__": "CN=DA-Mailbox-qs-qs",
+            "displayName": "DA-Mailbox-qs-qs1",
+            "distinguishedName": "CN=DA-Mailbox-qs-qs,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Data",
+            "dbagRecertSubtype": "Mailbox",
+            "dbagDataPrivClass": "FALSE",
+            "dbagIMSDataSecCLass": "C",
+            "digitalIdentity": "qs",
+            "role": "Manager",
+            "domain": "DBLUX",
+            "cn": "DA-Mailbox-qs-qs",
+            "dbagCostcenter": "6201126699",
+            "description": ["Test Description for Mailbox"],
+            "location": "Default Location (EMEA)",
+            "requestJustification": "Request for modification 2",
+            "groupType": "Security",
+            "dbagEntitlement": "Approver",
+            "groupScope": "Universal",
+            "dbagExternalProvider": "AZR#GCP",
+            "paths": "test/",
+            "accessToPSI": "No(Default)",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+            "dbagIMSAuthContactDelegate": [
+              "firstname5027.lastname2027@db.com",
+              "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com"
+            ],
+            "dbagIMSApprovers": [
+              "firstname5027.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com"
+            ],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC2",
+            "dn": "CN=DA-Mailbox-qs-qs,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1b"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1c",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1c"
+          },
+          "_rev": "0",
+          "description": "CN=AA-VIR-bfd-ws,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "glossary": {
+            "kv": [
+              {
+                "key": "accessioGroupType",
+                "value": "Application Access - Virtualization (Default)"
+              },
+              {
+                "dataType": "string",
+                "attrKey": "",
+                "value": "true",
+                "key": "accessioAppRequest"
+              }
+            ],
+            "idx": {
+              "/": {
+                "accessioGroupType": "Application Access - Virtualization (Default)"
+              }
+            }
+          },
+          "name": "CN=AA-VIR-bfd-ws,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=AA-VIR-bfd-ws,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1c",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "object": {
+              "dbagObjectLastRecertified": "20221110105559z",
+              "groupScope": "domain"
+            },
+            "entitlementProperty": null,
+            "dbagObjectLastRecertified": "2022-11-01T08:21:47Z",
+            "__NAME__": "CN=AA-VIR-bfd-ws",
+            "dbagComplianceStatus": "0",
+            "displayName": "AA-VIR-bfd-ws",
+            "distinguishedName": "CN=AA-VIR-bfd-ws,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Application",
+            "dbagRecertSubtype": "Authorization",
+            "digitalIdentity": "bfd",
+            "role": "Approver",
+            "domain": "ITCBOD",
+            "cn": "AA-VIR-bfd-ws",
+            "dbagCostcenter": "6201126695",
+            "description": ["Test Application Access Virtualization"],
+            "location": "Provider (Postbank)",
+            "requestJustification": "Request for modification 3",
+            "isGroupPrivileged": "No",
+            "dbagIMSDataSecCLass": "Internal",
+            "groupType": "Distribution",
+            "groupScope": "global",
+            "dbagExternalProvider": "GCP",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "owneremail@db.com",
+            "dbagIMSAuthContactDelegate": ["owner_delegate_email_1253@db.com"],
+            "dbagIMSApprovers": ["namrata.hom@dbguat.db.com", "bhavya.bhasker@dbguat.db.com"],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC3",
+            "dn": "CN=AA-VIR-bfd-ws,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1c"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4addfsdaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1b",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1b"
+          },
+          "_rev": "0",
+          "description": "CN=DA-Mailbox-qs-qs,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "glossary": {
+            "kv": [
+              {
+                "key": "accessioGroupType",
+                "value": "Data Access - Share (Default)"
+              },
+              {
+                "key": "accessioPermissionType",
+                "value": ""
+              }
+            ]
+          },
+          "name": "CN=DA-Mailbox-qs-qs,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=DA-Mailbox-qs-qs,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b9702sd13b6f310386e000c942cd1b",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "object": {
+              "dbagObjectLastRecertified": "20230101105559z"
+            },
+            "entitlementProperty": null,
+            "dbagObjectLastRecertified": "2023-01-01T08:21:47Z",
+            "__NAME__": "CN=DA-Mailbox-qs-qs",
+            "displayName": "DA-Mailbox-qs-qs",
+            "distinguishedName": "CN=DA-Mailbox-qs-qs,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Data",
+            "dbagRecertSubtype": "Share",
+            "dbagDataPrivClass": "FALSE",
+            "dbagIMSDataSecCLass": "C",
+            "digitalIdentity": "qs",
+            "role": "Manager",
+            "domain": "DBLUX",
+            "cn": "DA-Mailbox-qs-qs",
+            "dbagCostcenter": "6201126699",
+            "description": ["Test Description for Mailbox"],
+            "location": "Default Location (EMEA)",
+            "requestJustification": "Request for modification 2",
+            "groupType": "Security",
+            "dbagEntitlement": "Approver",
+            "groupScope": "Universal",
+            "dbagExternalProvider": "AZR#GCP",
+            "paths": "test/",
+            "accessToPSI": "No(Default)",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+            "dbagIMSAuthContactDelegate": "firstname5027.lastname2027@db.com",
+            "dbagIMSApprovers": [
+              "firstname5027.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com",
+              "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com"
+            ],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC4",
+            "dn": "CN=DA-Mailbox-qs-qs,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241dfscb6e3aa",
+
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b9702sd13b6f310386e000c942cd1b"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1d",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1d"
+          },
+          "_rev": "0",
+          "description": "CN=IA-Other-cdew-sdfg,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "glossary": {
+            "kv": []
+          },
+          "name": "CN=IA-Other-cdew-sdfg,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=IA-Other-cdew-sdfg,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1d",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "object": {
+              "dbagObjectLastRecertified": "20230710105559z",
+              "dbagIMSDataSecCLass": "I",
+              "groupScope": "universal",
+              "groupType": "security"
+            },
+            "dbagIMSDataSecCLass": "I",
+            "entitlementProperty": null,
+            "dbagComplianceStatus": "1",
+            "__NAME__": "CN=IA-Other-cdew-sdfg",
+            "displayName": "IA-Other-cdew-sdfg",
+            "distinguishedName": "CN=IA-Other-cdew-sdfg,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Infrastructure",
+            "dbagRecertSubtype": "Other",
+            "digitalIdentity": "cdew",
+            "role": "Reviewer",
+            "domain": "ITCBOD",
+            "cn": "IA-Other-cdew-sdfg",
+            "dbagCostcenter": "6201126695",
+            "description": ["Test Description for Infrastructure Access"],
+            "location": "Default Location (Global)",
+            "requestJustification": "Request for modification 4",
+            "isGroupPrivileged": "Yes",
+            "dbagExternalProvider": "AZR",
+            "dbAGInfrastructureNARID": ["123497-1"],
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "owneremail@db.com",
+            "dbagIMSAuthContactDelegate": [
+              "owner_delegate_email_1253@db.com",
+              "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com"
+            ],
+            "dbagIMSApprovers": ["owneremail@db.com;owner_delegate_email_1253@db.com"],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC5",
+            "dn": "CN=IA-Other-cdew-sdfg,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1d"]
+      },
+      {
+        "_index": "gov-sit3_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "5bb5b1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/5bb5b1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "5bb5b1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4"
+          },
+          "_rev": "29",
+          "description": "CN=AA-SWID00-ROLE00,OU=Accessio,OU=Groups,OU=Central Admin,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "glossary": {
+            "kv": [],
+            "tags": [],
+            "idx": {}
+          },
+          "name": "CN=AA-SWID00-ROLE00,OU=Accessio,OU=Groups,OU=Central Admin,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=AA-SWID00-ROLE00,OU=Accessio,OU=Groups,OU=Central Admin,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [
+            {
+              "name": "memberOf",
+              "unassignmentOperation": "removeFromTarget",
+              "value": [
+                "CN=AA-SWID00-ROLE00,OU=Accessio,OU=Groups,OU=Central Admin,DC=acnprojectroots,DC=com"
+              ],
+              "assignmentOperation": "mergeWithTarget"
+            }
+          ],
+          "id": "5bb5b1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+          "applicationId": "2a5a03ae-5046-4c9a-8733-8bf9d1bcf9a6",
+          "application": {
+            "_refResourceId": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "_ref": "managed/application/7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "_refProperties": {
+              "_rev": "0",
+              "_id": "372f433f-9400-485b-b319-8e90c61541a4"
+            },
+            "_refResourceCollection": "managed/application"
+          },
+          "igaContent": {
+            "object": {
+              "cn": "AA-SWID00-ROLE00",
+              "dbagApplicationID": ["28112-1"],
+              "dbagCostcenter": "6201126695",
+              "dbagExtensionAttribute2": "UNRESTRICTED",
+              "dbagExtensionAttribute3": "UNRESTRICTED",
+              "dbagExternalProvider": ["AZR"],
+              "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+              "dbagIMSAuthContactDelegate": "firstname2020.lastname2027@db.com",
+              "dbagIMSApprovers": [
+                "firstname2078.lastname2027@db.com",
+                "firstname2020.lastname2027@db.com",
+                "firstname5027.lastname2027@db.com"
+              ],
+              "dbagIMSDataSecCLass": "I",
+              "dbagObjectRecertificationstatus": "N",
+              "dbagSupportGroup": "HHIMAC",
+              "dbagRecerttype": "Application",
+              "dbagRecertSubtype": "SW Distribution",
+              "description": ["Description for AD Group, SW Distribution, 28112-1, role00"],
+              "displayName": "AA-SWID00-ROLE00",
+              "distinguishedName": "CN=AA-SWID00-ROLE00,OU=Accessio,OU=Groups,OU=Central Admin,DC=acnprojectroots,DC=com",
+              "dn": "CN=AA-SWID00-ROLE00,OU=Accessio,OU=Groups,OU=Central Admin,DC=acnprojectroots,DC=com",
+              "groupScope": "universal",
+              "groupType": "security",
+              "name": "AA-SWID00-ROLE00",
+              "objectClass": ["top", "group"],
+              "dbagObjectLastRecertified": "20230710105559z"
+            },
+            "objectClass": ["top", "group"],
+            "recertTypeSubType": "Application-SW Distribution",
+            "dbagApplicationID": ["123634-1"],
+            "entitlementProperty": "memberOf",
+            "hasMultipleApprovers": "true",
+            "name": "AA-SWID00-ROLE00",
+            "dbagComplianceStatus": "1",
+            "__NAME__": "CN=AA-SWID00-ROLE00",
+            "displayName": "AA-SWID00-ROLE00",
+            "distinguishedName": "CN=AA-SWID00-ROLE00,OU=Accessio,OU=Groups,OU=Central Admin,DC=acnprojectroots,DC=com",
+            "dbagRecerttype": "Application",
+            "dbagRecertSubtype": "SW Distribution",
+            "digitalIdentity": "cdew",
+            "role": "Reviewer",
+            "domain": "ITCBOD",
+            "cn": "AA-SWID00-ROLE00",
+            "dbagCostcenter": "6201126695",
+            "description": ["Description for AD Group, SW Distribution, 28112-1, role00"],
+            "location": "Default Location (Global)",
+            "requestJustification": "Request for modification 4",
+            "isGroupPrivileged": "Yes",
+            "dbagExternalProvider": ["AZR"],
+            "dbAGInfrastructureNARID": ["123497-1"],
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+            "dbagIMSAuthContactDelegate": "firstname2020.lastname2027@db.com",
+            "dbagIMSApprovers": [
+              "firstname2078.lastname2027@db.com",
+              "firstname2020.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com"
+            ],
+            "dbagIMSDataSecCLass": "I",
+            "dbagObjectRecertificationstatus": "N",
+            "dbagSupportGroup": "HHIMAC",
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC",
+            "dn": "CN=AA-SWID00-ROLE00,OU=Accessio,OU=Groups,OU=Central Admin,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": true
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": [
+          "5bb5b1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4"
+        ]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1e",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1e"
+          },
+          "_rev": "0",
+          "description": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1e",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "glossary": {
+            "kv": [
+              {
+                "dataType": "string",
+                "attrKey": "",
+                "value": "true",
+                "key": "accessioAppRequest"
+              }
+            ]
+          },
+          "igaContent": {
+            "entitlementProperty": null,
+
+            "__NAME__": "CN=IA-Server-sw-de",
+            "displayName": "IA-Server-sw-de",
+            "distinguishedName": "CN=IA-Server-sw-de,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Infrastructure",
+            "role": "Approver",
+            "safeName": "sw",
+            "domain": "DBG",
+            "cn": "IA-Server-sw-de",
+            "dbagApplicationID": ["123634-1"],
+            "dbagCostcenter": "6201126603",
+            "description": ["Test Description for Role"],
+            "groupType": "Security",
+            "groupScope": "Universal",
+            "info": "sdfg",
+            "location": "OUCyberArkRegAmericas",
+            "requestJustification": "Request for modification 5",
+            "dbagFileSystemFullPath": "HP ILO",
+            "accessioPrerequisiteRMPRoles": "CIO Application Support External( Developers)",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "owneremail@db.com",
+            "dbagIMSAuthContactDelegate": ["owner_delegate_email_1253@db.com"],
+            "dbagIMSApprovers": [],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC6",
+            "dn": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "dbagComplianceStatus": "1",
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__",
+          "dbagProvisioningBy": "169701-1"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1e"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1d",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1d"
+          },
+          "_rev": "0",
+          "description": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1d1",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "glossary": {
+            "kv": [
+              {
+                "dataType": "string",
+                "attrKey": "",
+                "value": "false",
+                "key": "accessioAppRequest"
+              }
+            ]
+          },
+          "igaContent": {
+            "entitlementProperty": null,
+            "__NAME__": "CN=IA-Server-sw-de",
+            "displayName": "IA-Server-sw-de",
+            "distinguishedName": "CN=IA-Server-sw-de,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Infrastructure",
+            "role": "Approver",
+            "safeName": "sw",
+            "domain": "DBG",
+            "cn": "IA-Server-sw-de1",
+            "dbagApplicationID": ["123634-1"],
+            "dbagCostcenter": "6201126603",
+            "description": ["Test Description for Role"],
+            "groupType": "Security",
+            "groupScope": "Universal",
+            "info": "sdfg",
+            "location": "OUCyberArkRegAmericas",
+            "requestJustification": "Request for modification 5",
+            "dbagFileSystemFullPath": "HP ILO",
+            "accessioPrerequisiteRMPRoles": "CIO Application Support External( Developers)",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "owneremail@db.com",
+            "dbagIMSAuthContactDelegate": [
+              "owner_delegate_email_1253@db.com",
+              "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com"
+            ],
+            "dbagIMSApprovers": ["owneremail@db.com;owner_delegate_email_1253@db.com"],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC7",
+            "dn": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1d"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd2d",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd2d"
+          },
+          "_rev": "0",
+          "description": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd2d2",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "glossary": {
+            "kv": []
+          },
+          "igaContent": {
+            "entitlementProperty": null,
+            "__NAME__": "CN=IA-Server-sw-de",
+            "displayName": "IA-Server-sw-de",
+            "distinguishedName": "CN=IA-Server-sw-de,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Infrastructure",
+            "role": "Approver",
+            "safeName": "sw",
+            "domain": "DBG",
+            "cn": "IA-Server-sw-de2",
+            "dbagApplicationID": ["123634-1"],
+            "dbagCostcenter": "6201126603",
+            "description": ["Test Description for Role"],
+            "groupType": "Security",
+            "groupScope": "Universal",
+            "info": "sdfg",
+            "location": "OUCyberArkRegAmericas",
+            "requestJustification": "Request for modification 5",
+            "dbagFileSystemFullPath": "HP ILO",
+            "accessioPrerequisiteRMPRoles": "CIO Application Support External( Developers)",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "owneremail@db.com",
+            "dbagIMSAuthContactDelegate": ["owner_delegate_email_1253@db.com"],
+            "dbagIMSApprovers": ["owneremail@db.com;owner_delegate_email_1253@db.com"],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC8",
+            "dn": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd2d"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd3d",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd3d"
+          },
+          "_rev": "0",
+          "description": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd3d2",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "entitlementProperty": null,
+            "__NAME__": "CN=IA-Server-sw-de",
+            "displayName": "IA-Server-sw-de",
+            "distinguishedName": "CN=IA-Server-sw-de,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Infrastructure",
+            "role": "Approver",
+            "safeName": "sw",
+            "domain": "DBG",
+            "cn": "IA-Server-sw-de3",
+            "dbagApplicationID": ["123634-1"],
+            "dbagCostcenter": "6201126603",
+            "description": ["Test Description for Role"],
+            "groupType": "Security",
+            "groupScope": "Universal",
+            "info": "sdfg",
+            "location": "OUCyberArkRegAmericas",
+            "requestJustification": "Request for modification 5",
+            "dbagFileSystemFullPath": "HP ILO",
+            "accessioPrerequisiteRMPRoles": "CIO Application Support External( Developers)",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "owneremail@db.com",
+            "dbagIMSAuthContactDelegate": ["owner_delegate_email_1253@db.com"],
+            "dbagIMSApprovers": ["owneremail@db.com;owner_delegate_email_1253@db.com"],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC",
+            "dn": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd3d"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd4d",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd4d"
+          },
+          "_rev": "0",
+          "description": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd4d4",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "glossary": {
+            "kv": [
+              {
+                "dataType": "string",
+                "attrKey": "",
+                "value": "abc",
+                "key": "accessioAppRequest"
+              }
+            ]
+          },
+          "igaContent": {
+            "entitlementProperty": null,
+            "__NAME__": "CN=IA-Server-sw-de",
+            "displayName": "IA-Server-sw-de",
+            "distinguishedName": "CN=IA-Server-sw-de,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Infrastructure",
+            "role": "Approver",
+            "safeName": "sw",
+            "domain": "DBG",
+            "cn": "IA-Server-sw-de4",
+            "dbagApplicationID": ["123634-1"],
+            "dbagCostcenter": "6201126603",
+            "description": ["Test Description for Role"],
+            "groupType": "Security",
+            "groupScope": "Universal",
+            "info": "sdfg",
+            "location": "OUCyberArkRegAmericas",
+            "requestJustification": "Request for modification 5",
+            "dbagFileSystemFullPath": "HP ILO",
+            "accessioPrerequisiteRMPRoles": "CIO Application Support External( Developers)",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "owneremail@db.com",
+            "dbagIMSAuthContactDelegate": [
+              "owner_delegate_email_1253@db.com",
+              "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com"
+            ],
+            "dbagIMSApprovers": ["owneremail@db.com;owner_delegate_email_1253@db.com"],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC",
+            "dn": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd4d"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd5d",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd5d"
+          },
+          "_rev": "0",
+          "description": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd5d",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "entitlementProperty": null,
+            "__NAME__": "CN=IA-Server-sw-de",
+            "displayName": "IA-Server-sw-de",
+            "distinguishedName": "CN=IA-Server-sw-de,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Infrastructure",
+            "role": "Approver",
+            "safeName": "sw",
+            "domain": "DBG",
+            "cn": "IA-Server-sw-de5",
+            "dbagApplicationID": ["123634-1"],
+            "dbagCostcenter": "6201126603",
+            "description": ["Test Description for Role"],
+            "groupType": "Security",
+            "groupScope": "Universal",
+            "info": "sdfg",
+            "location": "OUCyberArkRegAmericas",
+            "requestJustification": "Request for modification 5",
+            "dbagFileSystemFullPath": "HP ILO",
+            "accessioPrerequisiteRMPRoles": "CIO Application Support External( Developers)",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "owneremail@db.com",
+            "dbagIMSAuthContactDelegate": ["owner_delegate_email_1253@db.com"],
+            "dbagIMSApprovers": [
+              "owneremail@db.com;owner_delegate_email_1253@db.com",
+              "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com"
+            ],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC",
+            "dn": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd5d"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd6d",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd6d"
+          },
+          "_rev": "0",
+          "description": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd6d",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "entitlementProperty": null,
+            "__NAME__": "CN=IA-Server-sw-de",
+            "displayName": "IA-Server-sw-de",
+            "distinguishedName": "CN=IA-Server-sw-de,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Infrastructure",
+            "role": "Approver",
+            "safeName": "sw",
+            "domain": "DBG",
+            "cn": "IA-Server-sw-de6",
+            "dbagApplicationID": ["123634-1"],
+            "dbagCostcenter": "6201126603",
+            "description": ["Test Description for Role"],
+            "groupType": "Security",
+            "groupScope": "Universal",
+            "info": "sdfg",
+            "location": "OUCyberArkRegAmericas",
+            "requestJustification": "Request for modification 5",
+            "dbagFileSystemFullPath": "HP ILO",
+            "accessioPrerequisiteRMPRoles": "CIO Application Support External( Developers)",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "owneremail@db.com",
+            "dbagIMSAuthContactDelegate": ["owner_delegate_email_1253@db.com"],
+            "dbagIMSApprovers": ["owneremail@db.com;owner_delegate_email_1253@db.com"],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC",
+            "dn": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd6d"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd7d",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd7d"
+          },
+          "_rev": "0",
+          "description": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd7d",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "entitlementProperty": null,
+            "__NAME__": "CN=IA-Server-sw-de",
+            "displayName": "IA-Server-sw-de",
+            "distinguishedName": "CN=IA-Server-sw-de,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Infrastructure",
+            "role": "Approver",
+            "safeName": "sw",
+            "domain": "DBG",
+            "cn": "IA-Server-sw-de7",
+            "dbagApplicationID": ["123634-1"],
+            "dbagCostcenter": "6201126603",
+            "description": ["Test Description for Role"],
+            "groupType": "Security",
+            "groupScope": "Universal",
+            "info": "sdfg",
+            "location": "OUCyberArkRegAmericas",
+            "requestJustification": "Request for modification 5",
+            "dbagFileSystemFullPath": "HP ILO",
+            "accessioPrerequisiteRMPRoles": "CIO Application Support External( Developers)",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "owneremail@db.com",
+            "dbagIMSAuthContactDelegate": ["owner_delegate_email_1253@db.com"],
+            "dbagIMSApprovers": ["owneremail@db.com;owner_delegate_email_1253@db.com"],
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC",
+            "dn": "CN=IA-Server-sw-de,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "member": [],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd7d"]
+      }
+    ]
+  }
+}

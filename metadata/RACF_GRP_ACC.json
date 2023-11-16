@@ -1,0 +1,462 @@
+{
+    "groupBy": [
+        {
+            "value": "Group",
+            "label": "Group",
+            "type": "account.igaContent.group_name.keyword"
+        }
+    ],
+    "initialGroupBy": "account.igaContent.account_hostname.keyword",
+    "filterBy": [
+        {
+            "value": "certify",
+            "type": "decision.certification.decision.keyword",
+            "label": "Maintained"
+        },
+        {
+            "value": "revoke",
+            "type": "decision.certification.decision.keyword",
+            "label": "Revoked"
+        },
+        {
+            "value": "reassign",
+            "type": "decision.certification.decision.keyword",
+            "label": "Reassign",
+            "sortType": "decision.certification.comments.action.keyword"
+        },
+        {
+            "value": "nullValue",
+            "type": "decision.certification.decision.keyword",
+            "label": "None"
+        }
+    ],
+    "initialFilterBy": "All",
+    "paginationSizes": [
+        10,
+        25,
+        50,
+        100
+    ],
+    "hasSortableColumns": true,
+    "initialSortColumnId": "applicationName",
+    "bulkActions": [
+        "maintain",
+        "revoke",
+        "reassign"
+    ],
+    "columns": [
+        {
+            "id": "select",
+            "type": "checkbox",
+            "header": {
+                "type": "component",
+                "component": "checkbox",
+                "text": "Select"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "mandatory": true,
+            "initialDisplay": true,
+            "order": 1
+        },
+        {
+            "id": "decision",
+            "type": "collapsColumn",
+            "header": {
+                "type": "text",
+                "text": "Decision"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 2,
+            "properties": {
+                "options": [
+                    {
+                        "id": "maintain",
+                        "iconInactive": "maintainDefault",
+                        "iconActive": "maintain",
+                        "title": "Maintain"
+                    },
+                    {
+                        "id": "revoke",
+                        "iconInactive": "revokeNew",
+                        "iconActive": "radio",
+                        "title": "Revoke"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "comment",
+            "type": "iconPopup",
+            "header": {
+                "type": "text",
+                "text": "comment"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 3,
+            "properties": {
+                "iconInactive": "comments",
+                "iconActive": "comments"
+            }
+        },
+        {
+            "id": "groupName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Name",
+                "sortKey": "account.igaContent.grp_name.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 5
+        },
+        {
+            "id": "groupDomain",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Domain",
+                "sortKey": "account.igaContent.grp_domain.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 4
+        },
+        {
+            "id": "groupPlatform",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Platform",
+                "sortKey": "account.igaContent.grp_platform.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 6
+        },
+        {
+            "id": "groupDelegateOwner",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Delegate Delegate",
+                "sortKey": "account.igaContent.grp_delegate_owner.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 7
+        },
+        {
+            "id": "groupType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Type",
+                "sortKey": "account.igaContent.grp_type.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 8
+        },
+        {
+            "id": "groupOwner",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Owner",
+                "sortKey": "account.igaContent.grp_owner.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 9
+        },
+        {
+            "id": "groupNarId",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Nar Id",
+                "sortKey": "account.igaContent.grp_nar_id.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 9
+        },
+        {
+            "id": "groupEntityId",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Entity Id",
+                "sortKey": "account.igaContent.grp_entity_id.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 9
+        },
+        {
+            "id": "groupDescription",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Description",
+                "sortKey": "account.igaContent.grp_comments.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 9
+        },
+        {
+            "id": "accountNarId",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Account Nar Id"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "accountType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Account Type"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "accountName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Account Name"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "accountDomain",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Account Domain"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "accountOwner",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Account Owner"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "accountSecondaryOwner",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Account Secondary Owner"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "accountPlatform",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Account Platform"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "accountEntityType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Account Entity Type"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "isPersonalAccount",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Is Personal Account"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "isPrivilegedAccount",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Is Privilaged Account"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "accountEntityStatus",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Account Entity Status"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "appName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "App Name"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "roleDescription",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Role Description"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "groupId",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Id"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 11
+        },
+        {
+            "id": "actions",
+            "type": "longMenu",
+            "header": {
+                "type": "text",
+                "text": "Actions"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 19,
+            "properties": {
+                "iconInactive": "ellipsisMenu",
+                "iconActive": "ellipsisMenu",
+                "options": [
+                    {
+                        "id": "maintain",
+                        "title": "Maintain"
+                    },
+                    {
+                        "id": "revoke",
+                        "title": "Revoke"
+                    },
+                    {
+                        "id": "reassign",
+                        "popupId": "reviewItemReassign"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sticky",
+            "type": "sticky",
+            "header": {
+                "type": "component",
+                "component": "sticky"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 20,
+            "sticky": "right"
+        }
+    ]
+}

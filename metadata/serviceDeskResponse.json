@@ -1,0 +1,1355 @@
+{
+  "took": 11,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 1212,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "gov-sit3_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "e43dd1a1b2d62e210f2cd19ac3a4b6bdec575eb56ab5ced45b30bacb1341cb3c5bb2bda3bd616fab35365b5fc2ddea8a33816db6f40d9fc671499c6caefc7f31",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "namrata.hom@gbgdev.db.com",
+            "givenName": "namrata",
+            "sn": "hom",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": false,
+            "userName": "namrata.hom@gbgdev.db.com"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230331-960",
+              "AccessioBulkRequestNumber": "20230331984z",
+              "requestJustification": "Joining",
+              "recepientMail": "namrata.hom@gbgdev.db.com",
+              "requestorMail": "namrata.hom@gbgdev.db.com",
+              "isDraft": false,
+              "category": "AD Group",
+              "operation": "Add Membership",
+              "applicationName": "AD_DBG"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/9fa4842f-1d87-4207-8685-5c3406a214ca",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-05-15T05:52:32.416Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1684129952218",
+            "branch": "actual",
+            "primaryKey": "9fa4842f-1d87-4207-8685-5c3406a214ca"
+          },
+          "requestType": "entitlementGrant",
+          "decision": {
+            "actors": {
+              "inactive": [],
+              "actorTags": [
+                "activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=",
+                "phase=&activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4"
+              ],
+              "active": [
+                {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": false,
+                    "reject": false,
+                    "reassign": false,
+                    "comment": false
+                  },
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "isAdmin": false,
+                  "userName": "Mahesh"
+                }
+              ]
+            },
+            "comments": [],
+            "completionDate": null,
+            "deadline": null,
+            "outcome": null,
+            "status": "in-progress"
+          },
+          "id": "9fa4842f-1d87-4207-8685-5c3406a214ca"
+        },
+        "sort": ["20230515-7AU6"]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "59fb96e5bf32e458c61a0a092c70f20833818c489f913248dd37aeba0f4cf449419b6d7793cf2e4ad519a250a609edaba74bc2c8d4a465e908608bdd593616cb",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": false,
+            "userName": "Mahesh"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230515-7AU6",
+              "requestJustification": "Joining",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "isDraft": false,
+              "category": "AD Group",
+              "operation": "Add Membership",
+              "applicationName": "AD_DBG"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/14f279c8-7df1-4fbf-af20-5f28f45e483b",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-06-01T09:09:13.725Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1685610553624",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "14f279c8-7df1-4fbf-af20-5f28f45e483b"
+          },
+          "requestType": "entitlementGrant",
+          "decision": {
+            "actors": {
+              "inactive": [],
+              "actorTags": [
+                "activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=",
+                "phase=&activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4"
+              ],
+              "active": [
+                {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": false,
+                    "reject": false,
+                    "reassign": false,
+                    "comment": false
+                  },
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "isAdmin": false,
+                  "userName": "Mahesh"
+                }
+              ]
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-06-01T09:09:13+00:00",
+                "action": "updateStatus",
+                "comment": "Request status updated to cancelled ",
+                "user": {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "userName": "Mahesh"
+                }
+              }
+            ],
+            "completionDate": "2023-06-01T09:09:13+00:00",
+            "deadline": null,
+            "outcome": "cancelled",
+            "status": "complete"
+          },
+          "id": "14f279c8-7df1-4fbf-af20-5f28f45e483b"
+        },
+        "sort": ["20230515-7AU6"]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "d30ca77399223e1bd6c243745f9467c2b53ebc749cc49fe97d96af886ecbd8a38835f92d8db0d184b60ae603adb9e87073d974404986ad4cda745642c6f1be7c",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": false,
+            "userName": "Mahesh"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230515-7AU6",
+              "requestJustification": "Joining",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "isDraft": false,
+              "category": "AD Group",
+              "operation": "Add Membership",
+              "applicationName": "AD_DBG"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/0e5cd858-602b-4126-a18d-89f7a6142f6e",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-06-01T09:09:00.992Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1685610540895",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "0e5cd858-602b-4126-a18d-89f7a6142f6e"
+          },
+          "requestType": "entitlementGrant",
+          "decision": {
+            "actors": {
+              "inactive": [],
+              "actorTags": [
+                "activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=",
+                "phase=&activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4"
+              ],
+              "active": [
+                {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": false,
+                    "reject": false,
+                    "reassign": false,
+                    "comment": false
+                  },
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "isAdmin": false,
+                  "userName": "Mahesh"
+                }
+              ]
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-06-01T09:09:00+00:00",
+                "action": "updateStatus",
+                "comment": "Request status updated to cancelled ",
+                "user": {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "userName": "Mahesh"
+                }
+              }
+            ],
+            "completionDate": "2023-06-01T09:09:00+00:00",
+            "deadline": null,
+            "outcome": "cancelled",
+            "status": "complete"
+          },
+          "id": "0e5cd858-602b-4126-a18d-89f7a6142f6e"
+        },
+        "sort": ["20230515-7AU6"]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "9ef2d0df62c055d41d260837c08ec46b52af244ab143d4c49b38e37fae8bd2a90d5e39741e633a241b5d320d7b9a0ad1e1148157c55aff12ed6a48b92dff5a93",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": false,
+            "userName": "Mahesh"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230513-AW5Y",
+              "requestJustification": "Joining",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "isDraft": false,
+              "category": "AD Group",
+              "operation": "Add Membership",
+              "applicationName": "AD_DBG"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/c040a24f-6e28-4ca0-9317-b5b26d9d048f",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-05-13T11:57:49.949Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1683979069735",
+            "branch": "actual",
+            "primaryKey": "c040a24f-6e28-4ca0-9317-b5b26d9d048f"
+          },
+          "requestType": "entitlementGrant",
+          "decision": {
+            "actors": {
+              "inactive": [],
+              "actorTags": [
+                "activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=",
+                "phase=&activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4"
+              ],
+              "active": [
+                {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": false,
+                    "reject": false,
+                    "reassign": false,
+                    "comment": false
+                  },
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "isAdmin": false,
+                  "userName": "Mahesh"
+                }
+              ]
+            },
+            "comments": [],
+            "completionDate": null,
+            "deadline": null,
+            "outcome": null,
+            "status": "in-progress"
+          },
+          "id": "c040a24f-6e28-4ca0-9317-b5b26d9d048f"
+        },
+        "sort": ["20230513-AW5Y"]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "f6b82869c9f99b5f31b2846e90e61d50e264c201ca1f2f105e3ef095c96179e45bda7c343f84e0acee50a98c19e70e54a940dde16a479963f162feeb672e3168",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": false,
+            "userName": "Mahesh"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230306-803",
+              "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "accountDescription": "",
+              "sAMAccountName": "mahesh-a",
+              "accountType": "Personal - Admin",
+              "rLastName": "Varahala",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "isDraft": false,
+              "requestJustification": "twat",
+              "rFirstName": "Mahesh",
+              "category": "AD Account",
+              "operation": "Delete",
+              "applicationName": "APP_AD_B_DBG"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/5b62966f-5f0c-46b6-a3e8-5f0bbbcb8435",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-04-18T16:51:37.856Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1681836697756",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "5b62966f-5f0c-46b6-a3e8-5f0bbbcb8435"
+          },
+          "requestType": "deleteAccount",
+          "decision": {
+            "actors": {
+              "inactive": [],
+              "actorTags": [
+                "activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=",
+                "phase=&activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4"
+              ],
+              "active": [
+                {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": false,
+                    "reject": false,
+                    "reassign": false,
+                    "comment": false
+                  },
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "isAdmin": false,
+                  "userName": "Mahesh"
+                }
+              ]
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-03-06T10:31:31+00:00",
+                "request": {
+                  "common": {
+                    "Accessio_Request_No": "20230306-803",
+                    "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "accountDescription": "",
+                    "sAMAccountName": "mahesh-a",
+                    "accountType": "Personal - Admin",
+                    "rLastName": "Varahala",
+                    "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "isDraft": false,
+                    "requestJustification": "twat",
+                    "rFirstName": "Mahesh",
+                    "category": "AD Account",
+                    "operation": "Delete",
+                    "applicationName": "APP_AD_B_DBG"
+                  }
+                },
+                "action": "updateRequest",
+                "user": {
+                  "id": "SYSTEM"
+                }
+              },
+              {
+                "timeStamp": "2023-04-18T16:51:37+00:00",
+                "action": "updateStatus",
+                "comment": "Request status updated to cancelled ",
+                "user": {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "userName": "Mahesh"
+                }
+              }
+            ],
+            "completionDate": "2023-04-18T16:51:37+00:00",
+            "deadline": null,
+            "outcome": "cancelled",
+            "status": "complete"
+          },
+          "id": "5b62966f-5f0c-46b6-a3e8-5f0bbbcb8435"
+        },
+        "sort": ["20230306-803"]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "9982ec0e28ccbe40c24444be7b263427f2e4b4929573393746f0470e124a4d9838550b88052623c175d293b2854326509d912c4ea987b3d26d2ad99436449b93",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": false,
+            "userName": "Mahesh"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230306-802",
+              "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "accountDescription": "",
+              "sAMAccountName": "mahesh41",
+              "accountType": "Personal - Additional",
+              "rLastName": "Varahala",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "isDraft": false,
+              "requestJustification": "test",
+              "rFirstName": "Mahesh",
+              "category": "AD Account",
+              "operation": "Delete",
+              "applicationName": "APP_AD_B_DBG"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/2f7edd92-6e90-4019-94e0-c4f2a934afb9",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-04-18T16:48:40.125Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1681836520020",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "2f7edd92-6e90-4019-94e0-c4f2a934afb9"
+          },
+          "requestType": "deleteAccount",
+          "decision": {
+            "actors": {
+              "inactive": [],
+              "actorTags": [
+                "activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=",
+                "phase=&activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4"
+              ],
+              "active": [
+                {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": false,
+                    "reject": false,
+                    "reassign": false,
+                    "comment": false
+                  },
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "isAdmin": false,
+                  "userName": "Mahesh"
+                }
+              ]
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-03-06T10:23:15+00:00",
+                "request": {
+                  "common": {
+                    "Accessio_Request_No": "20230306-802",
+                    "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "accountDescription": "",
+                    "sAMAccountName": "mahesh41",
+                    "accountType": "Personal - Additional",
+                    "rLastName": "Varahala",
+                    "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "isDraft": false,
+                    "requestJustification": "test",
+                    "rFirstName": "Mahesh",
+                    "category": "AD Account",
+                    "operation": "Delete",
+                    "applicationName": "APP_AD_B_DBG"
+                  }
+                },
+                "action": "updateRequest",
+                "user": {
+                  "id": "SYSTEM"
+                }
+              },
+              {
+                "timeStamp": "2023-04-18T16:48:39+00:00",
+                "action": "updateStatus",
+                "comment": "Request status updated to cancelled ",
+                "user": {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "userName": "Mahesh"
+                }
+              }
+            ],
+            "completionDate": "2023-04-18T16:48:39+00:00",
+            "deadline": null,
+            "outcome": "cancelled",
+            "status": "complete"
+          },
+          "id": "2f7edd92-6e90-4019-94e0-c4f2a934afb9"
+        },
+        "sort": ["20230306-802"]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "10c6dfa998243a489c5ea506f25bad5f1b3a76e0fd0e925a230e5293305a64c202ba0bfdf728b5d46476c0c1e7b083881ea350022ea69d518e7d1c66434cb752",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": false,
+            "userName": "Mahesh"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230306-801",
+              "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "accountDescription": "",
+              "sAMAccountName": "mahesh6",
+              "accountType": "Personal - Additional",
+              "rLastName": "Varahala",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "isDraft": false,
+              "requestJustification": "test",
+              "rFirstName": "Mahesh",
+              "category": "AD Account",
+              "operation": "Delete",
+              "applicationName": "APP_AD_B_DBG"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/9a41c94a-d207-49f6-a9e6-6e3d47a485e5",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-04-18T14:31:49.061Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1681828308968",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "9a41c94a-d207-49f6-a9e6-6e3d47a485e5"
+          },
+          "requestType": "deleteAccount",
+          "decision": {
+            "actors": {
+              "inactive": [],
+              "actorTags": [
+                "activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=",
+                "phase=&activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4"
+              ],
+              "active": [
+                {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": false,
+                    "reject": false,
+                    "reassign": false,
+                    "comment": false
+                  },
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "isAdmin": false,
+                  "userName": "Mahesh"
+                }
+              ]
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-03-06T10:19:48+00:00",
+                "request": {
+                  "common": {
+                    "Accessio_Request_No": "20230306-801",
+                    "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "accountDescription": "",
+                    "sAMAccountName": "mahesh6",
+                    "accountType": "Personal - Additional",
+                    "rLastName": "Varahala",
+                    "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "isDraft": false,
+                    "requestJustification": "test",
+                    "rFirstName": "Mahesh",
+                    "category": "AD Account",
+                    "operation": "Delete",
+                    "applicationName": "APP_AD_B_DBG"
+                  }
+                },
+                "action": "updateRequest",
+                "user": {
+                  "id": "SYSTEM"
+                }
+              },
+              {
+                "timeStamp": "2023-04-18T14:31:48+00:00",
+                "action": "updateStatus",
+                "comment": "Request status updated to cancelled ",
+                "user": {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "userName": "Mahesh"
+                }
+              }
+            ],
+            "completionDate": "2023-04-18T14:31:48+00:00",
+            "deadline": null,
+            "outcome": "cancelled",
+            "status": "complete"
+          },
+          "id": "9a41c94a-d207-49f6-a9e6-6e3d47a485e5"
+        },
+        "sort": ["20230306-801"]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "bb54ca61139477798070b1a7c68e2a4e17b79039a39950c1f3ba99c1859e9ffef024745265efd22269924a06c4532354bf9e95881c2f91695aa302c1952e4446",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": false,
+            "userName": "Mahesh"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230306-800",
+              "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "accountDescription": "",
+              "sAMAccountName": "MaheshP123",
+              "accountType": "Personal - Additional",
+              "rLastName": "Varahala",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "isDraft": false,
+              "requestJustification": "test",
+              "rFirstName": "Mahesh",
+              "category": "AD Account",
+              "operation": "Delete",
+              "applicationName": "APP_AD_B_DBG"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/911609dc-b2a8-491c-b061-7de9b467b9a6",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-04-18T14:25:49.104Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1681827949000",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "911609dc-b2a8-491c-b061-7de9b467b9a6"
+          },
+          "requestType": "deleteAccount",
+          "decision": {
+            "actors": {
+              "inactive": [],
+              "actorTags": [
+                "activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=",
+                "phase=&activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4"
+              ],
+              "active": [
+                {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": false,
+                    "reject": false,
+                    "reassign": false,
+                    "comment": false
+                  },
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "isAdmin": false,
+                  "userName": "Mahesh"
+                }
+              ]
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-03-06T10:09:38+00:00",
+                "request": {
+                  "common": {
+                    "Accessio_Request_No": "20230306-800",
+                    "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "accountDescription": "",
+                    "sAMAccountName": "MaheshP123",
+                    "accountType": "Personal - Additional",
+                    "rLastName": "Varahala",
+                    "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "isDraft": false,
+                    "requestJustification": "test",
+                    "rFirstName": "Mahesh",
+                    "category": "AD Account",
+                    "operation": "Delete",
+                    "applicationName": "APP_AD_B_DBG"
+                  }
+                },
+                "action": "updateRequest",
+                "user": {
+                  "id": "SYSTEM"
+                }
+              },
+              {
+                "timeStamp": "2023-04-18T14:25:48+00:00",
+                "action": "updateStatus",
+                "comment": "Request status updated to cancelled ",
+                "user": {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "userName": "Mahesh"
+                }
+              }
+            ],
+            "completionDate": "2023-04-18T14:25:48+00:00",
+            "deadline": null,
+            "outcome": "cancelled",
+            "status": "complete"
+          },
+          "id": "911609dc-b2a8-491c-b061-7de9b467b9a6"
+        },
+        "sort": ["20230306-800"]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "d7b57cfaf70d222b435f99909d43bbcd302b2ae0a523c493d06ab09d2356f8c5a21a26cf584ec72cc34834e919ce39daaa4bbf2ae7301fe941f75c367648e5e5",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": false,
+            "userName": "Mahesh"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230306-799",
+              "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "accountDescription": "",
+              "sAMAccountName": "mahesh51",
+              "accountType": "Personal - Additional",
+              "rLastName": "Varahala",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "isDraft": false,
+              "requestJustification": "test",
+              "rFirstName": "Mahesh",
+              "category": "AD Account",
+              "operation": "Delete",
+              "applicationName": "APP_AD_B_DBG"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/2b8b149a-657c-46e2-b48a-8d5d2bad9e4b",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-04-18T14:22:56.683Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1681827776588",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "2b8b149a-657c-46e2-b48a-8d5d2bad9e4b"
+          },
+          "requestType": "deleteAccount",
+          "decision": {
+            "actors": {
+              "inactive": [],
+              "actorTags": [
+                "activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=",
+                "phase=&activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4"
+              ],
+              "active": [
+                {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": false,
+                    "reject": false,
+                    "reassign": false,
+                    "comment": false
+                  },
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "isAdmin": false,
+                  "userName": "Mahesh"
+                }
+              ]
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-03-06T10:07:53+00:00",
+                "request": {
+                  "common": {
+                    "Accessio_Request_No": "20230306-799",
+                    "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "accountDescription": "",
+                    "sAMAccountName": "mahesh51",
+                    "accountType": "Personal - Additional",
+                    "rLastName": "Varahala",
+                    "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "isDraft": false,
+                    "requestJustification": "test",
+                    "rFirstName": "Mahesh",
+                    "category": "AD Account",
+                    "operation": "Delete",
+                    "applicationName": "APP_AD_B_DBG"
+                  }
+                },
+                "action": "updateRequest",
+                "user": {
+                  "id": "SYSTEM"
+                }
+              },
+              {
+                "timeStamp": "2023-04-18T14:22:56+00:00",
+                "action": "updateStatus",
+                "comment": "Request status updated to cancelled ",
+                "user": {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "userName": "Mahesh"
+                }
+              }
+            ],
+            "completionDate": "2023-04-18T14:22:56+00:00",
+            "deadline": null,
+            "outcome": "cancelled",
+            "status": "complete"
+          },
+          "id": "2b8b149a-657c-46e2-b48a-8d5d2bad9e4b"
+        },
+        "sort": ["20230306-799"]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "84f4ea2df25967837d001b1e82de3ffbba7b87f0a63f7e2880dd25c8154740541c5a62134461379f73dfe7a2394b45f342c0191df8a68b53cf2e853d0b8ea002",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230202-688",
+              "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "accountDescription": "This request will Create Personal - Additional",
+              "endDate": "9999-05-24",
+              "rLastName": "Varahala",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "isDraft": false,
+              "requestJustification": "",
+              "accountDetails": {
+                "accountNameSuffix": "4",
+                "recertificationPeriod": "06",
+                "sAMAccountName": "mahesh4",
+                "accountType": "Personal - Additional",
+                "domain": "DBG",
+                "l": "Provider (Deutsche Immobilien Leasing)",
+                "primaryAccount": "mahesh",
+                "userAccountControl": "512"
+              },
+              "rFirstName": "Mahesh",
+              "category": "AD Account",
+              "operation": "Create",
+              "applicationName": "AD_DBG",
+              "startDate": "2022-12-02"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/23eae56d-2777-4d83-aece-b3851f289c7d",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-03-15T08:43:23.387Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1678869803282",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "23eae56d-2777-4d83-aece-b3851f289c7d"
+          },
+          "requestType": "createAccount",
+          "decision": {
+            "actors": {
+              "inactive": [
+                {
+                  "phase": "LineManagerApproval",
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": true,
+                    "reject": true,
+                    "reassign": true,
+                    "comment": true
+                  },
+                  "givenName": "Mahesh",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "sn": "Varahala",
+                  "userName": "Mahesh"
+                },
+                {
+                  "phase": "LineManagerApproval",
+                  "mail": "debarshi.mandal@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": true,
+                    "reject": true,
+                    "reassign": true,
+                    "comment": true
+                  },
+                  "givenName": "Debarshi",
+                  "id": "managed/user/2ec92f0d-d5bf-4a9a-83c8-d9501d8756d0",
+                  "sn": "Mandal",
+                  "userName": "Debarshi"
+                }
+              ],
+              "actorTags": [
+                "inactiveId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=LineManagerApproval",
+                "phase=LineManagerApproval&inactiveId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                "inactiveId=managed%2Fuser%2F2ec92f0d-d5bf-4a9a-83c8-d9501d8756d0&phase=LineManagerApproval",
+                "phase=LineManagerApproval&inactiveId=managed%2Fuser%2F2ec92f0d-d5bf-4a9a-83c8-d9501d8756d0"
+              ],
+              "active": []
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-02-02T06:00:53+00:00",
+                "request": {
+                  "common": {
+                    "Accessio_Request_No": "20230202-688",
+                    "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "accountDescription": "This request will Create Personal - Additional",
+                    "endDate": "9999-05-24",
+                    "rLastName": "Varahala",
+                    "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "isDraft": false,
+                    "requestJustification": "",
+                    "accountDetails": {
+                      "accountNameSuffix": "4",
+                      "recertificationPeriod": "06",
+                      "sAMAccountName": "mahesh4",
+                      "accountType": "Personal - Additional",
+                      "domain": "DBG",
+                      "l": "Provider (Deutsche Immobilien Leasing)",
+                      "primaryAccount": "mahesh",
+                      "userAccountControl": "512"
+                    },
+                    "rFirstName": "Mahesh",
+                    "category": "AD Account",
+                    "operation": "Create",
+                    "applicationName": "AD_DBG",
+                    "startDate": "2022-12-02"
+                  }
+                },
+                "action": "updateRequest",
+                "user": {
+                  "id": "SYSTEM"
+                }
+              },
+              {
+                "timeStamp": "2023-03-15T07:02:20+00:00",
+                "phase": "LineManagerApproval",
+                "action": "reassign",
+                "comment": "Assigned task to Debarshi Mandal (Debarshi). Removed actor(s) User 1001 (User1001).",
+                "user": {
+                  "mail": "portal_request_admin@db.com",
+                  "givenName": "portal_request_admin",
+                  "id": "managed/user/43e218fe-aae4-47d9-9f5e-790713761afa",
+                  "sn": "portal_request_admin",
+                  "userName": "portal_request_admin"
+                }
+              }
+            ],
+            "completionDate": null,
+            "deadline": null,
+            "outcome": null,
+            "phases": [
+              {
+                "decision": "approve",
+                "workflowTaskId": "351043",
+                "name": "LineManagerApproval",
+                "completionDate": "2023-03-15T08:43:23+00:00",
+                "type": "request",
+                "startDate": "2023-02-02T06:00:55+00:00",
+                "events": {
+                  "reminder": {
+                    "notification": "accountsRequestReminder",
+                    "frequency": 5
+                  },
+                  "assignment": {
+                    "notification": "amendAccountApproval"
+                  },
+                  "expiration": {
+                    "notification": "accountsRequestExpired"
+                  }
+                },
+                "completedBy": {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "userName": "Mahesh"
+                },
+                "status": "complete"
+              }
+            ],
+            "status": "in-progress"
+          },
+          "id": "23eae56d-2777-4d83-aece-b3851f289c7d"
+        },
+        "sort": ["20230202-688"]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "84f4ea2df25967837d001b1e82de3ffbba7b87f0a63f7e2880dd25c8154740541c5a62134461379f73dfe7a2394b45f342c0191df8a68b53cf2e853d0b8ea002",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230202-688",
+              "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "accountDescription": "This request will Create Personal - Additional",
+              "endDate": "9999-05-24",
+              "rLastName": "Varahala",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "isDraft": false,
+              "requestJustification": "",
+              "accountDetails": {
+                "accountNameSuffix": "4",
+                "recertificationPeriod": "06",
+                "sAMAccountName": "mahesh4",
+                "accountType": "Personal - Additional",
+                "domain": "DBG",
+                "l": "Provider (Deutsche Immobilien Leasing)",
+                "primaryAccount": "mahesh",
+                "userAccountControl": "512"
+              },
+              "rFirstName": "Mahesh",
+              "category": "AD Account",
+              "operation": "Create",
+              "applicationName": "AD_DBG",
+              "startDate": "2022-12-02"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/23eae56d-2777-4d83-aece-b3851f289c7d",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-03-15T08:43:23.387Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1678869803282",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "23eae56d-2777-4d83-aece-b3851f289c7d"
+          },
+          "requestType": "createAccount",
+          "decision": {
+            "actors": {
+              "inactive": [
+                {
+                  "phase": "LineManagerApproval",
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": true,
+                    "reject": true,
+                    "reassign": true,
+                    "comment": true
+                  },
+                  "givenName": "Mahesh",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "sn": "Varahala",
+                  "userName": "Mahesh"
+                },
+                {
+                  "phase": "LineManagerApproval",
+                  "mail": "debarshi.mandal@acpcloud1769outlook.onmicrosoft.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": true,
+                    "reject": true,
+                    "reassign": true,
+                    "comment": true
+                  },
+                  "givenName": "Debarshi",
+                  "id": "managed/user/2ec92f0d-d5bf-4a9a-83c8-d9501d8756d0",
+                  "sn": "Mandal",
+                  "userName": "Debarshi"
+                }
+              ],
+              "actorTags": [
+                "inactiveId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=LineManagerApproval",
+                "phase=LineManagerApproval&inactiveId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                "inactiveId=managed%2Fuser%2F2ec92f0d-d5bf-4a9a-83c8-d9501d8756d0&phase=LineManagerApproval",
+                "phase=LineManagerApproval&inactiveId=managed%2Fuser%2F2ec92f0d-d5bf-4a9a-83c8-d9501d8756d0"
+              ],
+              "active": []
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-02-02T06:00:53+00:00",
+                "request": {
+                  "common": {
+                    "Accessio_Request_No": "20230202-688",
+                    "recepientMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "accountDescription": "This request will Create Personal - Additional",
+                    "endDate": "9999-05-24",
+                    "rLastName": "Varahala",
+                    "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                    "isDraft": false,
+                    "requestJustification": "",
+                    "accountDetails": {
+                      "accountNameSuffix": "4",
+                      "recertificationPeriod": "06",
+                      "sAMAccountName": "mahesh4",
+                      "accountType": "Personal - Additional",
+                      "domain": "DBG",
+                      "l": "Provider (Deutsche Immobilien Leasing)",
+                      "primaryAccount": "mahesh",
+                      "userAccountControl": "512"
+                    },
+                    "rFirstName": "Mahesh",
+                    "category": "AD Account",
+                    "operation": "Create",
+                    "applicationName": "AD_DBG",
+                    "startDate": "2022-12-02"
+                  }
+                },
+                "action": "updateRequest",
+                "user": {
+                  "id": "SYSTEM"
+                }
+              },
+              {
+                "timeStamp": "2023-03-15T07:02:20+00:00",
+                "phase": "LineManagerApproval",
+                "action": "reassign",
+                "comment": "Assigned task to Debarshi Mandal (Debarshi). Removed actor(s) User 1001 (User1001).",
+                "user": {
+                  "mail": "portal_request_admin@db.com",
+                  "givenName": "portal_request_admin",
+                  "id": "managed/user/43e218fe-aae4-47d9-9f5e-790713761afa",
+                  "sn": "portal_request_admin",
+                  "userName": "portal_request_admin"
+                }
+              }
+            ],
+            "completionDate": null,
+            "deadline": null,
+            "outcome": null,
+            "phases": [
+              {
+                "decision": "approve",
+                "workflowTaskId": "351043",
+                "name": "LineManagerApproval",
+                "completionDate": "2023-03-15T08:43:23+00:00",
+                "type": "request",
+                "startDate": "2023-02-02T06:00:55+00:00",
+                "events": {
+                  "reminder": {
+                    "notification": "accountsRequestReminder",
+                    "frequency": 5
+                  },
+                  "assignment": {
+                    "notification": "amendAccountApproval"
+                  },
+                  "expiration": {
+                    "notification": "accountsRequestExpired"
+                  }
+                },
+                "completedBy": {
+                  "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+                  "givenName": "Mahesh",
+                  "sn": "Varahala",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "userName": "Mahesh"
+                },
+                "status": "complete"
+              }
+            ],
+            "status": "in-progress"
+          },
+          "id": "23eae56d-2777-4d83-aece-b3851f289c7d"
+        },
+        "sort": ["20230202-688"]
+      }
+    ]
+  }
+}

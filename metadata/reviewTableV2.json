@@ -1,0 +1,407 @@
+{
+  "groupBy": [
+    {
+      "id": 0,
+      "name": "All",
+      "columnToBeGrouped": ""
+    },
+    {
+      "id": 1,
+      "name": "User name",
+      "columnToBeGrouped": "username"
+    },
+    {
+      "id": 2,
+      "name": "Account type",
+      "columnToBeGrouped": "accountType"
+    },
+    {
+      "id": 3,
+      "name": "Cost center",
+      "columnToBeGrouped": "costCenter"
+    },
+    {
+      "id": 4,
+      "name": "UBR node",
+      "columnToBeGrouped": "UBRnode"
+    },
+    {
+      "id": 5,
+      "name": "Supervisor",
+      "columnToBeGrouped": "supervisor"
+    },
+    {
+      "id": 6,
+      "name": "D-ISO-M",
+      "columnToBeGrouped": "DISOM"
+    }
+  ],
+  "initialGroupBy":0,
+  "filterBy": [
+    {
+      "id": 0,
+      "name": "All",
+      "filterValue": {}
+    },
+    {
+      "id": 1,
+      "name": "Open actions",
+      "filterValue": {
+        "columns": [
+          {
+            "columnName": "name",
+            "values": ["System 1"]
+          },
+          {
+            "column": "email",
+            "values": ["someemail@gmail.com",  "someanotheremail@gmail.com"]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Closed actions",
+      "filterValue": {
+        "columns": [
+          {
+            "columnName": "name",
+            "values": ["System 1"]
+          },
+          {
+            "column": "email",
+            "values": ["someemail@gmail.com",  "someanotheremail@gmail.com"]
+          }
+        ]
+      }
+    }
+  ],
+  "initialFilterBy":0,
+  "searchBy": ["name","accountType"],
+  "paginationSizes":[
+    10,
+    25,
+    50,
+    100
+  ],
+  "hasSortableColumns":true,
+  "initialSortColumnId":"applicationName",
+  "bulkActions":[
+    "maintain",
+    "revoke",
+    "allowExceptions",
+    "reassign",
+    "forward",
+    "sendEmail"
+  ],
+  "columns":[
+    {
+      "id":"select",
+      "generalAction": false,
+      "type":"checkbox",
+      "header":{
+        "type":"component",
+        "component":"checkbox"
+      },
+      "hasInfo":false,
+      "sortable":false,
+      "initialDisplay":true,
+      "order":1
+    },
+    {
+      "id":"certify",
+      "generalAction": true,
+      "type":"icon",
+      "header":{
+        "type":"text",
+        "text":"Maintain"
+      },
+      "hasInfo":false,
+      "sortable":false,
+      "initialDisplay":true,
+      "order":2,
+      "properties":{
+        "iconInactive":"success",
+        "iconActive":"unchecked"
+      }
+    },
+    {
+      "id":"revoke",
+      "generalAction": true,
+      "type":"iconPopup",
+      "header":{
+        "type":"text",
+        "text":"Revoke"
+      },
+      "hasInfo":false,
+      "sortable":false,
+      "initialDisplay":true,
+      "order":3,
+      "properties":{
+        "iconInactive":"revoke",
+        "iconActive":"revokeOutline"
+      }
+    },
+    {
+      "id":"allowExceptions",
+      "generalAction": true,
+      "type":"iconPopup",
+      "header":{
+        "type":"text",
+        "text":"Allow Exceptions"
+      },
+      "hasInfo":false,
+      "sortable":false,
+      "initialDisplay":true,
+      "order":3,
+      "properties":{
+        "iconInactive":"calendar",
+        "iconActive":"calendarOutline"
+      }
+    },
+    {
+      "id":"moreActions",
+      "generalAction": false,
+      "type":"dropdownToPopup",
+      "header":{
+        "type":"text",
+        "text":""
+      },
+      "hasInfo":false,
+      "sortable":false,
+      "initialDisplay":true,
+      "order":4,
+      "properties":{
+        "placeholderId":"More",
+        "options":[
+          {
+            "id":"reassign",
+            "popupId":"reviewItemReassign"
+          },
+          {
+            "id":"forward",
+            "popupId":"reviewItemForward"
+          },
+          {
+            "id":"email",
+            "popupId":"reviewItemEmail"
+          }
+        ]
+      }
+    },
+    {
+      "id":"expirationDate",
+      "generalAction": false,
+      "type":"linkToPopup",
+      "header":{
+        "type":"text",
+        "text":""
+      },
+      "hasInfo":false,
+      "sortable":false,
+      "initialDisplay":false,
+      "order":5,
+      "properties":{
+        "popupId":"reviewItemExpirationDate"
+      }
+    },
+    {
+      "id":"comment",
+      "generalAction": false,
+      "type":"linkToPopup",
+      "header":{
+        "type":"text",
+        "text":""
+      },
+      "hasInfo":false,
+      "sortable":false,
+      "initialDisplay":true,
+      "order":6,
+      "properties":{
+        "textId":"comment",
+        "popupId":"reviewItemComment"
+      }
+    },
+    {
+      "id":"applicationName",
+      "generalAction": false,
+      "type":"text",
+      "header":{
+        "type":"text",
+        "text":"Application Name"
+      },
+      "hasInfo":false,
+      "sortable":true,
+      "initialDisplay":true,
+      "order":7
+    },
+    {
+      "id":"accountName",
+      "generalAction": false,
+      "type":"text",
+      "header":{
+        "type":"text",
+        "text":"Account Name"
+      },
+      "hasInfo":true,
+      "sortable":true,
+      "initialDisplay":true,
+      "order":8,
+      "properties":{
+        "popupId":"reviewItemMoreInfo",
+        "infoFieldId":"account"
+      }
+    },
+    {
+      "id":"username",
+      "generalAction": false,
+      "type":"text",
+      "header":{
+        "type":"text",
+        "text":"Username"
+      },
+      "hasInfo":true,
+      "sortable":true,
+      "initialDisplay":true,
+      "order":9,
+      "properties":{
+        "popupId":"reviewItemMoreInfo",
+        "infoFieldId":"user"
+      }
+    },
+    {
+      "id":"status",
+      "generalAction": false,
+      "type":"text",
+      "header":{
+        "type":"text",
+        "text":"Status"
+      },
+      "hasInfo":false,
+      "sortable":true,
+      "initialDisplay":true,
+      "order":10
+    },
+    {
+      "id":"email",
+      "generalAction": false,
+      "type":"text",
+      "header":{
+        "type":"text",
+        "text":"Email"
+      },
+      "hasInfo":false,
+      "sortable":true,
+      "initialDisplay":true,
+      "order":11
+    },
+    {
+      "id":"lastLogin",
+      "generalAction": false,
+      "type":"text",
+      "header":{
+        "type":"text",
+        "text":"Last login"
+      },
+      "hasInfo":false,
+      "sortable":true,
+      "initialDisplay":true,
+      "order":12
+    },
+    {
+      "id":"accountType",
+      "generalAction": false,
+      "type":"text",
+      "header":{
+        "type":"text",
+        "text":"Account type"
+      },
+      "hasInfo":false,
+      "sortable":true,
+      "initialDisplay":true,
+      "order":13
+    },
+    {
+      "id":"costCenter",
+      "generalAction": false,
+      "type":"text",
+      "header":{
+        "type":"text",
+        "text":"Cost center"
+      },
+      "hasInfo":false,
+      "sortable":true,
+      "initialDisplay":true,
+      "order":14
+    },
+    {
+      "id":"UBRnode",
+      "generalAction": false,
+      "type":"text",
+      "header":{
+        "type":"text",
+        "text":"UBRnode"
+      },
+      "hasInfo":false,
+      "sortable":true,
+      "initialDisplay":true,
+      "order":15
+    },
+    {
+      "id":"supervisor",
+      "generalAction": false,
+      "type":"text",
+      "header":{
+        "type":"text",
+        "text":"Supervisor"
+      },
+      "hasInfo":false,
+      "sortable":true,
+      "initialDisplay":true,
+      "order":16
+    },
+    {
+      "id":"DISOM",
+      "generalAction": false,
+      "type":"text",
+      "header":{
+        "type":"text",
+        "text":"DISOM"
+      },
+      "hasInfo":false,
+      "sortable":true,
+      "initialDisplay":true,
+      "order":17
+    },
+    {
+      "id":"history",
+      "generalAction": false,
+      "type":"linkToPopup",
+      "header":{
+        "type":"text",
+        "text":""
+      },
+      "sortable":false,
+      "initialDisplay":true,
+      "order":18,
+      "properties":{
+        "textId":"View history",
+        "popupId":"reviewItemHistory"
+      }
+    },
+    {
+      "id":"sticky",
+      "generalAction": false,
+      "type":"sticky",
+      "header":{
+        "type":"component",
+        "component":"sticky"
+      },
+      "hasInfo":false,
+      "sortable":false,
+      "initialDisplay":true,
+      "order":19,
+      "sticky":"right"
+    }
+  ]
+}

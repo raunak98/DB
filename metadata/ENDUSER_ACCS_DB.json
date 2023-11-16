@@ -1,0 +1,424 @@
+{
+  "groupBy": [
+    {
+      "type": "account.igaContent.account_hostname.keyword",
+      "label": "Hostname",
+      "value": "Hostname",
+      "default": true
+    },
+    {
+      "type": "account.igaContent.account_nar_id.keyword",
+      "label": "NAR ID",
+      "value": "NAR ID"
+    },
+    {
+      "type": "account.igaContent.account_name.keyword",
+      "label": "Account Name",
+      "value": "Account Name"
+    },
+    {
+      "type": "account.igaContent.account_entitlement.keyword",
+      "label": "Entitlement",
+      "value": "Entitlement"
+    },
+    {
+      "type": "application.name.keyword",
+      "label": "Application Name",
+      "value": "Application Name"
+    },
+    {
+      "type": "decision.certification.actors.label.keyword",
+      "label": "Reviewer",
+      "value": "Reviewer"
+    }
+  ],
+  "initialGroupBy": "All",
+  "filterBy": [
+    {
+      "value": "certify",
+      "type": "decision.certification.decision.keyword",
+      "label": "Maintained"
+    },
+    {
+      "type": "account.igaContent.account_entity_type.keyword",
+      "value": "Application Administration Account",
+      "label": "Application Administration Account"
+    },
+    {
+      "value": "reassign",
+      "type": "decision.certification.decision.keyword",
+      "label": "Reassign",
+      "sortType": "decision.certification.comments.action.keyword"
+    },
+    {
+      "value": "nullValue",
+      "type": "decision.certification.decision.keyword",
+      "label": "None"
+    }
+  ],
+  "initialFilterBy": "All",
+  "paginationSizes": [10, 25, 50, 100],
+  "hasSortableColumns": true,
+  "initialSortColumnId": "applicationName",
+  "bulkActions": ["EUA", "AAA", "ASA", "ISA", "reassign", "forward"],
+  "columns": [
+    {
+      "id": "select",
+      "type": "checkbox",
+      "header": {
+        "type": "component",
+        "component": "checkbox",
+        "text": "Select"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "mandatory": true,
+      "initialDisplay": true,
+      "order": 1
+    },
+    {
+      "id": "decision",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Decision"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 2,
+      "properties": {
+        "options": [
+          {
+            "id": "endUserAccount",
+            "text": "End-User Account",
+            "type": "actionButton",
+            "title": "End-User Account"
+          },
+          {
+            "id": "aaa",
+            "text": "AAA",
+            "type": "actionButton",
+            "title": "Application Administration Account"
+          },
+          {
+            "id": "asa",
+            "text": "ASA",
+            "type": "actionButton",
+            "title": "Application Service Account"
+          },
+          {
+            "id": "isa",
+            "text": "ISA",
+            "type": "actionButton",
+            "title": "Infrastructure Service Account"
+          }
+        ]
+      }
+    },
+    {
+      "id": "comment",
+      "type": "iconPopup",
+      "header": {
+        "type": "text",
+        "text": "comment"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "mandatory": false,
+      "initialDisplay": false,
+      "order": 3,
+      "properties": {
+        "iconInactive": "comments",
+        "iconActive": "comments"
+      }
+    },
+    {
+      "id": "accountName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Name",
+        "sortKey": "account.__NAME__.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "mandatory": false,
+      "initialDisplay": true,
+      "order": 4,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "account"
+      }
+    },
+    {
+      "id": "entitlement",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Entitlement Name",
+        "sortKey": "account.igaContent.account_entitlement.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "mandatory": false,
+      "initialDisplay": true,
+      "order": 5,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "entitlement"
+      }
+    },
+    {
+      "id": "username",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Username",
+        "sortKey": "user.userName.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "mandatory": false,
+      "initialDisplay": false,
+      "order": 6,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "user"
+      }
+    },
+    {
+      "id": "status",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Status",
+        "sortKey": "decision.certification.decision.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "mandatory": false,
+      "initialDisplay": false,
+      "order": 7
+    },
+    {
+      "id": "resource",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Resource",
+        "sortKey": "account.igaContent.account_hostname.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "mandatory": false,
+      "initialDisplay": true,
+      "order": 8
+    },
+    {
+      "id": "databaseInstanceName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Database Instance name",
+        "sortKey": "account.igaContent.app_name.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "mandatory": false,
+      "initialDisplay": true,
+      "order": 9
+    },
+    {
+      "id": "narId",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "NAR ID",
+        "sortKey": "account.igaContent.account_nar_id.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "mandatory": false,
+      "initialDisplay": true,
+      "order": 10
+    },
+    {
+      "id": "businessSource",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Business Source",
+        "sortKey": "account.igaContent.account_nar_id.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "mandatory": false,
+      "initialDisplay": true,
+      "order": 11
+    },
+    {
+      "id": "source",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Source",
+        "sortKey": "account.igaContent.account_platform.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "mandatory": false,
+      "initialDisplay": true,
+      "order": 12
+    },
+    {
+      "id": "accountDomain",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Domain",
+        "sortKey": "account.igaContent.account_domain.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 13
+    },
+    {
+      "id": "accountOwner",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Owner",
+        "sortKey": "account.igaContent.account_owner.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 14
+    },
+    {
+      "id": "accountType",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Platform",
+        "sortKey": "account.igaContent.account_entity_type.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 15
+    },
+    {
+      "id": "isPrivilegedAccount",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Is Privileged Account",
+        "sortKey": "account.igaContent.is_privileged_account.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 16
+    },
+    {
+      "id": "accountEntityStatus",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Entity Status",
+        "sortKey": "account.igaContent.account_entity_status.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 17
+    },
+    {
+      "id": "resourceType",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Resource Type",
+        "sortKey": "account.igaContent.resource_type.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 18
+    },
+    {
+      "id": "resourceClassification",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Resource Classification",
+        "sortKey": "account.igaContent.resource_classification.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 19
+    },
+    {
+      "id": "actions",
+      "type": "longMenu",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "mandatory": true,
+      "initialDisplay": true,
+      "order": 20,
+      "properties": {
+        "iconInactive": "ellipsisMenu",
+        "iconActive": "ellipsisMenu",
+        "options": [
+          {
+            "id": "EUA",
+            "title": "EUA"
+          },
+          {
+            "id": "AAA",
+            "title": "AAA"
+          },
+          {
+            "id": "ASA",
+            "title": "ASA"
+          },
+          {
+            "id": "ISA",
+            "title": "ISA"
+          },
+          {
+            "id": "reassign",
+            "popupId": "reviewItemReassign"
+          },
+          {
+            "id": "forward",
+            "popupId": "reviewItemForward"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sticky",
+      "type": "sticky",
+      "header": {
+        "type": "component",
+        "component": "sticky"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "mandatory": true,
+      "initialDisplay": true,
+      "order": 21,
+      "sticky": "right"
+    }
+  ]
+}

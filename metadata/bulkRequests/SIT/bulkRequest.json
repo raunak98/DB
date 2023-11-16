@@ -1,0 +1,73 @@
+[
+  {
+    "title": "metaData.ActiveDirectory",
+    "type": "Accordion",
+    "displayInMenu": true,
+    "children": [
+      {
+        "title": "metaData.ADAccountManagement",
+        "type": "Accordion",
+        "displayInMenu": true,
+        "children": [
+          {
+            "title": "metaData.CreateADAccount",
+            "type": "Link",
+            "displayInMenu": true,
+
+            "url": "./bulk-requests/request/bulkCreate"
+          },
+          {
+            "title": "metaData.ModifyADAccount",
+            "type": "Link",
+            "displayInMenu": true,
+
+            "url": "./bulk-requests/request/bulkModify"
+          },
+          {
+            "title": "metaData.DeleteADAccount",
+            "type": "Link",
+            "displayInMenu": true,
+
+            "url": "./bulk-requests/request/bulkDelete"
+          }
+        ]
+      },
+      {
+        "title": "metaData.ADGroupManagement",
+        "type": "Accordion",
+        "displayInMenu": true,
+
+        "children": [
+          {
+            "title": "metaData.CreateADGroup",
+            "type": "Link",
+            "displayInMenu": true,
+
+            "url": "./bulk-requests/adGroup/bulkCreateAdGroup"
+          },
+          {
+            "title": "metaData.ModifyADGroup",
+            "type": "Link",
+            "displayInMenu": true,
+
+            "url": "./bulk-requests/adGroup/bulkModifyAdGroup"
+          },
+          {
+            "title": "metaData.DeleteADGroup",
+            "type": "Link",
+            "displayInMenu": true,
+
+            "url": "./bulk-requests/adGroup/bulkDeleteAdGroup"
+          },
+          {
+            "title": "metaData.AddorRemoveMembers",
+            "type": "Link",
+            "displayInMenu": true,
+
+            "url": "./bulk-requests/adGroup/bulkAddRemoveGroupMember"
+          }
+        ]
+      }
+    ]
+  }
+]

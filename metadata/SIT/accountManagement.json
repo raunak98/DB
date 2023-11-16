@@ -1,0 +1,48 @@
+[
+  {
+    "title": "metaData.ActiveDirectory",
+    "type": "Accordion",
+    "displayInMenu": true,
+    "children": [
+      {
+        "title": "metaData.ADAccountManagement",
+        "type": "Accordion",
+        "displayInMenu": true,
+        "children": [
+          {
+            "title": "metaData.CreateADAccount",
+            "type": "Link",
+            "displayInMenu": true,
+            "url": "/requests/request/create"
+          }
+        ]
+      },
+      {
+        "title": "metaData.ADGroupManagement",
+        "type": "Accordion",
+        "displayInMenu": true,
+        "children": [
+          {
+            "title": "metaData.CreateADGroup",
+            "type": "Link",
+            "displayInMenu": true,
+            "url": "/requests/request/create/adGroupManagement"
+          },
+
+          {
+            "title": "metaData.AddorRemoveMembers",
+            "type": "Link",
+            "displayInMenu": true,
+            "url": "/requests/request/adGroupMembership/addOrRemove"
+          },
+          {
+            "title": "metaData.AddorRemove Servers",
+            "type": "Link",
+            "displayInMenu": true,
+            "url": "/requests/request/adGroupMembership/addOrRemoveServer"
+          }
+        ]
+      }
+    ]
+  }
+]

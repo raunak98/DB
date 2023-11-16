@@ -1,0 +1,410 @@
+{
+  "groupBy": [
+    {
+      "type": "account.igaContent.action.keyword",
+      "label": "By Question",
+      "value": "By Question"
+    },
+    {
+      "type": "account.igaContent.account_nar_id.keyword",
+      "label": "NAR ID",
+      "value": "NAR ID"
+    },
+    {
+      "type": "application.name.keyword",
+      "label": "Application Name",
+      "value": "Application Name"
+    },
+    {
+      "type": "account.igaContent.resource_name.keyword",
+      "value": "Resource Name",
+      "label": "Resource Name",
+      "default": true
+    },
+    {
+      "type": "decision.certification.actors.label.keyword",
+      "label": "Reviewer",
+      "value": "Reviewer"
+    }
+  ],
+  "initialGroupBy": "All",
+  "filterBy": [
+    {
+      "value": "certify",
+      "type": "decision.certification.decision.keyword",
+      "label": "YES"
+    },
+    {
+      "value": "revoke",
+      "type": "decision.certification.decision.keyword",
+      "label": "Not-Applicable"
+    },
+    {
+      "value": "reassign",
+      "type": "decision.certification.decision.keyword",
+      "label": "Reassign",
+      "sortType": "decision.certification.comments.action.keyword"
+    },
+    {
+      "value": "nullValue",
+      "type": "decision.certification.decision.keyword",
+      "label": "None"
+    }
+  ],
+  "initialFilterBy": "All",
+  "paginationSizes": [10, 25, 50, 100],
+  "hasSortableColumns": true,
+  "initialSortColumnId": "applicationName",
+  "bulkActions": ["YES", "Not-Applicable", "reassign", "forward"],
+  "columns": [
+    {
+      "id": "select",
+      "type": "checkbox",
+      "header": {
+        "type": "component",
+        "component": "checkbox",
+        "text": "Select"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "mandatory": true,
+      "initialDisplay": true,
+      "order": 1
+    },
+    {
+      "id": "decision",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Decision"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 2,
+      "properties": {
+        "options": [
+          {
+            "id": "yes",
+            "type": "actionButton",
+            "text": "YES",
+            "title": "Yes"
+          },
+          {
+            "id": "notApplicable",
+            "type": "actionButton",
+            "text": "Not-Applicable",
+            "title": "Not Applicable"
+          }
+        ]
+      }
+    },
+    {
+      "id": "comment",
+      "type": "iconPopup",
+      "header": {
+        "type": "text",
+        "text": "comment"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "order": 3,
+      "properties": {
+        "iconInactive": "comments",
+        "iconActive": "comments"
+      }
+    },
+    {
+      "id": "resourceName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Resource Name",
+        "sortKey": "account.igaContent.resource_name.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 4
+    },
+    {
+      "id": "narId",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Nar Id",
+        "sortKey": "account.igaContent.account_nar_id.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 5
+    },
+    {
+      "id": "dataResourceSet",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Data Resource Set",
+        "sortKey": "account.igaContent.resource_type.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 6
+    },
+    {
+      "id": "question",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Question",
+        "sortKey": "account.igaContent.action.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 7
+    },
+    {
+      "id": "description",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Description",
+        "sortKey": "account.igaContent.description.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 8
+    },
+    {
+      "id": "accountOwnerValidated",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Owner Validated",
+        "sortKey": "account.igaContent.account_owner.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 9
+    },
+    {
+      "id": "entitledName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Entitled Name",
+        "sortKey": "account.igaContent.account_entitlement.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 10,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "entitlement"
+      }
+    },
+    {
+      "id": "entitledType",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Entitled Type",
+        "sortKey": "account.igaContent.account_type.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 11
+    },
+    {
+      "id": "username",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Username",
+        "sortKey": "user.userName.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 12,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "user"
+      }
+    },
+    {
+      "id": "status",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Status",
+        "sortKey": "decision.certification.decision.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 13
+    },
+    {
+      "id": "account",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account",
+        "sortKey": "account.igaContent.account_type.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 14
+    },
+    {
+      "id": "applicationName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Application Name",
+        "sortKey": "application.name.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 15
+    },
+    {
+      "id": "accountDomain",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Domain",
+        "sortKey": "account.igaContent.account_domain.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 16
+    },
+    {
+      "id": "accountPlatform",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Platform",
+        "sortKey": "account.igaContent.account_platform.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 17
+    },
+    {
+      "id": "isPrivilegedAccount",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Is Privileged Account",
+        "sortKey": "account.igaContent.is_privileged_account.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 18
+    },
+    {
+      "id": "accountEntityStatus",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Entity Status",
+        "sortKey": "account.igaContent.account_entity_status.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 19
+    },
+    {
+      "id": "resourceClassification",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Resource Classification",
+        "sortKey": "account.igaContent.resource_classification.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 20
+    },
+    {
+      "id": "accountName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Entity Status",
+        "sortKey": "account.__NAME__.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 20
+    },
+    {
+      "id": "actions",
+      "type": "longMenu",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 21,
+      "properties": {
+        "iconInactive": "ellipsisMenu",
+        "iconActive": "ellipsisMenu",
+        "options": [
+          {
+            "id": "YES",
+            "title": "Yes"
+          },
+          {
+            "id": "Not-Applicable",
+            "title": "Not Applicable"
+          },
+          {
+            "id": "reassign",
+            "popupId": "reviewItemReassign"
+          },
+          {
+            "id": "forward",
+            "popupId": "reviewItemForward"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sticky",
+      "type": "sticky",
+      "header": {
+        "type": "component",
+        "component": "sticky"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "order": 22,
+      "sticky": "right"
+    }
+  ]
+}

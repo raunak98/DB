@@ -1,0 +1,662 @@
+[
+  {
+    "id": "dn",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DN"
+    },
+    "initialDisplay": true,
+    "order": 1
+  },
+  {
+    "id": "groupId",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Group Id"
+    },
+    "initialDisplay": true,
+    "order": 2
+  },
+  {
+    "id": "groupApprovers",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Group Approvers"
+    },
+    "initialDisplay": true,
+    "order": 3
+  },
+  {
+    "id": "recertType",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Recert Type"
+    },
+    "initialDisplay": true,
+    "order": 4
+  },
+  {
+    "id": "grpName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Group Name"
+    },
+    "initialDisplay": true,
+    "order": 5
+  },
+  {
+    "id": "grpType",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "GRP Type"
+    },
+    "initialDisplay": true,
+    "order": 6
+  },
+  {
+    "id": "grpDescription",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "GRP Description"
+    },
+    "initialDisplay": true,
+    "order": 7
+  },
+  {
+    "id": "calOwner",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "CAL Owner"
+    },
+    "initialDisplay": true,
+    "order": 8
+  },
+  {
+    "id": "calCBISO",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "CAL CBISO"
+    },
+    "initialDisplay": true,
+    "order": 9
+  },
+  {
+    "id": "drName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DR Name"
+    },
+    "initialDisplay": true,
+    "order": 10
+  },
+  {
+    "id": "drDescription",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DR Description"
+    },
+    "initialDisplay": true,
+    "order": 11
+  },
+  {
+    "id": "drType",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DR Type"
+    },
+    "initialDisplay": true,
+    "order": 12
+  },
+  {
+    "id": "drStatus",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DR Status"
+    },
+    "initialDisplay": true,
+    "order": 13
+  },
+  {
+    "id": "subInfoTwo",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "SUB Info 2"
+    },
+    "initialDisplay": true,
+    "order": 14
+  },
+  {
+    "id": "vdrProvider",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "VDR Provider"
+    },
+    "initialDisplay": true,
+    "order": 15
+  },
+  {
+    "id": "groupOwner",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Group Owner"
+    },
+    "initialDisplay": true,
+    "order": 16
+  },
+  {
+    "id": "divisionalISO",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Divisional  ISO"
+    },
+    "initialDisplay": true,
+    "order": 17
+  },
+  {
+    "id": "accessApprover1",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Access Approver 1"
+    },
+    "initialDisplay": true,
+    "order": 18
+  },
+  {
+    "id": "accessApprover2",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Access Approver 2"
+    },
+    "initialDisplay": true,
+    "order": 19
+  },
+  {
+    "id": "calAdminRank1",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "CAL ADMIN RANK 1"
+    },
+    "initialDisplay": true,
+    "order": 20
+  },
+  {
+    "id": "calAdminRank2",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "CAL ADMIN RANK 2"
+    },
+    "initialDisplay": true,
+    "order": 21
+  },
+  {
+    "id": "calFriendlyName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "CAL Friendly Name"
+    },
+    "initialDisplay": true,
+    "order": 22
+  },
+  {
+    "id": "subGroupName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Sub Group Name"
+    },
+    "initialDisplay": true,
+    "order": 23
+  },
+  {
+    "id": "calSource",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Cal Source"
+    },
+    "initialDisplay": true,
+    "order": 24
+  },
+  {
+    "id": "calCBISOSource",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "cal CBISO Source"
+    },
+    "initialDisplay": true,
+    "order": 25
+  },
+  {
+    "id": "drStatusDate",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DR Status Date"
+    },
+    "initialDisplay": true,
+    "order": 26
+  },
+  {
+    "id": "drCreateDate",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DR Create Date"
+    },
+    "initialDisplay": true,
+    "order": 27
+  },
+  {
+    "id": "drUBRNode",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DR UBR Node"
+    },
+    "initialDisplay": true,
+    "order": 28
+  },
+  {
+    "id": "drCostCenter",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DR Cost Center"
+    },
+    "initialDisplay": true,
+    "order": 29
+  },
+  {
+    "id": "drInformationClass",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DR Information Class"
+    },
+    "initialDisplay": true,
+    "order": 30
+  },
+  {
+    "id": "drIBCategory",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DR IB Category"
+    },
+    "initialDisplay": true,
+    "order": 31
+  },
+  {
+    "id": "drIBDesignation",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DR IB Designation"
+    },
+    "initialDisplay": true,
+    "order": 32
+  },
+  {
+    "id": "name",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Name"
+    },
+    "initialDisplay": true,
+    "order": 33
+  },
+  {
+    "id": "displayName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DisplayName"
+    },
+    "initialDisplay": true,
+    "order": 34
+  },
+  {
+    "id": "ApplicationID",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "ApplicationID"
+    },
+    "initialDisplay": true,
+    "order": 35
+  },
+  {
+    "id": "sAMAccountName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "sAMAccountName"
+    },
+    "initialDisplay": true,
+    "order": 36
+  },
+  {
+    "id": "dbagComplianceStatus",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagComplianceStatus"
+    },
+    "initialDisplay": true,
+    "order": 37
+  },
+  {
+    "id": "dbagRecerttype",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagRecerttype"
+    },
+    "initialDisplay": true,
+    "order": 38
+  },
+  {
+    "id": "dbagRecertSubtype",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagRecertSubtype"
+    },
+    "initialDisplay": true,
+    "order": 39
+  },
+  {
+    "id": "dbagInfrastructureID",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagInfrastructureID"
+    },
+    "initialDisplay": true,
+    "order": 40
+  },
+  {
+    "id": "dbagIMSAuthContact",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagIMSAuthContact"
+    },
+    "initialDisplay": true,
+    "order": 41
+  },
+  {
+    "id": "dbagIMSAuthContactDelegate",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagIMSAuthContactDelegate"
+    },
+    "initialDisplay": true,
+    "order": 42
+  },
+  {
+    "id": "dbagEntitlement",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagEntitlement"
+    },
+    "initialDisplay": true,
+    "order": 43
+  },
+  {
+    "id": "dbagIMSDataSecClass",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagIMSDataSecClass"
+    },
+    "initialDisplay": true,
+    "order": 44
+  },
+  {
+    "id": "description",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "description"
+    },
+    "initialDisplay": true,
+    "order": 45
+  },
+  {
+    "id": "DistinguishedName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DistinguishedName"
+    },
+    "initialDisplay": true,
+    "order": 46
+  },
+  {
+    "id": "GroupCategory",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "GroupCategory"
+    },
+    "initialDisplay": true,
+    "order": 47
+  },
+  {
+    "id": "dbagExtensionAttribute6",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagExtensionAttribute6"
+    },
+    "initialDisplay": true,
+    "order": 48
+  },
+  {
+    "id": "mail",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "mail"
+    },
+    "initialDisplay": true,
+    "order": 49
+  },
+  {
+    "id": "costCenter",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "costCenter"
+    },
+    "initialDisplay": true,
+    "order": 50
+  },
+  {
+    "id": "dbagApplicationID",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagApplicationID"
+    },
+    "initialDisplay": true,
+    "order": 51
+  },
+  {
+    "id": "dbagDataPrivClass",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagDataPrivClass"
+    },
+    "initialDisplay": true,
+    "order": 52
+  },
+  {
+    "id": "dbagFileSystemFullPath",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagFileSystemFullPath"
+    },
+    "initialDisplay": true,
+    "order": 53
+  },
+  {
+    "id": "dbagProcessingdata",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagProcessingdata"
+    },
+    "initialDisplay": true,
+    "order": 54
+  },
+  {
+    "id": "dbagExternalProvider",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagExternalProvider"
+    },
+    "initialDisplay": true,
+    "order": 55
+  },
+  {
+    "id": "dbagSupportGroup",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagSupportGroup"
+    },
+    "initialDisplay": true,
+    "order": 56
+  },
+  {
+    "id": "dbagProvisioningBy",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagProvisioningBy"
+    },
+    "initialDisplay": true,
+    "order": 57
+  },
+  {
+    "id": "dbagFileSystemFullPaths",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagFileSystemFullPaths"
+    },
+    "initialDisplay": true,
+    "order": 58
+  },
+  {
+    "id": "dbagIMSApprovers",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagIMSApprovers"
+    },
+    "initialDisplay": true,
+    "order": 59
+  },
+  {
+    "id": "createdDate",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "createdDate"
+    },
+    "initialDisplay": true,
+    "order": 60
+  },
+  {
+    "id": "dbagModifiedBy",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagModifiedBy"
+    },
+    "initialDisplay": true,
+    "order": 61
+  },
+  {
+    "id": "member",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "member"
+    },
+    "initialDisplay": true,
+    "order": 62
+  },
+  {
+    "id": "dbagObjectRecertificationStatus",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagObjectRecertificationStatus"
+    },
+    "initialDisplay": true,
+    "order": 63
+  },
+  {
+    "id": "dbagObjectLastRecertified",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "dbagObjectLastRecertified"
+    },
+    "initialDisplay": true,
+    "order": 64
+  },
+  {
+    "id": "whenChanged",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "whenChanged"
+    },
+    "initialDisplay": true,
+    "order": 65
+  },
+  {
+    "id": "objectClass",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "objectClass"
+    },
+    "initialDisplay": true,
+    "order": 56
+  }
+]

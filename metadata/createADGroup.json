@@ -1,0 +1,3600 @@
+{
+  "steps": [
+    {
+      "id": "step1",
+      "title": "metaData.requestDetails",
+      "heading": "metaData.requestDetails",
+      "titleId": "adAccessioGroupType",
+      "substeps": [
+        {
+          "id": "step1.1",
+          "title": "metaData.groupTypeNameDetails",
+          "heading": "metaData.groupTypeNameDetails",
+          "titleId": "adAccessioGroupType1",
+          "children": [
+            {
+              "title": "AD Group Type",
+              "type": "dropdown",
+              "id": "adGroupType",
+              "label": "metaData.adGroupType",
+              "name": "dbagRecerttype",
+              "category": "adAccessioGroupType",
+              "url": "/v0/governance/getADGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "options": []
+            },
+            {
+              "title": "AD Group Sub-Type",
+              "type": "dropdown",
+              "id": "adGroupSubType",
+              "label": "metaData.adGroupSubType",
+              "name": "dbagRecertSubtype",
+              "url": "/v0/governance/getADGroupType",
+              "queryparameters": ["adGroupType"],
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "options": []
+            },
+            {
+              "title": "Accessio Group Type",
+              "type": "dropdown",
+              "id": "accessioGroupType",
+              "label": "metaData.accessioGroupType",
+              "name": "accessioGroupType",
+              "url": "/v0/governance/getADGroupType",
+              "queryparameters": ["adGroupType", "adGroupSubType"],
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "options": []
+            },
+            {
+              "title": "Digital Identity",
+              "type": "text",
+              "id": "digitalIdentity",
+              "label": "metaData.digitalIdentity",
+              "name": "digitalIdentity",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericTypeWithHyphen": true,
+              "maxLength": 64,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.digitalIdentity",
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Infrastructure Access - Server - Admin (Default)",
+                "Role - Admin (Default)",
+                "Role - User (Default)"
+              ]
+            },
+            {
+              "title": "Group Domain",
+              "type": "dropdown",
+              "id": "domain",
+              "label": "metaData.groupDomain",
+              "name": "domain",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Role - User (Default)"
+              ],
+              "options": [
+                {
+                  "label": "DBCH",
+                  "value": "DBCH",
+                  "belongsto": [
+                    "Application Access - Authorization (Default)",
+                    "Application Access - SW Distribution (Default)",
+                    "Application Access - Virtualization (Default)",
+                    "Infrastructure Access - AD Objects (Default)",
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)",
+                    "Infrastructure Access - Control (Default)",
+                    "Infrastructure Access - Database - Application Support (Default)",
+                    "Infrastructure Access - Database - Admin (Default)",
+                    "Infrastructure Access - Database - End User (Default)",
+                    "Infrastructure Access - Desktop (Default)",
+                    "Infrastructure Access - Other (Default)",
+                    "Infrastructure Access - Print (Default)",
+                    "Infrastructure Access - Server - Application Support (Default)",
+                    "Role - Admin (Default)",
+                    "Role - User (Default)",
+                    "Infrastructure Access - Server - Admin (Default)"
+                  ]
+                },
+                {
+                  "label": "DBG",
+                  "value": "DBG",
+                  "belongsto": [
+                    "Application Access - Authorization (Default)",
+                    "dbAccessGate - Application Approver Group - Application Authorization",
+                    "dbAccessGate - Business Approver Group - Application Authorization",
+                    "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                    "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                    "dbSRS - Approver ACL Group - Application Authorization",
+                    "dbSRS - Role ACL Group - Application Authorization",
+                    "DLP Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "Application Access - SW Distribution (Default)",
+                    "Application Access - Virtualization (Default)",
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)",
+                    "Infrastructure Access - AD Objects (Default)",
+                    "CyberArk - Safe Access Group - Infrastructure Support",
+                    "Infrastructure Access - Control (Default)",
+                    "Infrastructure Access - Database - Application Support (Default)",
+                    "Infrastructure Access - Database - Admin (Default)",
+                    "Infrastructure Access - Database - End User (Default)",
+                    "Infrastructure Access - Desktop (Default)",
+                    "Infrastructure Access - Other (Default)",
+                    "Robot Object - Infrastructure Other",
+                    "Infrastructure Access - Print (Default)",
+                    "Infrastructure Access - Server - Application Support (Default)",
+                    "Administrative - CyberArk Application Server Group",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "Infrastructure Access - Server - Admin (Default)",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "Role - Admin (Default)",
+                    "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                    "Role - User (Default)"
+                  ]
+                },
+                {
+                  "label": "DBLUX",
+                  "value": "DBLUX",
+                  "belongsto": [
+                    "Application Access - Authorization (Default)",
+                    "Application Access - Virtualization (Default)",
+                    "Application Access - SW Distribution (Default)",
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)",
+                    "Infrastructure Access - AD Objects (Default)",
+                    "Infrastructure Access - Control (Default)",
+                    "Infrastructure Access - Database - Admin (Default)",
+                    "Infrastructure Access - Database - Application Support (Default)",
+                    "Infrastructure Access - Database - End User (Default)",
+                    "Infrastructure Access - Desktop (Default)",
+                    "Infrastructure Access - Other (Default)",
+                    "Infrastructure Access - Print (Default)",
+                    "Infrastructure Access - Server - Application Support (Default)",
+                    "Infrastructure Access - Server - Admin (Default)",
+                    "Role - Admin (Default)",
+                    "Role - User (Default)"
+                  ]
+                },
+                {
+                  "label": "DBSVC",
+                  "value": "DBSVC",
+                  "belongsto": [
+                    "Application Access - Authorization (Default)",
+                    "Application Access - Virtualization (Default)",
+                    "Application Access - SW Distribution (Default)",
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)",
+                    "Infrastructure Access - AD Objects (Default)",
+                    "Infrastructure Access - Control (Default)",
+                    "Infrastructure Access - Database - Admin (Default)",
+                    "Infrastructure Access - Database - Application Support (Default)",
+                    "Infrastructure Access - Database - End User (Default)",
+                    "Infrastructure Access - Desktop (Default)",
+                    "Infrastructure Access - Other (Default)",
+                    "Infrastructure Access - Print (Default)",
+                    "Infrastructure Access - Server - Application Support (Default)",
+                    "Infrastructure Access - Server - Admin (Default)",
+                    "Role - Admin (Default)",
+                    "Role - User (Default)"
+                  ]
+                },
+                {
+                  "label": "ITCBOD",
+                  "value": "ITCBOD",
+                  "belongsto": [
+                    "Application Access - Authorization (Default)",
+                    "Application Access - Virtualization (Default)",
+                    "Application Access - SW Distribution (Default)",
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)",
+                    "Infrastructure Access - AD Objects (Default)",
+                    "Infrastructure Access - Control (Default)",
+                    "Infrastructure Access - Database - Admin (Default)",
+                    "Infrastructure Access - Database - Application Support (Default)",
+                    "Infrastructure Access - Database - End User (Default)",
+                    "Infrastructure Access - Desktop (Default)",
+                    "Infrastructure Access - Other (Default)",
+                    "Infrastructure Access - Print (Default)",
+                    "Infrastructure Access - Server - Application Support (Default)",
+                    "Infrastructure Access - Server - Admin (Default)",
+                    "Role - Admin (Default)",
+                    "Role - User (Default)"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Role",
+              "type": "text",
+              "id": "role",
+              "label": "metaData.role",
+              "name": "role",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericTypeWithHyphen": true,
+              "maxLength": 64,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.role",
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Role - User (Default)"
+              ]
+            },
+            {
+              "title": "Approver Level",
+              "type": "dropdown",
+              "id": "approverLevel",
+              "label": "metaData.approverLevel",
+              "name": "approverLevel",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": [
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization"
+              ],
+              "options": [
+                {
+                  "label": "Level 2",
+                  "value": "APPL2",
+                  "belongsto": [
+                    "dbAccessGate - Application Approver Group - Application Authorization",
+                    "dbAccessGate - Infrastructure Application Approver Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "Level 3",
+                  "value": "APPL3",
+                  "belongsto": [
+                    "dbAccessGate - Application Approver Group - Application Authorization",
+                    "dbAccessGate - Infrastructure Application Approver Group - Application Authorization"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Category Reference",
+              "type": "text",
+              "id": "categoryReference",
+              "label": "metaData.categoryReference",
+              "name": "categoryReference",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericTypeWithHyphen": true,
+              "maxLength": 30,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.categoryReference",
+              "relatedTo": ["dbSRS - Approver ACL Group - Application Authorization"]
+            },
+            {
+              "title": "Version / Iteration of Group",
+              "type": "text",
+              "id": "versionIterationofGroup",
+              "label": "metaData.versionIterationOfGroup",
+              "name": "versionIterationofGroup",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericTypeWithHyphen": true,
+              "maxLength": 64,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.versionIterationOfGroup",
+              "relatedTo": [
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization"
+              ]
+            },
+            {
+              "title": "VRM ID",
+              "type": "text",
+              "id": "vRMID",
+              "label": "metaData.vrmId",
+              "name": "vRMID",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "alphanumericTypeWithHyphen": true,
+              "maxLength": 64,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.vrmID",
+              "relatedTo": [
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization"
+              ]
+            },
+            {
+              "title": "Group Name Text",
+              "type": "text",
+              "id": "groupNameText",
+              "label": "metaData.groupNameText",
+              "name": "groupNameText",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericTypeWithHyphen": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.groupNameText",
+              "relatedTo": [
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization"
+              ]
+            },
+            {
+              "title": "Project Name",
+              "type": "text",
+              "id": "projectName",
+              "label": "metaData.projectName",
+              "name": "projectName",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "alphanumericTypeWithHyphen": true,
+              "maxLength": 64,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.projectName",
+              "relatedTo": [
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization"
+              ]
+            },
+            {
+              "title": "Production UAT or DEV",
+              "type": "dropdown",
+              "id": "productionUATorDEV",
+              "label": "metaData.productionUATorDEV",
+              "name": "productionUATorDEV",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.productionUATorDEV",
+              "relatedTo": [
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User"
+              ],
+              "options": [
+                {
+                  "label": "DEV",
+                  "value": "DEV"
+                },
+                {
+                  "label": "PROD",
+                  "value": "PROD"
+                },
+                {
+                  "label": "UAT",
+                  "value": "UAT"
+                }
+              ]
+            },
+            {
+              "title": "Application Name",
+              "type": "text",
+              "id": "applicationName",
+              "label": "metaData.applicationName",
+              "name": "applicationName",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "alphanumericTypeWithHyphen": true,
+              "maxLength": 64,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.applicationName",
+              "relatedTo": [
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization"
+              ]
+            },
+            {
+              "title": "Group Role",
+              "type": "dropdown",
+              "id": "groupRole",
+              "label": "metaData.groupRole",
+              "name": "groupRole",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.groupRole",
+              "relatedTo": ["Identity Based Access Control (IBAC) - Entitlement Group - Role User"],
+              "options": [
+                {
+                  "label": "BPO",
+                  "value": "BPO"
+                },
+                {
+                  "label": "DEV",
+                  "value": "DEV"
+                },
+                {
+                  "label": "SUP",
+                  "value": "SUP"
+                }
+              ]
+            },
+            {
+              "title": "Safe Name",
+              "type": "text",
+              "id": "safeName",
+              "label": "metaData.safeName",
+              "name": "safeName",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericTypeWithHyphen": true,
+              "maxLength": 64,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.safeName",
+              "relatedTo": [
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support"
+              ]
+            },
+            {
+              "title": "ES (Enterprise Services)",
+              "type": "dropdown",
+              "id": "enterpriseServices",
+              "label": "metaData.enterpriseServices",
+              "name": "enterpriseServices",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.esEnterpriseServices",
+              "relatedTo": ["Administrative - CyberArk Infrastructure Server Group"],
+              "options": [
+                {
+                  "label": "False",
+                  "value": "NA"
+                },
+                {
+                  "label": "True",
+                  "value": "ES"
+                }
+              ]
+            },
+            {
+              "title": "DLP Environment",
+              "type": "dropdown",
+              "id": "dLPEnvironment",
+              "label": "metaData.DLPEnvironment",
+              "name": "dLPEnvironment",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": ["DLP Group - Application Authorization"],
+              "options": [
+                {
+                  "label": "Business Validation",
+                  "value": "B"
+                },
+                {
+                  "label": "Dev",
+                  "value": "D"
+                },
+                {
+                  "label": "Production",
+                  "value": "P"
+                },
+                {
+                  "label": "UAT",
+                  "value": "U"
+                }
+              ]
+            },
+            {
+              "title": "DLP Group Role",
+              "type": "text",
+              "id": "dLPGroupRole",
+              "label": "metaData.DLPGroupRole",
+              "name": "dLPGroupRole",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericTypeWithHyphen": true,
+              "maxLength": 64,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": ["DLP Group - Application Authorization"]
+            },
+            {
+              "title": "Server Name",
+              "type": "text",
+              "id": "serverName",
+              "label": "metaData.serverName",
+              "name": "serverName",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericTypeWithHyphen": true,
+              "maxLength": 64,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": [
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group"
+              ]
+            },
+            {
+              "title": "Vendor/Team Name",
+              "type": "text",
+              "id": "vendorteamName",
+              "label": "metaData.vendorName",
+              "name": "vendorteamName",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericTypeWithHyphen": true,
+              "maxLength": 64,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.vendorTeamName",
+              "relatedTo": ["Identity Based Access Control (IBAC) - Entitlement Group - Role User"]
+            },
+            {
+              "title": "Location",
+              "type": "dropdown",
+              "id": "samLocation",
+              "label": "metaData.location",
+              "name": "location",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.location",
+              "relatedTo": [
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Robot Object - Infrastructure Other"
+              ],
+              "options": []
+            },
+            {
+              "title": "Application NAR ID",
+              "type": "autocomplete",
+              "id": "samDbagApplicationID",
+              "label": "metaData.applicationNARID",
+              "name": "dbagApplicationID",
+              "url": "/v0/application/getApplicationNarId",
+              "queryparameters": ["exactMatch", "narId"],
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": [
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization"
+              ],
+              "placeholder": "metaData.applicationNARIDPlaceholder"
+            },
+            {
+              "title": "Robot Business Description",
+              "type": "text",
+              "id": "RobotBusinessDescription",
+              "label": "metaData.robotBusinessDescription",
+              "name": "description",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericTypeWithHyphen": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.robotBusinessDescription",
+              "relatedTo": ["Robot Object - Infrastructure Other"]
+            },
+
+            {
+              "title": "dbSRS Approver Level",
+              "type": "dropdown",
+              "id": "dbSRSApproverLevel",
+              "label": "metaData.dbSRSApproverLevel",
+              "name": "dbSRSApproverLevel",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": [
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "CyberArk - Role Group - Application Support"
+              ],
+              "options": [
+                {
+                  "label": "Level 1",
+                  "value": "L1",
+                  "belongsto": [
+                    "dbSRS - Approver ACL Group - Application Authorization",
+                    "CyberArk - Role Group - Application Support"
+                  ]
+                },
+                {
+                  "label": "Level 2",
+                  "value": "L2",
+                  "belongsto": [
+                    "dbSRS - Approver ACL Group - Application Authorization",
+                    "CyberArk - Role Group - Application Support"
+                  ]
+                },
+                {
+                  "label": "Level 3",
+                  "value": "L3",
+                  "belongsto": ["CyberArk - Role Group - Application Support"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "step1.2",
+          "title": "metaData.additionalGroupDetails",
+          "heading": "metaData.additionalGroupDetails",
+          "titleId": "adAccessioGroupType2",
+          "children": [
+            {
+              "title": "Group Name",
+              "type": "displayvalue",
+              "id": "samAccount",
+              "label": "metaData.groupName",
+              "name": "cn",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "maxLength": 64,
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Role - User (Default)"
+              ]
+            },
+            {
+              "title": "Application NAR ID",
+              "type": "autocomplete",
+              "id": "dbagApplicationID",
+              "label": "metaData.applicationNARID",
+              "name": "dbagApplicationID",
+              "url": "/v0/application/getApplicationNarId",
+              "queryparameters": ["exactMatch", "narId"],
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.applicationNARID",
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User"
+              ],
+              "placeholder": "metaData.applicationNARIDPlaceholder"
+            },
+            {
+              "title": "Cost Center",
+              "type": "autocomplete",
+              "id": "dbagCostcenter",
+              "label": "metaData.costCenter",
+              "name": "dbagCostcenter",
+              "url": "/v0/governance/getCostCenter",
+              "queryparameters": ["exactMatch", "costCenter"],
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.costCenter",
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Role - User (Default)"
+              ],
+              "placeholder": "metaData.costCenterNumber"
+            },
+            {
+              "title": "Group Description",
+              "type": "text",
+              "id": "description",
+              "label": "metaData.groupDescription",
+              "name": "description",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericType": true,
+              "maxLength": 2048,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.groupDescription",
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Role - User (Default)"
+              ]
+            },
+            {
+              "title": "Group Name",
+              "type": "text",
+              "id": "groupName",
+              "label": "metaData.groupName",
+              "name": "groupName",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Role - User (Default)"
+              ]
+            },
+            {
+              "title": "Description",
+              "type": "text",
+              "id": "description1",
+              "label": "metaData.description1",
+              "name": "description1",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Role - User (Default)"
+              ]
+            },
+            {
+              "title": "End Location",
+              "type": "dropdown",
+              "id": "endlocation",
+              "label": "metaData.endLocation",
+              "name": "location",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.endLocation",
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Application Access - Virtualization (Default)",
+                "Application Access - SW Distribution (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Infrastructure Access - Server - Admin (Default)",
+                "Role - Admin (Default)",
+                "Role - User (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User"
+              ],
+              "options": []
+            },
+            {
+              "title": "Distinguished Name",
+              "type": "autocomplete",
+              "id": "distinguishedName1",
+              "label": "metaData.distinguishedName",
+              "name": "distinguishedName1",
+              "url": "/v0/governance/getDN",
+              "queryparameters": ["exactMatch", "dn", "domain"],
+              "secondaryqueryparameters": ["domain"],
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Role - User (Default)"
+              ],
+              "options": [],
+              "placeholder": "metaData.distinguishedName"
+            },
+            {
+              "title": "dbUnity Support Group",
+              "type": "autocomplete",
+              "id": "dbagsupportGroup",
+              "label": "metaData.dbUnitySupportGroup",
+              "name": "dbagSupportGroup",
+              "url": "/v0/governance/getdbUnityGroup",
+              "queryparameters": ["groupName", "exactMatch"],
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.dbUnitySupportGroup",
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)"
+              ],
+              "placeholder": "metaData.dbUnitySupportGroup"
+            },
+            {
+              "title": "Is This Group Privileged ?",
+              "type": "dropdown",
+              "id": "accessioIsGroupPrivileged",
+              "label": "metaData.privilegedGroup",
+              "name": "accessioIsGroupPrivileged",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.accessioIsThisGroupPrivileged",
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)"
+              ],
+              "options": [
+                {
+                  "label": "No",
+                  "value": "No"
+                },
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                }
+              ]
+            },
+            {
+              "title": "Data Security class",
+              "type": "dropdown",
+              "id": "dbagIMSDataSecCLass",
+              "label": "metaData.dataSecurityClass",
+              "name": "dbagIMSDataSecCLass",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "Role - Admin (Default)",
+                "Role - User (Default)"
+              ],
+              "options": [
+                {
+                  "label": "Confidential",
+                  "value": "C"
+                },
+                {
+                  "label": "Internal",
+                  "value": "I"
+                },
+                {
+                  "label": "Public",
+                  "value": "P"
+                },
+                {
+                  "label": "Strictly Confidential",
+                  "value": "SC"
+                }
+              ]
+            },
+            {
+              "title": "Group Type",
+              "type": "dropdown",
+              "id": "groupType",
+              "label": "metaData.groupType",
+              "name": "groupType",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "default": "security",
+              "infoText": "create.ADGroup.groupType",
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Role - User (Default)"
+              ],
+              "options": [
+                {
+                  "label": "Distribution",
+                  "value": "distribution",
+                  "belongsto": [
+                    "Role - Admin (Default)",
+                    "Role - User (Default)",
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)",
+                    "Infrastructure Access - AD Objects (Default)",
+                    "Infrastructure Access - Database - Admin (Default)",
+                    "Infrastructure Access - Database - Application Support (Default)",
+                    "Infrastructure Access - Database - End User (Default)",
+                    "Infrastructure Access - Print (Default)",
+                    "Application Access - Authorization (Default)",
+                    "Application Access - Virtualization (Default)",
+                    "Application Access - SW Distribution (Default)",
+                    "Infrastructure Access - Desktop (Default)",
+                    "Infrastructure Access - Other (Default)",
+                    "Infrastructure Access - Server - Application Support (Default)",
+                    "Infrastructure Access - Server - Admin (Default)",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "Infrastructure Access - Control (Default)",
+                    "CyberArk - Safe Access Group - Infrastructure Support",
+                    "Robot Object - Infrastructure Other",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "CyberArk - Role Group - Application Support",
+                    "Administrative - CyberArk Application Server Group",
+                    "Administrative - CyberArk Infrastructure Server Group"
+                  ]
+                },
+                {
+                  "label": "Security",
+                  "value": "security",
+                  "belongsto": [
+                    "Role - Admin (Default)",
+                    "Role - User (Default)",
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)",
+                    "Infrastructure Access - AD Objects (Default)",
+                    "Infrastructure Access - Database - Admin (Default)",
+                    "Infrastructure Access - Database - Application Support (Default)",
+                    "Infrastructure Access - Database - End User (Default)",
+                    "Infrastructure Access - Print (Default)",
+                    "Application Access - Authorization (Default)",
+                    "Application Access - Virtualization (Default)",
+                    "Application Access - SW Distribution (Default)",
+                    "Infrastructure Access - Desktop (Default)",
+                    "Infrastructure Access - Other (Default)",
+                    "Infrastructure Access - Server - Application Support (Default)",
+                    "Infrastructure Access - Server - Admin (Default)",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "Infrastructure Access - Control (Default)",
+                    "CyberArk - Safe Access Group - Infrastructure Support",
+                    "Robot Object - Infrastructure Other",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "CyberArk - Role Group - Application Support",
+                    "Administrative - CyberArk Application Server Group",
+                    "Administrative - CyberArk Infrastructure Server Group"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Group Scope",
+              "type": "dropdown",
+              "id": "groupScope",
+              "label": "metaData.groupScope",
+              "name": "groupScope",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "default": "universal",
+              "infoText": "create.ADGroup.groupScope",
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Role - User (Default)"
+              ],
+              "options": [
+                {
+                  "label": "Global",
+                  "value": "global",
+                  "belongsto": [
+                    "Application Access - Authorization (Default)",
+                    "dbAccessGate - Application Approver Group - Application Authorization",
+                    "Application Access - SW Distribution (Default)",
+                    "Application Access - Virtualization (Default)",
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)",
+                    "Infrastructure Access - AD Objects (Default)",
+                    "Infrastructure Access - Control (Default)",
+                    "Infrastructure Access - Database - Application Support (Default)",
+                    "Infrastructure Access - Database - End User (Default)",
+                    "Infrastructure Access - Database - Admin (Default)",
+                    "Infrastructure Access - Desktop (Default)",
+                    "Infrastructure Access - Other (Default)",
+                    "Infrastructure Access - Print (Default)",
+                    "Infrastructure Access - Server - Application Support (Default)",
+                    "Infrastructure Access - Server - Admin (Default)",
+                    "Role - Admin (Default)",
+                    "Role - User (Default)"
+                  ]
+                },
+                {
+                  "label": "Local",
+                  "value": "domain",
+                  "belongsto": [
+                    "Application Access - Authorization (Default)",
+                    "dbAccessGate - Application Approver Group - Application Authorization",
+                    "dbAccessGate - Business Approver Group - Application Authorization",
+                    "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                    "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                    "dbSRS - Approver ACL Group - Application Authorization",
+                    "dbSRS - Role ACL Group - Application Authorization",
+                    "DLP Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "Application Access - SW Distribution (Default)",
+                    "Application Access - Virtualization (Default)",
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)",
+                    "Infrastructure Access - AD Objects (Default)",
+                    "CyberArk - Safe Access Group - Infrastructure Support",
+                    "Infrastructure Access - Control (Default)",
+                    "Infrastructure Access - Database - Application Support (Default)",
+                    "Infrastructure Access - Database - End User (Default)",
+                    "Infrastructure Access - Database - Admin (Default)",
+                    "Infrastructure Access - Desktop (Default)",
+                    "Infrastructure Access - Other (Default)",
+                    "Robot Object - Infrastructure Other",
+                    "Infrastructure Access - Print (Default)",
+                    "Infrastructure Access - Server - Application Support (Default)",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "Administrative - CyberArk Application Server Group",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "Infrastructure Access - Server - Admin (Default)",
+                    "Role - Admin (Default)",
+                    "Role - User (Default)"
+                  ]
+                },
+                {
+                  "label": "Universal",
+                  "value": "universal",
+                  "belongsto": [
+                    "Application Access - Authorization (Default)",
+                    "dbAccessGate - Application Approver Group - Application Authorization",
+                    "dbAccessGate - Business Approver Group - Application Authorization",
+                    "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                    "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                    "dbSRS - Approver ACL Group - Application Authorization",
+                    "DLP Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "Application Access - SW Distribution (Default)",
+                    "Application Access - Virtualization (Default)",
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)",
+                    "Infrastructure Access - AD Objects (Default)",
+                    "CyberArk - Safe Access Group - Infrastructure Support",
+                    "Infrastructure Access - Control (Default)",
+                    "Infrastructure Access - Database - Application Support (Default)",
+                    "Infrastructure Access - Database - End User (Default)",
+                    "Infrastructure Access - Database - Admin (Default)",
+                    "Infrastructure Access - Desktop (Default)",
+                    "Infrastructure Access - Other (Default)",
+                    "Robot Object - Infrastructure Other",
+                    "Infrastructure Access - Print (Default)",
+                    "Infrastructure Access - Server - Application Support (Default)",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - Role Group - Application Support",
+                    "Administrative - CyberArk Application Server Group",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "Infrastructure Access - Server - Admin (Default)",
+                    "Role - Admin (Default)",
+                    "Role - User (Default)",
+                    "dbSRS - Role ACL Group - Application Authorization",
+                    "CyberArk - Safe Access Group - Application Support"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Enable Cloud Sync",
+              "type": "dropdown",
+              "id": "dbagExternalProvider",
+              "label": "metaData.enableCloudSync",
+              "name": "dbagExternalProvider",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.enableCloudSync",
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "Application Access - Virtualization (Default)",
+                "Application Access - SW Distribution (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Infrastructure Access - Server - Admin (Default)",
+                "Role - Admin (Default)",
+                "Role - User (Default)",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization"
+              ],
+              "options": [
+                {
+                  "label": "AZR",
+                  "value": "AZR"
+                },
+                {
+                  "label": "AZR&GCP",
+                  "value": "AZR#GCP"
+                }
+              ]
+            },
+            {
+              "title": "Comment",
+              "type": "text",
+              "id": "info",
+              "label": "metaData.comment",
+              "name": "info",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "alphanumericType": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.comment",
+              "relatedTo": [
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Robot Object - Infrastructure Other",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Robot Object - Infrastructure Other"
+              ]
+            },
+            {
+              "title": "Nesting Restriction",
+              "type": "dropdown",
+              "id": "dbagExtensionAttribute2",
+              "label": "metaData.nestingRestriction",
+              "name": "dbagExtensionAttribute2",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "default": "Unrestricted",
+              "infoText": "create.ADGroup.nestingRestriction",
+              "relatedTo": [
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization"
+              ],
+              "options": [
+                {
+                  "label": "Groups only",
+                  "value": "Groups only"
+                },
+                {
+                  "label": "Unrestricted",
+                  "value": "Unrestricted"
+                },
+                {
+                  "label": "Users only",
+                  "value": "Users only"
+                }
+              ]
+            },
+            {
+              "title": "Processing Data",
+              "type": "text",
+              "id": "dbagProcessingdata",
+              "label": "metaData.processingData",
+              "name": "dbagProcessingdata",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "alphanumericType": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "maxLength": 2056,
+              "infoText": "create.ADGroup.processingData",
+              "relatedTo": [
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User"
+              ]
+            },
+            {
+              "title": "Entitlement",
+              "type": "dropdown",
+              "id": "entitlement",
+              "label": "metaData.entitlement",
+              "name": "dbagEntitlement",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.entitlement",
+              "relatedTo": [
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Robot Object - Infrastructure Other",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group"
+              ],
+              "options": [
+                {
+                  "label": "Administrator",
+                  "value": "Administrator",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "Administrative - CyberArk Infrastructure Server Group"
+                  ]
+                },
+                {
+                  "label": "App Admin",
+                  "value": "App Admin",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "Administrative - CyberArk Infrastructure Server Group"
+                  ]
+                },
+                {
+                  "label": "Approver",
+                  "value": "Approver",
+                  "belongsto": [
+                    "Robot Object - Infrastructure Other",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "DLP Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "Author",
+                  "value": "Author",
+                  "belongsto": [
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "DLP Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "Designer",
+                  "value": "Designer",
+                  "belongsto": [
+                    "Robot Object - Infrastructure Other",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "DLP Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "Full",
+                  "value": "Full",
+                  "belongsto": [
+                    "Robot Object - Infrastructure Other",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "DLP Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "Manager",
+                  "value": "Manager",
+                  "belongsto": [
+                    "Robot Object - Infrastructure Other",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "DLP Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "Read",
+                  "value": "Read",
+                  "belongsto": [
+                    "Robot Object - Infrastructure Other",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "DLP Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "Read Only",
+                  "value": "Read Only",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "Administrative - CyberArk Infrastructure Server Group"
+                  ]
+                },
+                {
+                  "label": "Other - please specify",
+                  "value": "Other - please specify",
+                  "belongsto": [
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "DLP Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "SiteAdmin",
+                  "value": "SiteAdmin",
+                  "belongsto": [
+                    "Robot Object - Infrastructure Other",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "DLP Group - Application Authorization"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Entitlement Other",
+              "type": "text",
+              "id": "entitlementOther",
+              "label": "metaData.entitlementOthers",
+              "name": "dbagEntitlement",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "showRequired": true,
+              "alphanumericType": true,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.entitlementOther",
+              "relatedTo": [
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization"
+              ]
+            },
+            {
+              "title": "Department",
+              "type": "autocomplete",
+              "id": "department",
+              "label": "metaData.department",
+              "name": "department",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "url": "/v0/governance/getDeptWithDeptId",
+              "queryparameters": ["departmentId"],
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "placeholder": "metaData.departmentName",
+              "infoText": "create.ADGroup.department",
+              "relatedTo": [
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Robot Object - Infrastructure Other",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User"
+              ]
+            },
+            {
+              "title": "Paths",
+              "type": "text",
+              "id": "dbagFileSystemFullPaths",
+              "label": "metaData.paths",
+              "name": "paths",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "alphanumericType": true,
+              "maxLength": 1024,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.paths",
+              "relatedTo": [
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Admin (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group"
+              ]
+            },
+            {
+              "title": "Accessio Is gMSAGroup?",
+              "type": "dropdown",
+              "id": "accessioIsgMSAGroup",
+              "label": "metaData.accessiogMSAGroup",
+              "name": "accessioIsgMSAGroup",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "default": "No",
+              "infoText": "create.ADGroup.accessioIsgMSAGroup?",
+              "relatedTo": ["Application Access - Authorization (Default)"],
+              "options": [
+                {
+                  "label": "No",
+                  "value": "No"
+                },
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                }
+              ]
+            },
+            {
+              "title": "Provides access to Price Sensitive Information?",
+              "type": "dropdown",
+              "id": "dbagDataPrivClass",
+              "label": "metaData.priceSensitiveInfo?",
+              "name": "dbagDataPrivClass",
+              "category": "adAccessioGroupType",
+              "default": "FALSE",
+              "infoText": "create.ADGroup.providesaccesstoPriceSensitiveInformation?",
+              "relatedTo": [
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)"
+              ],
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "options": [
+                {
+                  "label": "No(Default)",
+                  "value": "FALSE",
+                  "belongsto": [
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)"
+                  ]
+                },
+                {
+                  "label": "Yes",
+                  "value": "TRUE",
+                  "belongsto": [
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "DWS Private",
+              "type": "dropdown",
+              "id": "dwsPrivate",
+              "label": "metaData.DWSPrivate",
+              "name": "dwsPrivate",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "default": "0",
+              "needBulkOperation": true,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.dWSPrivate",
+              "relatedTo": [
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)"
+              ],
+              "options": [
+                {
+                  "label": "No",
+                  "value": "0",
+                  "belongsto": [
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)"
+                  ]
+                },
+                {
+                  "label": "Yes",
+                  "value": "1",
+                  "belongsto": [
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Client Private",
+              "type": "dropdown",
+              "id": "clientPrivate",
+              "label": "metaData.clientPrivate",
+              "name": "clientPrivate",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "default": "0",
+              "needBulkOperation": true,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.clientPrivate",
+              "relatedTo": [
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)"
+              ],
+              "options": [
+                {
+                  "label": "No",
+                  "value": "0",
+                  "belongsto": [
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)"
+                  ]
+                },
+                {
+                  "label": "Yes",
+                  "value": "1",
+                  "belongsto": [
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "DB Private",
+              "type": "dropdown",
+              "id": "dbPrivate",
+              "label": "metaData.dbPrivate",
+              "name": "dbPrivate",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "default": "0",
+              "needBulkOperation": true,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.dBPrivate",
+              "relatedTo": [
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)"
+              ],
+              "options": [
+                {
+                  "label": "No",
+                  "value": "0",
+                  "belongsto": [
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)"
+                  ]
+                },
+                {
+                  "label": "Yes",
+                  "value": "1",
+                  "belongsto": [
+                    "Data Access - Mailbox (Default)",
+                    "Data Access - Other (Default)",
+                    "Data Access - Share (Default)",
+                    "Data Access - SharePoint (Default)"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "CyberArk Region",
+              "type": "dropdown",
+              "id": "cyberarkregion",
+              "label": "metaData.cyberArkRegion",
+              "name": "location",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.cyberArkRegion",
+              "relatedTo": [
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support"
+              ],
+              "options": []
+            },
+            {
+              "title": "Accessio Platform Type",
+              "type": "dropdown",
+              "id": "accessioPlatformType",
+              "label": "metaData.accessioPlatformType",
+              "name": "accessioPlatformType",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.accessioPlatformType",
+              "relatedTo": [
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support"
+              ],
+              "options": [
+                {
+                  "label": "All Platforms",
+                  "value": "All Platforms",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    ",CyberArk - BreakGlass Group - Infrastructure Support",
+                    "CyberArk - Role Group - Application Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "BladeLogic",
+                  "value": "BladeLogic",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    ",CyberArk - BreakGlass Group - Infrastructure Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "control for M",
+                  "value": "control for M",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "CyberArk - Role Group - Application Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "Directory Services",
+                  "value": "Directory Services",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "Firewalls",
+                  "value": "Firewalls",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "HP ILO",
+                  "value": "HP ILO",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    ",CyberArk - BreakGlass Group - Infrastructure Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "MS SQL",
+                  "value": "MS SQL",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    ",",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "CyberArk - Role Group - Application Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "Oracle",
+                  "value": "Oracle",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "CyberArk - Role Group - Application Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "Routing andSwitching",
+                  "value": "Routing andSwitching",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "Sybase",
+                  "value": "Sybase",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "CyberArk - Role Group - Application Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "Unix",
+                  "value": "Unix",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    ",",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "CyberArk - Role Group - Application Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "VMWare Virtual Hosting Enterprise Server Console",
+                  "value": "VMWare Virtual Hosting Enterprise Server Console",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "CyberArk - Role Group - Application Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "Windows",
+                  "value": "Windows",
+                  "belongsto": [
+                    "Administrative - CyberArk Application Server Group",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - BreakGlass Group - Application Support",
+                    ",",
+                    "CyberArk - BreakGlass Group - Infrastructure Support",
+                    "CyberArk - Role Group - Application Support",
+                    "Administrative - CyberArk Infrastructure Server Group",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "MAMs",
+              "type": "autocomplete",
+              "id": "mAMs",
+              "label": "metaData.MAMs",
+              "name": "dbagApplicationID",
+              "category": "adAccessioGroupType",
+              "url": "/v0/application/getApplicationNarId",
+              "queryparameters": ["exactMatch", "narId"],
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.mAMs",
+              "relatedTo": ["Robot Object - Infrastructure Other"],
+              "placeholder": "metaData.MAMs"
+            },
+            {
+              "title": "Accessio Prerequisite RMP Roles",
+              "type": "dropdown",
+              "id": "accessioPrerequisiteRMPRoles",
+              "label": "metaData.prerequisiteRMPRoles",
+              "name": "accessioPrerequisiteRMPRoles",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "infoText": "create.ADGroup.accessioPrerequisiteRMPRoles",
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "default": "Application Operations Internal(L1,L2,L3)",
+              "relatedTo": [
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support"
+              ],
+              "options": [
+                {
+                  "label": "Application Operations External(L1,L2,L3)",
+                  "value": "Application Operations External(L1,L2,L3)",
+                  "belongsto": [
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - Role Group - Application Support"
+                  ]
+                },
+                {
+                  "label": "Application Operations Internal(L1,L2,L3)",
+                  "value": "Application Operations Internal(L1,L2,L3)",
+                  "belongsto": [
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support"
+                  ]
+                },
+                {
+                  "label": "CIO Application Support External( Developers)",
+                  "value": "CIO Application Support External( Developers)",
+                  "belongsto": [
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support"
+                  ]
+                },
+                {
+                  "label": "CIO Application Support Internal ( Developers)",
+                  "value": "CIO Application Support Internal ( Developers)",
+                  "belongsto": [
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - Role Group - Application Support",
+                    "CyberArk - Safe Access Group - Application Support"
+                  ]
+                },
+                {
+                  "label": "Infrastructure Technology Lead/Manager",
+                  "value": "Infrastructure Technology Lead/Manager",
+                  "belongsto": [
+                    "CyberArk - Safe Access Group - Application Support",
+                    "CyberArk - Safe Access Group - Infrastructure Support"
+                  ]
+                },
+                {
+                  "label": "Infrastructure Ops- Database Administrator External",
+                  "value": "Infrastructure Ops- Database Administrator External",
+                  "belongsto": ["CyberArk - Safe Access Group - Infrastructure Support"]
+                },
+                {
+                  "label": "Infrastructure Ops- Database Administrator Internal",
+                  "value": "Infrastructure Ops- Database Administrator Internal",
+                  "belongsto": ["CyberArk - Safe Access Group - Infrastructure Support"]
+                },
+                {
+                  "label": "Infrastructure Ops- Domain Administrator",
+                  "value": "Infrastructure Ops- Domain Administrator",
+                  "belongsto": ["CyberArk - Safe Access Group - Infrastructure Support"]
+                },
+                {
+                  "label": "Infrastructure Ops- System Administrator External",
+                  "value": "Infrastructure Ops- System Administrator External",
+                  "belongsto": ["CyberArk - Safe Access Group - Infrastructure Support"]
+                },
+                {
+                  "label": "Infrastructure Ops- System Administrator Internal",
+                  "value": "Infrastructure Ops- System Administrator Internal",
+                  "belongsto": ["CyberArk - Safe Access Group - Infrastructure Support"]
+                },
+                {
+                  "label": "Universal",
+                  "value": "Universal",
+                  "belongsto": [
+                    "CyberArk - BreakGlass Group - Application Support",
+                    "CyberArk - Role Group - Application Support"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Accessio Prerequisite RMP Roles",
+              "type": "text",
+              "id": "accessioPrerequisiteRMPRolesText",
+              "label": "metaData.prerequisiteRMPRoles",
+              "name": "accessioPrerequisiteRMPRoles",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.accessioPrerequisiteRMPRolesText",
+              "relatedTo": [
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group"
+              ]
+            },
+            {
+              "title": "Infra NAR ID",
+              "type": "autocomplete",
+              "id": "dbagInfrastructureID",
+              "label": "metaData.infraNARID",
+              "name": "dbagInfrastructureID",
+              "url": "/v0/application/getApplicationNarId",
+              "queryparameters": ["exactMatch", "narId"],
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.infraNARID",
+              "relatedTo": [
+                "Infrastructure Access - Server - Admin (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization"
+              ],
+              "placeholder": "metaData.applicationNARIDPlaceholder"
+            },
+            {
+              "title": "Support Group",
+              "type": "text",
+              "id": "dbagSupportGroup",
+              "label": "metaData.dbUnitySupportGroup",
+              "name": "dbagSupportGroup",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "alphanumericType": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "infoText": "create.ADGroup.supportGroup",
+              "relatedTo": [
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Administrative - CyberArk Infrastructure Server Group"
+              ]
+            },
+            {
+              "title": "User Scope Restriction",
+              "type": "dropdown",
+              "id": "dbagExtensionAttribute3",
+              "label": "metaData.userScopeRestriction",
+              "name": "dbagExtensionAttribute3",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "default": "Unrestricted",
+              "infoText": "create.ADGroup.userScopeRestriction",
+              "relatedTo": [
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User"
+              ],
+              "options": [
+                {
+                  "label": "Admin",
+                  "value": "Admin",
+                  "belongsto": [
+                    "dbAccessGate - Business Approver Group - Application Authorization",
+                    "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                    "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                    "dbSRS - Approver ACL Group - Application Authorization",
+                    "dbSRS - Role ACL Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                    "dbAccessGate - Application Approver Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "ATOS",
+                  "value": "ATOS",
+                  "belongsto": [
+                    "dbAccessGate - Business Approver Group - Application Authorization",
+                    "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                    "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                    "dbSRS - Approver ACL Group - Application Authorization",
+                    "dbSRS - Role ACL Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                    "dbAccessGate - Application Approver Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "Deutsche bank",
+                  "value": "Deutsche bank",
+                  "belongsto": [
+                    "dbAccessGate - Business Approver Group - Application Authorization",
+                    "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                    "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                    "dbSRS - Approver ACL Group - Application Authorization",
+                    "dbSRS - Role ACL Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                    "dbAccessGate - Application Approver Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "HP",
+                  "value": "HP",
+                  "belongsto": [
+                    "dbAccessGate - Business Approver Group - Application Authorization",
+                    "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                    "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                    "dbSRS - Approver ACL Group - Application Authorization",
+                    "dbSRS - Role ACL Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                    "dbAccessGate - Application Approver Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "IBM",
+                  "value": "IBM",
+                  "belongsto": [
+                    "dbAccessGate - Business Approver Group - Application Authorization",
+                    "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                    "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                    "dbSRS - Approver ACL Group - Application Authorization",
+                    "dbSRS - Role ACL Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                    "dbAccessGate - Application Approver Group - Application Authorization"
+                  ]
+                },
+                {
+                  "label": "Unrestricted(default)",
+                  "value": "Unrestricted",
+                  "belongsto": [
+                    "dbAccessGate - Business Approver Group - Application Authorization",
+                    "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                    "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                    "dbSRS - Approver ACL Group - Application Authorization",
+                    "dbSRS - Role ACL Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                    "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                    "dbAccessGate - Application Approver Group - Application Authorization",
+                    "dbAccessGate - Application Approver Group - Application Authorization"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "DLP OU",
+              "type": "dropdown",
+              "id": "dlpou",
+              "label": "metaData.DLPOU",
+              "name": "location",
+              "category": "adAccessioGroupType",
+              "requiredField": true,
+              "displayType": {
+                "hidden": false,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": ["DLP Group - Application Authorization"],
+              "options": []
+            },
+            {
+              "title": "Distinguished Name",
+              "type": "displayvalue",
+              "id": "distinguishedName",
+              "label": "metaData.distinguishedName",
+              "name": "distinguishedName",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "alphanumericType": true,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Role - User (Default)"
+              ],
+              "placeholder": "metaData.distinguishedName"
+            },
+            {
+              "title": "Group description",
+              "type": "displayvalue",
+              "id": "compiledGroupDescription",
+              "label": "metaData.groupDescription",
+              "name": "compiledGroupDescription",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "alphanumericType": true,
+              "displayType": {
+                "hidden": true,
+                "readOnly": false,
+                "disabled": false
+              },
+              "relatedTo": [
+                "Application Access - Authorization (Default)",
+                "dbAccessGate - Application Approver Group - Application Authorization",
+                "dbAccessGate - Business Approver Group - Application Authorization",
+                "dbAccessGate - CIDA Service Team Group - Application Authorization",
+                "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+                "dbSRS - Approver ACL Group - Application Authorization",
+                "dbSRS - Role ACL Group - Application Authorization",
+                "DLP Group - Application Authorization",
+                "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+                "Application Access - SW Distribution (Default)",
+                "Application Access - Virtualization (Default)",
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)",
+                "Infrastructure Access - AD Objects (Default)",
+                "CyberArk - Safe Access Group - Infrastructure Support",
+                "Infrastructure Access - Control (Default)",
+                "Infrastructure Access - Database - Application Support (Default)",
+                "Infrastructure Access - Database - Admin (Default)",
+                "Infrastructure Access - Database - End User (Default)",
+                "Infrastructure Access - Desktop (Default)",
+                "Infrastructure Access - Other (Default)",
+                "Robot Object - Infrastructure Other",
+                "Infrastructure Access - Print (Default)",
+                "Infrastructure Access - Server - Application Support (Default)",
+                "Administrative - CyberArk Application Server Group",
+                "Administrative - CyberArk Infrastructure Server Group",
+                "Infrastructure Access - Server - Admin (Default)",
+                "CyberArk - BreakGlass Group - Application Support",
+                "CyberArk - Role Group - Application Support",
+                "CyberArk - Safe Access Group - Application Support",
+                "Role - Admin (Default)",
+                "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "Role - User (Default)"
+              ]
+            },
+            {
+              "title": "PSI Description",
+              "type": "textContent",
+              "id": "pSIDescription",
+              "label": "metaData.descriptionPSI",
+              "name": "pSIDescription",
+              "category": "adAccessioGroupType",
+              "requiredField": false,
+              "relatedTo": [
+                "Data Access - Mailbox (Default)",
+                "Data Access - Other (Default)",
+                "Data Access - Share (Default)",
+                "Data Access - SharePoint (Default)"
+              ],
+              "default": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on <a href=\"https://db.csod.com/samldefault.aspx?ouid=2\" target=\"_blank\">Connect2Learn</a>, before making a selection. \n For more information, please refer to the <a href=\"https://mydb.intranet.db.com/docs/DOC-538507\" target=\"_blank\">Information Barrier Policy</a>.",
+              "defaultGerman" : "Eine kurs-/preissensible Information (PSI) ist eine Information präzisen Inhalts, die nicht veröffentlicht wurde, in direktem oder indirektem Zusammenhang mit einem oder mehreren Emittenten oder einem oder mehreren Finanzinstrumenten steht und die sich bei einer Veröffentlichung wahrscheinlich erheblich auf die Kurse/Preise dieser Finanzinstrumente oder auf die Preise damit verbundener derivativer Finanzinstrumente auswirken würde. Bitte nehmen Sie an der obligatorischen PSI-Schulung CRegO Academy - Price Sensitive Information auf <a href=\"https://mydb.intranet.db.com/docs/DOC-538507\" target=\"_blank\">Connect2Learn </a> teil, bevor Sie eine Auswahl treffen. Weitere Informationen finden Sie in der Richtlinie zur <a href=\"https://mydb.intranet.db.com/docs/DOC-538507\" target=\"_blank\"> Informations-Barriere.</a>",
+              "displayType": {
+                "hidden": false,
+                "readOnly": true,
+                "disabled": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step2",
+      "title": "metaData.ownershipANDjustification",
+      "heading": "metaData.ownershipANDjustification",
+      "titleId": "businessJustification",
+      "children": [
+        {
+          "title": "Group Authorization Contact",
+          "type": "autocomplete",
+          "id": "dbagIMSAuthContact",
+          "label": "metaData.groupAuthorizationContact",
+          "name": "dbagIMSAuthContact",
+          "url": "/v0/governance/getEmailAddress",
+          "queryparameters": ["exactMatch", "emailId"],
+          "category": "businessJustification",
+          "requiredField": true,
+          "placeholder": "metaData.groupPlaceholder",
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADGroup.groupAuthorizationContact",
+          "relatedTo": [
+            "Application Access - Authorization (Default)",
+            "dbAccessGate - Application Approver Group - Application Authorization",
+            "dbAccessGate - Business Approver Group - Application Authorization",
+            "dbAccessGate - CIDA Service Team Group - Application Authorization",
+            "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+            "dbSRS - Approver ACL Group - Application Authorization",
+            "dbSRS - Role ACL Group - Application Authorization",
+            "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+            "Unclassified - Application - Authorisation",
+            "Application Access - Virtualization (Default)",
+            "Application Access - SW Distribution (Default)",
+            "Data Access - Mailbox (Default)",
+            "Data Access - Other (Default)",
+            "Data Access - Share (Default)",
+            "Data Access - SharePoint (Default)",
+            "Infrastructure Access - AD Objects (Default)",
+            "Infrastructure Access - Control (Default)",
+            "Group - Infrastructure Support",
+            "Infrastructure Access - Database - Admin (Default)",
+            "Infrastructure Access - Database - Application Support (Default)",
+            "Infrastructure Access - Database - End User (Default)",
+            "Infrastructure Access - Desktop (Default)",
+            "Infrastructure Access - Other (Default)",
+            "Robot Object - Infrastructure Other",
+            "Infrastructure Access - Print (Default)",
+            "Infrastructure Access - Server - Application Support (Default)",
+            "Group - Infrastructure Support",
+            "CyberArk - BreakGlass Group - Infrastructure Support",
+            "CyberArk - Role Group - Infrastructure Support",
+            "Infrastructure Access - Server - Admin (Default)",
+            "Administrative - CyberArk Application Server Group",
+            "Administrative - CyberArk Infrastructure Server Group",
+            "CyberArk - BreakGlass Group - Application Support",
+            "CyberArk - Role Group - Application Support",
+            "Group - Application Support",
+            "Role - Admin (Default)",
+            "Role - User (Default)",
+            "DLP Group - Application Authorization",
+            "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+            "CyberArk - Safe Access Group - Infrastructure Support",
+            "CyberArk - Safe Access Group - Application Support"
+          ]
+        },
+        {
+          "title": "Group Authorization Delegate",
+          "type": "autocomplete",
+          "id": "dbagIMSAuthContactDelegate",
+          "label": "metaData.groupAuthorizationDelegate",
+          "name": "dbagIMSAuthContactDelegate",
+          "url": "/v0/governance/getEmailAddress",
+          "queryparameters": ["exactMatch", "emailId"],
+          "category": "businessJustification",
+          "requiredField": true,
+          "placeholder": "metaData.groupPlaceholder",
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADGroup.groupAuthorizationDelegate",
+          "relatedTo": [
+            "Application Access - Authorization (Default)",
+            "dbAccessGate - Application Approver Group - Application Authorization",
+            "dbAccessGate - Business Approver Group - Application Authorization",
+            "dbAccessGate - CIDA Service Team Group - Application Authorization",
+            "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+            "dbSRS - Approver ACL Group - Application Authorization",
+            "dbSRS - Role ACL Group - Application Authorization",
+            "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+            "Unclassified - Application - Authorisation",
+            "Application Access - Virtualization (Default)",
+            "Application Access - SW Distribution (Default)",
+            "Data Access - Mailbox (Default)",
+            "Data Access - Other (Default)",
+            "Data Access - Share (Default)",
+            "Data Access - SharePoint (Default)",
+            "Infrastructure Access - AD Objects (Default)",
+            "Infrastructure Access - Control (Default)",
+            "Group - Infrastructure Support",
+            "Infrastructure Access - Database - Admin (Default)",
+            "Infrastructure Access - Database - Application Support (Default)",
+            "Infrastructure Access - Database - End User (Default)",
+            "Infrastructure Access - Desktop (Default)",
+            "Infrastructure Access - Other (Default)",
+            "Infrastructure Access - Server - Application Support (Default)",
+            "Robot Object - Infrastructure Other",
+            "Infrastructure Access - Print (Default)",
+            "Group - Infrastructure Support",
+            "CyberArk - BreakGlass Group - Infrastructure Support",
+            "CyberArk - Role Group - Infrastructure Support",
+            "Infrastructure Access - Server - Admin (Default)",
+            "Administrative - CyberArk Application Server Group",
+            "Administrative - CyberArk Infrastructure Server Group",
+            "CyberArk - BreakGlass Group - Application Support",
+            "CyberArk - Role Group - Application Support",
+            "Group - Application Support",
+            "Role - Admin (Default)",
+            "Role - User (Default)",
+            "DLP Group - Application Authorization",
+            "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+            "CyberArk - Safe Access Group - Infrastructure Support",
+            "CyberArk - Safe Access Group - Application Support"
+          ]
+        },
+        {
+          "title": "Group Approvers",
+          "type": "autocomplete",
+          "id": "dbagIMSApprovers",
+          "label": "metaData.groupApprovers",
+          "name": "dbagIMSApprovers",
+          "url": "/v0/governance/getEmailAddress",
+          "queryparameters": ["exactMatch", "emailId"],
+          "category": "businessJustification",
+          "isMultiple": true,
+          "requiredField": true,
+          "alphanumericType": true,
+          "placeholder": "metaData.groupPlaceholder",
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADGroup.groupApprovers",
+          "relatedTo": [
+            "Application Access - Authorization (Default)",
+            "dbAccessGate - Application Approver Group - Application Authorization",
+            "dbAccessGate - Business Approver Group - Application Authorization",
+            "dbAccessGate - CIDA Service Team Group - Application Authorization",
+            "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+            "dbSRS - Approver ACL Group - Application Authorization",
+            "dbSRS - Role ACL Group - Application Authorization",
+            "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+            "Unclassified - Application - Authorisation",
+            "Application Access - Virtualization (Default)",
+            "Application Access - SW Distribution (Default)",
+            "Data Access - Mailbox (Default)",
+            "Data Access - Other (Default)",
+            "Data Access - Share (Default)",
+            "Data Access - SharePoint (Default)",
+            "Infrastructure Access - AD Objects (Default)",
+            "Infrastructure Access - Control (Default)",
+            "Group - Infrastructure Support",
+            "Infrastructure Access - Database - Admin (Default)",
+            "Infrastructure Access - Database - Application Support (Default)",
+            "Infrastructure Access - Server - Application Support (Default)",
+            "Infrastructure Access - Database - End User (Default)",
+            "Infrastructure Access - Desktop (Default)",
+            "Infrastructure Access - Other (Default)",
+            "Robot Object - Infrastructure Other",
+            "Infrastructure Access - Print (Default)",
+            "Group - Infrastructure Support",
+            "CyberArk - BreakGlass Group - Infrastructure Support",
+            "CyberArk - Role Group - Infrastructure Support",
+            "Infrastructure Access - Server - Admin (Default)",
+            "Administrative - CyberArk Application Server Group",
+            "Administrative - CyberArk Infrastructure Server Group",
+            "CyberArk - BreakGlass Group - Application Support",
+            "CyberArk - Role Group - Application Support",
+            "Group - Application Support",
+            "Role - Admin (Default)",
+            "Role - User (Default)",
+            "DLP Group - Application Authorization",
+            "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+            "CyberArk - Safe Access Group - Infrastructure Support",
+            "CyberArk - Safe Access Group - Application Support"
+          ]
+        },
+        {
+          "title": "Business Justification",
+          "label": "metaData.businessJustification",
+          "type": "textarea",
+          "id": "businessJustification",
+          "name": "requestJustification",
+          "category": "businessJustification",
+          "requiredField": true,
+          "infoText": "create.ADGroup.businessJustification",
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "alphanumericType": true,
+          "maxLength": 500
+        }
+      ]
+    },
+    {
+      "id": "step3",
+      "title": "create.ADAccount.summary",
+      "heading": "create.ADAccount.summary",
+      "titleId": "summary"
+    }
+  ],
+  "labelToCategory": {
+    "adAccessioGroupType": "metaData.groupRequestDetails",
+    "businessJustification": "metaData.ownershipANDjustification",
+    "adGroupType": "AD Group Type",
+    "adGroupSubType": "AD Group Sub-Type",
+    "accessioGroupType": "Accessio Group Type",
+    "domain": "Group Domain",
+    "cn": "Group Name",
+    "digitalIdentity": "Digital Identity",
+    "role": "Role",
+    "groupNameText": "Group Name Text",
+    "groupRole": "Group Role",
+    "dLPEnvironment": "DLP Environment",
+    "dLPGroupRole": "DLP Group Role",
+    "serverName": "Server Name",
+    "vendorteamName": "Vendor/Team Name",
+    "dlpOu": "DLP OU",
+    "dbagApplicationID": "Application NAR ID",
+    "samdbagApplicationID": "Application NAR ID",
+    "dbagCostcenter": "Cost Center",
+    "description": "Group Description",
+    "compiledGroupDescription": "Group Description",
+    "location": "End Location",
+    "samLocation": "Location",
+    "dbagsupportGroup": "dbUnity Support Group",
+    "accessioIsGroupPrivileged": "Is This Group Privileged ?",
+    "dataSecurityClass": "Data Security class",
+    "groupType": "Group Type",
+    "groupScope": "Group Scope",
+    "dbagExternalProvider": "Enable Cloud Sync",
+    "approverLevel": "Approver Level",
+    "info": "Comment",
+    "dbagExtensionAttribute2": "Nesting Restriction",
+    "dbagProcessingdata": "Processing Data",
+    "categoryReference": "Category Reference",
+    "entitlementOther": "Entitlement Other",
+    "entitlement": "Entitlement",
+    "department": "Department",
+    "versionIterationofGroup": "Version / Iteration of Group",
+    "vRMID": "VRM ID",
+    "projectName": "Project Name",
+    "productionUATorDEV": "Production UAT or DEV",
+    "applicationName": "Application Name",
+    "paths": "Paths",
+    "accessioIsgMSAGroup": "Is gMSAGroup?",
+    "accessToPSI": "Provides access to Price Sensitive Information?",
+    "pSIDescription": "PSI Description",
+    "safeName": "Safe Name",
+    "RobotBusinessDescription": "Robot Business Description",
+    "region": "CyberArk Region",
+    "platformType": "Platform Type",
+    "mAMs": "MAMs",
+    "dbAGRMPPreReqRoles": "Prerequisite RMP Roles",
+    "enterpriseServices": "ES (Enterprise Services)",
+    "dbAGInfrastructureNARID": "Infra NAR ID",
+    "dbagSupportGroup": "Support Group",
+    "userScopeRestriction": "User Scope Restriction",
+    "GroupAuthorizationContact": "Group Authorization Contact",
+    "GroupAuthorizationDelegate": "Group Authorization Delegate",
+    "GroupApprovers": "Group Approvers",
+    "Description": "Description",
+    "Distinguished Name": "Distinguished Name",
+    "Group Name": "Group Name"
+  },
+  "SAMAccountDataStucture": [
+    {
+      "category": "Application Access - Authorization (Default)",
+      "prefix": "AA-A",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "dbSRS - Role ACL Group - Application Authorization",
+      "prefix": "UACE-L-LON-dbSRS-55928-1-Role",
+      "text": ["groupNameText"],
+      "suffix": ""
+    },
+    {
+      "category": "Unclassified - Application - Authorisation",
+      "prefix": "",
+      "text": [],
+      "suffix": ""
+    },
+    {
+      "category": "Application Access - Virtualization (Default)",
+      "prefix": "AA-VIR",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Application Access - SW Distribution (Default)",
+      "prefix": "AA-SW",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Data Access - Mailbox (Default)",
+      "prefix": "DA-Mailbox",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Data Access - Other (Default)",
+      "prefix": "DA-Other",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Data Access - Share (Default)",
+      "prefix": "DA-Share",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Data Access - SharePoint (Default)",
+      "prefix": "DA-Sharepoint",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - AD Objects (Default)",
+      "prefix": "IA-AD",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Control (Default)",
+      "prefix": "IA-Control",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "CyberArk - Safe Access Group - Infrastructure Support",
+      "prefix": "IA-Control",
+      "text": ["safeName", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Database - Admin (Default)",
+      "prefix": "IA-Database",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Database - Application Support (Default)",
+      "prefix": "IA-Database",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Database - End User (Default)",
+      "prefix": "IA-Database",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Desktop (Default)",
+      "prefix": "IA-Desktop",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Other (Default)",
+      "prefix": "IA-Other",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Robot Object - Infrastructure Other",
+      "prefix": "IA-ROBOT",
+      "text": ["RobotBusinessDescription"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Print (Default)",
+      "prefix": "IA-Print",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Server - Application Support (Default)",
+      "prefix": "IA-Server",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "CyberArk - BreakGlass Group - Infrastructure Support",
+      "prefix": "IA-Server",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "CyberArk - Role Group - Infrastructure Support",
+      "prefix": "IA-Server",
+      "text": ["role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Server - Admin (Default)",
+      "prefix": "IA-Server",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Administrative - CyberArk Application Server Group",
+      "prefix": "ADR",
+      "text": ["samLocation", "DBW", "serverName"],
+      "suffix": ""
+    },
+    {
+      "category": "Administrative - CyberArk Infrastructure Server Group",
+      "prefix": "ADS-DBWITH",
+      "text": ["role", "serverName"],
+      "suffix": ""
+    },
+    {
+      "category": "CyberArk - BreakGlass Group - Application Support",
+      "prefix": "IA-Server",
+      "text": ["safeName"],
+      "suffix": ""
+    },
+    {
+      "category": "CyberArk - Role Group - Application Support",
+      "prefix": "IA-Server",
+      "text": ["safeName", "dbSRSApproverLevel"],
+      "suffix": ""
+    },
+    {
+      "category": "CyberArk - Safe Access Group - Application Support",
+      "prefix": "IA-Control",
+      "text": ["safeName", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "dbAccessGate - CIDA Service Team Group - Application Authorization",
+      "prefix": "ACE-S-DBG-DBAG-CIDA-ServiceTeam",
+      "text": ["groupNameText"],
+      "suffix": ""
+    },
+    {
+      "category": "dbAccessGate - Application Approver Group - Application Authorization",
+      "prefix": "ACE-DBAG-AAG",
+      "text": ["groupNameText", "samDbagApplicationID", "approverLevel"],
+      "suffix": ""
+    },
+    {
+      "category": "dbAccessGate - Business Approver Group - Application Authorization",
+      "prefix": "ACE-DBAG-BAG",
+      "text": ["groupNameText"],
+      "suffix": ""
+    },
+    {
+      "category": "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+      "prefix": "ACE-DBAG-IAAG",
+      "text": ["groupNameText", "samDbagApplicationID", "approverLevel"],
+      "suffix": ""
+    },
+    {
+      "category": "dbSRS - Approver ACL Group - Application Authorization",
+      "prefix": "UACE-L-LON-dbSRS",
+      "text": ["samDbagApplicationID", "categoryReference", "dbSRSApproverLevel"],
+      "suffix": ""
+    },
+    {
+      "category": "DLP Group - Application Authorization",
+      "prefix": "ACE-G-DLP",
+      "text": ["dLPEnvironment", "dLPGroupRole"],
+      "suffix": ""
+    },
+    {
+      "category": "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+      "prefix": "ACE-S-IBAC",
+      "text": [
+        "applicationName",
+        "productionUATorDEV",
+        "projectName",
+        "vRMID",
+        "versionIterationofGroup",
+        "role"
+      ],
+      "suffix": ""
+    },
+    {
+      "category": "Role - Admin (Default)",
+      "prefix": "R-AD",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Role - User (Default)",
+      "prefix": "R-User",
+      "text": ["digitalIdentity", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+      "prefix": "UACE-S-IBAC",
+      "text": ["productionUATorDEV", "vendorteamName", "projectName", "groupRole"],
+      "suffix": ""
+    }
+  ],
+  "descriptionStructure": [
+    {
+      "category": "Application Access - Authorization (Default)",
+      "prefix": "Authorization",
+      "text": ["dbagApplicationID", "role", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "Data Access - Other (Default)",
+      "prefix": "Data Access Other",
+      "text": ["description", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Control (Default)",
+      "prefix": "Control",
+      "text": ["role", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "Data Access - SharePoint (Default)",
+      "prefix": "Data Access SharePoint",
+      "text": ["role", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Desktop (Default)",
+      "prefix": "",
+      "text": ["description", "Desktop", "dbagInfrastructureID", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "dbAccessGate - Application Approver Group - Application Authorization",
+      "prefix": "",
+      "text": [
+        "description",
+        "dbAccessGate (65953-2) Application Approver Group",
+        "samDbagApplicationID",
+        "groupNameText",
+        "approverLevel"
+      ],
+      "suffix": ""
+    },
+    {
+      "category": "dbAccessGate - Business Approver Group - Application Authorization",
+      "prefix": "",
+      "text": ["dbAccessGate (65953-2) Business Approver Group", "description", "groupNameText"],
+      "suffix": ""
+    },
+    {
+      "category": "dbAccessGate - CIDA Service Team Group - Application Authorization",
+      "prefix": "",
+      "text": ["dbAccessGate (65953-2) CIDA Service Team", "description", "groupNameText"],
+      "suffix": ""
+    },
+    {
+      "category": "dbAccessGate - Infrastructure Application Approver Group - Application Authorization",
+      "prefix": "",
+      "text": [
+        "dbAccessGate (65953-2) Infrastructure Application Approver Group",
+        "description",
+        "samDbagApplicationID",
+        "groupNameText",
+        "approverLevel"
+      ],
+      "suffix": ""
+    },
+    {
+      "category": "Application Access - SW Distribution (Default)",
+      "prefix": "",
+      "text": ["description", "SW Distribution", "dbagApplicationID", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Application Access - Virtualization (Default)",
+      "prefix": "",
+      "text": ["description", "Virtualization", "dbagApplicationID", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Data Access - Mailbox (Default)",
+      "prefix": "Data Access Mailbox",
+      "text": ["role", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "Data Access - Share (Default)",
+      "prefix": "Data Access Share",
+      "text": ["description", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Database - End User (Default)",
+      "prefix": "Database End User",
+      "text": ["description", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Other (Default)",
+      "prefix": "Infrastructure Access Other",
+      "text": ["description", "dbagInfrastructureID", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Robot Object - Infrastructure Other",
+      "prefix": "Robot Operator Group",
+      "text": ["description", "RobotBusinessDescription"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Print (Default)",
+      "prefix": "Print",
+      "text": ["description", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "Administrative - CyberArk Application Server Group",
+      "prefix": "CyberArk",
+      "text": ["role", "serverName", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "Administrative - CyberArk Infrastructure Server Group",
+      "prefix": "",
+      "text": ["description", "CyberArk", "role", "serverName"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Server - Admin (Default)",
+      "prefix": "Server Admin",
+      "text": ["dbagInfrastructureID", "role", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "CyberArk - BreakGlass Group - Application Support",
+      "prefix": "",
+      "text": [
+        "description",
+        "CyberArk",
+        "cyberarkregion",
+        "role",
+        "permissioning group for",
+        "dbagApplicationID"
+      ],
+      "suffix": ""
+    },
+    {
+      "category": "CyberArk - Role Group - Application Support",
+      "prefix": "",
+      "text": [
+        "description",
+        "CyberArk",
+        "cyberarkregion",
+        "dbSRSApproverLevel",
+        "permissioning group for",
+        "dbagApplicationID"
+      ],
+      "suffix": ""
+    },
+    {
+      "category": "CyberArk - Safe Access Group - Application Support",
+      "prefix": "CyberArk",
+      "text": ["description", "cyberarkregion", "role", "group for", "dbagApplicationID"],
+      "suffix": ""
+    },
+    {
+      "category": "Role - Admin (Default)",
+      "prefix": "Role Admin",
+      "text": ["role", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "Role - User (Default)",
+      "prefix": "Role User",
+      "text": ["description", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "dbSRS - Approver ACL Group - Application Authorization",
+      "prefix": "",
+      "text": [
+        "description",
+        "dbSRS Approval Group",
+        "samDbagApplicationID",
+        "categoryReference",
+        "dbSRSApproverLevel"
+      ],
+      "suffix": ""
+    },
+    {
+      "category": "dbSRS - Role ACL Group - Application Authorization",
+      "prefix": "",
+      "text": ["description", "groupNameText"],
+      "suffix": ""
+    },
+    {
+      "category": "Identity Based Access Control (IBAC) - Application Group - Application Authorization",
+      "prefix": "",
+      "text": ["versionIterationofGroup", "description", "projectName", "group", "1", "role"],
+      "suffix": ""
+    },
+    {
+      "category": "DLP Group - Application Authorization",
+      "prefix": "",
+      "text": ["description"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - AD Objects (Default)",
+      "prefix": "",
+      "text": ["Active Directory", "dbagInfrastructureID", "role", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "CyberArk - Safe Access Group - Infrastructure Support",
+      "prefix": "CyberArk",
+      "text": ["role", "group for", "info", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Database - Admin (Default)",
+      "prefix": "Database Admin",
+      "text": ["role", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Database - Application Support (Default)",
+      "prefix": "Database App Support",
+      "text": ["role", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "Infrastructure Access - Server - Application Support (Default)",
+      "prefix": "Server App Support",
+      "text": ["dbagInfrastructureID", "role", "description"],
+      "suffix": ""
+    },
+    {
+      "category": "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+      "prefix": "",
+      "text": ["vendorteamName", "projectName", "groupRole", "description"],
+      "suffix": ""
+    }
+  ]
+}

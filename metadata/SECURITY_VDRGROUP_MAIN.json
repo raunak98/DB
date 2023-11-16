@@ -1,0 +1,398 @@
+{
+  "groupBy": [
+    {
+      "value": "GRP_NAME",
+      "label": "Group Name",
+      "type": "assignment.igaContent.GRP_NAME.keyword"
+    },
+    {
+      "value": "Account Owner",
+      "label": "Account Owner",
+      "type": "user.userName.keyword"
+    },
+    {
+      "value": "VDR Provider",
+      "label": "VDR Provider",
+      "type": "account.igaContent.VDR_PROVIDER.keyword"
+    },
+    {
+      "type": "decision.certification.actors.label.keyword",
+      "label": "Reviewer",
+      "value": "Reviewer",
+      "default": true
+    },
+    {
+      "value": "Username",
+      "label": "Username",
+      "type": "user.userName.keyword"
+    },
+    {
+      "type": "account.igaContent.ACCOUNT_ID.keyword",
+      "label": "Account Name",
+      "value": "Account Name"
+    },
+    {
+      "type": "assignment.name.keyword",
+      "label": "Entitlement",
+      "value": "Entitlement"
+    },
+    {
+      "type": "application.name.keyword",
+      "label": "Application Name",
+      "value": "Application Name"
+    },
+    {
+      "type": "assignment.igaContent.DR_NAME.keyword",
+      "label": "Data Room Name",
+      "value": "Data Room Name"
+    },
+    {
+      "type": "user.mail.keyword",
+      "label": "Email",
+      "value": "Email"
+    },
+    {
+      "type": "assignment.igaContent.CAL_OWNER.keyword",
+      "label": "Cal Owner",
+      "value": "Cal Owner"
+    },
+    {
+      "type": "assignment.igaContent.GRP_TYPE.keyword",
+      "label": "Group Type",
+      "value": "Group Type"
+    }
+  ],
+  "initialGroupBy": "All",
+  "filterBy": [
+    {
+      "value": "certify",
+      "type": "decision.certification.decision.keyword",
+      "label": "Maintained"
+    },
+    {
+      "value": "revoke",
+      "type": "decision.certification.decision.keyword",
+      "label": "Revoked"
+    },
+    {
+      "value": "reassign",
+      "type": "decision.certification.comments.action.keyword",
+      "label": "Reassign",
+      "sortType": "decision.certification.comments.action.keyword"
+    },
+    {
+      "value": "nullValue",
+      "type": "decision.certification.decision.keyword",
+      "label": "None"
+    }
+  ],
+  "initialFilterBy": "All",
+  "paginationSizes": [10, 25, 50, 100],
+  "hasSortableColumns": true,
+  "initialSortColumnId": "applicationName",
+  "bulkActions": ["maintain", "revoke", "reassign", "forward"],
+  "columns": [
+    {
+      "id": "select",
+      "type": "checkbox",
+      "header": {
+        "type": "component",
+        "component": "checkbox",
+        "text": "Select"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "mandatory": true,
+      "initialDisplay": true,
+      "order": 1
+    },
+    {
+      "id": "decision",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Decision"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 2,
+      "properties": {
+        "options": [
+          {
+            "id": "maintain",
+            "iconInactive": "maintainDefault",
+            "iconActive": "maintain",
+            "title": "Maintain"
+          },
+          {
+            "id": "revoke",
+            "iconInactive": "revokeNew",
+            "iconActive": "radio",
+            "title": "Revoke"
+          }
+        ]
+      }
+    },
+    {
+      "id": "comment",
+      "type": "iconPopup",
+      "header": {
+        "type": "text",
+        "text": "comment"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 3,
+      "properties": {
+        "iconInactive": "comments",
+        "iconActive": "comments"
+      }
+    },
+    {
+      "id": "accountName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account",
+        "sortKey": "account.igaContent.ACCOUNT_ID.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 4,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "account"
+      }
+    },
+    {
+      "id": "entitlement",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Entitlement Name",
+        "sortKey": "assignment.name.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "mandatory": false,
+      "initialDisplay": true,
+      "order": 5,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "entitlement"
+      }
+    },
+    {
+      "id": "dataRoomName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Data Room Name",
+        "sortKey": "assignment.igaContent.DR_NAME.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 6,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "dataRoomName"
+      }
+    },
+    {
+      "id": "groupDescription",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Description (g)",
+        "sortKey": "assignment.igaContent.GRP_DESCRIPTION.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 7
+    },
+    {
+      "id": "dataRoomDescription",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Data Room Description (g)",
+        "sortKey": "assignment.igaContent.DR_DESCRIPTION.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 8,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "dataRoomDescription"
+      }
+    },
+    {
+      "id": "dataRoomId",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Data Room Id",
+        "sortKey": "assignment.igaContent.DR_APPLICATION_ID.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 9,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "dataRoomId"
+      }
+    },
+    {
+      "id": "username",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Name",
+        "sortKey": "user.userName.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 10,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "username"
+      }
+    },
+    {
+      "id": "email",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Email",
+        "sortKey": "user.mail.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 11
+    },
+    {
+      "id": "accountTypeA",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "accountTypeA",
+        "sortKey": "account.accountType.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 12
+    },
+    {
+      "id": "accountStatus",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Status",
+        "sortKey": "account.igaContent.ACCOUNT_STATUS.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 13
+    },
+    {
+      "id": "vdrProvider",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "VDR Provider",
+        "sortKey": "account.igaContent.VDR_PROVIDER.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 14
+    },
+    {
+      "id": "groupName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Name",
+        "sortKey": "assignment.igaContent.GRP_NAME.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 15
+    },
+    {
+      "id": "groupType",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Type",
+        "sortKey": "assignment.igaContent.GRP_TYPE.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 16
+    },
+    {
+      "id": "calOwner",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "CAL Owner",
+        "sortKey": "assignment.igaContent.CAL_OWNER.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "order": 17
+    },
+    {
+      "id": "actions",
+      "type": "longMenu",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "mandatory": true,
+      "initialDisplay": true,
+      "order": 18,
+      "properties": {
+        "iconInactive": "ellipsisMenu",
+        "iconActive": "ellipsisMenu",
+        "options": [
+          {
+            "id": "maintain",
+            "title": "Maintain"
+          },
+          {
+            "id": "revoke",
+            "title": "Revoke"
+          },
+          {
+            "id": "reassign",
+            "popupId": "reviewItemReassign"
+          },
+          {
+            "id": "forward",
+            "popupId": "reviewItemForward"
+          }
+        ]
+      }
+    }
+  ]
+}

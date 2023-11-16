@@ -1,0 +1,117 @@
+{
+  "paginationSizes": [10, 25, 50, 100],
+  "initialSortColumnId": "applicationName",
+  "hasSortableColumns": true,
+  "bulkActions": ["delete"],
+  "columns": [
+    {
+      "id": "select",
+      "type": "checkbox",
+      "header": {
+        "type": "component",
+        "component": "checkbox",
+        "text": "Select"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 1
+    },
+    {
+      "id": "actions",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "order": 1,
+      "initialDisplay": true,
+      "sortable": false,
+      "mandatory": true,
+      "properties": {
+        "options": [
+          {
+            "id": "edit",
+            "text": "open",
+            "fieldForPath": "id",
+            "redirectProps": ["id"],
+            "title": "draft.Edit"
+          },
+          {
+            "id": "withdraw",
+            "iconInactive": "delete",
+            "iconActive": "delete",
+            "title": "draft.Delete"
+          },
+
+          {
+            "id": "submit",
+            "title": "draft.Submit",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "id",
+              "redirectProps": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "categoryDraft",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Category",
+        "sortKey": "request.common.category.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 7
+    },
+    {
+      "id": "operation",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Operation",
+        "sortKey": "request.common.operation.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4
+    },
+    {
+      "id": "recipient",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Recipient",
+        "sortKey": "request.common.recepientMail.keyword"
+      },
+      "initialDisplay": true,
+      "order": 4,
+      "sortable": true,
+      "hasInfo": true,
+      "properties": {
+        "infoFieldLink": "http://gd.intranet.db.com/iam/"
+      }
+    },
+    {
+      "id": "detailedInfo",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Detailed Information",
+        "sortKey": "request.common.requestJustification.keyword"
+      },
+      "initialDisplay": true,
+      "order": 5,
+      "sortable": true
+    }
+  ]
+}

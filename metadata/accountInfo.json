@@ -1,0 +1,162 @@
+[
+  {
+    "id": "dn",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "DN"
+    },
+    "initialDisplay": true,
+    "order": 1
+  },
+  {
+    "id": "accountName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Account Name"
+    },
+    "initialDisplay": true,
+    "order": 2
+  },
+  {
+    "id": "mail",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Mail"
+    },
+    "initialDisplay": true,
+    "order": 3
+  },
+  {
+    "id": "employeeType",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Employee Type"
+    },
+    "initialDisplay": true,
+    "order": 4
+  },
+  {
+    "id": "lastName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Last Name"
+    },
+    "initialDisplay": true,
+    "order": 5
+  },
+  {
+    "id": "firstName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "First Name"
+    },
+    "initialDisplay": true,
+    "order": 6
+  },
+  {
+    "id": "type",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Type"
+    },
+    "initialDisplay": true,
+    "order": 7
+  },
+  {
+    "id": "domain",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Domain"
+    },
+    "initialDisplay": true,
+    "order": 8
+  },
+  {
+    "id": "entityType",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Entity Type"
+    },
+    "initialDisplay": true,
+    "order": 9
+  },
+  {
+    "id": "entitlement",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Entitlement"
+    },
+    "initialDisplay": true,
+    "order": 10
+  },
+  {
+    "id": "accountId",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Account ID"
+    },
+    "initialDisplay": true,
+    "order": 11
+  },
+  {
+    "id": "accountFriendlyName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Account Friendly Name"
+    },
+    "initialDisplay": true,
+    "order": 12
+  },
+  {
+    "id": "accountType",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Account Type"
+    },
+    "initialDisplay": true,
+    "order": 13
+  },
+  {
+    "id": "accountStatus",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Account Status"
+    },
+    "initialDisplay": true,
+    "order": 14
+  },
+  {
+    "id": "accountOwner",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Account Owner"
+    },
+    "initialDisplay": true,
+    "order": 15
+  },
+  {
+    "id": "vdrProvider",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "VDR Provider"
+    },
+    "initialDisplay": true,
+    "order": 16
+  }
+]

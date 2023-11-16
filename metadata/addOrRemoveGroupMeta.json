@@ -1,0 +1,97 @@
+{
+  "groupBy": [
+    {
+      "value": "GroupIOwn",
+      "label": "Group I Own",
+      "type": "user.userName.keyword"
+    }
+  ],
+  "initialGroupBy": "All",
+  "filterBy": [],
+  "initialFilterBy": "All",
+  "paginationSizes": [10, 25, 50, 100],
+  "hasSortableColumns": true,
+  "initialSortColumnId": "",
+  "bulkActions": ["approve", "reject"],
+  "columns": [
+    {
+      "id": "select",
+      "type": "checkbox",
+      "header": {
+        "type": "component",
+        "component": "checkbox",
+        "text": "Select"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 1
+    },
+    {
+      "id": "approvers",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Approvers"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 2,
+      "properties": {
+        "options": [
+          {
+            "id": "approvers",
+            "type": "view",
+            "text": "View",
+            "title": "View"
+          }
+        ]
+      }
+    },
+    {
+      "id": "groupName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Name"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 3
+    },
+
+    {
+      "id": "groupCategory",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Category"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 4
+    },
+
+    {
+      "id": "sticky",
+      "type": "sticky",
+      "header": {
+        "type": "component",
+        "component": "sticky"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 15,
+      "sticky": "right"
+    }
+  ]
+}

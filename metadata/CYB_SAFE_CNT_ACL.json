@@ -1,0 +1,685 @@
+{
+    "groupBy": [
+        {
+            "value": "Entitlement_Name",
+            "label": "Entitlement_Name",
+            "type": "account.igaContent.resource_name.keyword"
+        }
+    ],
+    "initialGroupBy": "account.igaContent.account_hostname.keyword",
+    "filterBy": [
+        {
+            "value": "certify",
+            "type": "decision.certification.decision.keyword",
+            "label": "Maintained"
+        },
+        {
+            "value": "revoke",
+            "type": "decision.certification.decision.keyword",
+            "label": "Revoked"
+        },
+        {
+            "value": "reassign",
+            "type": "decision.certification.decision.keyword",
+            "label": "Reassign",
+            "sortType": "decision.certification.comments.action.keyword"
+        },
+        {
+            "value": "nullValue",
+            "type": "decision.certification.decision.keyword",
+            "label": "None"
+        }
+    ],
+    "initialFilterBy": "All",
+    "paginationSizes": [
+        10,
+        25,
+        50,
+        100
+    ],
+    "hasSortableColumns": true,
+    "initialSortColumnId": "applicationName",
+    "bulkActions": [
+        "maintain",
+        "revoke",
+        "reassign",
+        "none"
+    ],
+    "columns": [
+        {
+            "id": "select",
+            "type": "checkbox",
+            "header": {
+                "type": "component",
+                "component": "checkbox",
+                "text": "Select"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "mandatory": true,
+            "initialDisplay": true,
+            "order": 1
+        },
+        {
+            "id": "decision",
+            "type": "collapsColumn",
+            "header": {
+                "type": "text",
+                "text": "Decision"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 2,
+            "properties": {
+                "options": [
+                    {
+                        "id": "maintain",
+                        "iconInactive": "maintainDefault",
+                        "iconActive": "maintain",
+                        "title": "Maintain"
+                    },
+                    {
+                        "id": "revoke",
+                        "iconInactive": "revokeNew",
+                        "iconActive": "radio",
+                        "title": "Revoke"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "comment",
+            "type": "iconPopup",
+            "header": {
+                "type": "text",
+                "text": "comment"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 3,
+            "properties": {
+                "iconInactive": "comments",
+                "iconActive": "comments"
+            }
+        },
+        {
+            "id": "groupType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Type",
+                "sortKey": "account.igaContent.group_name.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 7,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "groupType"
+            }
+        },
+        {
+            "id": "groupName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Name",
+                "sortKey": "account.igaContent.group_name.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 19
+        },
+        {
+            "id": "groupIndividualId",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Individual ID",
+                "sortKey": "account.igaContent.group_type.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 5,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "individualId"
+            }
+        },
+        {
+            "id": "groupEntityId",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Entity ID",
+                "sortKey": "account.igaContent.group_entity_id.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 4
+        },
+        {
+            "id": "groupPlatform",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Platform",
+                "sortKey": "account.igaContent.group_platform.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 10
+        },
+        {
+            "id": "groupOwner",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Owner",
+                "sortKey": "account.igaContent.group_owner.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 8
+        },
+        {
+            "id": "groupOwnerType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Owner Type",
+                "sortKey": "account.igaContent.group_owner_type.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 8
+        },
+        {
+            "id": "groupOwnerDelegate",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Owner Delegate",
+                "sortKey": "account.igaContent.group_owner_delegate.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 8
+        },
+        {
+            "id": "groupEntityType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Entity Type",
+                "sortKey": "account.igaContent.group_entity_type.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 8
+        },
+        {
+            "id": "groupEntityStatus",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Entity Status",
+                "sortKey": "account.igaContent.group_entity_status.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "groupDomain",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Domain",
+                "sortKey": "account.igaContent.group_domain.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "groupComments",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Comments",
+                "sortKey": "account.igaContent.group_comments.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "groupNarId",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Nar Id",
+                "sortKey": "account.igaContent.group_nar_id.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "groupCreateDate",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Create Date",
+                "sortKey": "account.igaContent.group_create_date.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "cybaction",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Action",
+                "sortKey": "account.igaContent.action.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "actionDescription",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Action Description",
+                "sortKey": "account.igaContent.action_description.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Name",
+                "sortKey": "account.igaContent.resource_name.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Type",
+                "sortKey": "account.igaContent.resource_type.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseFQN",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement FQN",
+                "sortKey": "account.igaContent.resource_fnq.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseDescription",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Description",
+                "sortKey": "account.igaContent.resource_description.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseClassification",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Classification",
+                "sortKey": "account.igaContent.resource_classification.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseEntityLifeStatus",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Entity Life Status",
+                "sortKey": "account.igaContent.resource_entity_life_status.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseEntityInstanceName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Entity Instance Name",
+                "sortKey": "account.igaContent.resource_entity_life_status.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseEntityType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Entity Type",
+                "sortKey": "account.igaContent.resource_entity_type.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "supportRoleName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Support Role Name",
+                "sortKey": "account.igaContent.support_role_name.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "supportRoleLeader",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Support Role Leader",
+                "sortKey": "account.igaContent.support_role_leader.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseCreateDate",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlemet Create Date",
+                "sortKey": "account.igaContent.resource_create_date.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "safeOwnerEmail",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Owner",
+                "sortKey": "account.igaContent.safe_owner_email.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "safeDelegate1Email",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Delegate 1",
+                "sortKey": "account.igaContent.safe_delegate_1_email.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "safeDelegate2Email",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Delegate 2",
+                "sortKey": "account.igaContent.safe_delegate_2_email.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "safeDelegate3Email",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Delegate 3",
+                "sortKey": "account.igaContent.safe_delegate_3_email.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "actions",
+            "type": "longMenu",
+            "header": {
+                "type": "text",
+                "text": "Actions"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 20,
+            "properties": {
+                "iconInactive": "ellipsisMenu",
+                "iconActive": "ellipsisMenu",
+                "options": [
+                    {
+                        "id": "maintain",
+                        "title": "Maintain"
+                    },
+                    {
+                        "id": "revoke",
+                        "title": "Revoke"
+                    },
+                    {
+                        "id": "reassign",
+                        "popupId": "reviewItemReassign"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sticky",
+            "type": "sticky",
+            "header": {
+                "type": "component",
+                "component": "sticky"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 21,
+            "sticky": "right"
+        }
+    ]
+}

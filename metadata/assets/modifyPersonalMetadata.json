@@ -1,0 +1,216 @@
+{
+  "groupBy": [
+    {
+      "value": "Hostname",
+      "label": "Database Name",
+      "type": "account.igaContent.object.account_hostname.keyword"
+    }
+  ],
+  "initialGroupBy": "account.igaContent.object.account_hostname.keyword",
+  "filterBy": [
+    {
+      "type": "account.igaContent.object.account_entity_type.keyword",
+      "value": "Application Service Account",
+      "label": "Application Service Account"
+    }
+  ],
+  "initialFilterBy": "All",
+  "paginationSizes": [10, 25, 50, 100],
+  "hasSortableColumns": true,
+  "initialSortColumnId": "",
+  "bulkActions": [""],
+  "columns": [
+    {
+      "id": "actions",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 1,
+      "properties": {
+        "options": [
+          {
+            "id": "viewDetails",
+            "iconInactive": "view",
+            "iconActive": "view",
+            "title": "myAssets.viewDetails",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "id",
+              "redirectProps": ["id"],
+              "redirectTo": ["/my-asset/AccountSummary"]
+            }
+          },
+          {
+            "id": "edit",
+            "iconInactive": "editNew",
+            "iconActive": "editNew",
+            "title": "myAssets.editDetails",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "id",
+              "redirectProps": ["id"],
+              "redirectTo": ["/my-asset/modify"]
+            }
+          },
+          {
+            "id": "delete",
+            "iconInactive": "delete",
+            "iconActive": "delete",
+            "title": "myAssets.deleteDetails",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "id",
+              "redirectProps": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "sAMAccountName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Name",
+        "sortKey": "igaContent.sAMAccountName.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 2
+    },
+    {
+      "id": "accountStatus",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Status"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 3
+    },
+    {
+      "id": "category",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Category"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4
+    },
+    {
+      "id": "requestNumber",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Request No"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 5
+    },
+    {
+      "id": "recipientId",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Recipient",
+        "sortKey": "userId.mail.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 6,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "recipient"
+      }
+    },
+    {
+      "id": "requester",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Requester"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 7,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "requester"
+      }
+    },
+    {
+      "id": "itAssests",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "It Assets"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 8
+    },
+    {
+      "id": "requestType",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Request Type"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 9
+    },
+    {
+      "id": "requestDate",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Request Date"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 10
+    },
+    {
+      "id": "sticky",
+      "type": "sticky",
+      "header": {
+        "type": "component",
+        "component": "sticky"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": false,
+      "mandatory": true,
+      "order": 11,
+      "sticky": "right"
+    }
+  ]
+}

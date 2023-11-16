@@ -1,0 +1,24 @@
+{
+  "result": [
+    {
+      "id": "1",
+      "index": "0",
+      "label": "myTeamsTab.personalAccounts"
+    },
+    {
+      "id": "2",
+      "index": "1",
+      "label": "myTeamsTab.nonPersonalAccounts"
+    },
+    {
+      "id": "3",
+      "index": "2",
+      "label": "myTeamsTab.groups"
+    },
+    {
+      "id": "4",
+      "index": "3",
+      "label": "myTeamsTab.indirectlyOwnedGroups"
+    }
+  ]
+}

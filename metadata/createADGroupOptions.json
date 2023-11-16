@@ -1,0 +1,375 @@
+{
+  "accountCategory": [
+    {
+      "label": "Application Access - Authorisation (Default)",
+      "value": "ApplicationAccess-AuthorisationDefault"
+    },
+    {
+      "label": "dbAccessGate - Application Approver Group - Application Authorisation",
+      "value": "dbAccessGate-ApplicationApproverGroup-ApplicationAuthorisation"
+    },
+    {
+      "label": "dbAccessGate - Business Approver Group - Application Authorisation",
+      "value": "dbAccessGate-BusinessApproverGroup-ApplicationAuthorisation"
+    },
+    {
+      "label": "dbAccessGate - CIDA Service Team Group - Application Authorisation",
+      "value": "dbAccessGate-CIDAServiceTeamGroup-Application Authorisation"
+    },
+    {
+      "label": "dbAccessGate - Infrastructure Application Approver Group - Application Authorisation",
+      "value": "dbAccessGate-InfrastructureApplicationApproverGroup-ApplicationAuthorisation"
+    },
+    {
+      "label": "dbSRS - Approver ACL Group - Application Authorisation dbSRS - Role ACL Group - Application Authorisation",
+      "value": "dbSRS-ApproverACLGroup-ApplicationAuthorisationdbSRS-RoleACLGroup-ApplicationAuthorisation"
+    },
+    {
+      "label": "Identity Based Access Control ( IBAC)- Application Group - Application Authorization",
+      "value": "IdentityBasedAccessControl(IBAC)-Application Group-ApplicationAuthorization"
+    },
+    {
+      "label": "Infrastructure Access - Print (Default)",
+      "value": "InfrastructureAccess-PrintDefault"
+    },
+    {
+      "label": "Data Access - Sharepoint (Default)",
+      "value": "DataAccess-SharepointDefault"
+    },
+    {
+      "label": "Infrastructure Access - AD Objects (Default)",
+      "value": "InfrastructureAccess-ADObjectsDefault"
+    },
+    {
+      "label": "Infrastructure Access - Control (Default)",
+      "value": "InfrastructureAccess-ControlDefault"
+    },
+    {
+      "label": "CyberArk - Safe Access Group - Infrastructure Support",
+      "value": "CyberArk-SafeAccessGroup-InfrastructureSupport"
+    },
+    {
+      "label": "Infrastructure Access - Database - Admin (Default)",
+      "value": "InfrastructureAccess-Database-AdminDefault"
+    },
+    {
+      "label": "Infrastructure Access - Database - Application Support (Default)",
+      "value": "InfrastructureAccess-Database-ApplicationSupportDefault"
+    },
+    {
+      "label": "Infrastructure Access - Database - End User (Default)",
+      "value": "InfrastructureAccess-Database-EndUserDefault"
+    },
+    {
+      "label": "Infrastructure Access - Desktop (Default)",
+      "value": "InfrastructureAccess-DesktopDefault"
+    },
+    {
+      "label": "Infrastructure Access - Other (Default)",
+      "value": "InfrastructureAccess-OtherDefault"
+    },
+    {
+      "label": "Robot Object - Infrastructure Other",
+      "value": "RobotObject-InfrastructureOther"
+    },
+    {
+      "label": "Infrastructure Access - Server - Application Support (Default)",
+      "value": "InfrastructureAccess-Server-ApplicationSupportDefault"
+    },
+    {
+      "label": "CyberArk - BreakGlass Group - Infrastructure Support",
+      "value": "CyberArk-BreakGlassGroup-InfrastructureSupport"
+    },
+    {
+      "label": "CyberArk - Role Group - Infrastructure Support",
+      "value": "CyberArk-RoleGroup-InfrastructureSupport"
+    },
+    {
+      "label": "Infrastructure Access - Server - Admin (Default)",
+      "value": "InfrastructureAccess-Server-AdminDefault"
+    },
+    {
+      "label": "Administrative - CyberArk Application Server Group",
+      "value": "Administrative-CyberArkApplicationServerGroup"
+    },
+    {
+      "label": "Administrative - CyberArk Infrastructure Server Group",
+      "value": "Administrative-CyberArkInfrastructureServerGroup"
+    },
+    {
+      "label": "CyberArk - BreakGlass Group - Application Support",
+      "value": "CyberArk-BreakGlass Group-ApplicationSupport"
+    },
+    {
+      "label": "CyberArk - Role Group - Application Support",
+      "value": "CyberArk-RoleGroup-ApplicationSupport"
+    },
+    {
+      "label": "CyberArk - Safe Access Group - Application Support",
+      "value": "CyberArk-SafeAccessGroup-ApplicationSupport"
+    },
+    {
+      "label": "Role - Admin (Default)",
+      "value": "Role-AdminDefault"
+    },
+    {
+      "label": "Role - User (Default)",
+      "value": "Role-UserDefault"
+    },
+    {
+      "label": "dbSRS - Role ACL Group - Application Authorisation",
+      "value": "dbSRS-RoleACLGroup-ApplicationAuthorisation"
+    },
+    {
+      "label": "Unclassified - Application - Authorisation",
+      "value": "Unclassified-Application-Authorisation"
+    },
+    {
+      "label": "Application Access - Virtualisation (Default)",
+      "value": "ApplicationAccess-VirtualisationDefault"
+    },
+    {
+      "label": "Application Access - SW Distribution (Default)",
+      "value": "ApplicationAccess-SWDistributionDefault"
+    },
+    {
+      "label": "Data Access - Mailbox (Default)",
+      "value": "DataAccess-MailboxDefault"
+    },
+    {
+      "label": "Data Access - Share (Default)",
+      "value": "DataAccess-ShareDefault"
+    },
+    {
+      "label": "Data Access - Other (Default)",
+      "value": "DataAccess-OtherDefault"
+    },
+    {
+      "label": "dbSRS - Approver ACL Group - Application Authorisation",
+      "value": "dbSRS-ApproverACLGroup-ApplicationAuthorisation"
+    },
+    {
+      "label": "Infrastructure Access - Control (Default)",
+      "value": "InfrastructureAccess-ControlDefault"
+    },
+    {
+      "label": "Administrative - CyberArk Infrastructure Server Group",
+      "value": "Administrative-CyberArkInfrastructureServerGroup"
+    }
+  ],
+  "accessioGroupType": [
+    {
+      "label": "Application Access - Authorisation (Default)",
+      "value": "Application Access - Authorisation (Default)"
+    },
+    {
+      "label": "dbAccessGate - Application Approver Group - Application Authorisation",
+      "value": "dbAccessGate - Application Approver Group - Application Authorisation"
+    },
+    {
+      "label": "dbAccessGate - Business Approver Group - Application Authorisation",
+      "value": "dbAccessGate - Business Approver Group - Application Authorisation"
+    },
+    {
+      "label": "dbAccessGate - CIDA Service Team Group - Application Authorisation",
+      "value": "dbAccessGate - CIDA Service Team Group - Application Authorisation"
+    },
+    {
+      "label": "dbAccessGate - Infrastructure Application Approver Group - Application Authorisation",
+      "value": "dbAccessGate - Infrastructure Application Approver Group - Application Authorisation"
+    },
+    {
+      "label": "dbSRS - Approver ACL Group - Application Authorisation",
+      "value": "dbSRS - Approver ACL Group - Application Authorisation"
+    },
+    {
+      "label": "dbSRS - Role ACL Group - Application Authorisation",
+      "value": "dbSRS - Role ACL Group - Application Authorisation"
+    },
+    {
+      "label": "Identity Based Access Control ( IBAC)- Application Group - Application Authorization",
+      "value": "Identity Based Access Control ( IBAC)- Application Group - Application Authorization"
+    },
+    {
+      "label": "Application Access - Virtualisation (Default)",
+      "value": "Application Access - Virtualisation (Default)"
+    },
+    {
+      "label": "Application Access - SW Distribution (Default)",
+      "value": "Application Access - SW Distribution (Default)"
+    },
+    {
+      "label": "Data Access - Mailbox (Default)",
+      "value": "Data Access - Mailbox (Default)"
+    },
+    {
+      "label": "Data Access - Other (Default)",
+      "value": "Data Access - Other (Default)"
+    },
+    {
+      "label": "Data Access - Share (Default)",
+      "value": "Data Access - Share (Default)"
+    },
+    {
+      "label": "Data Access - Sharepoint (Default)",
+      "value": "Data Access - Sharepoint (Default)"
+    },
+    {
+      "label": "Infrastructure Access - AD Objects (Default)",
+      "value": "Infrastructure Access - AD Objects (Default)"
+    },
+    {
+      "label": "Infrastructure Access - Control (Default)",
+      "value": "Infrastructure Access - Control (Default)"
+    },
+    {
+      "label": "CyberArk - Safe Access Group - Infrastructure Support",
+      "value": "CyberArk - Safe Access Group - Infrastructure Support"
+    },
+    {
+      "label": "Infrastructure Access - Database - Admin (Default)",
+      "value": "Infrastructure Access - Database - Admin (Default)"
+    },
+    {
+      "label": "Infrastructure Access - Database - Application Support (Default)",
+      "value": "Infrastructure Access - Database - Application Support (Default)"
+    },
+    {
+      "label": "Infrastructure Access - Database - End User (Default)",
+      "value": "Infrastructure Access - Database - End User (Default)"
+    },
+    {
+      "label": "Infrastructure Access - Desktop (Default)",
+      "value": "Infrastructure Access - Desktop (Default)"
+    },
+    {
+      "label": "Infrastructure Access - Other (Default)",
+      "value": "Infrastructure Access - Other (Default)"
+    },
+    {
+      "label": "Robot Object - Infrastructure Other",
+      "value": "Robot Object - Infrastructure Other"
+    },
+    {
+      "label": "Infrastructure Access - Print (Default)",
+      "value": "Infrastructure Access - Print (Default)"
+    },
+    {
+      "label": "Infrastructure Access - Server - Application Support (Default)",
+      "value": "Infrastructure Access - Server - Application Support (Default)"
+    },
+    {
+      "label": "CyberArk - BreakGlass Group - Infrastructure Support",
+      "value": "CyberArk - BreakGlass Group - Infrastructure Support"
+    },
+    {
+      "label": "CyberArk - Role Group - Infrastructure Support",
+      "value": "CyberArk - Role Group - Infrastructure Support"
+    },
+    {
+      "label": "Infrastructure Access - Server - Admin (Default)",
+      "value": "Infrastructure Access - Server - Admin (Default)"
+    },
+    {
+      "label": "Administrative - CyberArk Application Server Group",
+      "value": "Administrative - CyberArk Application Server Group"
+    },
+    {
+      "label": "Administrative - CyberArk Infrastructure Server Group",
+      "value": "Administrative - CyberArk Infrastructure Server Group"
+    },
+    {
+      "label": "CyberArk - BreakGlass Group - Application Support",
+      "value": "CyberArk - BreakGlass Group - Application Support"
+    },
+    {
+      "label": "CyberArk - Role Group - Application Support",
+      "value": "CyberArk - Role Group - Application Support"
+    },
+    {
+      "label": "CyberArk - Safe Access Group - Application Support",
+      "value": "CyberArk - Safe Access Group - Application Support"
+    },
+    {
+      "label": "Role - Admin (Default)",
+      "value": "Role - Admin (Default)"
+    },
+    {
+      "label": "Role - User (Default)",
+      "value": "Role - User (Default)"
+    }
+  ],
+  "groupDomain": [
+    { "label": "DBCH", "value": "DBCH" },
+    { "label": "DBG", "value": "DBG" },
+    { "label": "DBLUX", "value": "DBLUX" },
+    { "label": "DBSVC", "value": "DBSVC" },
+    { "label": "ITCBOD", "value": "ITCBOD" }
+  ],
+  "recipient": [
+    {
+      "label": "Vollala, Prashanth (prashanth.vollalaone@db.com)",
+      "value": "prashanth.vollalaone@db.com",
+      "manager": "Wiese, Alexander (alexander.wieseone@db.com)"
+    },
+    {
+      "label": "Vollala, Prashanth (prashanth.vollalatwo@db.com)",
+      "value": "prashanth.vollalatwo@db.com",
+      "manager": "Wiese, Alexander (alexander.wiesetwo@db.com)"
+    }
+  ],
+  "locations": [
+    {
+      "label": "Default Location (Americas)",
+      "value": "Default Location (Americas)"
+    },
+    {
+      "label": "Deafault Location (EMEA)",
+      "value": "Deafault Location (EMEA)"
+    },
+    {
+      "label": "Provider (ATOS)",
+      "value": "Provider (ATOS)"
+    },
+    {
+      "label": "Provider (ATOS Germany) ",
+      "value": "Provider (ATOS Germany) "
+    },
+    {
+      "label": "Provider (Bauspar AG)",
+      "value": "Provider (Bauspar AG)"
+    },
+    {
+      "label": "Provider (DB Securities)",
+      "value": "Provider (DB Securities)"
+    },
+    {
+      "label": "Provider (Deutsche Immobillen Leasing)",
+      "value": "Provider (Deutsche Immobillen Leasing)"
+    }
+  ],
+  "dbagApplicationID": [
+    { "label": "101235-1 BankAPI-dbAPI", "value": "101235_1" },
+    { "label": "111236-1 Research Core", "value": "111236_1" }
+  ],
+  "costCenter": [
+    {
+      "label": "Controlling VRS Angestellte RST 122-2 (N)",
+      "value": "0029002095",
+      "department": [{ "label": "Controlling Department", "value": "Controlling Department" }]
+    },
+    {
+      "label": "VRS RST 122-2 (N)",
+      "value": "0089103018",
+      "department": [{ "label": "VRS Department", "value": "VRS Department" }]
+    }
+  ],
+  "department": [
+    { "label": "SDG", "value": "SDG" },
+    { "label": "SDGGQM", "value": "SDGGQM" }
+  ],
+  "primaryAccount": [
+    { "id": "prashanth.vollalaone@db.com", "label": "AVP", "value": "AVP" },
+    { "id": "prashanth.vollalatwo@db.com", "label": "MKV", "value": "MKV" }
+  ]
+}

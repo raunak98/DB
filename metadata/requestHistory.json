@@ -1,0 +1,210 @@
+{
+  "paginationSizes": [10, 25, 50, 100],
+  "initialSortColumnId": "applicationName",
+  "hasSortableColumns": true,
+  "groupBy": [
+    {
+      "value": "Hostname",
+      "label": "Database Name",
+      "type": "account.igaContent.object.account_hostname.keyword"
+    }
+  ],
+  "initialGroupBy": "account.igaContent.object.account_hostname.keyword",
+  "filterBy": [
+    {
+      "type": "account.igaContent.object.account_entity_type.keyword",
+      "value": "Application Service Account",
+      "label": "Application Service Account"
+    }
+  ],
+  "initialFilterBy": "All",
+  "columns": [
+    {
+      "id": "actions",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "order": 1,
+      "initialDisplay": true,
+      "sortable": false,
+      "mandatory": true,
+      "properties": {
+        "options": [
+          {
+            "id": "viewDetails",
+            "text": "open",
+            "fieldForPath": "id",
+            "redirectProps": ["id"],
+            "title": "requestHistory.viewDetails"
+          },
+          {
+            "id": "withdraw",
+            "iconInactive": "delete",
+            "iconActive": "delete",
+            "title": "requestHistory.withdraw"
+          }
+        ]
+      }
+    },
+    {
+      "id": "requestNumber",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Request No",
+        "sortKey": "request.common.Accessio_Request_No.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 2
+    },
+    {
+      "id": "recipient",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Recipient",
+        "sortKey": "request.common.recepientMail.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 5,
+      "properties": {
+        "infoFieldLink": "http://gd.intranet.db.com/iam/"
+      }
+    },
+    {
+      "id": "requester",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Requester",
+        "sortKey": "request.common.requestorMail.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 5,
+      "properties": {
+        "infoFieldLink": "http://gd.intranet.db.com/iam/"
+      }
+    },
+    {
+      "id": "status",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Status",
+        "sortKey": ""
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 6
+    },
+    {
+      "id": "category",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Category",
+        "sortKey": "request.common.category.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 7
+    },
+    {
+      "id": "operation",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Operation",
+        "sortKey": "request.common.operation.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4
+    },
+    {
+      "id": "requestedItem",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Requested Item"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 8
+    },
+    {
+      "id": "requestDate",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Request Date",
+        "sortKey": "decision.startDate"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 9
+    },
+    {
+      "id": "approvalDate",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Decision Date"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 10
+    },
+    {
+      "id": "completionDate",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Completion Date",
+        "sortKey": "decision.completionDate"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 11
+    },
+    {
+      "id": "bulkRequestId",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Bulk Request Id",
+        "sortKey": "request.common.AccessioBulkRequestNumber.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 3
+    }
+  ]
+}

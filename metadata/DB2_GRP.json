@@ -1,0 +1,259 @@
+{
+    "groupBy": [
+        {
+            "value": "Group",
+            "label": "Group",
+            "type": "account.igaContent.grp_name"
+        }
+    ],
+    "initialGroupBy": "account.igaContent.account_hostname.keyword",
+    "filterBy": [
+        {
+            "value": "certify",
+            "type": "decision.certification.decision.keyword",
+            "label": "Maintained"
+        },
+        {
+            "value": "revoke",
+            "type": "decision.certification.decision.keyword",
+            "label": "Revoked"
+        },
+        {
+            "value": "reassign",
+            "type": "decision.certification.decision.keyword",
+            "label": "Reassign",
+            "sortType": "decision.certification.comments.action.keyword"
+        },
+        {
+            "value": "nullValue",
+            "type": "decision.certification.decision.keyword",
+            "label": "None"
+        }
+    ],
+    "initialFilterBy": "All",
+    "paginationSizes": [
+        10,
+        25,
+        50,
+        100
+    ],
+    "hasSortableColumns": true,
+    "initialSortColumnId": "applicationName",
+    "bulkActions": [
+        "maintain",
+        "revoke",
+        "reassign",
+        "none"
+    ],
+    "columns": [
+        {
+            "id": "select",
+            "type": "checkbox",
+            "header": {
+                "type": "component",
+                "component": "checkbox",
+                "text": "Select"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "mandatory": true,
+            "initialDisplay": true,
+            "order": 1
+        },
+        {
+            "id": "decision",
+            "type": "collapsColumn",
+            "header": {
+                "type": "text",
+                "text": "Decision"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 2,
+            "properties": {
+                "options": [
+                    {
+                        "id": "maintain",
+                        "iconInactive": "maintainDefault",
+                        "iconActive": "maintain",
+                        "title": "Maintain"
+                    },
+                    {
+                        "id": "revoke",
+                        "iconInactive": "revokeNew",
+                        "iconActive": "radio",
+                        "title": "Revoke"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "comment",
+            "type": "iconPopup",
+            "header": {
+                "type": "text",
+                "text": "comment"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 3,
+            "properties": {
+                "iconInactive": "comments",
+                "iconActive": "comments"
+            }
+        },
+        {
+            "id": "status",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Status"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 7
+        },
+        {
+            "id": "entilementUniqueName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entilement Unique Name"
+            },
+            "hasInfo": true,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 6
+        },
+        {
+            "id": "entilementDomain",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entilement Domain"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 4
+        },
+        {
+            "id": "groupId",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Group Id"
+            },
+            "hasInfo": true,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 5
+        },
+        {
+            "id": "entilementPlatform",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entilement Platform"
+            },
+            "hasInfo": true,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 6
+        },
+        {
+            "id": "entitlementDelegate",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Delegate"
+            },
+            "hasInfo": true,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 7
+        },
+        {
+            "id": "entitlementType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Type"
+            },
+            "hasInfo": true,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 8
+        },
+        {
+            "id": "entitlementOwner",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Owner"
+            },
+            "hasInfo": true,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 9
+        },
+        {
+            "id": "actions",
+            "type": "longMenu",
+            "header": {
+                "type": "text",
+                "text": "Actions"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 19,
+            "properties": {
+                "iconInactive": "ellipsisMenu",
+                "iconActive": "ellipsisMenu",
+                "options": [
+                    {
+                        "id": "maintain",
+                        "title": "Maintain"
+                    },
+                    {
+                        "id": "revoke",
+                        "title": "Revoke"
+                    },
+                    {
+                        "id": "reassign",
+                        "popupId": "reviewItemReassign"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sticky",
+            "type": "sticky",
+            "header": {
+                "type": "component",
+                "component": "sticky"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 20,
+            "sticky": "right"
+        }
+    ]
+}

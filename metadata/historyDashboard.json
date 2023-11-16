@@ -1,0 +1,20 @@
+[
+  {
+    "id": ["reviewshistory"],
+    "displayInMenu": true,
+    "data": "/v0/dashboard/reviews?status=complete",
+    "redirectTo": ["/tasks/reviews"]
+  },
+  {
+    "id": ["approvals"],
+    "displayInMenu": true,
+    "data": "/v0/dashboard/approvals",
+    "redirectTo": ["/history/approvalHistory"]
+  },
+  {
+    "id": ["requesthistory"],
+    "displayInMenu": true,
+    "data": "/v0/dashboard/request",
+    "redirectTo": "/history/requestHistory"
+  }
+]

@@ -1,0 +1,205 @@
+{
+  "took": 11,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 1,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "gov-sit3_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "e43dd1a1b2d62e210f2cd19ac3a4b6bdec575eb56ab5ced45b30bacb1341cb3c5bb2bda3bd616fab35365b5fc2ddea8a33816db6f40d9fc671499c6caefc7f31",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "namrata.hom@gbgdev.db.com",
+            "givenName": "namrata",
+            "sn": "hom",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": false,
+            "userName": "namrata.hom@gbgdev.db.com"
+          },
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "request": {
+            "common": {
+              "Accessio_Request_No": "20230331-960",
+              "AccessioBulkRequestNumber": "20230331984z",
+              "requestJustification": "Delete Account",
+              "recepientMail": "namrata.hom@gbgdev.db.com",
+              "requestorMail": "namrata.hom@gbgdev.db.com",
+              "accountDescription": "This request will delete record",
+              "sAMAccountName": "NamrataPrimary-2",
+              "rLastName": "",
+              "accountType": "",
+              "isDraft": false,
+              "rFirstName": "",
+              "category": "AD Account",
+              "operation": "Delete",
+              "applicationName": "APP_AD_B_DBG"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/9fa4842f-1d87-4207-8685-5c3406a214ca",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-03-31T05:52:32.416Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1684129952218",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "9fa4842f-1d87-4207-8685-5c3406a214ca"
+          },
+          "requestType": "deleteAccount",
+          "decision": {
+            "actors": {
+              "inactive": [
+                {
+                  "mail": "namrata.hom@gbgdev.db.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": false,
+                    "reject": false,
+                    "comment": false,
+                    "reassign": false
+                  },
+                  "givenName": "namrata",
+                  "sn": "hom",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "isAdmin": false,
+                  "userName": "namrata.hom@gbgdev.db.com"
+                },
+                {
+                  "phase": "LineManagerApproval",
+                  "mail": "bhavya.bhaskar-rao@gbgdev.db.com",
+                  "permissions": {
+                    "cancel": false,
+                    "modify": false,
+                    "fulfill": false,
+                    "approve": "true",
+                    "reject": "true",
+                    "comment": "true",
+                    "reassign": "true"
+                  },
+                  "givenName": "bhavya",
+                  "sn": "bhaskar",
+                  "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+                  "isAdmin": false,
+                  "userName": "bhavya.bhaskar-rao@gbgdev.db.com"
+                }
+              ],
+              "actorTags": [
+                "activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4&phase=",
+                "phase=&activeId=managed%2Fuser%2Fe03ae474-d5f3-4ef2-a6b9-3e928ba0dad4"
+              ],
+              "active": []
+            },
+            "comments": [
+              {
+                "timeStamp": "2023-03-06T10:31:31+00:00",
+                "request": {
+                  "common": {
+                    "Accessio_Request_No": "20230306-960",
+                    "AccessioBulkRequestNumber": "20230331984z",
+                    "recepientMail": "",
+                    "accountDescription": "This request will delete record",
+                    "sAMAccountName": "NamrataPrimary-2",
+                    "accountType": "",
+                    "rLastName": "",
+                    "requestorMail": "namrata.hom@gbgdev.db.com",
+                    "isDraft": false,
+                    "requestJustification": "twat",
+                    "rFirstName": "",
+                    "category": "AD Account",
+                    "operation": "Delete",
+                    "applicationName": "APP_AD_B_DBG"
+                  }
+                },
+                "action": "updateRequest",
+                "user": {
+                  "id": "SYSTEM"
+                }
+              },
+              {
+                "timeStamp": "2023-03-06T10:31:31+00:00",
+                "request": {
+                  "common": {
+                    "Accessio_Request_No": "20230306-960",
+                    "AccessioBulkRequestNumber": "20230331984z",
+                    "recepientMail": "",
+                    "accountDescription": "This request will delete record",
+                    "sAMAccountName": "NamrataPrimary-2",
+                    "accountType": "",
+                    "rLastName": "",
+                    "requestorMail": "namrata.hom@gbgdev.db.com",
+                    "isDraft": false,
+                    "requestJustification": "twat",
+                    "rFirstName": "",
+                    "category": "AD Account",
+                    "operation": "Delete",
+                    "applicationName": "APP_AD_B_DBG"
+                  }
+                },
+                "action": "updateRequest",
+                "user": {
+                  "id": "SYSTEM"
+                }
+              },
+              {
+                "timeStamp": "2023-03-06T10:31:31+00:00",
+                "comment": "Request status updated to cancelled",
+                "action": "updateRequest",
+                "user": {
+                  "mail": "accessio@db.com",
+                  "id": "SYSTEM"
+                }
+              }
+            ],
+            "completionDate": "2023-03-31",
+            "deadline": null,
+            "outcome": "cancelled",
+            "status": "in-progress",
+            "phases": [
+              {
+                "decision": null,
+                "workflowTaskId": "351043",
+                "name": "LineManagerApproval",
+                "completionDate": "2023-03-15T08:43:23+00:00",
+                "type": "request",
+                "startDate": "2023-03-31T06:00:55+00:00",
+                "events": {
+                  "reminder": {
+                    "notification": "accountsApprovalReminder",
+                    "date": "2023-04-05T06:00:55+00:00",
+                    "frequency": 5
+                  },
+                  "expiration": {
+                    "notification": "accountsRequestExpired",
+                    "date": "2023-04-10"
+                  }
+                },
+                "status": "complete"
+              }
+            ]
+          },
+          "id": "9fa4842f-1d87-4207-8685-5c3406a214ca"
+        },
+        "sort": ["20230515-7AU6"]
+      }
+    ]
+  }
+}

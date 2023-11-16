@@ -1,0 +1,172 @@
+{
+  "groupBy": [],
+  "initialGroupBy": "All",
+  "filterBy": [],
+  "initialFilterBy": "All",
+  "paginationSizes": [10, 25, 50, 100],
+  "hasSortableColumns": true,
+  "initialSortColumnId": "",
+  "columns": [
+    {
+      "id": "actions",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 2,
+      "properties": {
+        "options": [
+          {
+            "id": "viewDetails",
+            "iconInactive": "view",
+            "iconActive": "view",
+            "title": "justifications.viewDetails",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "id",
+              "redirectProps": ["id"],
+              "redirectTo": ["/tasks/justifications/justificationsSummary"]
+            }
+          },
+          {
+            "id": "comment",
+            "type": "iconPopup",
+            "iconInactive": "comments",
+            "iconActive": "comments",
+            "title": "Comments"
+          },
+          {
+            "id": "withdraw",
+            "iconInactive": "delete",
+            "iconActive": "delete",
+            "title": "requestHistory.withdraw"
+          }
+        ]
+      }
+    },
+    {
+      "id": "requestNumber",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Request No",
+        "sortKey": "request.common.Accessio_Request_No.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 3
+    },
+    {
+      "id": "recipient",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Recipient",
+        "sortKey": "request.common.recepientMail.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "recipient",
+        "infoFieldLink": "http://gd.intranet.db.com/iam/"
+      }
+    },
+    {
+      "id": "category",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Category",
+        "sortKey": "request.common.category.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 7
+    },
+    {
+      "id": "operation",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Operation",
+        "sortKey": "request.common.operation.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4
+    },
+    {
+      "id": "requestDate",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Request Date",
+        "sortKey": "decision.startDate"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 6
+    },
+    {
+      "id": "requestedItem",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Requested Item"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 7
+    },
+    {
+      "id": "status",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Status",
+        "sortKey": "decision.status.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 8,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "status"
+      }
+    },
+    {
+      "id": "expiry",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Expiry"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 9
+    }
+  ]
+}

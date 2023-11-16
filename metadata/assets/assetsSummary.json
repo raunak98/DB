@@ -1,0 +1,171 @@
+{
+  "steps": [
+    {
+      "id": "accountCategory",
+      "title": "Account Details",
+      "heading": "metaData.accountDetails",
+      "children": [
+        {
+          "id": "category",
+          "label": "create.ADAccount.accountCategory",
+          "value": ""
+        },
+        {
+          "id": "dbagApplicationID",
+          "label": "metaData.applicationNARID",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account",
+            "Shared - Generic",
+            "Technical - Generic brokered",
+            "Technical - Service/ Process"
+          ]
+        },
+        {
+          "id": "primaryAccount",
+          "label": "create.ADAccount.primaryAccount",
+          "value": ""
+        },
+        {
+          "id": "recipientId",
+          "label": "metaData.Recipient",
+          "value": ""
+        },
+        {
+          "id": "domain",
+          "label": "create.ADAccount.domain",
+          "value": ""
+        },
+        {
+          "id": "l",
+          "label": "metaData.location",
+          "value": "",
+          "relatedTo": [
+            "Personal - Additional",
+            "Personal - Admin",
+            "Personal - Desktop Admin",
+            "Shared - Generic",
+            "Technical - Generic brokered",
+            "Technical - Service/ Process",
+            "Technical - Test",
+            "Personal - Domain Support"
+          ]
+        },
+        {
+          "id": "dbagCostcenter",
+          "label": "metaData.costCenter",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account"
+          ]
+        },
+        {
+          "id": "department",
+          "label": "metaData.department",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account"
+          ]
+        },
+        {
+          "id": "l",
+          "label": "create.ADAccount.accountRegion",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account"
+          ]
+        },
+        {
+          "id": "serviceNowLevel",
+          "label": "create.ADAccount.accountServiceNowLevel",
+          "value": "",
+          "relatedTo": ["CyberArk Role (shared) Account"]
+        },
+        {
+          "id": "dbagInfrastructureID",
+          "label": "create.ADAccount.accountinfrastructureNarId",
+          "value": "",
+          "relatedTo": ["Technical - Generic brokered"]
+        },
+        {
+          "id": "platformType",
+          "label": "create.ADAccount.platformType",
+          "value": "",
+          "relatedTo": ["CyberArk Role (shared) Account"]
+        },
+        {
+          "id": "accountStatus",
+          "label": "review.columnHeader.accountStatus",
+          "value": ""
+        },
+        {
+          "id": "description",
+          "label": "serverMembership.description",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account"
+          ]
+        },
+        {
+          "id": "recertificationPeriod",
+          "label": "create.ADAccount.accountrecertificationPeriod",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account"
+          ]
+        },
+        {
+          "id": "accountAccessLevel",
+          "label": "create.ADAccount.acccountAccessLevel",
+          "value": "",
+          "relatedTo": ["CyberArk Role (shared) Account"]
+        },
+        {
+          "id": "accountNameSuffix",
+          "label": "create.ADAccount.acccountNameSuffixx",
+          "value": "",
+          "relatedTo": ["Personal - Additional"]
+        },
+        {
+          "id": "accountNameMiddle",
+          "label": "create.ADAccount.accountNameMidddle",
+          "value": "",
+          "relatedTo": [
+            "Shared - Generic",
+            "Technical - Generic brokered",
+            "Technical - Service/ Process",
+            "Technical - Test"
+          ]
+        },
+        {
+          "id": "passwordNeverExpires",
+          "label": "create.ADAccount.passwordNeverExpiress",
+          "value": "",
+          "relatedTo": ["Technical - Service/ Process"]
+        },
+        {
+          "id": "sAMAccountName",
+          "label": "serverMembership.accountName",
+          "value": ""
+        },
+        {
+          "id": "employeeId",
+          "label": "review.columnHeader.employeeID",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}

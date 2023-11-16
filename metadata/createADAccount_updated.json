@@ -1,0 +1,1052 @@
+{
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Request",
+      "heading": "Account Category",
+      "titleId": "request",
+      "headingId": "accountCategory",
+      "children": [
+        {
+          "title": "Account Category",
+          "type": "dropdown",
+          "id": "accountCategory",
+          "name": "accountType",
+          "label": "create.ADAccount.accountCategory",
+          "url": "/api/metadata/accountCategory",
+          "queryparameters": ["queryString"],
+          "category": "accountCategory",
+          "requiredField": true,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          }
+        },
+        {
+          "title": "Application NAR ID",
+          "type": "autocomplete",
+          "id": "dbagApplicationID",
+          "label": "review.columnHeader.applicationNARId",
+          "name": "dbagApplicationID",
+          "url": "/v0/application/getApplicationNarId",
+          "queryparameters": ["exactMatch", "narId"],
+          "category": "accountCategory",
+          "requiredField": true,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": [
+            "SharedGeneric",
+            "TechnicalGenericbrokered",
+            "TechnicalServiceProcess",
+            "CyberArkNamedAccountApplication",
+            "CyberArkNamedAccountInfrastructure",
+            "CyberArkRolesharedAccount",
+            "gMSA"
+          ],
+          "placeholder": "create.ADAccount.applicationNarIdPlaceHolder",
+          "infoText": "create.ADAccount.applicationNarId"
+        },
+        {
+          "title": "ITAO",
+          "type": "displayvalue",
+          "id": "iTAO",
+          "label": "metaData.itao",
+          "name": "iTAO",
+          "category": "accountCategory",
+          "requiredField": true,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": ["gMSA"]
+        },
+        {
+          "title": "ITAO Delegate",
+          "type": "displayvalue",
+          "id": "iTAODelegate",
+          "label": "metaData.itaoDelegate",
+          "name": "iTAODelegate",
+          "category": "accountCategory",
+          "requiredField": true,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": ["gMSA"]
+        },
+        {
+          "title": "Recipient",
+          "type": "autocomplete",
+          "id": "recipient",
+          "label": "review.columnHeader.recipient",
+          "name": "recipient",
+          "url": "/v0/governance/getEmailAddress",
+          "queryparameters": ["exactMatch", "emailId"],
+          "category": "accountCategory",
+          "requiredField": true,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": [
+            "CyberArkNamedAccountApplication",
+            "CyberArkNamedAccountInfrastructure",
+            "CyberArkRolesharedAccount",
+            "SharedGeneric",
+            "PersonalAdditional",
+            "PersonalAdmin",
+            "PersonalDesktopAdmin",
+            "PersonalDomainSupport",
+            "TechnicalGenericbrokered",
+            "TechnicalTest",
+            "TechnicalServiceProcess",
+            "gMSA"
+          ],
+          "default": "",
+          "placeholder": "create.ADAccount.recipientPlaceHolder"
+        },
+        {
+          "title": "Primary Account",
+          "type": "displayvalue",
+          "id": "primaryAccount",
+          "label": "create.ADAccount.primaryAccount",
+          "name": "primaryAccount",
+          "category": "accountCategory",
+          "url": "/v0/account/accountDetails",
+          "queryparameters": ["recepient"],
+          "requiredField": false,
+          "displayType": {
+            "hidden": true,
+            "readOnly": false,
+            "disabled": false
+          }
+        },
+        {
+          "title": "Domain",
+          "type": "displayvalue",
+          "id": "domain",
+          "label": "create.ADAccount.domain",
+          "name": "domain",
+          "category": "accountCategory",
+          "requiredField": false,
+          "default": "DBG",
+          "displayType": {
+            "hidden": true,
+            "readOnly": false,
+            "disabled": false
+          }
+        },
+        {
+          "title": "Location",
+          "type": "dropdown",
+          "id": "location",
+          "label": "create.ADAccount.accountLocation",
+          "name": "l",
+          "category": "accountCategory",
+          "requiredField": true,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": [
+            "PersonalAdditional",
+            "PersonalAdmin",
+            "PersonalDesktopAdmin",
+            "SharedGeneric",
+            "TechnicalGenericbrokered",
+            "TechnicalServiceProcess",
+            "TechnicalTest",
+            "PersonalDomainSupport"
+          ],
+          "infoText": "create.ADAccount.location",
+          "options": [
+            {
+              "label": "Administrative (GIST)",
+              "value": "Administrative (GIST)",
+              "belongsto": ["PersonalDomainSupport"]
+            },
+            {
+              "label": "Default Location (Americas)",
+              "value": "Default Location (Americas)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest"
+              ]
+            },
+            {
+              "label": "Default Location (Asia-Pacific)",
+              "value": "Default Location (Asia-Pacific)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest"
+              ]
+            },
+            {
+              "label": "Default Location (EMEA)",
+              "value": "Default Location (EMEA)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest"
+              ]
+            },
+            {
+              "label": "Default Location (Global)",
+              "value": "Default Location (Global)",
+              "belongsto": ["TechnicalServiceProcess"]
+            },
+            {
+              "label": "Provider (ATOS)",
+              "value": "Provider (ATOS)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest",
+                "TechnicalServiceProcess"
+              ]
+            },
+            {
+              "label": "Provider (ATOS Germany)",
+              "value": "Provider (ATOS Germany)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest",
+                "TechnicalServiceProcess"
+              ]
+            },
+            {
+              "label": "Provider (Bauspar AG)",
+              "value": "Provider (Bauspar AG)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest",
+                "TechnicalServiceProcess"
+              ]
+            },
+            {
+              "label": "Provider (DB Securities)",
+              "value": "Provider (DB Securities)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest",
+                "TechnicalServiceProcess"
+              ]
+            },
+            {
+              "label": "Provider (Deutsche Immobilien Leasing)",
+              "value": "Provider (Deutsche Immobilien Leasing)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest",
+                "TechnicalServiceProcess"
+              ]
+            },
+            {
+              "label": "Provider (Engineering-EMEA)",
+              "value": "Provider (Engineering-EMEA)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest",
+                "TechnicalServiceProcess"
+              ]
+            },
+            {
+              "label": "Provider (IT Audit)",
+              "value": "Provider (IT Audit)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest",
+                "TechnicalServiceProcess"
+              ]
+            },
+            {
+              "label": "Provider (Postbank)",
+              "value": "Provider (Postbank)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest",
+                "TechnicalServiceProcess"
+              ]
+            },
+            {
+              "label": "Provider (Russia)",
+              "value": "Provider (Russia)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest",
+                "TechnicalServiceProcess"
+              ]
+            },
+            {
+              "label": "Provider (Switzerland)",
+              "value": "Provider (Switzerland)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest",
+                "TechnicalServiceProcess"
+              ]
+            },
+            {
+              "label": "Provider (Turkey)",
+              "value": "Provider (Turkey)",
+              "belongsto": [
+                "PersonalAdditional",
+                "PersonalAdmin",
+                "PersonalDesktopAdmin",
+                "SharedGeneric",
+                "TechnicalGenericbrokered",
+                "TechnicalTest",
+                "TechnicalServiceProcess"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Cost Center",
+          "type": "autocomplete",
+          "id": "dbagCostcenter",
+          "label": "review.columnHeader.costCenter",
+          "name": "dbagCostcenter",
+          "url": "/v0/governance/getCostCenter",
+          "queryparameters": ["exactMatch", "costCenter"],
+          "category": "accountCategory",
+          "requiredField": true,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.costCenter",
+          "relatedTo": [
+            "CyberArkNamedAccountApplication",
+            "CyberArkNamedAccountInfrastructure",
+            "CyberArkRolesharedAccount",
+            "gMSA"
+          ]
+        },
+        {
+          "title": "Department",
+          "type": "autocomplete",
+          "id": "department",
+          "label": "review.columnHeader.department",
+          "name": "department",
+          "url": "/v0/governance/getDeptWithDeptId",
+          "queryparameters": ["departmentId"],
+          "category": "accountCategory",
+          "requiredField": true,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.department",
+          "relatedTo": [
+            "CyberArkNamedAccountApplication",
+            "CyberArkNamedAccountInfrastructure",
+            "CyberArkRolesharedAccount"
+          ]
+        },
+        {
+          "title": "Region",
+          "type": "dropdown",
+          "id": "region",
+          "label": "create.ADAccount.accountRegion",
+          "name": "l",
+          "category": "accountCategory",
+          "requiredField": true,
+          "default": "gl",
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.region",
+          "relatedTo": [
+            "CyberArkNamedAccountApplication",
+            "CyberArkNamedAccountInfrastructure",
+            "CyberArkRolesharedAccount"
+          ],
+          "options": [
+            {
+              "label": "Americas",
+              "value": "am"
+            },
+            {
+              "label": "AsiaPac",
+              "value": "ap"
+            },
+            {
+              "label": "EMEA",
+              "value": "em"
+            },
+            {
+              "label": "Global",
+              "value": "gl"
+            }
+          ]
+        },
+        {
+          "title": "Service Now Level",
+          "type": "dropdown",
+          "id": "serviceNowLevel",
+          "label": "create.ADAccount.accountServiceNowLevel",
+          "name": "serviceNowLevel",
+          "category": "accountCategory",
+          "requiredField": true,
+          "relatedTo": ["CyberArkRolesharedAccount"],
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.serviceNowLevel",
+          "options": [
+            {
+              "label": "Everyone Else",
+              "value": "Y"
+            },
+            {
+              "label": "Level-1 Support",
+              "value": "1"
+            },
+            {
+              "label": "Level-2 Support",
+              "value": "2"
+            },
+            {
+              "label": "Level-3 Support",
+              "value": "3"
+            },
+            {
+              "label": "SNLevel_LevelT",
+              "value": "t"
+            }
+          ]
+        },
+        {
+          "title": "Infrastructure NAR ID",
+          "type": "dropdown",
+          "id": "dbagInfrastructureID",
+          "label": "create.ADAccount.accountinfrastructureNarId",
+          "name": "dbagInfrastructureID",
+          "category": "accountCategory",
+          "requiredField": true,
+          "relatedTo": ["TechnicalGenericbrokered"],
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.infrastructureNarId",
+          "options": [
+            {
+              "label": "db-Cyberark-Global (NAR ID: 46965-1)",
+              "value": "46965-1"
+            }
+          ]
+        },
+        {
+          "title": "Platform Type",
+          "type": "dropdown",
+          "id": "platformType",
+          "label": "create.ADAccount.platformType",
+          "name": "platformType",
+          "category": "accountCategory",
+          "requiredField": true,
+          "relatedTo": ["CyberArkRolesharedAccount"],
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.platformType",
+          "options": [
+            {
+              "label": "All platforms",
+              "value": "al"
+            },
+            {
+              "label": "BladeLogic",
+              "value": "bl"
+            },
+            {
+              "label": "Control for M",
+              "value": "cm"
+            },
+            {
+              "label": "Directory Services",
+              "value": "ds"
+            },
+            {
+              "label": "Firewalls",
+              "value": "fw"
+            },
+            {
+              "label": "HP ILO",
+              "value": "il"
+            },
+            {
+              "label": "MS SQL",
+              "value": "sq"
+            },
+            {
+              "label": "Oracle",
+              "value": "or"
+            },
+            {
+              "label": "Routing & Switching",
+              "value": "rs"
+            },
+            {
+              "label": "Sybase",
+              "value": "sy"
+            },
+            {
+              "label": "Unix",
+              "value": "ux"
+            },
+            {
+              "label": "VMWare Virtual Hosting Enterprise Server Console",
+              "value": "es"
+            },
+            {
+              "label": "Windows",
+              "value": "wn"
+            }
+          ]
+        },
+        {
+          "title": "Account Status",
+          "type": "dropdown",
+          "id": "accountStatus",
+          "label": "review.columnHeader.accountStatus",
+          "name": "userAccountControl",
+          "category": "accountCategory",
+          "requiredField": true,
+          "default": "512",
+          "displayType": {
+            "hidden": true,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.accountStatus",
+          "options": [
+            {
+              "label": "Disabled",
+              "value": "514"
+            },
+            {
+              "label": "Enabled",
+              "value": "512"
+            }
+          ]
+        },
+        {
+          "title": "Description",
+          "type": "text",
+          "id": "description",
+          "label": "review.columnHeader.description",
+          "name": "description",
+          "category": "accountCategory",
+          "requiredField": true,
+          "alphanumericType": true,
+          "maxLength": 500,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.description",
+          "relatedTo": [
+            "CyberArkNamedAccountApplication",
+            "CyberArkNamedAccountInfrastructure",
+            "CyberArkRolesharedAccount",
+            "gMSA"
+          ]
+        },
+        {
+          "title": "Recertification Period",
+          "type": "dropdown",
+          "id": "recertificationPeriod",
+          "label": "create.ADAccount.accountrecertificationPeriod",
+          "name": "recertificationPeriod",
+          "category": "accountCategory",
+          "requiredField": true,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.recertificationPeriod",
+          "relatedTo": [
+            "CyberArkNamedAccountApplication",
+            "CyberArkNamedAccountInfrastructure",
+            "CyberArkRolesharedAccount"
+          ],
+          "default": "06",
+          "options": [
+            {
+              "label": "01 Month",
+              "value": "01"
+            },
+            {
+              "label": "02 Months",
+              "value": "02"
+            },
+            {
+              "label": "03 Months",
+              "value": "03"
+            },
+            {
+              "label": "04 Months",
+              "value": "04"
+            },
+            {
+              "label": "05 Months",
+              "value": "05"
+            },
+            {
+              "label": "06 Months",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "title": "Account Access Level",
+          "type": "dropdown",
+          "id": "accountAccessLevel",
+          "label": "create.ADAccount.acccountAccessLevel",
+          "name": "accountAccessLevel",
+          "category": "accountCategory",
+          "requiredField": true,
+          "relatedTo": ["CyberArkRolesharedAccount"],
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.accountAccessLevel",
+          "options": [
+            {
+              "label": "Level 1",
+              "value": "1"
+            },
+            {
+              "label": "Level 2",
+              "value": "2"
+            },
+            {
+              "label": "Level 3",
+              "value": "3"
+            },
+            {
+              "label": "Level 4",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "Account Name (suffix)",
+          "type": "dropdown",
+          "id": "accountNameSuffix",
+          "label": "create.ADAccount.acccountNameSuffixx",
+          "name": "accountNameSuffix",
+          "category": "accountCategory",
+          "requiredField": true,
+          "relatedTo": ["PersonalAdditional"],
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.accountNameSuffix",
+          "options": [
+            {
+              "label": "2",
+              "value": "2"
+            },
+            {
+              "label": "3",
+              "value": "3"
+            },
+            {
+              "label": "4",
+              "value": "4"
+            },
+            {
+              "label": "5",
+              "value": "5"
+            },
+            {
+              "label": "6",
+              "value": "6"
+            },
+            {
+              "label": "7",
+              "value": "7"
+            },
+            {
+              "label": "8",
+              "value": "8"
+            },
+            {
+              "label": "9",
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "title": "Account Name (middle)",
+          "type": "text",
+          "id": "accountNameMiddle",
+          "label": "create.ADAccount.accountNameMidddle",
+          "name": "middleName",
+          "category": "accountCategory",
+          "requiredField": true,
+          "onlyAlphanumericType": true,
+          "maxLength": 20,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.accountNameMiddle",
+          "relatedTo": [
+            "TechnicalGenericbrokered",
+            "TechnicalServiceProcess",
+            "TechnicalTest",
+            "SharedGeneric"
+          ]
+        },
+        {
+          "title": "Password Never Expires",
+          "type": "checkbox",
+          "id": "passwordNeverExpires",
+          "label": "create.ADAccount.passwordNeverExpiress",
+          "name": "passwordNeverExpires",
+          "category": "accountCategory",
+          "requiredField": false,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "infoText": "create.ADAccount.passwordNeverExpires",
+          "relatedTo": ["TechnicalServiceProcess"]
+        },
+        {
+          "title": "SAMAccount",
+          "type": "displayvalue",
+          "id": "samAccount",
+          "label": "create.ADAccount.samAccount",
+          "name": "sAMAccountName",
+          "category": "accountCategory",
+          "requiredField": false,
+          "default": "",
+          "displayType": {
+            "hidden": true,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": [
+            "PersonalAdditional",
+            "PersonalAdmin",
+            "PersonalDomainSupport",
+            "SharedGeneric",
+            "CyberArkNamedAccountApplication",
+            "CyberArkNamedAccountInfrastructure",
+            "TechnicalGenericbrokered",
+            "TechnicalTest",
+            "TechnicalServiceProcess",
+            "PersonalDesktopAdmin",
+            "CyberArkRolesharedAccount",
+            "gMSA"
+          ]
+        },
+        {
+          "title": "gMSA Name",
+          "type": "text",
+          "id": "name",
+          "label": "create.ADAccount.gmsaName",
+          "name": "name",
+          "category": "accountCategory",
+          "requiredField": true,
+          "alphanumericType": true,
+          "startAdornment": "gM_",
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": ["gMSA"]
+        },
+
+        {
+          "title": "Active Directory Group Name",
+          "type": "autocomplete",
+          "id": "PrincipalsAllowedToRetrieveManagedPassword",
+          "label": "create.ADAccount.activeDirectoryGroupName",
+          "name": "PrincipalsAllowedToRetrieveManagedPassword",
+          "url": "/v0/governance/searchGroups",
+          "category": "accountCategory",
+          "requiredField": true,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": ["gMSA"]
+        },
+        {
+          "title": "Managed Password Interval In Days",
+          "type": "text",
+          "id": "ManagedPasswordIntervalInDays",
+          "label": "create.ADAccount.managedPasswordIntervals",
+          "name": "ManagedPasswordIntervalInDays",
+          "category": "accountCategory",
+          "requiredField": true,
+          "default": "30",
+          "maxValue": "90",
+          "minValue": "1",
+          "numericType": true,
+          "maxLength": 2,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": ["gMSA"]
+        },        
+        {
+          "title": "Kerberos Encryption Type",
+          "type": "multiCheckbox",
+          "id": "KerberosEncryptionType",
+          "label": "create.ADAccount.KerberosEncryptionType",
+          "name": "KerberosEncryptionType",
+          "category": "accountCategory",
+          "requiredField": false,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": ["gMSA"],
+          "options": [
+            { "label": "AES128", "value": "8", "id": "AES128", "checked": true },
+            { "label": "AES256", "value": "16", "id": "AES256", "checked": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step2",
+      "title": "Business Justification",
+      "heading": "Business Justification",
+      "titleId": "businessJustification",
+      "children": [
+        {
+          "title": "Business Justification",
+          "label": "create.ADAccount.businessJustification",
+          "type": "textarea",
+          "id": "businessJustification",
+          "name": "requestJustification",
+          "category": "businessJustification",
+          "requiredField": true,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "alphanumericType": true,
+          "maxLength": 500
+        }
+      ]
+    },
+    {
+      "id": "step3",
+      "title": "Summary",
+      "heading": "Summary",
+      "titleId": "summary"
+    }
+  ],
+  "labelToCategory": {
+    "accountCategory": "Account Information",
+    "dbagApplicationID": "Application NAR ID",
+    "recipient": "Recipient",
+    "primaryAccount": "Primary Account",
+    "domain": "Domain",
+    "location": "Location",
+    "dbagCostcenter": "Cost Center",
+    "department": "Department",
+    "region": "Region",
+    "serviceNowLevel": "Service Now Level",
+    "dbagInfrastructureID": "Infrastructure NAR ID",
+    "platformType": "Platform Type",
+    "accountStatus": "Account Status",
+    "description": "Description",
+    "recertificationPeriod": "Recertification Period",
+    "accountAccessLevel": "Account Access Level",
+    "accountNameSuffix": "Account Name (suffix)",
+    "accountNameMiddle": "Account Name (middle)",
+    "passwordNeverExpires": "Password Never Expires",
+    "businessJustification": "Business Justification",
+    "approver": "Approvers",
+    "name": "gMSA Name",
+    "PrincipalsAllowedToRetrieveManagedPassword": "Active Directory Group Name",
+    "ManagedPasswordIntervalInDays": "Managed Password Interval In Days",
+    "KerberosEncryptionType": "Kerberos Encryption Type"
+  },
+  "SAMAccountDataStucture": [
+    {
+      "category": "PersonalAdditional",
+      "label": "Personal - Additional",
+      "prefix": "",
+      "text": ["primaryAccount"],
+      "suffix": "accountNameSuffix"
+    },
+    {
+      "category": "PersonalAdmin",
+      "label": "Personal - Admin",
+      "prefix": "",
+      "text": ["primaryAccount"],
+      "suffix": "-a"
+    },
+    {
+      "category": "PersonalDomainSupport",
+      "label": "Personal - Domain Support",
+      "prefix": "",
+      "text": ["primaryAccount"],
+      "suffix": "-ds"
+    },
+    {
+      "category": "PersonalDesktopAdmin",
+      "label": "Personal - Desktop Admin",
+      "prefix": "",
+      "text": ["primaryAccount"],
+      "suffix": "-d"
+    },
+    {
+      "category": "CyberArkNamedAccountApplication",
+      "label": "CyberArk Named Account (Application)",
+      "prefix": "",
+      "text": ["primaryAccount"],
+      "suffix": "-caa"
+    },
+    {
+      "category": "CyberArkNamedAccountInfrastructure",
+      "label": "CyberArk Named Account (Infrastructure)",
+      "prefix": "",
+      "text": ["primaryAccount"],
+      "suffix": "-cai"
+    },
+    {
+      "category": "CyberArkRolesharedAccount",
+      "label": "CyberArk Role (shared) Account",
+      "prefix": "d",
+      "text": [
+        "region",
+        "accountAccessLevel",
+        "serviceNowLevel",
+        "expression",
+        "_",
+        "dbagApplicationID",
+        "_",
+        "platformType"
+      ],
+      "suffix": "-g"
+    },
+    {
+      "category": "SharedGeneric",
+      "label": "Shared - Generic",
+      "prefix": "",
+      "text": ["accountNameMiddle"],
+      "suffix": "-g"
+    },
+    {
+      "category": "TechnicalGenericbrokered",
+      "label": "Technical - Generic brokered",
+      "prefix": "",
+      "text": ["accountNameMiddle"],
+      "suffix": "-g"
+    },
+    {
+      "category": "TechnicalServiceProcess",
+      "label": "Technical - Service/ Process",
+      "prefix": "svc_",
+      "text": ["accountNameMiddle"],
+      "suffix": ""
+    },
+    {
+      "category": "TechnicalTest",
+      "label": "Technical - Test",
+      "prefix": "",
+      "text": ["accountNameMiddle"],
+      "suffix": "-t"
+    },
+    {
+      "category": "gMSA",
+      "label": "gMSA (Group Managed Service Account)",
+      "prefix": "gM_",
+      "text": ["name"],
+      "suffix": "$"
+    }
+  ]
+}

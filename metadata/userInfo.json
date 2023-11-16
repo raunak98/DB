@@ -1,0 +1,52 @@
+[
+  {
+    "id": "username",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Username"
+    },
+    "initialDisplay": true,
+    "order": 1
+  },
+  {
+    "id": "mail",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Email"
+    },
+    "initialDisplay": true,
+    "order": 2
+  },
+  {
+    "id": "firstName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "First Name"
+    },
+    "initialDisplay": true,
+    "order": 3
+  },
+  {
+    "id": "lastName",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Last Name"
+    },
+    "initialDisplay": true,
+    "order": 4
+  },
+  {
+    "id": "status",
+    "type": "text",
+    "header": {
+      "type": "text",
+      "text": "Status"
+    },
+    "initialDisplay": true,
+    "order": 4
+  }
+]

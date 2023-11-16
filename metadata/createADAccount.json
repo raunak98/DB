@@ -1,0 +1,111 @@
+{
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Request",
+      "heading": "Account Category",
+      "children": [
+        {
+          "title": "Account Category",
+          "type": "autocomplete",
+          "id": "accountCategory",
+          "label": "Account Category",
+          "url": "/api/metadata/accountCategory",
+          "category": "accountCategory",
+          "requiredField": true
+        },
+        {
+          "title": "Recipient",
+          "type": "autocomplete",
+          "id": "recipient",
+          "label": "Recipient",
+          "url": "/api/metadata/recipient",
+          "relatedTo": "PersonalAdmin",
+          "category": "recipient",
+          "requiredField": true
+        },
+        {
+          "title": "Location",
+          "type": "autocomplete",
+          "id": "location",
+          "label": "Location",
+          "url": "/api/metadata/locations",
+          "relatedTo": "PersonalAdmin",
+          "category": "location",
+          "requiredField": true
+        }
+      ]
+    },
+    {
+      "id": "step2",
+      "title": "Approver",
+      "heading": "Approver",
+      "association": {
+        "field": "accountCategory",
+        "matchingValue": [
+          "PersonalAdmin",
+          "CyberArkNamedAccountApplication"
+        ]
+      },
+      "children": [
+        {
+          "title": "Approver",
+          "type": "autocomplete",
+          "id": "approver",
+          "label": "Approver",
+          "url": "/api/metadata/recipient",
+          "relatedTo": "PersonalAdmin",
+          "category": "approver",
+          "requiredField": true
+        },
+        {
+          "title": "Business Justification",
+          "label": "Business Justification",
+          "type": "textarea",
+          "id": "businessJustification",
+          "relatedTo": "PersonalAdmin",
+          "category": "approver",
+          "requiredField": true,
+          "alphaType": true
+        }
+      ]
+    },
+    {
+      "id": "step3",
+      "title": "Additional Step",
+      "heading": "Additional Step",
+      "association": {
+        "field": "accountCategory",
+        "matchingValue": [
+          "CyberArkNamedAccountApplication"
+        ]
+      },
+      "children": [
+        {
+          "title": "Approvertemp",
+          "type": "autocomplete",
+          "id": "approvertemp",
+          "label": "Approvertemp",
+          "url": "/api/metadata/recipient",
+          "relatedTo": "PersonalAdmin",
+          "category": "approvertemp",
+          "requiredField": true
+        },
+        {
+          "title": "Business Justification",
+          "label": "Business Justification",
+          "type": "textarea",
+          "id": "businessJustificationtemp",
+          "relatedTo": "PersonalAdmin",
+          "category": "approvertemp",
+          "requiredField": true
+        }
+      ]
+    },
+    {
+      "id": "step4",
+      "title": "Summary",
+      "heading": "Summary"
+    }
+  ]
+}

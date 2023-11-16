@@ -1,0 +1,190 @@
+{
+  "groupBy": [],
+  "initialGroupBy": "All",
+  "filterBy": [],
+  "initialFilterBy": "All",
+  "paginationSizes": [10, 25, 50, 100],
+  "hasSortableColumns": true,
+  "initialSortColumnId": "",
+  "bulkActions": [""],
+  "columns": [
+    {
+      "id": "select",
+      "type": "checkbox",
+      "header": {
+        "type": "component",
+        "component": "checkbox",
+        "text": "Select"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 1
+    },
+    {
+      "id": "actions",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 2,
+      "properties": {
+        "options": [
+          {
+            "id": "viewDetails",
+            "iconInactive": "view",
+            "iconActive": "view",
+            "title": "myAssets.viewDetails",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "cn",
+              "redirectProps": ["id"],
+              "redirectTo": ["/my-asset/accountSummary/indirectlyOwnedGroupSummary"]
+            }
+          },
+          {
+            "id": "edit",
+            "iconInactive": "editNew",
+            "iconActive": "editNew",
+            "title": "myAssets.editDetails",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "id",
+              "redirectProps": ["id"],
+              "redirectTo": ["/my-asset/modify/indirectlyOwnedModifyGroup"]
+            }
+          },
+          {
+            "id": "delete",
+            "iconInactive": "delete",
+            "iconActive": "delete",
+            "title": "myAssets.deleteDetails",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "id",
+              "redirectProps": ["id"]
+            }
+          },
+          {
+            "id": "reviewMetadata",
+            "iconInactive": "reviewMetadata",
+            "iconActive": "reviewMetadata",
+            "title": "myAssets.reviewMetadata",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "id",
+              "redirectProps": ["id"]
+            }
+          },
+          {
+            "id": "moreActions",
+            "title": "myAssets.moreActions",
+            "type": "longMenu",
+            "header": {
+              "type": "text",
+              "text": "myAssets.moreActions"
+            },
+            "properties": {
+              "iconInactive": "ellipsisMenu",
+              "iconActive": "ellipsisMenu",
+              "options": [
+                {
+                  "id": "transferOwnership",
+                  "popupId": "reviewItemTransferOwnership"
+                },
+                {
+                  "id": "addMembership",
+                  "url": "/requests/request/adGroupMembership/addOrRemove?groupName="
+                },
+                {
+                  "id": "linkForMembership",
+                  "popupId": "membershipLink"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cn",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Name",
+        "sortKey": "igaContent.displayName.keyword"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 3
+    },
+    {
+      "id": "description",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Description",
+        "sortKey": "igaContent.description.keyword"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4
+    },
+    {
+      "id": "applicationId",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Application ID",
+        "sortKey": "igaContent.dbagApplicationID.keyword"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 5,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "requester"
+      }
+    },
+    {
+      "id": "role",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Your Role"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 6
+    },
+    {
+      "id": "sticky",
+      "type": "sticky",
+      "header": {
+        "type": "component",
+        "component": "sticky"
+      },
+
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 7,
+      "sticky": "right"
+    }
+  ]
+}

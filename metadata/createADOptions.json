@@ -1,0 +1,286 @@
+{
+  "accountCategory": [
+    {
+      "label": "CyberArk Named Account (Application)",
+      "value": "CyberArkNamedAccountApplication",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "Asset Administration Account"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "CyberArk named accounts used for Application. Asset Administration Accounts (AAA) are the privileged accounts that are used by individuals for activities such as administration of IT Assets. Request the creation of an additional ActiveDirectory account - for more details of using this page please check <a href=\"https://mydb.intranet.db.com/docs/DOC-554617\" target=\"_blank\">myDB</a>"
+        }
+      ]
+    },
+    {
+      "label": "CyberArk Named Account (Infrastructure)",
+      "value": "CyberArkNamedAccountInfrastructure",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "Asset Administration Account"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "CyberArk named accounts used for Infrastructure. Asset Administration Accounts (AAA) are the privileged accounts that are used by individuals for activities such as administration of IT Assets. Request the creation of an additional ActiveDirectory account - for more details of using this page please check <a href=\"https://mydb.intranet.db.com/docs/DOC-554617\" target=\"_blank\">myDB</a>"
+        }
+      ]
+    },
+    {
+      "label": "CyberArk Role (shared) Account",
+      "value": "CyberArkRolesharedAccount",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "Asset Administration Role-IDs"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "Asset Administration Role-IDs (AA Role-ID)/ Shared Accounts are common IT Asset administration accounts used by multiple individual IDs or system. Request the creation of an additional ActiveDirectory account - for more details of using this page please check <a href=\"https://mydb.intranet.db.com/docs/DOC-554617\" target=\"_blank\">myDB</a>"
+        }
+      ]
+    },
+    {
+      "label": "Personal - Additional",
+      "value": "PersonalAdditional",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Individual Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "End-User-Account"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "An additional (secondary) account is for end-users who require a second setup enforcing a separate desktop/profile environment. Request the creation of an additional ActiveDirectory account - for more details of using this page please check <a href=\"https://mydb.intranet.db.com/docs/DOC-554617\" target=\"_blank\">myDB</a>"
+        }
+      ]
+    },
+    {
+      "label": "Personal - Admin",
+      "value": "PersonalAdmin",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Individual Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "Asset Administration Account"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "A standard admin account is required to perform administrative tasks in any IT asset (e.g. Deployments, Infrastructure Support)\n General Principles:\n 1. Admin accounts should only be given membership of groups that provide (or support) administrative access, i.e. they should not be given any group membership that gives file system or application access. \n 2.Administrative access should only be given to users who require the access for a specific job function in line with their role. Request the creation of an additional ActiveDirectory account - for more details of using this page please check <a href=\"https://mydb.intranet.db.com/docs/DOC-554617\" target=\"_blank\">myDB</a>"
+        }
+      ]
+    },
+    {
+      "label": "Personal - Desktop Admin",
+      "value": "PersonalDesktopAdmin",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Individual Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "Asset Administration Account"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "This Account is used for SL1 Desktop support to allow logon to workstations with workstation admin right for the purposes of troubleshooting. These desktop administrative user accounts must be used only when specifically required.\n General Principles:\n 1. Desktop Admin accounts should only be given membership of groups that provide (or support) workstation administrative access, i.e. they should not be given any group membership that gives file system or application access\n 2. Administrative access should only be given to user who require the access for a specific job function in line with their role. Request the creation of an additional ActiveDirectory account - for more details of using this page please check <a href=\"https://mydb.intranet.db.com/docs/DOC-554617\" target=\"_blank\">myDB</a>"
+        }
+      ]
+    },
+    {
+      "label": "Personal - Domain Support",
+      "value": "PersonalDomainSupport",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Individual Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "Asset Administration Account"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "This account is to be used for Administrators of a domain and is limited to certain teams in DB. General Principles:\n 1. As a general rule,-ds accounts are required to use a brokering solution.\n 2. Administrative access should only be given to users who require the access for a specific job function in line with their role. Request the creation of an additional ActiveDirectory account - for more details of using this page please check <a href=\"https://mydb.intranet.db.com/docs/DOC-554617\" target=\"_blank\">myDB</a>"
+        }
+      ]
+    },
+    {
+      "label": "Shared - Generic",
+      "value": "SharedGeneric",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Shared Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "End-User Shared Account"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "An account shared by more than one individual (e.g.: Bloomberg terminal). Generic accounts must not have admin access to systems under any circumstances.\nGeneral Principles:\n1. A PC and/or an account is used to perform a function by a number of individuals in one location and constant logging on and off is impractical and will ultimately lead to a degradation on the service provided by this function, e.g. receptionists.\n2. A generic account is needed for a presentation or training for a limited period of time.\n3. Generic accounts must be setup such that they can logon to specific workstations only\n4. As generic accounts are liable to remain live after their need has passed, regular views should be carried out to ascertain their on-going requirement.\n5. Requests for generic accounts must provide suitable justification of need and have to be approved by the Chief  BISO. Request the creation of an additional ActiveDirectory account - for more details of using this page please check <a href=\"https://mydb.intranet.db.com/docs/DOC-554617\" target=\"_blank\">myDB</a>"
+        }
+      ]
+    },
+    {
+      "label": "Technical - Generic brokered",
+      "value": "TechnicalGenericbrokered",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Shared Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "Asset Administration Shared Account"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "An account used only by brokering system.\n General Principles:\n 1. Owing to the possible loss of individual accountability, generic IDs are against DB policy and should generally be avoided. Policy exceptions may be made where mitigating factors exist such the requirement for brokering system.\n 2. Requests for generic broker accounts must provide suitable justification of need and have to be approved by the chief BISO. Request the creation of an additional ActiveDirectory account - for more details of using this page please check <a href=\"https://mydb.intranet.db.com/docs/DOC-554617\" target=\"_blank\">myDB</a>"
+        }
+      ]
+    },
+    {
+      "label": "Technical - Service/ Process",
+      "value": "TechnicalServiceProcess",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Service Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "Infrastructure / Application Service Account"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "Service Accounts (now also incorporates process account) are used for running services and processes in an automated fashion. (e.g. Scheduled scripts, Inter-System Communication, File Transfers) \nGeneral Principles:\n 1. As a general rule service account must not be given membership of groups that provide (or support) administrative access and must not be allowed interactive logon. \n2. Service accounts should be set up such that they can logon to specific workstations or servers only. \n3. If a Service account does require administrative access, this should be granted specifically only on the servers where the access is required. Request the creation of an additional ActiveDirectory account - for more details of using this page please check <a href=\"https://mydb.intranet.db.com/docs/DOC-554617\" target=\"_blank\">myDB</a>"
+        }
+      ]
+    },
+    {
+      "label": "Technical - Test",
+      "value": "TechnicalTest",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Shared Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "End-User Shared Account"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "Test Accounts are used ONLY for application or infrastructure testing. These accounts should be removed as soon as any relevant testing has been concluded. Request the creation of an additional ActiveDirectory account - for more details of using this page please check <a href=\"https://mydb.intranet.db.com/docs/DOC-554617\" target=\"_blank\">myDB</a>"
+        }
+      ]
+    },
+    {
+      "label": "gMSA (Group Managed Service Account)",
+      "value": "gMSA",
+      "metaData": [
+        {
+          "label": "review.columnHeader.accountType",
+          "description": "Service Account"
+        },
+        {
+          "label": "create.ADAccount.accountSubType",
+          "description": "Infrastructure / Application Service Account"
+        },
+        {
+          "label": "create.ADAccount.accountDescription",
+          "description": "<ul id=\"items\"><li>Pre-Requisite instructions: ( <a href=\"https://confluence.intranet.db.com/display/IA/Service+Account+gMSA+Configuration+Pre-Requisites\" target=\"_blank\">https://confluence.intranet.db.com/display/IA/Service+Account+gMSA+Configuration+Pre-Requisites</a>)</li><li>Is server group created? If not, follow guidlines from below link: <a href=\"https://confluence.intranet.db.com/display/IA/Provision+gMSA+Server+Group+in+DBG+domain\" target=\"_blank\"> https://confluence.intranet.db.com/display/IA/Provision+gMSA+Server+Group+in+DBG+domain</a></li><li> gMSA account does not give visibility of the password or use of the passwords.</li><li>gMSA account do not work across domains.</li><li>If existing service account planned to be replaced with gMSA, is password known for the account in case failback is required.</li><li>Was existing service account password changed and resulted in no impact to any of the application services.</li><li>Service account usages are fully known and documented.</li></ul><br/>Service account is used for the following use cases:<ol><li>Services on server</li><li>IIS Pools</li><li>Scheduled task</li><li>SQL Server</li><li>gMSA compatible applications</li></ol><br/><ul><li>Service account is used within any applications or SQL databases.</li><li>Windows servers OS is 2012 or higher for target servers.</li><li>Service account is not hardcoded in any scripts or configuration files.</li></ul>"
+        }
+      ]
+    }
+  ],
+  "recipient": [
+    {
+      "label": "Vollala, Prashanth (prashanth.vollalaone@db.com)",
+      "value": "prashanth.vollalaone@db.com",
+      "manager": "Wiese, Alexander (alexander.wieseone@db.com)"
+    },
+    {
+      "label": "Vollala, Prashanth (prashanth.vollalatwo@db.com)",
+      "value": "prashanth.vollalatwo@db.com",
+      "manager": "Wiese, Alexander (alexander.wiesetwo@db.com)"
+    }
+  ],
+  "locations": [
+    {
+      "label": "Default Location (Americas)",
+      "value": "Default Location (Americas)"
+    },
+    {
+      "label": "Deafault Location (EMEA)",
+      "value": "Deafault Location (EMEA)"
+    },
+    {
+      "label": "Provider (ATOS Germany) ",
+      "value": "Provider (ATOS Germany) "
+    },
+    {
+      "label": "Provider (ATOS)",
+      "value": "Provider (ATOS)"
+    },
+    {
+      "label": "Provider (Bauspar AG)",
+      "value": "Provider (Bauspar AG)"
+    },
+    {
+      "label": "Provider (DB Securities)",
+      "value": "Provider (DB Securities)"
+    },
+    {
+      "label": "Provider (Deutsche Immobillen Leasing)",
+      "value": "Provider (Deutsche Immobillen Leasing)"
+    }
+  ],
+  "dbagApplicationID": [
+    { "label": "101235-1 BankAPI-dbAPI", "value": "101235_1" },
+    { "label": "111236-1 Research Core", "value": "111236_1" }
+  ],
+  "costCenter": [
+    {
+      "label": "Controlling VRS Angestellte RST 122-2 (N)",
+      "value": "0029002095",
+      "department": [{ "label": "Controlling Department", "value": "Controlling Department" }]
+    },
+    {
+      "label": "VRS RST 122-2 (N)",
+      "value": "0089103018",
+      "department": [{ "label": "VRS Department", "value": "VRS Department" }]
+    }
+  ],
+  "department": [
+    { "label": "SDG", "value": "SDG" },
+    { "label": "SDGGQM", "value": "SDGGQM" }
+  ],
+  "primaryAccount": [
+    { "id": "prashanth.vollalaone@db.com", "label": "AVP", "value": "AVP" },
+    { "id": "prashanth.vollalatwo@db.com", "label": "MKV", "value": "MKV" }
+  ]
+}

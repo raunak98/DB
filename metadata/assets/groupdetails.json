@@ -1,0 +1,135 @@
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 15,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"
+          },
+          "_rev": "0",
+          "description": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "glossary": {
+            "kv": [
+              {
+                "key": "accessioGroupType",
+                "value": "Identity Based Access Control (IBAC) - Entitlement Group - Role User"
+              },
+              {
+                "dataType": "string",
+                "attrKey": "",
+                "value": "yes",
+                "key": "accessioIsgMSAGroup"
+              }
+            ]
+           
+          },
+          "name": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "APP_AD_B_DBG",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "object": {
+              "dbagObjectLastRecertified": "20230406102302Z",
+              "dbagIMSApprovers": [
+                "firstname5027.lastname2027@db.com",
+                "firstname5027.lastname2027@db.com",
+                "firstname5027.lastname2027@db.com"
+              ]
+            },
+          "dbagProvisioningBy": "",
+            "entitlementProperty": null,
+            "dbagObjectLastRecertified": "2023-04-06T08:21:47Z",
+            "__NAME__": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV",
+            "displayName": "UACE-S-IBAC-UAT-sdfg-sdfg-DEV",
+            "distinguishedName": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV,DC=ZWDffBG,DC=ZWADS,DC=DB,DC=COM",
+            "dbagRecerttype": "Role",
+            "dbagRecertSubtype": "User",
+            "projectName": "sdfg",
+            "productionUATorDEV": "UAT",
+            "groupRole": "DEV",
+            "vendorteamName": "sdfg",
+            "domain": "DBG",
+            "cn": "UACE-S-IBAC-UAT-sdfg-sdfg-DEV",
+            "dbagApplicationID": ["123634-1"],
+            "dbagCostcenter": "6201126603",
+            "description": ["Test Description"],
+            "info": "Test Comment",
+            "dbagExtensionAttribute2": "Groups only",
+            "dbagProcessingdata": "sdfg",
+            "department": "Corporates & Industrial Leveraged Lending Portfolio",
+            "dbagSupportGroup": "sdfg",
+            "dbagExtensionAttribute3": "Deutsche bank",
+            "pSIDescription": "Price Sensitive Information (PSI) is information: \n of a precise nature \n which has not been made public \n relating directly or indirectly to one or more issuers or to one or more financial instruments \n which, if it were made public, would be likely to have a significant effect on the prices of those financial instruments or on the price of related derivative financial instruments. \n Kindly attend the Mandatory PSI training CRegO Academy - Price Sensitive Information on Connect2Learn, before making a selection. \n For more information, please refer to the Information Barrier Policy.",
+            "dbagIMSAuthContact": "firstname5027.lastname2027@db.com",
+            "dbagIMSAuthContactDelegate": "firstname5027.lastname2027@db.com",
+            "dbagIMSApprovers": [
+              "firstname5027.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com",
+              "firstname5027.lastname2027@db.com"
+            ],
+            "groupType": "-2147483646",
+            "whenCreated": "2022-08-03T08:25:30Z",
+            "uSNChanged": "9184",
+            "sAMAccountName": "$AQ3000-GHICMOEF6MVC1",
+            "requestJustification": "Request for modification 1",
+            "dn": "CN=UACE-S-IBAC-UAT-sdfg-sdfg-DEV,OU=Cloud,DC=acnprojectroots,DC=com",
+            "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "whenChanged": "2022-09-25T09:29:39Z",
+            "groupScope": "universal",
+            "member": [
+              "CN=felix,OU=Cloud,DC=acnprojectroots,DC=com",
+              "CN=harry,OU=Cloud,DC=acnprojectroots,DC=com"
+            ],
+            "uSNCreated": "9102",
+            "memberOf": [],
+            "_memberId": [
+              "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+              "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+            ],
+            "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1a"]
+      }
+    ]
+  }
+}

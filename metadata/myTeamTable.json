@@ -1,0 +1,107 @@
+{
+  "paginationSizes": [10, 25, 50, 100],
+  "initialSortColumnId": "applicationName",
+  "hasSortableColumns": true,
+  "columns": [
+    {
+      "id": "firstName",
+      "type": "text",
+      "header": {
+        "headerId": "First Name",
+        "type": "text",
+        "text": "First Name",
+        "sortKey": "givenName.keyword"
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 1,
+      "sortable": true
+    },
+    {
+      "id": "lastName",
+      "type": "text",
+      "header": {
+        "headerId": "Last Name",
+        "type": "text",
+        "text": "Last Name",
+        "sortKey": "sn.keyword"
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 2,
+      "sortable": true
+    },
+    {
+      "id": "myTeamAccountStatus",
+      "type": "text",
+      "header": {
+        "headerId": "Status",
+        "type": "text",
+        "text": "Status",
+        "sortKey": "accountStatus.keyword"
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 3,
+      "sortable": false
+    },
+    {
+      "id": "email",
+      "type": "text",
+      "header": {
+        "headerId": "Email",
+        "type": "text",
+        "text": "Email",
+        "sortKey": "mail.keyword"
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4,
+      "sortable": true
+    },
+    {
+      "id": "personalNumber",
+      "type": "text",
+      "header": {
+        "headerId": "Personal Number",
+        "type": "text",
+        "text": "Personal Number",
+        "sortKey": ""
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 5,
+      "sortable": false
+    },
+    {
+      "id": "department",
+      "type": "text",
+      "header": {
+        "headerId": "Department",
+        "type": "text",
+        "text": "Depeartment"
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 6,
+      "sortable": false
+    },
+    {
+      "id": "redirect",
+      "type": "redirectButton",
+      "header": {
+        "type": "text",
+        "text": " "
+      },
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 8,
+      "properties": {
+        "text": "open",
+        "fieldForPath": "id",
+        "redirectProps": ["id", "name"],
+        "redirectTo": ["./myTeam/view"]
+      }
+    }
+  ]
+}

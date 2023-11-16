@@ -1,0 +1,196 @@
+{
+  "paginationSizes": [10, 25, 50, 100],
+  "initialSortColumnId": "applicationName",
+  "hasSortableColumns": true,
+  "groupBy": [
+    {
+      "value": "Hostname",
+      "label": "Database Name",
+      "type": "account.igaContent.object.account_hostname.keyword"
+    }
+  ],
+  "initialGroupBy": "account.igaContent.object.account_hostname.keyword",
+  "filterBy": [
+    {
+      "type": "account.igaContent.object.account_entity_type.keyword",
+      "value": "Application Service Account",
+      "label": "Application Service Account"
+    }
+  ],
+  "initialFilterBy": "All",
+  "columns": [
+    {
+      "id": "actions",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 1,
+      "properties": {
+        "options": [
+          {
+            "id": "viewDetails",
+            "iconInactive": "view",
+            "iconActive": "view",
+            "title": "approvalHistory.viewDetails",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "id",
+              "redirectProps": ["id"],
+              "redirectTo": ["/history/approvalHistory/approvalSummary"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "requestNumber",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Request No",
+        "sortKey": "request.common.Accessio_Request_No.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 1
+    },
+    {
+      "id": "requester",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Requester",
+        "sortKey": "request.common.requestorMail.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 2,
+      "properties": {
+        "infoFieldLink": "http://gd.intranet.db.com/iam/"
+      }
+    },
+    {
+      "id": "recipient",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Recipient",
+        "sortKey": "request.common.recepientMail.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 3,
+      "properties": {
+        "infoFieldLink": "http://gd.intranet.db.com/iam/"
+      }
+    },
+    {
+      "id": "category",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Category",
+        "sortKey": "request.common.category.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4
+    },
+    {
+      "id": "operation",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Operation",
+        "sortKey": "request.common.operation.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4
+    },
+    {
+      "id": "requestedItem",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Requested Item"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 5
+    },
+    {
+      "id": "requestDate",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Request Date",
+        "sortKey": "decision.startDate"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 6
+    },
+    {
+      "id": "approvalHisCompletionDate",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Decision Date",
+        "sortKey": "decision.completionDate"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 7
+    },
+    {
+      "id": "approvalAction",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Approval Action"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 8
+    },
+    {
+      "id": "bulkRequestId",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Bulk Request Id",
+        "sortKey": "request.common.AccessioBulkRequestNumber.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 9
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "steps": [
+    {
+      "id": "section1",
+      "title": "Account Category",
+      "heading": "Account Category",
+      "status": "Completed",
+      "mapping": "accountCategory",
+      "children": [
+        {
+          "label": "Account Category",
+          "value": "Personal - Desktop Admin"
+        }
+      ]
+    },
+    {
+      "id": "section2",
+      "title": "Account Category",
+      "heading": "Recepient",
+      "status": "Completed",
+      "mapping": "recepient",
+      "children": [
+        {
+          "label": "Users",
+          "value": "Amanda Brady"
+        },
+        {
+          "label": "Recipients primary AD account",
+          "value": "dbg\\smitsa"
+        }
+      ]
+    },
+    {
+      "id": "section3",
+      "title": "Account Category",
+      "heading": "Location",
+      "mapping": "location",
+      "status": "Completed",
+      "children": [
+        {
+          "label": "Location",
+          "value": "Default Location (Americas)"
+        }
+      ]
+    },
+    {
+      "id": "section4",
+      "title": "Approver",
+      "heading": "Approvers",
+      "status": "Completed",
+      "mapping": "approver",
+      "children": [
+        {
+          "label": "Approver",
+          "value": "Amanda Brady"
+        },
+        {
+          "label": "Business Justification",
+          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada vitae erat in ultricies. Morbi ut sem dapibus ligula laoreet accumsan eu ultrices mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada vitae erat in ultricies. Morbi ut sem dapibus ligula laoreet accumsan eu ultrices mauris"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "groupBy": [],
+  "initialGroupBy": "All",
+  "filterBy": [],
+  "initialFilterBy": "All",
+  "paginationSizes": [10, 25, 50, 100],
+  "hasSortableColumns": true,
+  "initialSortColumnId": "",
+  "bulkActions": ["approve", "reject"],
+  "columns": [
+    {
+      "id": "select",
+      "type": "checkbox",
+      "header": {
+        "type": "component",
+        "component": "checkbox",
+        "text": "Select"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 1
+    },
+    {
+      "id": "decision",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Decision"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 2,
+      "properties": {
+        "options": [
+          {
+            "id": "approve",
+            "iconInactive": "maintain",
+            "iconActive": "maintain",
+            "title": "Approve"
+          },
+          {
+            "id": "reject",
+            "iconInactive": "revokeNew",
+            "iconActive": "revokeNew",
+            "title": "Reject"
+          },
+          {
+            "id": "requestInfo",
+            "text": "Request Details",
+            "iconActive": "requestInfo",
+            "title": "Request Details"
+          }
+        ]
+      }
+    },
+    {
+      "id": "actions",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 3,
+      "properties": {
+        "options": [
+          {
+            "id": "viewDetails",
+            "iconInactive": "view",
+            "iconActive": "view",
+            "title": "approval.viewDetails",
+            "properties": {
+              "text": "open",
+              "fieldForPath": "id",
+              "redirectProps": ["id"],
+              "redirectTo": ["/tasks/approvals/summary"]
+            }
+          },
+          {
+            "id": "comment",
+            "type": "iconPopup",
+            "iconInactive": "comments",
+            "iconActive": "comments",
+            "title": "Comments"
+          }
+        ]
+      }
+    },
+    {
+      "id": "justification",
+      "type": "linkToPopup",
+      "header": {
+        "type": "text",
+        "text": "Justification",
+        "sortKey": "request.common.requestJustification.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 4,
+      "properties": {
+        "textId": "Justification",
+        "popupId": "justification"
+      }
+    },
+    {
+      "id": "requestNumber",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Request No",
+        "sortKey": "request.common.Accessio_Request_No.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 5
+    },
+    {
+      "id": "requester",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Requester",
+        "sortKey": "request.common.requestorMail.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 6,
+      "properties": {
+        "infoFieldLink": "http://gd.intranet.db.com/iam/"
+      }
+    },
+    {
+      "id": "recipient",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Recipient",
+        "sortKey": "request.common.recepientMail.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 7,
+      "properties": {
+        "infoFieldLink": "http://gd.intranet.db.com/iam/"
+      }
+    },
+    {
+      "id": "category",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Category",
+        "sortKey": "request.common.category.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 8
+    },
+    {
+      "id": "operation",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Operation",
+        "sortKey": "request.common.operation.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4
+    },
+    {
+      "id": "requestDate",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Request Date",
+        "sortKey": "decision.startDate"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 9
+    },
+    {
+      "id": "requestedItem",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Requested Item"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 10
+    },
+    {
+      "id": "status",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Status",
+        "sortKey": "decision.status.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 11,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "status"
+      }
+    },
+    {
+      "id": "expiry",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Expiry",
+        "sortKey": "request.common.endDate.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 12
+    },
+    {
+      "id": "bulkRequestNumber",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Bulk Request No",
+        "sortKey": "request.common.AccessioBulkRequestNumber.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 13
+    },
+    {
+      "id": "sticky",
+      "type": "sticky",
+      "header": {
+        "type": "component",
+        "component": "sticky"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 14,
+      "sticky": "right"
+    }
+  ]
+}

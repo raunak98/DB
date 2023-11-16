@@ -1,0 +1,101 @@
+{
+  "paginationSizes": [
+    10,
+    25,
+    50,
+    100
+  ],
+  "initialSortColumnId": "applicationName",
+  "hasSortableColumns": true,
+  "columns": [
+    {
+      "id": "name",
+      "type": "redirectButton",
+      "header": {
+        "headerId": "name",
+        "type": "text",
+        "text": "name"
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 1,
+      "sortable": true,
+      "properties": {
+        "text": "open",
+        "fieldForPath": "id",
+        "redirectProps": ["id", "name"]
+      }
+    },
+    {
+      "id": "startDate",
+      "type": "text",
+      "header": {
+        "headerId": "startDate",
+        "type": "text",
+        "text": "start Date"
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 2,
+      "sortable": true
+    },
+    {
+      "id": "dueDate",
+      "type": "text",
+      "header": {
+        "headerId": "dueDate",
+        "type": "text",
+        "text": "due Date"
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 3,
+      "sortable": true
+    },
+    {
+      "id": "status",
+      "type": "text",
+      "header": {
+        "headerId": "status",
+        "type": "text",
+        "text": "status"
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4,
+      "sortable": true
+    },
+    {
+      "id": "completion",
+      "type": "text",
+      "header": {
+        "headerId": "completion",
+        "type": "text",
+        "text": "completion"
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 5,
+      "sortable": true
+    },
+    {
+      "id": "redirect",
+      "type": "redirectButton",
+      "header": {
+        "type": "text",
+        "text": ""
+      },
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 7,
+      "properties": {
+        "text": "open",
+        "fieldForPath": "id",
+        "redirectProps": [
+          "id",
+          "name"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "groupBy": [
+    {
+      "value": "GRP Name",
+      "label": "Group Name",
+      "type": "account.igaContent.grp_name.keyword",
+      "default": true
+    },
+    {
+      "type": "decision.certification.actors.label.keyword",
+      "label": "Reviewer",
+      "value": "Reviewer"
+    },
+    {
+      "value": "Username",
+      "label": "Username",
+      "type": "user.userName.keyword"
+    },
+    {
+      "type": "account.__NAME__.keyword",
+      "label": "Account Name",
+      "value": "Account Name"
+    },
+    {
+      "type": "assignment.name.keyword",
+      "label": "Entitlement",
+      "value": "Entitlement"
+    },
+    {
+      "type": "application.name.keyword",
+      "label": "Application Name",
+      "value": "Application Name"
+    }
+  ],
+  "initialGroupBy": "account.igaContent.grp_name.keyword",
+  "filterBy": [
+    {
+      "value": "certify",
+      "type": "decision.certification.decision.keyword",
+      "label": "Maintained"
+    },
+    {
+      "value": "revoke",
+      "type": "decision.certification.decision.keyword",
+      "label": "Revoked"
+    },
+    {
+      "value": "reassign",
+      "type": "decision.certification.decision.keyword",
+      "label": "Reassign",
+      "sortType": "decision.certification.comments.action.keyword"
+    },
+    {
+      "value": "nullValue",
+      "type": "decision.certification.decision.keyword",
+      "label": "None"
+    }
+  ],
+  "initialFilterBy": "All",
+  "paginationSizes": [10, 25, 50, 100],
+  "hasSortableColumns": true,
+  "initialSortColumnId": "applicationName",
+  "bulkActions": ["maintain", "revoke", "reassign", "forward"],
+  "columns": [
+    {
+      "id": "select",
+      "type": "checkbox",
+      "header": {
+        "type": "component",
+        "component": "checkbox",
+        "text": "Select"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 1
+    },
+    {
+      "id": "decision",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Decision"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 2,
+      "properties": {
+        "options": [
+          {
+            "id": "maintain",
+            "iconInactive": "maintainDefault",
+            "iconActive": "maintain",
+            "title": "Maintain"
+          },
+          {
+            "id": "revoke",
+            "iconInactive": "revokeNew",
+            "iconActive": "radio",
+            "title": "Revoke"
+          }
+        ]
+      }
+    },
+    {
+      "id": "comment",
+      "type": "iconPopup",
+      "header": {
+        "type": "text",
+        "text": "comment"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 3,
+      "properties": {
+        "iconInactive": "comments",
+        "iconActive": "comments"
+      }
+    },
+    {
+      "id": "dbEntitlement",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Entitlement",
+        "sortKey": "assignment.igaContent.entitlement.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "entitlement"
+      }
+    },
+    {
+      "id": "accountName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account Name",
+        "sortKey": "account.__NAME__.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 5,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "account"
+      }
+    },
+    {
+      "id": "username",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Username",
+        "sortKey": "user.userName.keyword"
+      },
+      "hasInfo": true,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 6,
+      "properties": {
+        "popupId": "reviewItemMoreInfo",
+        "infoFieldId": "user"
+      }
+    },
+    {
+      "id": "status",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Status",
+        "sortKey": "decision.certification.decision.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 7
+    },
+    {
+      "id": "email",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Email",
+        "sortKey": "user.mail.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": false,
+      "mandatory": false,
+      "order": 8
+    },
+    {
+      "id": "accountType",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Account type",
+        "sortKey": "account.accountType.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 9
+    },
+    {
+      "id": "hostname",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Hostname",
+        "sortKey": "account.igaContent.account_hostname.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 10
+    },
+    {
+      "id": "groupNarId",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Nar Id",
+        "sortKey": "account.igaContent.grp_nar_id.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "order": 11
+    },
+    {
+      "id": "groupType",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Type",
+        "sortKey": "assignment.igaContent.grp_type.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 12
+    },
+    {
+      "id": "groupName",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Name",
+        "sortKey": "assignment.igaContent.grp_name.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 13
+    },
+    {
+      "id": "groupDomain",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Group Domain",
+        "sortKey": "assignment.igaContent.grp_domain.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 14
+    },
+    {
+      "id": "entitlementType",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Entitlement",
+        "sortKey": "assignment.igaContent.entitlement_type.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4
+    },
+    {
+      "id": "entitlementDescription",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Entitlement",
+        "sortKey": "assignment.igaContent.entitlement_description.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4
+    },
+    {
+      "id": "entitlementNarId",
+      "type": "text",
+      "header": {
+        "type": "text",
+        "text": "Entitlement",
+        "sortKey": "assignment.igaContent.entitlement_nar_id.keyword"
+      },
+      "hasInfo": false,
+      "sortable": true,
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 4
+    },
+    {
+      "id": "actions",
+      "type": "longMenu",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 13,
+      "properties": {
+        "iconInactive": "ellipsisMenu",
+        "iconActive": "ellipsisMenu",
+        "options": [
+          {
+            "id": "maintain",
+            "title": "Maintain"
+          },
+          {
+            "id": "revoke",
+            "title": "Revoke"
+          },
+          {
+            "id": "reassign",
+            "popupId": "reviewItemReassign"
+          },
+          {
+            "id": "forward",
+            "popupId": "reviewItemForward"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sticky",
+      "type": "sticky",
+      "header": {
+        "type": "component",
+        "component": "sticky"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 21,
+      "sticky": "right"
+    }
+  ]
+}

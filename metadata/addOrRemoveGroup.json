@@ -1,0 +1,430 @@
+{
+  "took": 129,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 4,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "50862ed094d04f9f0c228d3686d5dd2a8a66cf76e156df8ad7ad256ae84ff39d532f16ec2ac3cd739a1526c62d175de995aa542fc5ee3cce2670f6f4e9dee75b",
+        "_score": null,
+        "_source": {
+          "mapping": "7d274b58e3a64ad5a35e4090e5815ce6_managedAccount_systemF07d0ecb26b94be69afde5af38011f9d__ACCOUNT__",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/0accb4e66d00d2e51e1b072d670d1e94ff81591a264339e9689206f2a38088cf",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-12-20T09:55:21.593Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "0accb4e66d00d2e51e1b072d670d1e94ff81591a264339e9689206f2a38088cf"
+          },
+          "_rev": "63",
+          "description": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "glossary": {
+            "kv": [
+              {
+                "isIndexed": true,
+                "dataType": "string",
+                "attrKey": "",
+                "attrValue": "",
+                "type": "value",
+                "value": "cost",
+                "key": "FT Category1"
+              },
+              {
+                "isIndexed": false,
+                "dataType": "boolean",
+                "attrKey": "",
+                "attrValue": "",
+                "type": "value",
+                "value": "false",
+                "key": "Pre-Approved"
+              }
+            ],
+            "tags": [
+              "=&Pre-Approved=false",
+              "Pre-Approved=false&=",
+              "=&FT+Category1=cost",
+              "FT+Category1=cost&="
+            ]
+          },
+          "application": {
+            "_refResourceId": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "_ref": "managed/application/7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "_refProperties": {
+              "_rev": "0",
+              "_id": "372f433f-9400-485b-b319-8e90c61541a4"
+            },
+            "_refResourceCollection": "managed/application"
+          },
+          "name": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "attributes": [
+            {
+              "name": "memberOf",
+              "unassignmentOperation": "removeFromTarget",
+              "value": [
+                "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com"
+              ],
+              "assignmentOperation": "mergeWithTarget"
+            }
+          ],
+          "applicationProperties": {
+            "name": "AD_DBG",
+            "_rev": "1373",
+            "_id": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "id": "0accb4e66d00d2e51e1b072d670d1e94ff81591a264339e9689206f2a38088cf",
+          "applicationId": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+          "_eventMetadata": {
+            "runAs": "openidm-admin",
+            "passwordChanged": false,
+            "changedFields": [],
+            "context": "activity",
+            "eventName": "activity",
+            "message": "update",
+            "userId": "openidm-admin",
+            "operation": "UPDATE",
+            "transactionId": "8675ed55-2587-4e6c-9883-76bd833a8828-1711323",
+            "trackingId": null,
+            "status": "SUCCESS"
+          },
+          "resourceType": "__GROUP__",
+          "igaContent": {
+            "entitlementProperty": "memberOf",
+            "description": "MyGroup",
+            "object": {
+              "dbagComplianceStatus": 1,
+              "dbagIMSApprovers": ["mohna.kunita@db.com", "sujatha.mishra@db.com"],
+              "groupType": "-2147483646",
+              "whenCreated": "2022-08-03T08:25:30Z",
+              "uSNChanged": "35978",
+              "sAMAccountName": "$AQ3000-GHICMOEF6MVC",
+              "displayName": "AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR",
+              "objectClass": ["top", "group"],
+              "description": [],
+              "dn": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+              "cn": "AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR",
+              "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+              "whenChanged": "2022-12-20T09:09:08Z",
+              "groupScope": "global",
+              "member": [],
+              "__NAME__": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+              "_memberId": [],
+              "memberOf": [],
+              "uSNCreated": "9018",
+              "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+              "objectCategory": "CN=Group,CN=Schema,CN=Configuration,DC=acnprojectroots,DC=com"
+            },
+            "isEntitlement": true
+          },
+          "objGlossary": {
+            "description": "testing for portal",
+            "accessioAppRequest": "true",
+            "accessioGroupType": "Application Access - Authorisation (Default)",
+            "accessioIsGroupPrivileged": "accessioIsGroupPrivileged",
+            "accessioIsgMSAGroup": "accessioIsgMSAGroup",
+            "accessioPlatformType": "accessioPlatformType",
+            "accessioPrerequisiteRMPRoles": "accessioPrerequisiteRMPRoles"
+          },
+          "objGlossaryId": "a792bdc4-211c-4cf9-936e-18cf912f68b6"
+        },
+        "sort": ["0accb4e66d00d2e51e1b072d670d1e94ff81591a264339e9689206f2a38088cf"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "c6e3d1b1dd528f57838b0a7368977df1e07c7e952e8a2f299e63b9287a5b7bf625ea7d3a7b3e91954f0f3c348747ca7857d3a88d2f4adaa0a17937ab712493e4",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1b",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-17T13:38:56.91Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1b"
+          },
+          "_rev": "0",
+          "description": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "AD_DBG1",
+            "_rev": "65",
+            "_id": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1b",
+          "applicationId": "8a3e7a49-c528-4185-808a-122ae72e85b4",
+          "igaContent": {
+            "entitlementProperty": null,
+            "object": {
+              "dbagComplianceStatus": 0,
+              "dbagIMSApprovers": ["anirudh.prabhu@db.com", "sujatha.mishra@db.com"],
+              "groupType": "-2147483646",
+              "whenCreated": "2022-08-03T08:25:30Z",
+              "uSNChanged": "9184",
+              "sAMAccountName": "$AQ3000-GHICMOEF6MVC",
+              "displayName": "AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR",
+              "description": [],
+              "dn": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+              "cn": "AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR",
+              "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+              "whenChanged": "2022-09-25T09:29:39Z",
+              "groupScope": "global",
+              "member": [
+                "CN=felix,OU=Cloud,DC=acnprojectroots,DC=com",
+                "CN=harry,OU=Cloud,DC=acnprojectroots,DC=com"
+              ],
+              "__NAME__": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+              "uSNCreated": "9102",
+              "memberOf": [],
+              "_memberId": [
+                "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+                "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+              ],
+              "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+              "objectCategory": "CN=Group,CN=Schema,CN=Configuration,DC=acnprojectroots,DC=com"
+            },
+            "isEntitlement": false
+          },
+          "objGlossary": {
+            "description": "testing for portal",
+            "accessioAppRequest": "true",
+            "accessioGroupType": "Application Access - Authorisation (Default)",
+            "accessioIsGroupPrivileged": "accessioIsGroupPrivileged",
+            "accessioIsgMSAGroup": "accessioIsgMSAGroup",
+            "accessioPlatformType": "accessioPlatformType",
+            "accessioPrerequisiteRMPRoles": "accessioPrerequisiteRMPRoles"
+          },
+          "objGlossaryId": "a792bdc4-211c-4cf9-936e-18cf912f68b6",
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["af734716b7894c2c73c8ce313cd6a476f194b970213b6f310386e000c942cd1b"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "958d221f484f96378ba3af860e1f817a201bf99ea02feacc58f30136d7326d3af4aa8f0c9f5ad8d6bb0ab1fffb813afae62d38452a3fdf242d3589bc092a2309",
+        "_score": null,
+        "_source": {
+          "mapping": "b179e7f4b60b4c199ebe1da954c1715d_managedAccount_system1e4412dd8a714d0d8c0bc54dd5645a4c__ACCOUNT__",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/e39e5d53-e08f-4246-8b0f-0b1aebfff0c4",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-11-23T08:47:08.653Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "e39e5d53-e08f-4246-8b0f-0b1aebfff0c4"
+          },
+          "_rev": "0",
+          "description": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "name": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "ManagedPortalAD",
+            "_rev": "30",
+            "_id": "b179e7f4-b60b-4c19-9ebe-1da954c1715d",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [
+            {
+              "name": "memberOf",
+              "unassignmentOperation": "removeFromTarget",
+              "value": [
+                "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com"
+              ],
+              "assignmentOperation": "mergeWithTarget"
+            }
+          ],
+          "id": "e39e5d53-e08f-4246-8b0f-0b1aebfff0c4",
+          "applicationId": "b179e7f4-b60b-4c19-9ebe-1da954c1715d",
+          "igaContent": {
+            "entitlementProperty": "memberOf",
+            "object": {
+              "dbagComplianceStatus": 0,
+              "dbagIMSApprovers": ["debarshi.mandal@db.com", "janman.jai@db.com"],
+              "groupType": "-2147483646",
+              "whenCreated": "2022-08-03T08:25:30Z",
+              "uSNChanged": "9198",
+              "sAMAccountName": "$AQ3000-GHICMOEF6MVC",
+              "displayName": "AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR",
+              "description": [],
+              "dn": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+              "cn": "AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR",
+              "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+              "whenChanged": "2022-11-07T04:50:25Z",
+              "groupScope": "global",
+              "member": [
+                "CN=felix,OU=Cloud,DC=acnprojectroots,DC=com",
+                "CN=harry,OU=Cloud,DC=acnprojectroots,DC=com"
+              ],
+              "name": "AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR",
+              "__NAME__": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+              "_memberId": [
+                "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+                "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+              ],
+              "memberOf": [],
+              "uSNCreated": "8957",
+              "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+              "objectCategory": "CN=Group,CN=Schema,CN=Configuration,DC=acnprojectroots,DC=com"
+            },
+            "isEntitlement": true
+          },
+          "resourceType": "__GROUP__",
+          "objGlossary": {
+            "description": "testing for portal",
+            "accessioAppRequest": "true",
+            "accessioGroupType": "Application Access - Authorisation (Default)",
+            "accessioIsGroupPrivileged": "accessioIsGroupPrivileged",
+            "accessioIsgMSAGroup": "accessioIsgMSAGroup",
+            "accessioPlatformType": "accessioPlatformType",
+            "accessioPrerequisiteRMPRoles": "accessioPrerequisiteRMPRoles"
+          },
+          "objGlossaryId": "a792bdc4-211c-4cf9-936e-18cf912f68b6"
+        },
+        "sort": ["e39e5d53-e08f-4246-8b0f-0b1aebfff0c4"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "e663b2f08507e06e6f1e2483fbf5882b6f8cc258a09f2b301e0b3999f36d18fa92898cddf64e781fd46c43be3d64c3e0790b8dbb59034d812d421591809a967a",
+        "_score": null,
+        "_source": {
+          "mapping": "",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/e57ff1feacc529f3973e054e5be2366aa94a55b00b06cc9a67341b8522dd78c1",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-11-02T09:19:24.942Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "e57ff1feacc529f3973e054e5be2366aa94a55b00b06cc9a67341b8522dd78c1"
+          },
+          "_rev": "6",
+          "description": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "glossary": {
+            "kv": [],
+            "tags": []
+          },
+          "application": {
+            "_refResourceId": "deb7557f-c44c-4502-baf6-885f9148049e",
+            "_ref": "managed/application/deb7557f-c44c-4502-baf6-885f9148049e",
+            "_refProperties": {
+              "_rev": "0",
+              "_id": "076355a5-5023-451d-92ae-d81391bc57cc"
+            },
+            "_refResourceCollection": "managed/application"
+          },
+          "name": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "ManagedPortalAD",
+            "_rev": "141",
+            "_id": "deb7557f-c44c-4502-baf6-885f9148049e",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [],
+          "id": "e57ff1feacc529f3973e054e5be2366aa94a55b00b06cc9a67341b8522dd78c1",
+          "applicationId": "deb7557f-c44c-4502-baf6-885f9148049e",
+          "igaContent": {
+            "entitlementProperty": null,
+            "object": {
+              "dbagComplianceStatus": 0,
+              "dbagIMSApprovers": [
+                "mohna.kunita@db.com",
+                "anirudh.prabhu@db.com",
+                "sujatha.mishra@db.com",
+                "debarshi.mandal@db.com"
+              ],
+              "groupType": "-2147483646",
+              "whenCreated": "2022-08-03T08:25:30Z",
+              "uSNChanged": "9170",
+              "sAMAccountName": "$AQ3000-GHICMOEF6MVC",
+              "displayName": "AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR",
+              "description": [],
+              "dn": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+              "cn": "AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR",
+              "__UID__": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+              "whenChanged": "2022-09-26T06:33:17Z",
+              "groupScope": "global",
+              "member": [
+                "CN=felix,OU=Cloud,DC=acnprojectroots,DC=com",
+                "CN=harry,OU=Cloud,DC=acnprojectroots,DC=com"
+              ],
+              "__NAME__": "CN=AA-A-DBAG46700AD-ACCESSIO_ENTITLEMENT_ADMINISTRATOR,OU=Cloud,DC=acnprojectroots,DC=com",
+              "_memberId": [
+                "1568933e-77e9-454a-9cf0-d10ba5d283f2",
+                "9dca48aa-39dc-4af0-a0eb-e6f9c39189bd"
+              ],
+              "uSNCreated": "9074",
+              "memberOf": [],
+              "_id": "be43d9e6-e14d-4f73-b366-be241cb6e3aa",
+              "objectCategory": "CN=Group,CN=Schema,CN=Configuration,DC=acnprojectroots,DC=com"
+            },
+            "isEntitlement": false
+          },
+          "resourceType": "__GROUP__",
+          "objGlossary": {
+            "description": "testing for portal",
+            "accessioAppRequest": "false",
+            "accessioGroupType": "Application Access - Authorisation (Default)",
+            "accessioIsGroupPrivileged": "accessioIsGroupPrivileged",
+            "accessioIsgMSAGroup": "accessioIsgMSAGroup",
+            "accessioPlatformType": "accessioPlatformType",
+            "accessioPrerequisiteRMPRoles": "accessioPrerequisiteRMPRoles"
+          },
+          "objGlossaryId": "a792bdc4-211c-4cf9-936e-18cf912f68b6"
+        },
+        "sort": ["e57ff1feacc529f3973e054e5be2366aa94a55b00b06cc9a67341b8522dd78c1"]
+      }
+    ]
+  }
+}

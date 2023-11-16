@@ -1,0 +1,631 @@
+{
+    "groupBy": [
+        {
+            "value": "Safe",
+            "label": "Safe",
+            "type": "account.igaContent.safe_name.keyword"
+        }
+    ],
+    "initialGroupBy": "account.igaContent.account_hostname.keyword",
+    "filterBy": [
+        {
+            "value": "certify",
+            "type": "decision.certification.decision.keyword",
+            "label": "Maintained"
+        },
+        {
+            "value": "revoke",
+            "type": "decision.certification.decision.keyword",
+            "label": "Revoked"
+        },
+        {
+            "value": "reassign",
+            "type": "decision.certification.decision.keyword",
+            "label": "Reassign",
+            "sortType": "decision.certification.comments.action.keyword"
+        },
+        {
+            "value": "nullValue",
+            "type": "decision.certification.decision.keyword",
+            "label": "None"
+        }
+    ],
+    "initialFilterBy": "All",
+    "paginationSizes": [
+        10,
+        25,
+        50,
+        100
+    ],
+    "hasSortableColumns": true,
+    "initialSortColumnId": "applicationName",
+    "bulkActions": [
+        "maintain",
+        "revoke",
+        "reassign",
+        "none"
+    ],
+    "columns": [
+        {
+            "id": "select",
+            "type": "checkbox",
+            "header": {
+                "type": "component",
+                "component": "checkbox",
+                "text": "Select"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "mandatory": true,
+            "initialDisplay": true,
+            "order": 1
+        },
+        {
+            "id": "decision",
+            "type": "collapsColumn",
+            "header": {
+                "type": "text",
+                "text": "Decision"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 2,
+            "properties": {
+                "options": [
+                    {
+                        "id": "maintain",
+                        "iconInactive": "maintainDefault",
+                        "iconActive": "maintain",
+                        "title": "Maintain"
+                    },
+                    {
+                        "id": "revoke",
+                        "iconInactive": "revokeNew",
+                        "iconActive": "radio",
+                        "title": "Revoke"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "comment",
+            "type": "iconPopup",
+            "header": {
+                "type": "text",
+                "text": "comment"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 3,
+            "properties": {
+                "iconInactive": "comments",
+                "iconActive": "comments"
+            }
+        },
+        {
+            "id": "safetype",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Type",
+                "sortKey": "account.igaContent.safe_type.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 7,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "safeType"
+            }
+        },
+        {
+            "id": "safeName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Name",
+                "sortKey": "account.igaContent.safe_name.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 19
+        },
+        {
+            "id": "safeIndividualId",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Individual ID",
+                "sortKey": "account.igaContent.safe_individual_id.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 5,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "safeIndividualId"
+            }
+        },
+        {
+            "id": "safeEntityId",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Entity ID",
+                "sortKey": "account.igaContent.safe_entity_id.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 4
+        },
+        {
+            "id": "safePlatform",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Platform",
+                "sortKey": "account.igaContent.safe_platform.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 10
+        },
+        {
+            "id": "safeOwner",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Owner",
+                "sortKey": "account.igaContent.safe_owner.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 8
+        },
+        {
+            "id": "safeOwnerType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Owner Type",
+                "sortKey": "account.igaContent.safe_owner_type.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 8
+        },
+        {
+            "id": "safeOwnerDelegate",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Owner Delegate",
+                "sortKey": "account.igaContent.safe_owner_delegate.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 8
+        },
+        {
+            "id": "safeEntityType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Entity Type",
+                "sortKey": "account.igaContent.safe_entity_type.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 8
+        },
+        {
+            "id": "safeEntityStatus",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Entity Status",
+                "sortKey": "account.igaContent.safe_entity_status.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "safeEntityStatus"
+            }
+        },
+        {
+            "id": "safeDomain",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Domain",
+                "sortKey": "account.igaContent.safe_domain.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "safeDomain"
+            }
+        },
+        {
+            "id": "safeComments",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Comments",
+                "sortKey": "account.igaContent.safe_comments.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "safeComments"
+            }
+        },
+        {
+            "id": "safeNarId",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Nar Id",
+                "sortKey": "account.igaContent.safe_nar_id.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "safeNarId"
+            }
+        },
+        {
+            "id": "safeCreateDate",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Safe Create Date",
+                "sortKey": "account.igaContent.safe_create_date.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "safeCreateDate"
+            }
+        },
+        {
+            "id": "cybaction",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement",
+                "sortKey": "account.igaContent.action.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "action"
+            }
+        },
+        {
+            "id": "actionDescription",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Description",
+                "sortKey": "account.igaContent.action_description.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "actionDescription"
+            }
+        },
+        {
+            "id": "entitlementCreateDate",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Entitlement Create Date",
+                "sortKey": "account.igaContent.resource_create_date.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "entitlementCreateDate"
+            }
+        },
+        {
+            "id": "resourseName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Resourse Name",
+                "sortKey": "account.igaContent.resource_name.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "resourseName"
+            }
+        },
+        {
+            "id": "resourseType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Resourse Type",
+                "sortKey": "account.igaContent.resource_type.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "resourseType"
+            }
+        },
+        {
+            "id": "resourseFQN",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Resourse FQN",
+                "sortKey": "account.igaContent.resource_fqn.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "resourseFQN"
+            }
+        },
+        {
+            "id": "resourseDescription",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Resourse Description",
+                "sortKey": "account.igaContent.resource_description.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "resourseDescription"
+            }
+        },
+        {
+            "id": "resourseClassification",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Resourse Classification",
+                "sortKey": "account.igaContent.resource_classification.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseEntityLifeStatus",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Resourse Entity Life Status",
+                "sortKey": "account.igaContent.resource_entity_life_status.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseEntityInstanceName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Resourse Entity Instance Name",
+                "sortKey": "account.igaContent.resource_entity_instance_name.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseEntityType",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Resourse Entity Type",
+                "sortKey": "account.igaContent.resource_entity_type.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "supportRoleName",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Support Role Name",
+                "sortKey": "account.igaContent.support_role_name.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "supportRoleLeader",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Support Role Leader",
+                "sortKey": "account.igaContent.support_role_leader.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "resourseCreateDate",
+            "type": "text",
+            "header": {
+                "type": "text",
+                "text": "Resourse Create Date",
+                "sortKey": "account.igaContent.resource_create_date.keyword"
+            },
+            "hasInfo": false,
+            "sortable": true,
+            "initialDisplay": true,
+            "mandatory": false,
+            "order": 15,
+            "properties": {
+                "popupId": "reviewItemMoreInfo",
+                "infoFieldId": "accountEntityStatus"
+            }
+        },
+        {
+            "id": "actions",
+            "type": "longMenu",
+            "header": {
+                "type": "text",
+                "text": "Actions"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 20,
+            "properties": {
+                "iconInactive": "ellipsisMenu",
+                "iconActive": "ellipsisMenu",
+                "options": [
+                    {
+                        "id": "maintain",
+                        "title": "Maintain"
+                    },
+                    {
+                        "id": "revoke",
+                        "title": "Revoke"
+                    },
+                    {
+                        "id": "reassign",
+                        "popupId": "reviewItemReassign"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sticky",
+            "type": "sticky",
+            "header": {
+                "type": "component",
+                "component": "sticky"
+            },
+            "hasInfo": false,
+            "sortable": false,
+            "initialDisplay": true,
+            "mandatory": true,
+            "order": 21,
+            "sticky": "right"
+        }
+    ]
+}
