@@ -1,0 +1,553 @@
+{
+  "steps": [
+    {
+      "id": "accountCategory",
+      "title": "Account Category Details",
+      "heading": "metadata.accountCategoryInformation",
+      "children": [
+        {
+          "id": "accountType",
+          "label": "review.columnHeader.accountCategory",
+          "value": ""
+        },
+        {
+          "id": "dbagApplicationID",
+          "label": "metaData.applicationNARID",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account",
+            "Shared - Generic",
+            "Technical - Generic brokered",
+            "Technical - Service/ Process",
+            "gMSA (Group Managed Service Account)"
+          ]
+        },
+        {
+          "id": "primaryAccount",
+          "label": "create.ADAccount.primaryAccount",
+          "value": ""
+        },
+        {
+          "id": "domain",
+          "label": "create.ADAccount.domain",
+          "value": ""
+        },
+        {
+          "id": "location",
+          "label": "metaData.location",
+          "value": "",
+          "relatedTo": [
+            "Personal - Additional",
+            "Personal - Admin",
+            "Personal - Desktop Admin",
+            "Shared - Generic",
+            "Technical - Generic brokered",
+            "Technical - Service/ Process",
+            "Technical - Test",
+            "Personal - Domain Support"
+          ],
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Administrative (GIST)",
+              "value": "Administrative (GIST)"
+            },
+            {
+              "label": "Default Location (Americas)",
+              "value": "Default Location (Americas)"
+            },
+            {
+              "label": "Default Location (Asia-Pacific)",
+              "value": "Default Location (Asia-Pacific)"
+            },
+            {
+              "label": "Default Location (EMEA)",
+              "value": "Default Location (EMEA)"
+            },
+            {
+              "label": "Default Location (Global)",
+              "value": "Default Location (Global)"
+            },
+            {
+              "label": "Provider (ATOS)",
+              "value": "Provider (ATOS)"
+            },
+            {
+              "label": "Provider (ATOS Germany)",
+              "value": "Provider (ATOS Germany)"
+            },
+            {
+              "label": "Provider (Bauspar AG)",
+              "value": "Provider (Bauspar AG)"
+            },
+            {
+              "label": "Provider (DB Securities)",
+              "value": "Provider (DB Securities)"
+            },
+            {
+              "label": "Provider (Deutsche Immobilien Leasing)",
+              "value": "Provider (Deutsche Immobilien Leasing)"
+            },
+            {
+              "label": "Provider (Engineering-EMEA)",
+              "value": "Provider (Engineering-EMEA)"
+            },
+            {
+              "label": "Provider (IT Audit)",
+              "value": "Provider (IT Audit)"
+            },
+            {
+              "label": "Provider (Postbank)",
+              "value": "Provider (Postbank)"
+            },
+            {
+              "label": "Provider (Russia)",
+              "value": "Provider (Russia)"
+            },
+            {
+              "label": "Provider (Switzerland)",
+              "value": "Provider (Switzerland)"
+            },
+            {
+              "label": "Provider (Turkey)",
+              "value": "Provider (Turkey)"
+            }
+          ]
+        },
+        {
+          "id": "dbagCostcenter",
+          "label": "metaData.costCenter",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account",
+            "gMSA (Group Managed Service Account)"
+          ]
+        },
+        {
+          "id": "department",
+          "label": "metaData.department",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account"
+          ]
+        },
+        {
+          "id": "region",
+          "label": "create.ADAccount.accountRegion",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account"
+          ],
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Americas",
+              "value": "am"
+            },
+            {
+              "label": "AsiaPac",
+              "value": "ap"
+            },
+            {
+              "label": "EMEA",
+              "value": "em"
+            },
+            {
+              "label": "Global",
+              "value": "gl"
+            }
+          ]
+        },
+        {
+          "id": "serviceNowLevel",
+          "label": "create.ADAccount.accountServiceNowLevel",
+          "value": "",
+          "relatedTo": ["CyberArk Role (shared) Account"],
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Everyone Else",
+              "value": "Y"
+            },
+            {
+              "label": "Level-1 Support",
+              "value": "1"
+            },
+            {
+              "label": "Level-2 Support",
+              "value": "2"
+            },
+            {
+              "label": "Level-3 Support",
+              "value": "3"
+            },
+            {
+              "label": "SNLevel_LevelT",
+              "value": "t"
+            }
+          ]
+        },
+        {
+          "id": "dbagInfrastructureID",
+          "label": "create.ADAccount.accountinfrastructureNarId",
+          "value": "",
+          "relatedTo": ["Technical - Generic brokered"],
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "db-Cyberark-Global (NAR ID: 46965-1)",
+              "value": "46965-1"
+            }
+          ]
+        },
+        {
+          "id": "platformType",
+          "label": "create.ADAccount.platformType",
+          "value": "",
+          "relatedTo": ["CyberArk Role (shared) Account"],
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "All platforms",
+              "value": "al"
+            },
+            {
+              "label": "BladeLogic",
+              "value": "bl"
+            },
+            {
+              "label": "Control for M",
+              "value": "cm"
+            },
+            {
+              "label": "Directory Services",
+              "value": "ds"
+            },
+            {
+              "label": "Firewalls",
+              "value": "fw"
+            },
+            {
+              "label": "HP ILO",
+              "value": "il"
+            },
+            {
+              "label": "MS SQL",
+              "value": "sq"
+            },
+            {
+              "label": "Oracle",
+              "value": "or"
+            },
+            {
+              "label": "Routing & Switching",
+              "value": "rs"
+            },
+            {
+              "label": "Sybase",
+              "value": "sy"
+            },
+            {
+              "label": "Unix",
+              "value": "ux"
+            },
+            {
+              "label": "VMWare Virtual Hosting Enterprise Server Console",
+              "value": "es"
+            },
+            {
+              "label": "Windows",
+              "value": "wn"
+            }
+          ]
+        },
+        {
+          "id": "accountStatus",
+          "label": "create.ADAccount.accountStatus",
+          "value": "",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Disabled",
+              "value": "514"
+            },
+            {
+              "label": "Enabled",
+              "value": "512"
+            }
+          ]
+        },
+        {
+          "id": "description",
+          "label": "metaData.description1",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account",
+            "gMSA (Group Managed Service Account)"
+          ]
+        },
+        {
+          "id": "recertificationPeriod",
+          "label": "create.ADAccount.accountrecertificationPeriod",
+          "value": "",
+          "relatedTo": [
+            "CyberArk Named Account (Application)",
+            "CyberArk Named Account (Infrastructure)",
+            "CyberArk Role (shared) Account"
+          ],
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "01 Month",
+              "value": "01"
+            },
+            {
+              "label": "02 Months",
+              "value": "02"
+            },
+            {
+              "label": "03 Months",
+              "value": "03"
+            },
+            {
+              "label": "04 Months",
+              "value": "04"
+            },
+            {
+              "label": "05 Months",
+              "value": "05"
+            },
+            {
+              "label": "06 Months",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "id": "accountAccessLevel",
+          "label": "create.ADAccount.acccountAccessLevel",
+          "value": "",
+          "relatedTo": ["CyberArk Role (shared) Account"],
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Level 1",
+              "value": "1"
+            },
+            {
+              "label": "Level 2",
+              "value": "2"
+            },
+            {
+              "label": "Level 3",
+              "value": "3"
+            },
+            {
+              "label": "Level 4",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "id": "accountNameSuffix",
+          "label": "create.ADAccount.acccountNameSuffixx",
+          "value": "",
+          "relatedTo": ["Personal - Additional"],
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "2",
+              "value": "2"
+            },
+            {
+              "label": "3",
+              "value": "3"
+            },
+            {
+              "label": "4",
+              "value": "4"
+            },
+            {
+              "label": "5",
+              "value": "5"
+            },
+            {
+              "label": "6",
+              "value": "6"
+            },
+            {
+              "label": "7",
+              "value": "7"
+            },
+            {
+              "label": "8",
+              "value": "8"
+            },
+            {
+              "label": "9",
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "id": "accountNameMiddle",
+          "label": "create.ADAccount.accountNameMidddle",
+          "value": "",
+          "relatedTo": [
+            "Shared - Generic",
+            "Technical - Generic brokered",
+            "Technical - Service/ Process",
+            "Technical - Test"
+          ]
+        },
+        {
+          "id": "passwordNeverExpires",
+          "label": "create.ADAccount.passwordNeverExpiress",
+          "value": "",
+          "relatedTo": ["Technical - Service/ Process"]
+        },
+        {
+          "id": "sAMAccountName",
+          "label": "modify.label.accountName",
+          "value": ""
+        },
+        {
+          "id": "expiry",
+          "label": "review.columnHeader.expiry",
+          "value": ""
+        },
+        {
+          "id": "itao",
+          "label": "metaData.itao",
+          "value": "",
+          "relatedTo": ["gMSA (Group Managed Service Account)"]
+        },
+        {
+          "id": "itaoDelegate",
+          "label": "metaData.itaoDelegate",
+          "value": "",
+          "relatedTo": ["gMSA (Group Managed Service Account)"]
+        },
+        {
+          "id": "PrincipalsAllowedToRetrieveManagedPassword",
+          "label": "metaData.activeDirectoryGrpName",
+          "value": "",
+          "relatedTo": ["gMSA (Group Managed Service Account)"]
+        },
+        {
+          "id": "KerberosEncryptionType",
+          "label": "metaData.kerbosEncryption",
+          "value": "",
+          "relatedTo": ["gMSA (Group Managed Service Account)"]
+        },
+        {
+          "id": "ManagedPasswordIntervalInDays",
+          "label": "metaData.managedPassword",
+          "value": "",
+          "relatedTo": ["gMSA (Group Managed Service Account)"]
+        }
+      ]
+    },
+    {
+      "id": "requestDetails",
+      "title": "approval.requestInfoBtn",
+      "heading": "approval.requestInfoBtn",
+      "status": "Completed",
+      "mapping": "requestDetails",
+      "children": [
+        {
+          "id": "requestNo",
+          "label": "metaData.RequestNo",
+          "value": ""
+        },
+        {
+          "id": "bulkRequestNo",
+          "label": "review.columnHeader.bulkRequestNumber",
+          "value": ""
+        },
+        {
+          "id": "recipient",
+          "label": "review.columnHeader.recipientMail",
+          "value": ""
+        },
+        {
+          "id": "requester",
+          "label": "metaData.Requester",
+          "value": ""
+        },
+        {
+          "id": "requestType",
+          "label": "metaData.RequestType",
+          "value": ""
+        },
+        {
+          "id": "requestDate",
+          "label": "metaData.RequestDate",
+          "value": ""
+        },
+        {
+          "id": "approvalDate",
+          "label": "metaData.ApprovalDate",
+          "value": ""
+        },
+        {
+          "id": "completionDate",
+          "label": "metaData.CompletionDate",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "comments",
+      "title": "metaData.Comments",
+      "heading": "metaData.Comments",
+      "status": "Completed",
+      "mapping": "comments",
+      "children": [
+        {
+          "id": "providedComments",
+          "label": "Tim Deboer, 2.3.22, 3pm",
+          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada vitae erat in ultricies. Morbi ut sem dapibus ligula laoreet accumsan eu ultrices mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada vitae erat in ultricies. Morbi ut sem dapibus ligula laoreet accumsan eu ultrices mauris"
+        }
+      ]
+    },
+    {
+      "id": "decisions",
+      "title": "Decisions",
+      "heading": "metaData.BusinessJustification",
+      "status": "Completed",
+      "mapping": "decisions",
+      "children": [
+        {
+          "id": "justification",
+          "label": "review.columnHeader.justification",
+          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada vitae erat in ultricies. Morbi ut sem dapibus ligula laoreet accumsan eu ultrices mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada vitae erat in ultricies. Morbi ut sem dapibus ligula laoreet accumsan eu ultrices mauris"
+        }
+      ]
+    },
+    {
+      "id": "approverInfo",
+      "title": "Approval Information",
+      "heading": "metadata.approvalInformation",
+      "status": "Completed",
+      "mapping": "decisions",
+      "children": [
+        {
+          "id": "phasesInfo",
+          "label": "",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}

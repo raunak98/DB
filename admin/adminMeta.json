@@ -1,0 +1,23 @@
+[
+  {
+    "title": "metaData.activeDirectory",
+    "type": "Accordion",
+    "children": [
+      {
+        "title": "metaData.adAccountAdministration",
+        "type": "Link",
+        "url": "/admin/AccountAdmin"
+      },
+      {
+        "title": "metaData.adGroupAdministration",
+        "type": "Link",
+        "url": "/admin/GroupAdmin"
+      },
+      {
+        "title": "metaData.serviceDeskAdministration",
+        "type": "Link",
+        "url": "/admin/ServiceDeskAdmin"
+      }
+    ]
+  }
+]

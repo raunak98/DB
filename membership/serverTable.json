@@ -1,0 +1,72 @@
+{
+  "paginationSizes": [10, 25, 50, 100],
+  "initialSortColumnId": "applicationName",
+  "hasSortableColumns": true,
+  "columns": [
+    {
+      "id": "serverName",
+      "type": "text",
+      "header": {
+        "headerId": "Server Name",
+        "type": "text",
+        "text": "Server Name",
+        "sortKey": ""
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 1,
+      "sortable": false
+    },
+    {
+      "id": "domain",
+      "type": "text",
+      "header": {
+        "headerId": "Domain",
+        "type": "text",
+        "text": "Domain",
+        "sortKey": ""
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 2,
+      "sortable": false
+    },
+    {
+      "id": "hostName",
+      "type": "text",
+      "header": {
+        "headerId": "Host Name",
+        "type": "text",
+        "text": "Host Name",
+        "sortKey": ""
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 3,
+      "sortable": false
+    },
+    {
+      "id": "action",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 4,
+      "properties": {
+        "options": [
+          {
+            "id": "delete",
+            "text": "Delete",
+            "type": "actionButton",
+            "title": "Delete"
+          }
+        ]
+      }
+    }
+  ]
+}

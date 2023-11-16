@@ -1,0 +1,58 @@
+{
+  "paginationSizes": [10, 25, 50, 100],
+  "initialSortColumnId": "applicationName",
+  "hasSortableColumns": true,
+  "columns": [
+    {
+      "id": "accountName",
+      "type": "text",
+      "header": {
+        "headerId": "Account Name",
+        "type": "text",
+        "text": "Account Name",
+        "sortKey": ""
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 1,
+      "sortable": false
+    },
+    {
+      "id": "emailId",
+      "type": "text",
+      "header": {
+        "headerId": "Email Id",
+        "type": "text",
+        "text": "Email Id",
+        "sortKey": ""
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 2,
+      "sortable": false
+    },
+    {
+      "id": "action",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 2,
+      "properties": {
+        "options": [
+          {
+            "id": "delete",
+            "text": "Delete",
+            "type": "actionButton",
+            "title": "Delete"
+          }
+        ]
+      }
+    }
+  ]
+}

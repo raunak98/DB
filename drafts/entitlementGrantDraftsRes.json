@@ -1,0 +1,63 @@
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 18,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "711ac9eae64eca2800574c0f5746e2f30f660848bd4c1d2710b0c873fa724f05c779a079de9a09a0916f5d878cdf828db4eb562476dafc8bcf740a23fc020251",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "isDraft": true,
+              "Accessio_Request_No": "",
+              "recepientMail": "bhavya.bhaskar-rao@dbgdev.db.com",
+              "groupDN": "CN=IA-ROBOT-TESTING876,OU=Accessio,OU=Groups,OU=Central Admin,DC=zwdbg,DC=db,DC=com",
+              "requestJustification": "testing draft",
+              "requestorMail": "mahesh-kumar.varahala@dbgdev.db.com",
+              "category": "AD Group",
+              "operation": "Add Membership",
+              "applicationName": "APP_AD_B_zwdbg",
+              "accountDN": "CN=bhavyaPrimary-a,OU=Users,OU=ATOS,OU=Global,DC=zwads,DC=db,DC=com"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/25891f25-3cea-4e11-9e83-9cb6eac51a1b",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T16:01:39.594Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691510499477",
+            "branch": "actual",
+            "primaryKey": "25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+          },
+          "requestType": "entitlementGrant",
+          "id": "25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+        },
+        "sort": [1691510499594]
+      }
+    ]
+  }
+}

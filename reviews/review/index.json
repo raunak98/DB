@@ -1,0 +1,193 @@
+[
+  {
+    "id": "review-item-1",
+    "status": "reassigned",
+    "expirationDate": "01/01/2022",
+    "comment": [
+      {
+        "username": "Alex",
+        "message": "This should be revoked!",
+        "date": "21/03/2020"
+      },
+      {
+        "username": "Daniel",
+        "message": "Yes, I can confirm",
+        "date": "22/03/2020"
+      }
+    ],
+    "applicationName": "Some name 1",
+    "accountName": "Some account 1",
+    "username": "Some username 1",
+    "email": "some.email1@gmail.com",
+    "lastLogin": "10/10/2020",
+    "accountType": "account type 1",
+    "costCenter": "costCenter 1",
+    "UBRnode": "UBRnode 1",
+    "supervisor": "supervisor 1",
+    "DISOM": "DISOM 1",
+    "history": [
+      "History 1 last action",
+      "History 1 before last action",
+      "History 1 another previous action"
+    ],
+    "user": {
+      "email": "some.email1@gmail.com",
+      "costCenter": "costCenter 1",
+      "UBRnode": "UBRnode 1",
+      "supervisor": "supervisor 1",
+      "DISOM": "DISOM 1",
+      "someUserField": "some user filed value 1",
+      "someOtherUserField": "some other user field value 1"
+    },
+    "account": {
+      "accountType": "account type 1",
+      "lastLogin": "10/10/2020",
+      "someAccountField": "some account filed value 1",
+      "someOtherAccountField": "some other account field value 1"
+    }
+  },
+  {
+    "id": "review-item-2",
+    "status": "maintained",
+    "expirationDate": "02/02/2022",
+    "comment": [],
+    "applicationName": "Some name 2",
+    "accountName": "Some account 2",
+    "username": "Some username 2",
+    "email": "some.email2@gmail.com",
+    "lastLogin": "10/02/2020",
+    "accountType": "accountt type 2",
+    "costCenter": "costCenter 2",
+    "UBRnode": "UBRnode 2",
+    "supervisor": "supervisor 2",
+    "DISOM": "DISOM 2",
+    "history": [
+      "History 2 last action",
+      "History 2 before last action",
+      "History 2 another previous action"
+    ],
+    "user": {
+      "email": "some.email2@gmail.com",
+      "costCenter": "costCenter 2",
+      "UBRnode": "UBRnode 2",
+      "supervisor": "supervisor 2",
+      "DISOM": "DISOM 2",
+      "someUserField": "some user filed value 2",
+      "someOtherUserField": "some other user field value 2"
+    },
+    "account": {
+      "accountType": "account type 2",
+      "lastLogin": "10/02/2020",
+      "someAccountField": "some account filed value 2",
+      "someOtherAccountField": "some other account field value 2"
+    }
+  },
+  {
+    "id": "review-item-3",
+    "status": "revoked",
+    "expirationDate": "03/03/2022",
+    "comment": [],
+    "applicationName": "Some name 3",
+    "accountName": "Some account 3",
+    "username": "Some username 3",
+    "email": "some.email3@gmail.com",
+    "lastLogin": "30/03/2020",
+    "accountType": "accountt type 3",
+    "costCenter": "costCenter 3",
+    "UBRnode": "UBRnode 3",
+    "supervisor": "supervisor 3",
+    "DISOM": "DISOM 3",
+    "history": [
+      "History 3 last action",
+      "History 3 before last action",
+      "History 3 another previous action"
+    ],
+    "user": {
+      "email": "some.email3@gmail.com",
+      "costCenter": "costCenter 3",
+      "UBRnode": "UBRnode 3",
+      "supervisor": "supervisor 3",
+      "DISOM": "DISOM 3",
+      "someUserField": "some user filed value 3",
+      "someOtherUserField": "some other user field value 3"
+    },
+    "account": {
+      "accountType": "account type 3",
+      "lastLogin": "30/03/2020",
+      "someAccountField": "some account filed value 3",
+      "someOtherAccountField": "some other account field value 3"
+    }
+  },
+  {
+    "id": "review-item-4",
+    "status": "reassigned",
+    "expirationDate": "04/04/2022",
+    "comment": [],
+    "applicationName": "Some name 4",
+    "accountName": "Some account 4",
+    "username": "Some username 4",
+    "email": "some.email4@gmail.com",
+    "lastLogin": "14/04/2020",
+    "accountType": "accountt type 4",
+    "costCenter": "costCenter 4",
+    "UBRnode": "UBRnode 4",
+    "supervisor": "supervisor 4",
+    "DISOM": "DISOM 4",
+    "history": [
+      "History 4 last action",
+      "History 4 before last action",
+      "History 4 another previous action"
+    ],
+    "user": {
+      "email": "some.email4@gmail.com",
+      "costCenter": "costCenter 4",
+      "UBRnode": "UBRnode 4",
+      "supervisor": "supervisor 4",
+      "DISOM": "DISOM 4",
+      "someUserField": "some user filed value 4",
+      "someOtherUserField": "some other user field value 4"
+    },
+    "account": {
+      "accountType": "account type 4",
+      "lastLogin": "14/04/2020",
+      "someAccountField": "some account filed value 4",
+      "someOtherAccountField": "some other account field value 4"
+    }
+  },
+  {
+    "id": "review-item-5",
+    "status": "reassigned",
+    "expirationDate": "04/04/2022",
+    "comment": [],
+    "applicationName": "Some name 5",
+    "accountName": "Some account 5",
+    "username": "Some username 5",
+    "email": "some.email5@gmail.com",
+    "lastLogin": "14/04/2020",
+    "accountType": "accountt type 5",
+    "costCenter": "costCenter 5",
+    "UBRnode": "UBRnode 5",
+    "supervisor": "supervisor 5",
+    "DISOM": "DISOM 5",
+    "history": [
+      "History 5 last action",
+      "History 5 before last action",
+      "History 5 another previous action"
+    ],
+    "user": {
+      "email": "some.email5@gmail.com",
+      "costCenter": "costCenter 5",
+      "UBRnode": "UBRnode 5",
+      "supervisor": "supervisor 5",
+      "DISOM": "DISOM 5",
+      "someUserField": "some user filed value 5",
+      "someOtherUserField": "some other user field value 5"
+    },
+    "account": {
+      "accountType": "account type 4",
+      "lastLogin": "14/04/2020",
+      "someAccountField": "some account filed value 4",
+      "someOtherAccountField": "some other account field value 4"
+    }
+  }
+]

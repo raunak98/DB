@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "requestNo": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf4",
+    "creationDate": "2022-06-06",
+    "requestType": "APP_AD_B_DBG4",
+    "recipient": "s.santaosh.patil4@accenture.com",
+    "detailedInfo": "Info regarding draft"
+  },
+  {
+    "id": 2,
+    "requestNo": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf2",
+    "creationDate": "2022-06-25",
+    "requestType": "APP_AD_B_DBG2",
+    "recipient": "s.santaosh.patil2@accenture.com",
+    "detailedInfo": "Info regarding draft"
+  },
+  {
+    "id": 3,
+    "requestNo": "03428fd3-d1f1-4d42-b4b3-48a0abab6bf",
+    "creationDate": "2022-06-03",
+    "requestType": "APP_AD_B_DBG",
+    "recipient": "s.santaosh.patil@accenture.com",
+    "detailedInfo": "Info regarding draft"
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "paginationSizes": [10, 25, 50, 100],
+  "initialSortColumnId": "applicationName",
+  "hasSortableColumns": true,
+  "columns": [
+    {
+      "id": "groupName",
+      "type": "text",
+      "header": {
+        "headerId": "Group Name",
+        "type": "text",
+        "text": "Group Name",
+        "sortKey": ""
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 1,
+      "sortable": false
+    },
+    {
+      "id": "domain",
+      "type": "text",
+      "header": {
+        "headerId": "Domain",
+        "type": "text",
+        "text": "Domain",
+        "sortKey": ""
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 2,
+      "sortable": false
+    },
+    {
+      "id": "approvers",
+      "type": "text",
+      "header": {
+        "headerId": "Approvers",
+        "type": "text",
+        "text": "Approvers",
+        "sortKey": ""
+      },
+      "initialDisplay": true,
+      "mandatory": false,
+      "order": 3,
+      "sortable": false
+    },
+    {
+      "id": "action",
+      "type": "collapsColumn",
+      "header": {
+        "type": "text",
+        "text": "Actions"
+      },
+      "hasInfo": false,
+      "sortable": false,
+      "initialDisplay": true,
+      "mandatory": true,
+      "order": 2,
+      "properties": {
+        "options": [
+          {
+            "id": "remove",
+            "text": "Remove",
+            "type": "actionButton",
+            "title": "Remove"
+          }
+        ]
+      }
+    }
+  ]
+}

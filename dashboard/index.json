@@ -1,0 +1,22 @@
+[
+  {
+    "id": "reviews",
+    "count": 9,
+    "redirectTo": "/tasks/reviews"
+  },
+  {
+    "id": "approvals",
+    "count": 35,
+    "redirectTo": "/tasks/approvals"
+  },
+  {
+    "id": "violations",
+    "count": 6,
+    "redirectTo": "/tasks/violations"
+  },
+  {
+    "id": "justifications",
+    "count": 6,
+    "redirectTo": "/tasks/justifications"
+  }
+]

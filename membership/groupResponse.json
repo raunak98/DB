@@ -1,0 +1,358 @@
+{
+  "took": 135,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 1,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "9be38ed21f186a2dcb603c31e9cba56bf682f6cd53d11e1fd9a68d482d1716877d3181155c482c088ffe8335b1d5d19bdbcc1d2c75acec4718127bed9df05c11",
+        "_score": null,
+        "_source": {
+          "mapping": "7d274b58e3a64ad5a35e4090e5815ce6_managedAccount_systemF07d0ecb26b94be69afde5af38011f9d__ACCOUNT__",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-14T13:38:27.784Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e"
+          },
+          "_rev": "0",
+          "description": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "AD_DBG",
+            "_rev": "894",
+            "_id": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [
+            {
+              "name": "memberOf",
+              "unassignmentOperation": "removeFromTarget",
+              "value": ["CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com"],
+              "assignmentOperation": "mergeWithTarget"
+            }
+          ],
+          "id": "eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e",
+          "applicationId": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+          "glossary": {
+						"kv": [
+							{
+								"key": "accessioAppRequest",
+								"value": "true"
+							},
+              {
+								"key": "accessioPrerequisiteRMPRoles",
+								"value": "Information Security Officer"
+							},
+              {
+								"key": "info",
+								"value": "Disbaled by dbAccessGa"
+							}
+						]
+					},
+          "igaContent": {
+            "object": {
+              "dbagComplianceStatus": "0",
+              "sAMAccountName":"testPrimaryNamrata",
+              "mail": "firstname2020.lastname2027@db.com",
+              "container": "OU=Cloud",
+              "groupType": "-2147483646",
+              "dbagRecerttype": "Infrastructure",
+              "displayName": "DBGroupTest202",
+              "instanceType": "4",
+              "objectClass": "group",
+              "distinguishedName": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+              "description": "Group used by portal team",
+              "dn": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com,DC=tibco,DC=zwads,DC=db,DC=com",
+              "dbagIMSAuthContactDelegate": "yamini.rayapuram@accenture.com",
+              "cn": "",
+              "dbagRecertSubtype": "Control",
+              "dbagApplicationID": "133275-1",
+              "dbagIMSDataSecClass": "P",
+              "IsSecurity": "True",
+              "dbagIMSAuthContact": "s.santaosh.patil@accenture.com",
+              "groupScope": "global",
+              "dbagCostcenter": "6201126760",
+              "dbagIMSApprovers": [
+                "firstname2020.lastname2027@db.com"
+              ],
+              "__NAME__": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com,DC=tibco,DC=zwads,DC=db,DC=com",
+              "department": "FVA",
+              "IsUniversal": "True",
+              "objectCategory": "CN=DBGroupTest202,CN=Schema,CN=Configuration,DC=acnprojectroots,DC=com"
+            }
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "9be38ed21f186a2dcb603c31e9cba56bf682f6cd53d11e1fd9a68d482d1716877d3181155c482c088ffe8335b1d5d19bdbcc1d2c75acec4718127bed9df05c11",
+        "_score": null,
+        "_source": {
+          "mapping": "7d274b58e3a64ad5a35e4090e5815ce6_managedAccount_systemF07d0ecb26b94be69afde5af38011f9d__ACCOUNT__",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-14T13:38:27.784Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e"
+          },
+          "_rev": "0",
+          "description": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "AD_DBG",
+            "_rev": "894",
+            "_id": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [
+            {
+              "name": "memberOf",
+              "unassignmentOperation": "removeFromTarget",
+              "value": ["CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com"],
+              "assignmentOperation": "mergeWithTarget"
+            }
+          ],
+          "id": "eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e",
+          "applicationId": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+          "glossary": {
+						"kv": [
+							{
+								"key": "accessioAppRequest",
+								"value": "true"
+							},
+              {
+								"key": "accessioPrerequisiteRMPRoles",
+								"value": "Information Security Officer"
+							},
+              {
+								"key": "info",
+								"value": "Disbaled by dbAccessGa"
+							}
+						]
+					},
+          "igaContent": {
+            "object": {
+              "dbagComplianceStatus": "0",
+              "sAMAccountName":"testPrimaryBhavya",
+              "mail": "firstname2020.lastname2027@db.com",
+              "container": "OU=Cloud",
+              "groupType": "-2147483646",
+              "dbagRecerttype": "Infrastructure",
+              "displayName": "DBGroupTest203",
+              "instanceType": "4",
+              "objectClass": "group",
+              "distinguishedName": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+              "description": "Group used by portal team",
+              "dn": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com,DC=zwdbg,DC=zwads,DC=db,DC=com",
+              "dbagIMSAuthContactDelegate": "yamini.rayapuram@accenture.com",
+              "cn": "",
+              "dbagRecertSubtype": "Control",
+              "dbagApplicationID": "133275-1",
+              "dbagIMSDataSecClass": "P",
+              "IsSecurity": "True",
+              "dbagIMSAuthContact": "s.santaosh.patil@accenture.com",
+              "groupScope": "universal",
+              "dbagCostcenter": "6201126760",
+              "dbagIMSApprovers": [
+                "firstname2020.lastname2027@db.com"
+              ],
+              "__NAME__": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+              "department": "FVA",
+              "IsUniversal": "True",
+              "objectCategory": "CN=DBGroupTest202,CN=Schema,CN=Configuration,DC=acnprojectroots,DC=com"
+            }
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "9be38ed21f186a2dcb603c31e9cba56bf682f6cd53d11e1fd9a68d482d1716877d3181155c482c088ffe8335b1d5d19bdbcc1d2c75acec4718127bed9df05c11",
+        "_score": null,
+        "_source": {
+          "mapping": "7d274b58e3a64ad5a35e4090e5815ce6_managedAccount_systemF07d0ecb26b94be69afde5af38011f9d__ACCOUNT__",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-14T13:38:27.784Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e"
+          },
+          "_rev": "0",
+          "description": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "AD_DBG",
+            "_rev": "894",
+            "_id": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [
+            {
+              "name": "memberOf",
+              "unassignmentOperation": "removeFromTarget",
+              "value": ["CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com"],
+              "assignmentOperation": "mergeWithTarget"
+            }
+          ],
+          "id": "eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e",
+          "applicationId": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+          "igaContent": {
+            "object": {
+              "dbagComplianceStatus": "0",
+              "dbagProvisioningBy": "123",
+              "container": "OU=Cloud",
+              "groupType": "-2147483646",
+              "dbagRecerttype": "Infrastructure",
+              "displayName": "DBGroupTest204",
+              "instanceType": "4",
+              "objectClass": "group",
+              "distinguishedName": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+              "description": "Group used by portal team",
+              "dn": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+              "dbagIMSAuthContactDelegate": "yamini.rayapuram@accenture.com",
+              "cn": "",
+              "dbagRecertSubtype": "Control",
+              "dbagApplicationID": "133275-1",
+              "dbagIMSDataSecClass": "P",
+              "IsSecurity": "True",
+              "dbagIMSAuthContact": "s.santaosh.patil@accenture.com",
+              "groupScope": "local",
+              "dbagCostcenter": "6201126760",
+              "dbagIMSApprovers": "",
+              "__NAME__": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+              "department": "FVA",
+              "IsUniversal": "True",
+              "objectCategory": "CN=DBGroupTest202,CN=Schema,CN=Configuration,DC=acnprojectroots,DC=com"
+            }
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e"]
+      },
+      {
+        "_index": "june-acreq_openidm_managed_assignment_latest",
+        "_type": "_doc",
+        "_id": "9be38ed21f186a2dcb603c31e9cba56bf682f6cd53d11e1fd9a68d482d1716877d3181155c482c088ffe8335b1d5d19bdbcc1d2c75acec4718127bed9df05c11",
+        "_score": null,
+        "_source": {
+          "mapping": "7d274b58e3a64ad5a35e4090e5815ce6_managedAccount_systemF07d0ecb26b94be69afde5af38011f9d__ACCOUNT__",
+          "metadata": {
+            "entityPath": "/openidm/managed/assignment/eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e",
+            "entityDefinition": "assignment",
+            "entityType": "/openidm/managed/assignment",
+            "created": "2022-10-14T13:38:27.784Z",
+            "namespace": "/openidm/managed",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "activity",
+            "branch": "actual",
+            "tags": {},
+            "primaryKey": "eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e"
+          },
+          "_rev": "0",
+          "description": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "objectType": "__GROUP__",
+          "name": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "__NAME__": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+          "applicationProperties": {
+            "name": "AD_DBG",
+            "_rev": "894",
+            "_id": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+            "igaContent": {
+              "logo": "img/logos/active-directory.svg"
+            }
+          },
+          "attributes": [
+            {
+              "name": "memberOf",
+              "unassignmentOperation": "removeFromTarget",
+              "value": ["CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com"],
+              "assignmentOperation": "mergeWithTarget"
+            }
+          ],
+          "id": "eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e",
+          "applicationId": "7d274b58-e3a6-4ad5-a35e-4090e5815ce6",
+          "igaContent": {
+            "object": {
+              "dbagComplianceStatus": "1",
+              "container": "OU=Cloud",
+              "groupType": "-2147483646",
+              "dbagRecerttype": "Infrastructure",
+              "displayName": "DBGroupTest205",
+              "instanceType": "4",
+              "objectClass": "group",
+              "distinguishedName": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+              "description": "Group used by portal team",
+              "dn": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+              "dbagIMSAuthContactDelegate": "yamini.rayapuram@accenture.com",
+              "cn": "",
+              "dbagRecertSubtype": "Control",
+              "dbagApplicationID": "133275-1",
+              "dbagIMSDataSecClass": "P",
+              "IsSecurity": "True",
+              "dbagIMSAuthContact": "s.santaosh.patil@accenture.com",
+              "groupScope": "global",
+              "dbagCostcenter": "6201126760",
+              "dbagIMSApprovers": [
+                "firstname2020.lastname2027@db.com"
+              ],
+              "__NAME__": "CN=DBGroupTest202,OU=Cloud,DC=acnprojectroots,DC=com",
+              "department": "FVA",
+              "IsUniversal": "True",
+              "objectCategory": "CN=DBGroupTest202,CN=Schema,CN=Configuration,DC=acnprojectroots,DC=com"
+            }
+          },
+          "resourceType": "__GROUP__"
+        },
+        "sort": ["eeb5b96685f6099541fdaa2245569c2f35f030891c2db3471083f988f591bc1e"]
+      }
+    ]
+  }
+}

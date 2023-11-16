@@ -1,0 +1,139 @@
+{
+  "steps": [
+    {
+      "id": "step1",
+      "title": "serverMembership.requestInformation",
+      "heading": "request",
+      "titleId": "request",
+      "headerId": "serverMembership.requestInformation",
+      "children": [
+        {
+          "title": "requestType",
+          "type": "radioGroup",
+          "id": "requestType",
+          "label": "serverMembership.requestType",
+          "default": "Add",
+          "name": "requestType",
+          "category": "requestType",
+          "requiredField": true,
+          "radioOptions": [
+            { "label": "serverMembership.add", "value": "Add" },
+            { "label": "serverMembership.remove", "value": "Remove" }
+          ],
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          }
+        },
+        {
+          "title": "AccountType",
+          "type": "autocomplete",
+          "id": "accountType",
+          "label": "serverMembership.accountPlaceholder",
+          "isMultiple": true,
+          "name": "accountType",
+          "url": "/v0/governance/searchAccounts",
+          "queryparameters": [""],
+          "category": "accountType",
+          "requiredField": false,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": false,
+          "placeholder": "serverMembership.accountPlaceholder",
+          "needButton": true,
+          "buttonInfo": {
+            "id": "accountTypeButton",
+            "label": "serverMembership.add",
+            "buttonInfo": "serverMembership.addButtonAccount"
+          },
+          "maxLimit": "7"
+        },
+        {
+          "title": "AccountTable",
+          "type": "table",
+          "id": "accountTable",
+          "label": "Account Table",
+          "name": "accountTable",
+          "url": "/api/membership/accountTable",
+          "category": "accountTable",
+          "columns": [
+            "serverMembership.accountName",
+            "serverMembership.domain",
+            "serverMembership.recipientMail",
+            "serverMembership.actions"
+          ],
+          "requiredField": false,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": false
+        },
+        {
+          "title": "GroupType",
+          "type": "autocomplete",
+          "id": "groupType",
+          "label": "serverMembership.groupPlaceholder",
+          "isMultiple": true,
+          "name": "groupType",
+          "url": "/v0/governance/searchGroups",
+          "queryparameters": [""],
+          "category": "groupType",
+          "requiredField": false,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": false,
+          "placeholder": "serverMembership.groupPlaceholder",
+          "needButton": true,
+          "buttonInfo": {
+            "id": "groupTypeButton",
+            "label": "serverMembership.add",
+            "buttonInfo": "serverMembership.addButtonGroup"
+          },
+          "maxLimit": "7"
+        },
+        {
+          "title": "GroupTable",
+          "type": "table",
+          "id": "groupTable",
+          "label": "Group Table",
+          "name": "groupTable",
+          "url": "/api/membership/groupTable",
+          "category": "groupTable",
+          "columns": [
+            "serverMembership.groupName",
+            "serverMembership.domain",
+            "serverMembership.description",
+            "serverMembership.AuthContact",
+            "serverMembership.AuthContactDelegate",
+            "serverMembership.approvers",
+            "serverMembership.link",
+            "serverMembership.actions"
+          ],
+
+          "requiredField": false,
+          "displayType": {
+            "hidden": false,
+            "readOnly": false,
+            "disabled": false
+          },
+          "relatedTo": false
+        }
+      ]
+    },
+    {
+      "id": "step2",
+      "title": "addGroupMembership.summary",
+      "heading": "Summary",
+      "titleId": "summary"
+    }
+  ]
+}

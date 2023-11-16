@@ -1,0 +1,19 @@
+{
+  "title": "Notification",
+  "notification": [
+    {
+      "date": "22/08/2023",
+      "title": "Sample Title",
+      "germanTitle": "Sample Title2 german",
+      "description": "This is a sample 2 content",
+      "germanDescription": "This is a sample 2 content german",
+      "priority": "high",
+      "displayNotification": false,
+      "link": [
+        { "text": "Read More2", "link": "http://www.google.com", "germanText": "Read More2german" },
+        { "text": "Read More3", "link": "http://www.google.com", "germanText": "Read More2german" },
+        { "text": "Read More4", "link": "http://www.google.com", "germanText": "Read More2german" }
+      ]
+    } 
+  ]
+}

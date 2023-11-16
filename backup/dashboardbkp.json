@@ -1,0 +1,17 @@
+[
+  {
+    "id": ["reviews", "total"],
+    "data": "/v0/dashboard/reviews?status=active",
+    "redirectTo": ["/tasks/reviews", null]
+  },
+  {
+    "id": ["approvals"],
+    "data": "/v0/dashboard/approvals",
+    "redirectTo": ["/tasks/approvals"]
+  },
+  {
+    "id": ["justifications"],
+    "data": "/v0/dashboard/justifications",
+    "redirectTo": ["/tasks/justifications"]
+  }
+]

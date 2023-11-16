@@ -1,0 +1,819 @@
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 18,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "1DRN711ac9eae64eca2800574c0f5746e2f30f660848bd4c1d2710b0c873fa724f05c779a079de9a09a0916f5d878cdf828db4eb562476dafc8bcf740a23fc020251",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "applicationName": "APP_AD_B_ZWDBG",
+              "groupDN": "CN=1DRIA-ROBOT-DEFECT,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "Accessio_Request_No": "",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "category": "AD Group",
+              "operation": "Amend",
+              "isDraft": true,
+              "requestJustification": "test 1869 for entitlement department paths mams",
+              "groupDetails": {
+                "dbagRecerttype": "Infrastructure",
+                "dbagEntitlement": ["Approver"],
+                "dbagRecertSubtype": "Other",
+                "accessioGroupType": "Robot Object - Infrastructure Other",
+                "cn": "1DRIA-ROBOT-DEFECT",
+                "dbagApplicationID": ["123634-1"],
+                "dbagCostcenter": "6201126695",
+                "description": ["Robot Operator Group, testing purpose, defect2256"],
+                "dbagExternalProvider": "AZR",
+                "dbagIMSDataSecCLass": "P",
+                "groupType": "distribution",
+                "groupScope": "domain",
+                "distinguishedName": "CN=1DRIA-ROBOT-DEFECT,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+                "department": "BSC GMC-2 KPI PB GY",
+                "dbagIMSAuthContact": ["firstname5027.lastname2027@db.com"],
+                "dbagIMSAuthContactDelegate": ["firstname2020.lastname2027@db.com"],
+                "dbagIMSApprovers": [
+                  "firstname2078.lastname2027@db.com",
+                  "firstname5027.lastname2027@db.com",
+                  "firstname2020.lastname2027@db.com"
+                ],
+                "info": "Testing groups",
+                "dbagFileSystemFullPaths": ["group data"]
+              }
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/25891f25-3cea-4e11-9e83-9cb6eac51a1b",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T16:01:39.594Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691510499477",
+            "branch": "actual",
+            "primaryKey": "25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+          },
+          "requestType": "modifyResource",
+          "id": "1DN25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+        },
+        "sort": [1691510499594]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "2DRN711ac9eae64eca2800574c0f5746e2f30f660848bd4c1d2710b0c873fa724f05c779a079de9a09a0916f5d878cdf828db4eb562476dafc8bcf740a23fc020251",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "applicationName": "APP_AD_B_ZWDBG",
+              "groupDN": "CN=4NAA-TEST-DEV-TESTPROJNAME-TESTVNAME,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "Accessio_Request_No": "",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "category": "AD Group",
+              "operation": "Amend",
+              "isDraft": true,
+              "requestJustification": "test 1869 2 for support group text",
+              "groupDetails": {
+                "dbagRecerttype": "Role",
+                "dbagRecertSubtype": "User",
+                "accessioGroupType": "Identity Based Access Control (IBAC) - Entitlement Group - Role User",
+                "cn": "4NDRAA-TEST-DEV-TESTPROJNAME-TESTVNAME",
+                "dbagApplicationID": ["123634-1"],
+                "dbagCostcenter": "6201126695",
+                "description": ["testvName, testProjName, DEV, tesxtGD"],
+                "info": "test",
+                "department": "Test UBR_SIT",
+                "dbagSupportGroup": "test",
+                "distinguishedName": "CN=4NDRAA-TEST-DEV-TESTPROJNAME-TESTVNAME,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+                "dbagIMSAuthContact": ["firstname5027.lastname2027@db.com"],
+                "dbagIMSAuthContactDelegate": ["firstname2020.lastname2027@db.com"],
+                "dbagIMSApprovers": [
+                  "firstname2078.lastname2027@db.com",
+                  "firstname2020.lastname2027@db.com",
+                  "firstname5027.lastname2027@db.com"
+                ]
+              }
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/25891f25-3cea-4e11-9e83-9cb6eac51a1b",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T16:01:39.594Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691510499477",
+            "branch": "actual",
+            "primaryKey": "25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+          },
+          "requestType": "modifyResource",
+          "id": "2DN25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+        },
+        "sort": [1691510499594]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "3DRN711ac9eae64eca2800574c0f5746e2f30f660848bd4c1d2710b0c873fa724f05c779a079de9a09a0916f5d878cdf828db4eb562476dafc8bcf740a23fc020251",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "applicationName": "APP_AD_B_ZWDBG",
+              "groupDN": "CN=ADR-ATOS-DBW-ASH98,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "Accessio_Request_No": "",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "category": "AD Group",
+              "operation": "Amend",
+              "isDraft": true,
+              "requestJustification": "test 2785 for rmp roles text",
+              "groupDetails": {
+                "dbagRecerttype": "Infrastructure",
+                "dbagRecertSubtype": "Server-Adm",
+                "accessioGroupType": "Administrative - CyberArk Application Server Group",
+                "cn": "ADR-ATOS-DBW-ASH98",
+                "dbagApplicationID": ["123634-1"],
+                "dbagCostcenter": "6201126695",
+                "description": ["Test Application Access Virtualization"],
+                "info": "test 2785",
+                "dbagEntitlement": "Approver",
+                "accessioPrerequisiteRMPRoles": "Testing Groups",
+                "dbagIMSDataSecCLass": "I",
+                "groupType": "security",
+                "groupScope": "domain",
+                "distinguishedName": "CN=ADR-ATOS-DBW-ASH98,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+                "dbagIMSAuthContact": ["firstname5027.lastname2027@db.com"],
+                "dbagIMSAuthContactDelegate": ["firstname2020.lastname2027@db.com"],
+                "dbagIMSApprovers": [
+                  "firstname5027.lastname2027@db.com",
+                  "firstname2020.lastname2027@db.com",
+                  "firstname2078.lastname2027@db.com"
+                ]
+              }
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/25891f25-3cea-4e11-9e83-9cb6eac51a1b",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T16:01:39.594Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691510499477",
+            "branch": "actual",
+            "primaryKey": "25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+          },
+          "requestType": "modifyResource",
+          "id": "3DN25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+        },
+        "sort": [1691510499594]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "4DRN711ac9eae64eca2800574c0f5746e2f30f660848bd4c1d2710b0c873fa724f05c779a079de9a09a0916f5d878cdf828db4eb562476dafc8bcf740a23fc020251",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "applicationName": "APP_AD_B_ZWDBG",
+              "groupDN": "CN=ADR-ATOS-DBW-ASH98,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "Accessio_Request_No": "",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "category": "AD Group",
+              "operation": "Amend",
+              "isDraft": true,
+              "requestJustification": "test 2785 for rmp roles dropdown",
+              "groupDetails": {
+                "dbagRecerttype": "Infrastructure",
+                "dbagRecertSubtype": "Server-App Sup",
+                "accessioGroupType": "CyberArk - Role Group - Application Support",
+                "cn": "ADR-ATOS-DBW-ASH98",
+                "dbagApplicationID": ["123634-1"],
+                "dbagCostcenter": "6201126695",
+                "description": ["Test Application Access Virtualization"],
+                "info": "test 2785",
+                "dbagEntitlement": "Approver",
+                "accessioPrerequisiteRMPRoles": "Universal",
+                "dbagIMSDataSecCLass": "I",
+                "groupType": "security",
+                "groupScope": "domain",
+                "distinguishedName": "CN=ADR-ATOS-DBW-ASH98,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+                "dbagIMSAuthContact": ["firstname5027.lastname2027@db.com"],
+                "dbagIMSAuthContactDelegate": ["firstname2020.lastname2027@db.com"],
+                "dbagIMSApprovers": [
+                  "firstname5027.lastname2027@db.com",
+                  "firstname2020.lastname2027@db.com",
+                  "firstname2078.lastname2027@db.com"
+                ]
+              }
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/25891f25-3cea-4e11-9e83-9cb6eac51a1b",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T16:01:39.594Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691510499477",
+            "branch": "actual",
+            "primaryKey": "25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+          },
+          "requestType": "modifyResource",
+          "id": "4DN25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+        },
+        "sort": [1691510499594]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "5DRN711ac9eae64eca2800574c0f5746e2f30f660848bd4c1d2710b0c873fa724f05c779a079de9a09a0916f5d878cdf828db4eb562476dafc8bcf740a23fc020251",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "applicationName": "APP_AD_B_ZWDBG",
+              "groupDN": "CN=1NDA-MAILBOX-DEVLOCAL-ROLELOCAL,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "Accessio_Request_No": "",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "category": "AD Group",
+              "operation": "Amend",
+              "isDraft": true,
+              "requestJustification": "test for PSI and 3 private fields",
+              "groupDetails": {
+                "dbagRecerttype": "Data",
+                "dbagRecertSubtype": "Mailbox",
+                "accessioGroupType": "Data Access - Mailbox (Default)",
+                "cn": "1NDA-MAILBOX-DEVLOCAL-ROLELOCAL",
+                "dbagCostcenter": "6201126695",
+                "description": ["Data Access Mailbox, rolelocal, group local"],
+                "dbagExternalProvider": "AZR#GCP",
+                "dbagExtensionAttribute6": "000",
+                "dbagDataPrivClass": "TRUE",
+                "dbagIMSDataSecCLass": "C",
+                "groupType": "security",
+                "groupScope": "universal",
+                "distinguishedName": "CN=1NDA-MAILBOX-DEVLOCAL-ROLELOCAL,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+                "dbagIMSAuthContact": ["firstname5027.lastname2027@db.com"],
+                "dbagIMSAuthContactDelegate": ["firstname2020.lastname2027@db.com"],
+                "dbagIMSApprovers": [
+                  "firstname2078.lastname2027@db.com",
+                  "firstname5027.lastname2027@db.com",
+                  "firstname2020.lastname2027@db.com"
+                ]
+              }
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/25891f25-3cea-4e11-9e83-9cb6eac51a1b",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T16:01:39.594Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691510499477",
+            "branch": "actual",
+            "primaryKey": "25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+          },
+          "requestType": "modifyResource",
+          "id": "5DN25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+        },
+        "sort": [1691510499594]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "6DRN711ac9eae64eca2800574c0f5746e2f30f660848bd4c1d2710b0c873fa724f05c779a079de9a09a0916f5d878cdf828db4eb562476dafc8bcf740a23fc020251",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "applicationName": "APP_AD_B_ZWDBG",
+              "groupDN": "CN=IA-Other-cdew-sdfg,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "Accessio_Request_No": "",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "category": "AD Group",
+              "operation": "Amend",
+              "isDraft": true,
+              "requestJustification": "test for infrastructure id",
+              "groupDetails": {
+                "dbagRecerttype": "Infrastructure",
+                "dbagRecertSubtype": "Other",
+                "accessioGroupType": "Infrastructure Access - Other (Default)",
+                "cn": "IA-Other-cdew-sdfg",
+                "dbagCostcenter": "6201126695",
+                "description": ["Test Description for Infrastructure Access"],
+                "dbagExternalProvider": "AZR#GCP",
+                "dbagInfrastructureID": ["123634-1"],
+                "dbagIMSDataSecCLass": "I",
+                "groupType": "security",
+                "groupScope": "universal",
+                "distinguishedName": "CN=IA-Other-cdew-sdfg,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+                "dbagIMSAuthContact": ["firstname5027.lastname2027@db.com"],
+                "dbagIMSAuthContactDelegate": ["firstname2020.lastname2027@db.com"],
+                "dbagIMSApprovers": [
+                  "firstname5027.lastname2027@db.com",
+                  "firstname2020.lastname2027@db.com",
+                  "firstname2078.lastname2027@db.com"
+                ]
+              }
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/25891f25-3cea-4e11-9e83-9cb6eac51a1b",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T16:01:39.594Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691510499477",
+            "branch": "actual",
+            "primaryKey": "25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+          },
+          "requestType": "modifyResource",
+          "id": "6DN25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+        },
+        "sort": [1691510499594]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "1DN711ac9eae64eca2800574c0f5746e2f30f660848bd4c1d2710b0c873fa724f05c779a079de9a09a0916f5d878cdf828db4eb562476dafc8bcf740a23fc020251",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "applicationName": "APP_AD_B_ZWDBG",
+              "groupDN": "CN=2NAA-A-ASHO-ROLE3,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+              "Accessio_Request_No": "",
+              "requestorMail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+              "category": "AD Assignment",
+              "operation": "Amend",
+              "isDraft": true,
+              "requestJustification": "test",
+              "groupDetails": {
+                "dbagRecerttype": "Application",
+                "dbagRecertSubtype": "Authorization",
+                "accessioGroupType": "Application Access - Authorization (Default)",
+                "cn": "2NAA-A-ASHO-ROLE3",
+                "dbagApplicationID": ["123634-1"],
+                "dbagCostcenter": "6201126695",
+                "description": ["Authorization, 124218-1 Maltego-CISO, role3, test"],
+                "dbagExternalProvider": "AZR",
+                "dbagIMSDataSecCLass": "I",
+                "groupType": "security",
+                "groupScope": "universal",
+                "distinguishedName": "CN=2NAA-A-ASHO-ROLE3,DC=ZWDBG,DC=ZWADS,DC=DB,DC=COM",
+                "dbagIMSAuthContact": ["firstname5027.lastname2027@db.com"],
+                "dbagIMSAuthContactDelegate": ["firstname2020.lastname2027@db.com"],
+                "dbagIMSApprovers": [
+                  "firstname2078.lastname2027@db.com",
+                  "firstname5027.lastname2027@db.com",
+                  "firstname2020.lastname2027@db.com"
+                ]
+              }
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/25891f25-3cea-4e11-9e83-9cb6eac51a1b",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T16:01:39.594Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691510499477",
+            "branch": "actual",
+            "primaryKey": "25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+          },
+          "requestType": "modifyResource",
+          "id": "1DN25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+        },
+        "sort": [1691510499594]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "711ac9eae64eca2800574c0f5746e2f30f660848bd4c1d2710b0c873fa724f05c779a079de9a09a0916f5d878cdf828db4eb562476dafc8bcf740a23fc020251",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "isDraft": true,
+              "accountDN": "Group Membership"
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/25891f25-3cea-4e11-9e83-9cb6eac51a1b",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T16:01:39.594Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691510499477",
+            "branch": "actual",
+            "primaryKey": "25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+          },
+          "requestType": "entitlementGrant",
+          "id": "25891f25-3cea-4e11-9e83-9cb6eac51a1b"
+        },
+        "sort": [1691510499594]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "cd9abb237f53006277cba5a61ab450576d4433aced1e5b862b7dbd3be322b1d350ee5e87b2871df1370d556b2db3b666b3fad852c34664a39ac7bdb231041fee",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "isDraft": true
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/d6fdd80f-f9f5-4368-8407-3e038bb715bf",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T16:01:36.118Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691510496010",
+            "branch": "actual",
+            "primaryKey": "d6fdd80f-f9f5-4368-8407-3e038bb715bf"
+          },
+          "requestType": "entitlementGrant",
+          "id": "d6fdd80f-f9f5-4368-8407-3e038bb715bf"
+        },
+        "sort": [1691510496118]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "8943b053c203b5f87fd02f963c7c0272347eb89b6d5f2f005618c05d99061f475061d481a421980debde46b385738029e107177f84a9a93d0753f55810b9ef6d",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "isDraft": true
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/fff002f0-ba0d-4280-b12f-a35aaae6f802",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T15:15:57.067Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691507756988",
+            "branch": "actual",
+            "primaryKey": "fff002f0-ba0d-4280-b12f-a35aaae6f802"
+          },
+          "requestType": "entitlementGrant",
+          "id": "fff002f0-ba0d-4280-b12f-a35aaae6f802"
+        },
+        "sort": [1691507757067]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "0e8bf76bed7f954639dcd061d755ce2a54dda8d827ece07df2432ef753c79ee2b858c2e041fae853a3bef363783b9e2d10dc5b6159163e71608d903b8536059e",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "isDraft": true
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/35a11758-d1e9-4999-ae30-27c39f3bfd13",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T15:15:54.311Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691507754229",
+            "branch": "actual",
+            "primaryKey": "35a11758-d1e9-4999-ae30-27c39f3bfd13"
+          },
+          "requestType": "entitlementGrant",
+          "id": "35a11758-d1e9-4999-ae30-27c39f3bfd13"
+        },
+        "sort": [1691507754311]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "f64876876083e4f3e9fd9d3e178312fcc94c0ea5e40a209a04a923a851a408bb0329cf427e989c2baa6147a4e6c1aa9f857eb1a6aaaef97f455e5f7c1fcb7b95",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "isDraft": true
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/4b72d57b-5b74-4f24-a36b-6abb842627be",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T15:04:26.034Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691507065941",
+            "branch": "actual",
+            "primaryKey": "4b72d57b-5b74-4f24-a36b-6abb842627be"
+          },
+          "requestType": "entitlementGrant",
+          "id": "4b72d57b-5b74-4f24-a36b-6abb842627be"
+        },
+        "sort": [1691507066034]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "e037fb666be84cce9ac191f0e45824f8708a7893640cce6c8b11c31dba5459bc667d69f57b96c14cebd48b57c6e290626fa436708062123daac42aa4392da597",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "isDraft": true
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/2ecf8f0b-0bae-4483-b348-f5244993bd92",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T15:04:22.043Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691507061932",
+            "branch": "actual",
+            "primaryKey": "2ecf8f0b-0bae-4483-b348-f5244993bd92"
+          },
+          "requestType": "entitlementGrant",
+          "id": "2ecf8f0b-0bae-4483-b348-f5244993bd92"
+        },
+        "sort": [1691507062043]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "d0b48c89e9c353f9dcc1d06ec65bf52e870723218e6f3a0affb3b4e8f3c4bb732c8aff99d0af9140dd18681805580d17cbcb23325f55a086a305db605ab5b644",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "isDraft": true
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/5d251448-867e-49bf-be77-585c0e026fd9",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T14:59:09.819Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691506749702",
+            "branch": "actual",
+            "primaryKey": "5d251448-867e-49bf-be77-585c0e026fd9"
+          },
+          "requestType": "entitlementGrant",
+          "id": "5d251448-867e-49bf-be77-585c0e026fd9"
+        },
+        "sort": [1691506749819]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "08c4ddacac386366c2e326a253548941141bdd69214526617dd4c2dd5f730da47f0cd2be593a806ca39323eed8227244aa6fe8221d3e8621d9192f486e3d436c",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "isDraft": true
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/25c760ae-06fb-429c-9959-9c1532d526cb",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T14:59:05.984Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691506745887",
+            "branch": "actual",
+            "primaryKey": "25c760ae-06fb-429c-9959-9c1532d526cb"
+          },
+          "requestType": "entitlementGrant",
+          "id": "25c760ae-06fb-429c-9959-9c1532d526cb"
+        },
+        "sort": [1691506745984]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "e4c5b48e598e06ed585b61f184970a70354d5fbbf914bfbfa39368b0f4d165e2bc5b1e70a29ad65f5bf0fd7f3b1c1b417d7086090e2c1650673b14d87fbfe14a",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "isDraft": true
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/20ca2ec0-c4e8-4b8e-ab06-01c95d34d675",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T14:39:31.939Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691505571813",
+            "branch": "actual",
+            "primaryKey": "20ca2ec0-c4e8-4b8e-ab06-01c95d34d675"
+          },
+          "requestType": "entitlementGrant",
+          "id": "20ca2ec0-c4e8-4b8e-ab06-01c95d34d675"
+        },
+        "sort": [1691505571939]
+      },
+      {
+        "_index": "june-acreq_common_decision_accessrequest_latest",
+        "_type": "_doc",
+        "_id": "8a9d06284dd4ca8164ca8422f69ec8dea6869b9f04b7726287569d96b39b532d9eb37798e7163e7d812721678b4b4f6e3bb8fb026d4abc42d216926bf536c4b0",
+        "_score": null,
+        "_source": {
+          "requester": {
+            "mail": "mahesh.k.varahala@acpcloud1769outlook.onmicrosoft.com",
+            "givenName": "Mahesh",
+            "sn": "Varahala",
+            "id": "managed/user/e03ae474-d5f3-4ef2-a6b9-3e928ba0dad4",
+            "isAdmin": true,
+            "userName": "Mahesh"
+          },
+          "request": {
+            "common": {
+              "isDraft": true
+            }
+          },
+          "metadata": {
+            "entityPath": "/common/decision/accessRequest/31f5e726-b0fb-4432-bf49-c35718205c09",
+            "entityDefinition": "accessRequest",
+            "entityType": "/common/decision/accessRequest",
+            "created": "2023-08-08T14:39:27.929Z",
+            "namespace": "/common/decision",
+            "tenantId": "ecea2b84-dc29-45fc-950e-21a058a5e75e",
+            "contextId": "1691505567820",
+            "branch": "actual",
+            "primaryKey": "31f5e726-b0fb-4432-bf49-c35718205c09"
+          },
+          "requestType": "entitlementGrant",
+          "id": "31f5e726-b0fb-4432-bf49-c35718205c09"
+        },
+        "sort": [1691505567929]
+      }
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "steps": [
+    {
+      "id": "accountCategory",
+      "title": "Entitlement Grant Details",
+      "heading": "metaData.EntitlementGrantDetails",
+      "children": [
+        {
+          "id": "accountName",
+          "label": "metaData.AccountName",
+          "value": ""
+        },
+        {
+          "id": "groupName",
+          "label": "metaData.GroupName",
+          "value": ""
+        },
+        {
+          "id": "accountDN",
+          "label": "metaData.AccountDomain",
+          "value": ""
+        },
+        {
+          "id": "serverName",
+          "label": "metaData.ServerName",
+          "value": ""
+        },
+        {
+          "id": "groupDN",
+          "label": "metaData.GroupDomain",
+          "value": ""
+        },
+        {
+          "id": "serverDN",
+          "label": "metaData.ServerDomain",
+          "value": ""
+        },
+        {
+          "id": "categoryEnt",
+          "label": "metaData.Category",
+          "value": ""
+        },
+        {
+          "id": "operation",
+          "label": "metaData.Operation",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "requestDetails",
+      "title": "Request Details",
+      "heading": "metaData.RequestDetails",
+      "status": "Completed",
+      "mapping": "requestDetails",
+      "children": [
+        {
+          "id": "requestNo",
+          "label": "metaData.RequestNo",
+          "value": ""
+        },
+        {
+          "id": "bulkRequestNo",
+          "label": "review.columnHeader.bulkRequestNumber",
+          "value": ""
+        },
+        {
+          "id": "recipient",
+          "label": "metaData.Recipient",
+          "value": ""
+        },
+        {
+          "id": "requester",
+          "label": "metaData.Requester",
+          "value": ""
+        },
+        {
+          "id": "requestType",
+          "label": "metaData.RequestType",
+          "value": ""
+        },
+        {
+          "id": "requestDate",
+          "label": "metaData.RequestDate",
+          "value": ""
+        },
+        {
+          "id": "externalRequestId",
+          "label": "metaData.ExternalRequestId",
+          "value": ""
+        },
+        {
+          "id": "approvalDate",
+          "label": "metaData.ApprovalDate",
+          "value": ""
+        },
+        {
+          "id": "completionDate",
+          "label": "metaData.CompletionDate",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "comments",
+      "title": "Comments",
+      "heading": "metaData.Comments",
+      "status": "Completed",
+      "mapping": "comments",
+      "children": [
+        {
+          "id": "providedComments",
+          "label": "metaData.Comments",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "decisions",
+      "title": "Decisions",
+      "heading": "metaData.BusinessJustification",
+      "status": "Completed",
+      "mapping": "decisions",
+      "children": [
+        {
+          "id": "requestJustification",
+          "label": "review.columnHeader.justification",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "approverInfo",
+      "title": "Approver Information",
+      "heading": "metaData.ApproverInformation",
+      "status": "Completed",
+      "mapping": "decisions",
+      "children": [
+        {
+          "id": "phasesInfo",
+          "label": "",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "requestErrorInfo",
+      "title": "Request Error",
+      "heading": "metaData.RequestError",
+      "status": "Completed",
+      "mapping": "decisions",
+      "children": [
+        {
+          "id": "requestError",
+          "label": "",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}
