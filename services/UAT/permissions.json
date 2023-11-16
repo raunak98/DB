@@ -1,0 +1,455 @@
+{
+  "modules": [
+    {
+      "id": "dashboard",
+      "showInSideNav": true,
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "children": [
+        {
+          "id": "request",
+          "multiple": true,
+          "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+          "children": [
+            {
+              "id": "create",
+              "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+              "children": []
+            },
+            {
+              "id": "modify",
+              "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+              "children": []
+            },
+            {
+              "id": "members",
+              "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "requests",
+      "showInSideNav": false,
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "children": [
+        {
+          "id": "request",
+          "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+          "children": [
+            {
+              "id": "create",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": [
+                {
+                  "id": "createADGroup",
+                  "multiple": true,
+                  "allowedRoles": [
+                    "END_USER",
+                    "SUPPORT",
+                    "CENTRAL_ID_ADMIN",
+                    "REVIEWER",
+                    "MONITOR"
+                  ],
+                  "children": [
+                    {
+                      "id": "adGroupManagement",
+                      "multiple": true,
+                      "allowedRoles": [
+                        "END_USER",
+                        "SUPPORT",
+                        "CENTRAL_ID_ADMIN",
+                        "REVIEWER",
+                        "MONITOR"
+                      ],
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "createADGroupSummary",
+                  "multiple": true,
+                  "allowedRoles": [
+                    "END_USER",
+                    "SUPPORT",
+                    "CENTRAL_ID_ADMIN",
+                    "REVIEWER",
+                    "MONITOR"
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "adGroupMembership",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": [
+                {
+                  "id": "addOrRemove",
+                  "allowedRoles": [
+                    "END_USER",
+                    "SUPPORT",
+                    "CENTRAL_ID_ADMIN",
+                    "REVIEWER",
+                    "MONITOR"
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "addOrRemoveServer",
+                  "allowedRoles": [
+                    "END_USER",
+                    "SUPPORT",
+                    "CENTRAL_ID_ADMIN",
+                    "REVIEWER",
+                    "MONITOR"
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "members",
+              "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bulk-requests",
+      "showInSideNav": false,
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "children": [
+        {
+          "id": "request",
+          "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+          "children": [
+            {
+              "id": "bulkCreate",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": []
+            },
+            {
+              "id": "bulkModify",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": []
+            },
+            {
+              "id": "bulkDelete",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "adGroup",
+          "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+          "children": [
+            {
+              "id": "bulkCreateAdGroup",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": []
+            },
+            {
+              "id": "bulkModifyAdGroup",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": []
+            },
+            {
+              "id": "bulkDeleteAdGroup",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": []
+            },
+            {
+              "id": "bulkAddRemoveGroupMember",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tasks",
+      "showInSideNav": true,
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "children": [
+        {
+          "id": "approvals",
+          "allowedRoles": ["SUPPORT", "CENTRAL_ID_ADMIN"],
+          "children": [
+            {
+              "id": "decisions",
+              "allowedRoles": ["SUPPORT", "CENTRAL_ID_ADMIN"],
+              "actions": [],
+              "children": []
+            },
+            {
+              "id": "summary",
+              "multiple": true,
+              "allowedRoles": ["SUPPORT", "CENTRAL_ID_ADMIN"],
+              "actions": [],
+              "children": []
+            },
+            {
+              "id": "sap-outstanding",
+              "allowedRoles": ["SUPPORT"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "reviews",
+          "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+          "children": [
+            {
+              "id": "semiAnnual",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": []
+            },
+            {
+              "id": "review",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "violations",
+          "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+          "children": []
+        },
+        {
+          "id": "justifications",
+          "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+          "children": [
+            {
+              "id": "justificationsSummary",
+              "multiple": true,
+              "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+              "actions": [],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "my-access",
+      "showInSideNav": false,
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "children": []
+    },
+    {
+      "id": "my-team",
+      "showInSideNav": false,
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "children": [
+        {
+          "id": "view",
+          "multiple": true,
+          "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "my-asset",
+      "showInSideNav": false,
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "children": [
+        {
+          "id": "modify",
+          "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+          "actions": [],
+          "children": [
+            {
+              "id": "group",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "actions": [],
+              "children": []
+            },
+            {
+              "id": "indirectlyOwnedModifyGroup",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "actions": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "accountSummary",
+          "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+          "actions": [],
+          "children": [
+            {
+              "id": "groupSummary",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "actions": [],
+              "children": []
+            },
+            {
+              "id": "indirectlyOwnedGroupSummary",
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "actions": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "historicalRequestHistory",
+          "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+          "actions": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "showInSideNav": true,
+      "children": [
+        {
+          "id": "approvals",
+          "allowedRoles": ["SUPPORT", "CENTRAL_ID_ADMIN"],
+          "children": [
+            {
+              "id": "decisions",
+              "allowedRoles": ["SUPPORT", "CENTRAL_ID_ADMIN"],
+              "actions": [],
+              "children": []
+            },
+            {
+              "id": "sap-outstanding",
+              "allowedRoles": ["SUPPORT"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "lists",
+          "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+          "showInSideNav": true,
+          "children": [
+            {
+              "id": "list",
+              "multiple": true,
+              "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "violations",
+          "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+          "children": []
+        },
+        {
+          "id": "requestHistory",
+          "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+          "children": [
+            {
+              "id": "requestSummary",
+              "multiple": true,
+              "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+              "actions": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "approvalHistory",
+          "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+          "children": [
+            {
+              "id": "approvalSummary",
+              "multiple": true,
+              "allowedRoles": ["END_USER", "CENTRAL_ID_ADMIN"],
+              "actions": [],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "admin",
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "showInSideNav": false,
+      "children": [
+        {
+          "id": "accountAdmin",
+          "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+          "actions": [],
+          "children": []
+        },
+        {
+          "id": "groupAdmin",
+          "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+          "actions": [],
+          "children": []
+        },
+        {
+          "id": "serviceDeskAdmin",
+          "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+          "actions": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "reports",
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "children": [],
+      "showInSideNav": true
+    },
+    {
+      "id": "drafts",
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "children": [
+        {
+          "id": "create",
+          "multiple": false,
+          "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+          "children": [
+            {
+              "id": "createADGroup",
+              "multiple": true,
+              "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+              "children": [
+                {
+                  "id": "adGroupManagement",
+                  "multiple": true,
+                  "allowedRoles": [
+                    "END_USER",
+                    "SUPPORT",
+                    "CENTRAL_ID_ADMIN",
+                    "REVIEWER",
+                    "MONITOR"
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "showInSideNav": false
+    },
+    {
+      "id": "help",
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "children": [],
+      "showInSideNav": true
+    },
+    {
+      "id": "profile",
+      "allowedRoles": ["END_USER", "SUPPORT", "CENTRAL_ID_ADMIN", "REVIEWER", "MONITOR"],
+      "children": [],
+      "showInSideNav": false
+    }
+  ]
+}
